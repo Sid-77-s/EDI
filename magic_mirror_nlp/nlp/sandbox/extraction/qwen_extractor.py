@@ -417,39 +417,86 @@ CURRENT TEXT TO PROCESS:
                     existing_names.add(norm_name)
             
             # --- spaCy / Regex Noun Safety Net ---
+            # When Ollama is offline this is the sole source of entity extraction.
+            # It must yield isolated object nouns, not spatial preposition phrases like
+            # "on my hand" or verb-noun compounds like "imagine an apple".
             if current_text.strip():
                 candidates = []
+
+                # Spatial/anchor preposition phrases to reject entirely (e.g. "on my hand", "in my palm")
+                _spatial_anchor_re = re.compile(
+                    r'\b(on|in|above|below|near|behind|in front of|next to|beside|over|under)'
+                    r'\s+(my|the|a|an|your|his|her|their)?\s*'
+                    r'(hand|palm|wrist|finger|fingers|arm|desk|table|surface|floor|wall|screen)\b',
+                    re.IGNORECASE,
+                )
+                # Filler verbs that must not be treated as noun heads in the regex path
+                _filler_verbs = {
+                    "imagine", "visualize", "show", "see", "look", "put", "place", "move",
+                    "think", "picture", "display", "create", "generate", "make", "get",
+                    "bring", "draw", "render", "demonstrate", "pretend",
+                }
+
                 if spacy_nlp is not None:
                     doc = spacy_nlp(current_text)
                     for chunk in doc.noun_chunks:
+                        # Reject chunks whose head is a spatial/anchor anchor word
+                        head_lower = chunk.root.text.lower()
+                        if head_lower in {"hand", "palm", "wrist", "finger", "desk", "table", "surface"}:
+                            continue
+                        # Reject if the chunk text matches the spatial anchor pattern
+                        if _spatial_anchor_re.search(chunk.text):
+                            continue
                         candidates.append(chunk.text)
                     for token in doc:
                         if token.pos_ in ("NOUN", "PROPN"):
-                            candidates.append(token.text)
+                            if token.lower_ not in {"hand", "palm", "wrist", "finger", "desk", "table", "surface"}:
+                                candidates.append(token.text)
                 else:
-                    # Robust fallback parser for key entities and noun phrases
-                    # Matches common phrases like "a dog", "the solar system", "a planet", "the core", etc.
-                    for m in re.finditer(r'\b(?:a|an|the|my|this|that)?\s*([a-zA-Z][a-zA-Z0-9_\-]*(?:\s+[a-zA-Z][a-zA-Z0-9_\-]*){0,2})\b', current_text, re.IGNORECASE):
+                    # Regex-only fallback: extract bare noun phrases (1-3 words) preceded by an article
+                    # and reject matches that begin with a filler verb or contain a spatial anchor.
+                    for m in re.finditer(
+                        r'\b(?:a|an|the|my|this|that)\s+([a-zA-Z][a-zA-Z0-9_\-]*(?:\s+[a-zA-Z][a-zA-Z0-9_\-]*){0,2})\b',
+                        current_text, re.IGNORECASE
+                    ):
                         cand = m.group(1).strip()
+                        # Reject if the first word is a filler verb
+                        first_word = cand.split()[0].lower() if cand else ""
+                        if first_word in _filler_verbs:
+                            continue
+                        # Reject if the candidate is a spatial anchor phrase
+                        if _spatial_anchor_re.search(cand):
+                            continue
                         if cand:
                             candidates.append(cand)
-                
+
                 # Filter candidates
                 stop_words = {
                     "it", "this", "that", "they", "he", "she", "we", "i", "you", "a", "an", "the",
-                    "some", "any", "my", "your", "his", "her", "their", "there", "here", "hand", "palm",
-                    "imagine", "visualize", "show", "me", "see", "look", "put", "place", "move", "now"
+                    "some", "any", "my", "your", "his", "her", "their", "there", "here",
+                    "hand", "palm", "wrist", "finger", "desk", "table", "surface",
+                    "imagine", "visualize", "show", "me", "see", "look", "put", "place", "move", "now",
+                    "on", "in", "at", "of", "with", "by", "for", "to", "from", "up", "down",
                 }
+                # Trailing spatial preposition words to strip from the end of candidates
+                _trailing_prep_re = re.compile(
+                    r'\s+(on|in|at|above|below|near|behind|over|under|beside|next|front|of|my|the|your|our|their)(\s+.*)?$',
+                    re.IGNORECASE,
+                )
                 for cand in set(candidates):
                     cand_lower = cand.strip().lower()
                     if not cand_lower or cand_lower in stop_words:
                         continue
-                        
+                    # Reject full spatial preposition phrases
+                    if _spatial_anchor_re.search(cand_lower):
+                        continue
+                    # Strip trailing preposition fragments (e.g. "apple on my" -> "apple")
+                    clean_cand_lower = _trailing_prep_re.sub('', cand_lower).strip()
                     # Remove leading articles for comparison
-                    clean_cand_lower = re.sub(r'^(the|a|an|my|this|that)\s+', '', cand_lower).strip()
+                    clean_cand_lower = re.sub(r'^(the|a|an|my|this|that)\s+', '', clean_cand_lower).strip()
                     if not clean_cand_lower or clean_cand_lower in stop_words or len(clean_cand_lower) < 2:
                         continue
-                    
+
                     # Check if candidate is already in existing_names or overlaps significantly
                     is_found = False
                     for existing_name in existing_names:
@@ -457,7 +504,7 @@ CURRENT TEXT TO PROCESS:
                         if clean_cand_lower in clean_existing or clean_existing in clean_cand_lower:
                             is_found = True
                             break
-                    
+
                     if not is_found:
                         norm_id = re.sub(r'[^a-z0-9_]+', '_', clean_cand_lower).strip('_') or "entity"
                         if norm_id and norm_id not in existing_ids:

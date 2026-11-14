@@ -27,6 +27,8 @@ import queue
 import sys
 import time
 import threading
+import uuid
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -73,7 +75,7 @@ from integration.runtime.multimodal_runtime import MultimodalRuntime
 from integration.multimodal_fusion.schemas import VisualPlan, ActionType
 
 # ---------------------------------------------------------------------------
-# Asset rendering  (new, additive)
+# Asset rendering & Hybrid Generation Engine  (new, additive)
 # ---------------------------------------------------------------------------
 from src.perception.assets import (
     ConceptAssetStore,
@@ -81,8 +83,15 @@ from src.perception.assets import (
     format_concept_label,
     clip_text_to_width,
 )
+from integration.generation import (
+    GenerationEngine,
+    GenerationRequest,
+    GenerationMode,
+    QualityTier,
+)
 
-_ASSET_STORE = ConceptAssetStore()
+_ASSET_STORE = ConceptAssetStore(asset_dir=_ROOT / "assets")
+_GEN_ENGINE = GenerationEngine(asset_store=_ASSET_STORE, asset_dir=_ROOT / "assets")
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -93,6 +102,51 @@ logging.basicConfig(
     datefmt="%H:%M:%S",
 )
 logger = logging.getLogger("integration_demo")
+
+
+class _LatencyTrace:
+    """Append-only, low-cost stage timing records for one demo session."""
+
+    def __init__(self, path: Path) -> None:
+        self.path = path
+        self._lock = threading.Lock()
+        self.current_id: Optional[str] = None
+        self._stream = path.open("a", encoding="utf-8")
+        self._last_flush = time.perf_counter()
+        self._closed = False
+
+    def record(self, stage: str, *, correlation_id: Optional[str] = None,
+               started_ns: Optional[int] = None, frame_id: Optional[int] = None,
+               **fields) -> None:
+        now_ns = time.perf_counter_ns()
+        row = {
+            "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+            "monotonic_ns": now_ns,
+            "correlation_id": correlation_id or self.current_id,
+            "stage": stage,
+            "duration_ms": ((now_ns - started_ns) / 1_000_000.0) if started_ns is not None else None,
+        }
+        if frame_id is not None:
+            row["frame_id"] = frame_id
+        row.update(fields)
+        try:
+            line = json.dumps(row, separators=(",", ":"), default=str) + "\n"
+            with self._lock:
+                if self._closed:
+                    return
+                self._stream.write(line)
+                if time.perf_counter() - self._last_flush >= 1.0:
+                    self._stream.flush()
+                    self._last_flush = time.perf_counter()
+        except OSError as exc:
+            logger.warning("Latency trace write failed: %s", exc)
+
+    def close(self) -> None:
+        with self._lock:
+            if not self._closed:
+                self._stream.flush()
+                self._stream.close()
+                self._closed = True
 
 # ---------------------------------------------------------------------------
 # Display constants
@@ -121,7 +175,7 @@ _C_ACTION        = (50,  200, 255)  # bright for active action
 class LiveState:
     """Thread-safe container for latest NLP + multimodal data."""
 
-    def __init__(self) -> None:
+    def __init__(self, generation_engine: Optional[GenerationEngine] = None) -> None:
         self._lock = threading.Lock()
         self.transcript: str = ""
         self.is_partial: bool = False
@@ -130,6 +184,8 @@ class LiveState:
         self.entities: list = []
         self.plan: Optional[VisualPlan] = None
         self.active_concept: Optional[str] = None
+        self.active_visual_id: Optional[str] = None
+        self.gen_engine: Optional[GenerationEngine] = generation_engine or _GEN_ENGINE
 
     def update_transcript(self, text: str, partial: bool) -> None:
         with self._lock:
@@ -152,15 +208,86 @@ class LiveState:
                 self.transcript = seg
                 self.is_partial = raw_json.get("is_partial", False)
 
+    @staticmethod
+    def _is_valid_concept(concept: Optional[str]) -> bool:
+        """
+        Rejects concepts that are clearly spatial-anchor phrases or stop-word noise
+        produced by the offline fallback extractor.
+        Valid concepts are short (1-3 words), not pure preposition phrases, and not
+        pure spatial anchors like 'on my hand' or 'in front of me'.
+        """
+        import re as _re
+        if not concept:
+            return False
+        c = concept.strip().lower()
+        if not c or c in ("", "—", "unknown", "none", "statement", "general", "concept"):
+            return False
+        # Reject strings starting with a spatial preposition
+        _spatial_start = _re.compile(
+            r'^(on|in|at|above|below|near|behind|in front of|next to|beside|over|under)\b'
+        )
+        if _spatial_start.match(c):
+            return False
+        # Reject pure anchor words
+        _pure_anchors = {"hand", "palm", "wrist", "finger", "fingers", "arm", "desk",
+                         "table", "surface", "floor", "wall", "screen", "my hand", "your hand"}
+        if c in _pure_anchors:
+            return False
+        # Reject excessively long compound phrases (> 3 words usually indicates a sentence fragment)
+        if len(c.split()) > 4:
+            return False
+        return True
+
     def update_plan(self, plan: VisualPlan) -> None:
         with self._lock:
             self.plan = plan
-            if plan:
-                if plan.action == ActionType.REMOVE:
-                    self.active_concept = None
-                elif plan.action not in (ActionType.NONE, None):
-                    if plan.concept and plan.concept.strip() not in ("", "—", "unknown", "none"):
-                        self.active_concept = plan.concept.strip()
+            if not plan:
+                return
+
+            if plan.action == ActionType.REMOVE:
+                self.active_concept = None
+                self.active_visual_id = None
+
+            elif plan.action == ActionType.CREATE:
+                if self._is_valid_concept(plan.concept):
+                    cleaned = plan.concept.strip()
+                    self.active_concept = cleaned
+                    self.active_visual_id = plan.visual_id
+                    if self.gen_engine:
+                        rep_type = plan.representation.type.value if plan.representation else None
+                        req = GenerationRequest(
+                            concept=cleaned,
+                            visual_id=plan.visual_id,
+                            representation_type=rep_type,
+                        )
+                        self.gen_engine.request_generation(req)
+
+            elif plan.action == ActionType.MOVE:
+                # MOVE reuses existing visual ID and asset; do not re-request generation
+                if plan.visual_id:
+                    self.active_visual_id = plan.visual_id
+                if self.active_concept is None and self._is_valid_concept(plan.concept):
+                    self.active_concept = plan.concept.strip()
+
+            elif plan.action == ActionType.UPDATE:
+                target_id = plan.visual_id or self.active_visual_id
+                if self.gen_engine and target_id:
+                    scale = plan.spatial.scale if plan.spatial else None
+                    pos = plan.spatial.position if plan.spatial else None
+                    self.gen_engine.update_representation(target_id, {"scale": scale, "position": pos})
+                if self._is_valid_concept(plan.concept):
+                    self.active_concept = plan.concept.strip()
+
+            elif plan.action == ActionType.ANIMATE:
+                # ANIMATE preserves visual identity and active representation without re-creating
+                if plan.visual_id:
+                    self.active_visual_id = plan.visual_id
+                if self._is_valid_concept(plan.concept):
+                    self.active_concept = plan.concept.strip()
+
+            elif plan.action not in (ActionType.NONE, None):
+                if self._is_valid_concept(plan.concept):
+                    self.active_concept = plan.concept.strip()
 
     def snapshot(self):
         with self._lock:
@@ -187,8 +314,11 @@ class _DiagMonitor:
     No existing NLP or Vision files are modified.
     """
 
-    def __init__(self):
+    def __init__(self, trace: Optional[_LatencyTrace] = None):
         self._lock = threading.Lock()
+        self.trace = trace
+        self._ids_by_text: dict = {}
+        self._qwen_started_ns: dict = {}
 
         # A — microphone callback counters
         self.mic_chunks:  int   = 0      # audio_queue.put calls
@@ -256,6 +386,14 @@ class _DiagMonitor:
             text       = item.get("text", "") if isinstance(item, dict) else ""
             is_partial = item.get("is_partial", True) if isinstance(item, dict) else True
             label = "partial" if is_partial else "final"
+            if not is_partial and mon.trace:
+                corr_id = str(uuid.uuid4())
+                with mon._lock:
+                    mon._ids_by_text[text.strip()] = corr_id
+                mon.trace.current_id = corr_id
+                mon.trace.record("speech_endpoint", correlation_id=corr_id, text_chars=len(text),
+                                 endpoint_source="whisper_final_transcript")
+                mon.trace.record("transcript_finalized", correlation_id=corr_id, text_chars=len(text))
             with mon._lock:
                 if is_partial:
                     mon.wh_partials += 1
@@ -280,6 +418,14 @@ class _DiagMonitor:
             with mon._lock:
                 mon.nlp_q_puts += 1
                 n = mon.nlp_q_puts
+                corr_id = mon._ids_by_text.get(item.get("text", "").strip()) if isinstance(item, dict) else None
+            if mon.trace:
+                start_ns = time.perf_counter_ns()
+                if corr_id:
+                    with mon._lock:
+                        mon._qwen_started_ns[corr_id] = start_ns
+                mon.trace.record("qwen_extraction_start", correlation_id=corr_id,
+                                 text_chars=len(text))
             print("[FAST→QWEN] #%d  text: '%s'" % (n, text))
             return original_put(item, *args, **kwargs)
         return _put
@@ -292,6 +438,17 @@ class _DiagMonitor:
         mon = self
         def _put(item, *args, **kwargs):
             msg_type = item.get("type", "unknown") if isinstance(item, dict) else "unknown"
+            if mon.trace and msg_type == "nlp_update":
+                state = item.get("state", {})
+                text = state.get("text_segment", "")
+                with mon._lock:
+                    corr_id = mon._ids_by_text.get(text.strip())
+                if corr_id:
+                    mon.trace.current_id = corr_id
+                    with mon._lock:
+                        started_ns = mon._qwen_started_ns.pop(corr_id, None)
+                    mon.trace.record("qwen_extraction_complete", correlation_id=corr_id,
+                                     started_ns=started_ns)
             with mon._lock:
                 mon.ui_puts += 1
                 changed = (msg_type != mon._last_nlp_event_type)
@@ -347,6 +504,7 @@ def _nlp_thread(
     runtime: MultimodalRuntime,
     live_state: LiveState,
     stop_event: threading.Event,
+    trace: Optional[_LatencyTrace] = None,
 ) -> None:
     """
     Runs the existing MicrophoneInput → WhisperTranscriber → FastProcessor
@@ -374,7 +532,7 @@ def _nlp_thread(
     deep_proc = QwenExtractor(model_name=model_name)
 
     # ── Attach diagnostic probes BEFORE starting threads ─────────────
-    diag = _DiagMonitor()
+    diag = _DiagMonitor(trace=trace)
 
     # Probe A: count what MicrophoneInput.callback puts into audio_queue
     mic.audio_queue.put = diag.wrap_mic_put(mic.audio_queue.put)
@@ -429,9 +587,7 @@ def _nlp_thread(
                 live_state.update_nlp(raw)
 
                 try:
-                    plan = runtime.process_nlp_update(json.dumps(raw))
-                    if plan is not None:
-                        live_state.update_plan(plan)
+                    runtime.process_nlp_update(json.dumps(raw))
                 except Exception as exc:
                     logger.warning("Integration error: %s", exc)
 
@@ -502,15 +658,29 @@ def _draw_visual_opportunity(
 
         # Fetch matching asset (returns None or ConceptAsset with status info)
         store = asset_store or _ASSET_STORE
+        asset_started_ns = time.perf_counter_ns()
         asset = store.get_asset(active_concept) if active_concept else None
+        trace = getattr(_draw_visual_opportunity, "_trace", None)
+        frame_id = getattr(_draw_visual_opportunity, "_frame_id", None)
+        if trace:
+            trace.record("asset_retrieval", started_ns=asset_started_ns,
+                         concept=active_concept or "", frame_id=frame_id)
 
-        # render_box_and_asset handles border, label badge, and image all in one pass
+        # render_box_and_asset handles border, label badge, and 3D model/image all in one pass
+        has_content = asset is not None and (asset.is_valid_image or getattr(asset, "is_3d", False))
+        render_started_ns = time.perf_counter_ns()
         render_box_and_asset(
             frame,
             bbox=opp.bbox,
             concept_label=active_concept,
-            asset=asset if (asset is not None and asset.is_valid_image) else None,
+            asset=asset if has_content else None,
         )
+        if trace:
+            trace.record("render", started_ns=render_started_ns, frame_id=frame_id)
+            if has_content and not getattr(trace, "_first_visual_render", False):
+                trace._first_visual_render = True
+                trace.record("first_visual_render", correlation_id=trace.current_id,
+                             concept=active_concept or "", frame_id=frame_id)
 
 
 def _draw_integration_hud(frame, transcript, is_partial, intent, intent_conf, entities, plan) -> None:
@@ -673,14 +843,23 @@ def run(
 
     # ── 3. Integration runtime ────────────────────────────────────
     live_state = LiveState()
-    runtime = MultimodalRuntime(on_plan_emitted=live_state.update_plan)
+    trace = _LatencyTrace(_ROOT / "latency_trace.jsonl")
+    print("[LATENCY] Writing monotonic stage records to %s" % trace.path)
+
+    def _on_plan_emitted(plan):
+        trace.record("visualplan_emitted", action=getattr(getattr(plan, "action", None), "value", None),
+                     concept=getattr(plan, "concept", None), visual_id=getattr(plan, "visual_id", None))
+        live_state.update_plan(plan)
+
+    _draw_visual_opportunity._trace = trace
+    runtime = MultimodalRuntime(on_plan_emitted=_on_plan_emitted)
     print("[INTEGRATION] MultimodalRuntime ready.")
 
     # ── 4. NLP pipeline in background thread ─────────────────────
     stop_event = threading.Event()
     nlp_t = threading.Thread(
         target=_nlp_thread,
-        args=(mic_device, model_name, runtime, live_state, stop_event),
+        args=(mic_device, model_name, runtime, live_state, stop_event, trace),
         daemon=True,
         name="nlp-pipeline",
     )
@@ -706,15 +885,23 @@ def run(
             if timeout > 0.0 and (time.monotonic() - start_time) >= timeout:
                 break
 
+            camera_wait_started_ns = time.perf_counter_ns()
             frame_data = reader.read_latest(timeout=0.2)
             if frame_data is None:
                 continue
+            trace.record("camera_consumer_wait", started_ns=camera_wait_started_ns,
+                         frame_id=frame_data.frame_id)
+            trace.record("camera_frame_received", frame_id=frame_data.frame_id,
+                         capture_timestamp=frame_data.capture_timestamp)
 
             cv2.flip(frame_data.image, 1, dst=frame_data.image)
 
             if pipeline is not None:
                 try:
+                    vision_started_ns = time.perf_counter_ns()
                     result, *_ = pipeline.process(frame_data)
+                    trace.record("vision_frame_complete", started_ns=vision_started_ns,
+                                 frame_id=frame_data.frame_id)
                     last_scene = result
                     if last_scene is not None:
                         runtime.process_vision_update(last_scene)
@@ -723,8 +910,10 @@ def run(
 
             # Snapshot state (including active concept)
             transcript, is_partial, intent, intent_conf, entities, plan, active_concept = live_state.snapshot()
+            _draw_visual_opportunity._frame_id = frame_data.frame_id
 
             # Existing yellow VisualOpportunity rectangle with active concept label
+            render_started_ns = time.perf_counter_ns()
             _draw_visual_opportunity(frame_data.image, last_scene, concept_label=active_concept)
 
             # Integration HUD (hidden by default for clean view; enabled with --show-hud / --debug)
@@ -737,6 +926,8 @@ def run(
                 )
 
             cv2.imshow(_WINDOW, frame_data.image)
+            trace.record("frame_ready_for_display", started_ns=render_started_ns,
+                         frame_id=frame_data.frame_id)
 
             key = cv2.waitKey(1) & 0xFF
             if key in (ord("q"), ord("Q"), 27):
@@ -753,8 +944,10 @@ def run(
         stop_event.set()
         if pipeline is not None:
             pipeline.close()
+        _GEN_ENGINE.shutdown(wait=False)
         reader.stop()
         cv2.destroyAllWindows()
+        trace.close()
         print("Demo shutdown complete.")
 
     return 0
