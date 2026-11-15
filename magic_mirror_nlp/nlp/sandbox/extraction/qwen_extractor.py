@@ -33,25 +33,9 @@ class QwenExtractor(BaseExtractor):
             print(f"Warning: could not load schema from {SCHEMA_PATH}: {e}")
             self.schema_dict = {}
 
-        self.system_instruction = """You are the NLP reasoning engine for Magic Mirror, a live Augmented Reality visualization system.
-Your job is to read the CURRENT TEXT spoken by the user and the PREVIOUS CONTEXT.
-You must output a structured JSON object representing the semantic graph and discourse intent strictly conforming to nlp_schema.json.
-
-CRITICAL INSTRUCTIONS:
-1. Distinguish between explicit statements (actually spoken) and inferred knowledge.
-2. Resolve pronouns (it, this, that, they) using the PREVIOUS CONTEXT. If a pronoun refers to an entity, add to coreference_resolutions: [{"text_reference": "it", "resolved_entity": "<id>"}].
-3. State Updates & Corrections: When the current text contains a correction signal (e.g. 'actually', 'no wait', 'I meant', 'correction:'), classify intent as 'correcting'. You MUST REPLACE the relevant value in semantic_graph.quantities and semantic_graph.entities.
-4. Extract relationships as simple directed triples: subject -> predicate -> object. Never repeat identical relationships.
-5. Accurately classify the speaker_activity intent (e.g. explaining, defining, describing, giving_example, demonstrating, comparing, analogy, hypothetical, cause_effect, process_sequencing, questioning, correcting, clarifying, summarizing, instructing, casual).
-6. Do NOT invent information. If a statement has no concrete entities or objects, return entities as empty [].
-7. Conciseness: Keep responses short and compact. Use short entity names (1-3 words max). Omit empty optional fields. Do not include markdown fences or conversational text.
-8. Concise & Complete Entities: Include ALL key nouns and noun phrases as entities in entities[]. Every entity referenced in relationships[] or quantities[] MUST also appear in entities[].
-9. Inferred Information: Provide 1-3 concrete spatial, physical, or contextual facts that the downstream AR/3D visual model needs.
-10. Few-Shot Examples:
-   - Example 1: "The core generates heat." -> {"speaker_activity": [{"intent": "explaining", "confidence": 0.95}], "semantic_graph": {"entities": [{"id": "core", "name": "core", "class": "object", "status": "new_explicit"}, {"id": "heat", "name": "heat", "class": "energy", "status": "new_explicit"}], "relationships": [{"subject": "core", "predicate": "generates", "object": "heat", "type": "causal", "confidence": 0.95}]}}
-11. Output JSON exactly in this compact structure (omit any optional keys not needed):
-{"speaker_activity": [{"intent": "...", "confidence": 0.95}], "semantic_graph": {"entities": [{"id": "...", "name": "...", "class": "...", "status": "new_explicit"}], "relationships": [{"subject": "...", "predicate": "...", "object": "...", "type": "causal", "confidence": 0.95}], "quantities": []}, "explicit_information": [], "inferred_information": [], "coreference_resolutions": [], "explanation_state": {"current_topic": "...", "active_concept": "...", "recent_entities": []}}
-"""
+        self.system_instruction = """Extract only the meaning of CURRENT TEXT. Use PREVIOUS CONTEXT to resolve pronouns and updates. Return compact JSON only, with this structure:
+{"speaker_activity":[{"intent":"explaining","confidence":0.9}],"semantic_graph":{"entities":[{"id":"apple","name":"apple","class":"object","status":"new_explicit"}],"relationships":[],"quantities":[]},"explicit_information":[],"inferred_information":[],"coreference_resolutions":[],"explanation_state":{"current_topic":"","active_concept":"","recent_entities":[]}}
+Use the schema's allowed intent/status/relationship values. Include all required entity IDs and required relationship fields. Preserve object concepts separately from modifiers (e.g. apple is the entity; apple --color--> red), spatial anchors, relationships, quantities, and coreference. Resolve it/this/that from context, and put the spoken pronoun in text_reference. For an explicit update, replace the prior value of the changed property or location; do not repeat stale values. Mark corrections as correcting. Do not invent facts. Keep names and output concise; include only useful visualization inferences. Do not add fields or prose."""
 
     def _refine_intent(self, intent: str, text: str) -> str:
         """
@@ -204,6 +188,108 @@ CRITICAL INSTRUCTIONS:
         return inferences
 
 
+    @staticmethod
+    def _compact_context(context_text: str, max_chars: int = 1800) -> str:
+        """Keep recent discourse state useful for coreference without sending full history."""
+        if not context_text:
+            return "No previous context."
+        try:
+            data = json.loads(context_text)
+            if isinstance(data, dict):
+                compact = {}
+                graph = data.get("semantic_graph")
+                if isinstance(graph, dict):
+                    compact["semantic_graph"] = {
+                        key: graph.get(key, [])[-12:]
+                        for key in ("entities", "relationships", "quantities")
+                        if isinstance(graph.get(key, []), list)
+                    }
+                for key in ("text_segment", "coreference_resolutions", "explanation_state"):
+                    if key in data:
+                        compact[key] = data[key]
+                context_text = json.dumps(compact, ensure_ascii=False, separators=(",", ":"))
+        except (json.JSONDecodeError, TypeError):
+            pass
+        if len(context_text) > max_chars:
+            context_text = context_text[-max_chars:]
+        return context_text
+
+    @staticmethod
+    def _normalize_references_and_updates(result_dict: dict, context_text: str, current_text: str) -> None:
+        """Bind spoken pronouns to the prior active object and drop superseded properties."""
+        reference = re.search(r"\b(it|this|that|these|those)\b", current_text, re.IGNORECASE)
+        if not reference:
+            result_dict["coreference_resolutions"] = []
+            return
+        try:
+            previous = json.loads(context_text) if context_text else {}
+        except (json.JSONDecodeError, TypeError):
+            previous = {}
+
+        graph = previous.get("semantic_graph", {}) if isinstance(previous, dict) else {}
+        entities = graph.get("entities", []) if isinstance(graph, dict) else []
+        state = previous.get("explanation_state", {}) if isinstance(previous, dict) else {}
+        active = str(state.get("active_concept", "")).strip().lower() if isinstance(state, dict) else ""
+        anchor_terms = ("hand", "palm", "wrist", "finger", "desk", "table", "surface")
+        candidates = [e for e in entities if isinstance(e, dict) and e.get("id")]
+        target = next((e for e in candidates if active in (str(e.get("id", "")).lower(), str(e.get("name", "")).lower())), None)
+        if target is None:
+            target = next((e for e in candidates if not any(term in str(e.get("name", "")).lower() for term in anchor_terms)), None)
+        if target:
+            resolutions = result_dict.setdefault("coreference_resolutions", [])
+            if not isinstance(resolutions, list):
+                resolutions = result_dict["coreference_resolutions"] = []
+            if not resolutions:
+                resolutions.append({"text_reference": reference.group(0), "resolved_entity": str(target["id"])})
+            for item in resolutions:
+                if isinstance(item, dict):
+                    item["text_reference"] = reference.group(0)
+                    item["resolved_entity"] = str(target["id"])
+
+        # If a new explicit value for the same property is present, discard stale context values.
+        relationships = result_dict.get("semantic_graph", {}).get("relationships", [])
+        if not isinstance(relationships, list):
+            return
+        text = current_text.lower()
+        grouped = {}
+        for rel in relationships:
+            if isinstance(rel, dict) and str(rel.get("predicate", "")).lower() in {"color", "colour", "location", "position"}:
+                key = (str(rel.get("subject", "")).lower(), str(rel.get("predicate", "")).lower())
+                grouped.setdefault(key, []).append(rel)
+        for rels in grouped.values():
+            current_values = [r for r in rels if str(r.get("object", "")).replace("_", " ").lower() in text]
+            if current_values:
+                keep = {id(r) for r in current_values}
+                relationships[:] = [r for r in relationships if r not in rels or id(r) in keep]
+
+    @staticmethod
+    def _ensure_color_modifiers(result_dict: dict, current_text: str) -> None:
+        """Represent explicit color phrases as properties of the base object entity."""
+        graph = result_dict.get("semantic_graph", {})
+        entities = graph.get("entities", []) if isinstance(graph, dict) else []
+        relationships = graph.get("relationships", []) if isinstance(graph, dict) else []
+        if not isinstance(entities, list) or not isinstance(relationships, list):
+            return
+        colors = ("red", "blue", "green", "yellow", "orange", "purple", "pink", "black", "white", "brown", "gray", "grey")
+        for color in colors:
+            for entity in list(entities):
+                if not isinstance(entity, dict) or not entity.get("id") or not entity.get("name"):
+                    continue
+                name = str(entity["name"]).strip()
+                if name.lower() == color:
+                    continue
+                if not re.search(r"\b" + re.escape(color) + r"\s+" + re.escape(name) + r"\b", current_text, re.IGNORECASE):
+                    continue
+                color_entity = next((e for e in entities if isinstance(e, dict) and str(e.get("id", "")).lower() == color), None)
+                if color_entity is None:
+                    color_entity = {"id": color, "name": color, "class": "attribute", "status": "new_explicit"}
+                    entities.append(color_entity)
+                else:
+                    color_entity["class"] = "attribute"
+                    color_entity["status"] = "new_explicit"
+                if not any(isinstance(r, dict) and r.get("subject") == entity["id"] and r.get("predicate") == "color" and r.get("object") == color_entity["id"] for r in relationships):
+                    relationships.append({"subject": entity["id"], "predicate": "color", "object": color_entity["id"], "type": "property"})
+
     def extract(self, current_text: str, context_text: str, is_partial: bool) -> tuple[dict, float]:
         """
         Extract semantic meaning from the text using the local Ollama Qwen model.
@@ -219,24 +305,15 @@ CRITICAL INSTRUCTIONS:
         start_time = time.time()
         
         user_message = f"""PREVIOUS CONTEXT (RAW TEXT):
-{context_text if context_text else 'No previous context.'}
+{self._compact_context(context_text)}
 
 CURRENT TEXT TO PROCESS:
 "{current_text}"
 """
 
-        # Compute adaptive token budget: allocate up to 700 tokens for multi-clause/list sentences
-        # (preventing premature JSON truncation on 3-4 entity graphs), while using 400-500 tokens for simple inputs.
-        commas = current_text.count(',')
-        clauses = commas + current_text.count(';') + current_text.count('...')
-        sentences = current_text.count('.') + current_text.count('!') + current_text.count('?')
-        
-        if len(current_text) > 65 or clauses >= 2 or sentences > 1:
-            adaptive_num_predict = 900
-        elif len(current_text) > 50 or clauses == 1:
-            adaptive_num_predict = 600
-        else:
-            adaptive_num_predict = 450
+        # Keep JSON generation bounded while allowing space for multi-entity utterances.
+        clauses = current_text.count(',') + current_text.count(';') + current_text.count('...')
+        adaptive_num_predict = 384
 
         try:
             try:
@@ -246,12 +323,13 @@ CURRENT TEXT TO PROCESS:
                         {"role": "system", "content": self.system_instruction},
                         {"role": "user", "content": user_message}
                     ],
-                    format="json",
+                    format=self.schema_dict,
                     options={
                         "temperature": 0.0,
                         "num_predict": adaptive_num_predict,
                         "repeat_penalty": 1.0
-                    }
+                    },
+                    keep_alive="30m"
                 )
                 raw_content = response.get("message", {}).get("content", "{}").strip()
             except Exception as ollama_err:
@@ -536,7 +614,16 @@ CURRENT TEXT TO PROCESS:
             # 8. coreference_resolutions
             if "coreference_resolutions" not in result_dict or not isinstance(result_dict["coreference_resolutions"], list):
                 result_dict["coreference_resolutions"] = []
+            else:
+                spoken_reference = re.search(r"\b(it|this|that|these|those)\b", current_text, re.IGNORECASE)
+                if spoken_reference:
+                    for resolution in result_dict["coreference_resolutions"]:
+                        if isinstance(resolution, dict) and resolution.get("resolved_entity"):
+                            resolution["text_reference"] = spoken_reference.group(0)
             
+            self._normalize_references_and_updates(result_dict, context_text, current_text)
+            self._ensure_color_modifiers(result_dict, current_text)
+
             # 9. explanation_state
             if "explanation_state" not in result_dict or not isinstance(result_dict["explanation_state"], dict):
                 result_dict["explanation_state"] = {
@@ -611,6 +698,8 @@ CURRENT TEXT TO PROCESS:
             try:
                 task = nlp_queue.get(timeout=0.5)
                 text = task.get("text", "")
+                queue_wait_ms = ((time.perf_counter_ns() - task["enqueued_ns"]) / 1_000_000.0
+                                 if task.get("enqueued_ns") else None)
                 
                 if not text:
                     continue
@@ -624,7 +713,10 @@ CURRENT TEXT TO PROCESS:
                     ui_queue.put({
                         "type": "nlp_update",
                         "state": self.current_state,
-                        "latency": latency
+                        "latency": latency,
+                        "correlation_id": task.get("correlation_id"),
+                        "queue_wait_ms": queue_wait_ms,
+                        "ollama_metrics": dict(self.last_metrics),
                     })
                 
             except queue.Empty:

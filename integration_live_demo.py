@@ -112,6 +112,9 @@ class _LatencyTrace:
         self._lock = threading.Lock()
         self.current_id: Optional[str] = None
         self._stream = path.open("a", encoding="utf-8")
+        self._finalized_ns: dict = {}
+        self._render_correlation_by_visual: dict = {}
+        self._rendered_pairs: set = set()
         self._last_flush = time.perf_counter()
         self._closed = False
 
@@ -128,6 +131,8 @@ class _LatencyTrace:
         }
         if frame_id is not None:
             row["frame_id"] = frame_id
+        if stage == "transcript_finalized" and row["correlation_id"]:
+            self._finalized_ns[row["correlation_id"]] = now_ns
         row.update(fields)
         try:
             line = json.dumps(row, separators=(",", ":"), default=str) + "\n"
@@ -147,6 +152,15 @@ class _LatencyTrace:
                 self._stream.flush()
                 self._stream.close()
                 self._closed = True
+
+    def first_render_start(self, correlation_id: Optional[str], visual_id: Optional[str]):
+        if not correlation_id or not visual_id:
+            return None
+        key = (correlation_id, visual_id)
+        if key in self._rendered_pairs:
+            return None
+        self._rendered_pairs.add(key)
+        return self._finalized_ns.get(correlation_id)
 
 # ---------------------------------------------------------------------------
 # Display constants
@@ -390,6 +404,10 @@ class _DiagMonitor:
                 corr_id = str(uuid.uuid4())
                 with mon._lock:
                     mon._ids_by_text[text.strip()] = corr_id
+                if isinstance(item, dict):
+                    item = dict(item)
+                    item["correlation_id"] = corr_id
+                    item["finalized_ns"] = time.perf_counter_ns()
                 mon.trace.current_id = corr_id
                 mon.trace.record("speech_endpoint", correlation_id=corr_id, text_chars=len(text),
                                  endpoint_source="whisper_final_transcript")
@@ -418,7 +436,7 @@ class _DiagMonitor:
             with mon._lock:
                 mon.nlp_q_puts += 1
                 n = mon.nlp_q_puts
-                corr_id = mon._ids_by_text.get(item.get("text", "").strip()) if isinstance(item, dict) else None
+                corr_id = item.get("correlation_id") if isinstance(item, dict) else None
             if mon.trace:
                 start_ns = time.perf_counter_ns()
                 if corr_id:
@@ -442,13 +460,21 @@ class _DiagMonitor:
                 state = item.get("state", {})
                 text = state.get("text_segment", "")
                 with mon._lock:
-                    corr_id = mon._ids_by_text.get(text.strip())
+                    corr_id = item.get("correlation_id") or mon._ids_by_text.get(text.strip())
                 if corr_id:
                     mon.trace.current_id = corr_id
-                    with mon._lock:
-                        started_ns = mon._qwen_started_ns.pop(corr_id, None)
-                    mon.trace.record("qwen_extraction_complete", correlation_id=corr_id,
-                                     started_ns=started_ns)
+                    parser = item.get("parser", "qwen")
+                    if parser == "deterministic":
+                        mon.trace.record("fast_parser_complete", correlation_id=corr_id,
+                                         parser_ms=item.get("parser_ms"))
+                    else:
+                        with mon._lock:
+                            started_ns = mon._qwen_started_ns.pop(corr_id, None)
+                        mon.trace.record("qwen_extraction_complete", correlation_id=corr_id,
+                                         started_ns=started_ns,
+                                         extraction_ms=(item.get("latency", 0) * 1000),
+                                         queue_wait_ms=item.get("queue_wait_ms"),
+                                         **item.get("ollama_metrics", {}))
             with mon._lock:
                 mon.ui_puts += 1
                 changed = (msg_type != mon._last_nlp_event_type)
@@ -677,10 +703,12 @@ def _draw_visual_opportunity(
         )
         if trace:
             trace.record("render", started_ns=render_started_ns, frame_id=frame_id)
-            if has_content and not getattr(trace, "_first_visual_render", False):
-                trace._first_visual_render = True
-                trace.record("first_visual_render", correlation_id=trace.current_id,
-                             concept=active_concept or "", frame_id=frame_id)
+            visual_id = getattr(_draw_visual_opportunity, "_active_visual_id", None)
+            corr_id = trace._render_correlation_by_visual.get(visual_id)
+            started_ns = trace.first_render_start(corr_id, visual_id) if has_content else None
+            if started_ns is not None:
+                trace.record("first_visual_render", correlation_id=corr_id, started_ns=started_ns,
+                             visual_id=visual_id, concept=active_concept or "", frame_id=frame_id)
 
 
 def _draw_integration_hud(frame, transcript, is_partial, intent, intent_conf, entities, plan) -> None:
@@ -847,6 +875,8 @@ def run(
     print("[LATENCY] Writing monotonic stage records to %s" % trace.path)
 
     def _on_plan_emitted(plan):
+        if plan.visual_id:
+            trace._render_correlation_by_visual[plan.visual_id] = trace.current_id
         trace.record("visualplan_emitted", action=getattr(getattr(plan, "action", None), "value", None),
                      concept=getattr(plan, "concept", None), visual_id=getattr(plan, "visual_id", None))
         live_state.update_plan(plan)
@@ -911,6 +941,7 @@ def run(
             # Snapshot state (including active concept)
             transcript, is_partial, intent, intent_conf, entities, plan, active_concept = live_state.snapshot()
             _draw_visual_opportunity._frame_id = frame_data.frame_id
+            _draw_visual_opportunity._active_visual_id = plan.visual_id if plan else None
 
             # Existing yellow VisualOpportunity rectangle with active concept label
             render_started_ns = time.perf_counter_ns()
