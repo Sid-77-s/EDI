@@ -1,0 +1,45 @@
+{
+  "timestamp": 1792744037,
+  "is_partial": false,
+  "text_segment": "Let's move on to the other side and let's move on to the other side.",
+  "speaker_activity": [
+    {
+      "intent": "explaining",
+      "confidence": 0.9
+    }
+  ],
+  "semantic_graph": {
+    "entities": [
+      {
+        "id": "side_and_let",
+        "name": "side and let",
+        "class": "object",
+        "status": "new_explicit"
+      },
+      {
+        "id": "s_move_on",
+        "name": "s move on",
+        "class": "object",
+        "status": "new_explicit"
+      },
+      {
+        "id": "to_the_other",
+        "name": "to the other",
+        "class": "object",
+        "status": "new_explicit"
+      }
+    ],
+    "relationships": [],
+    "quantities": []
+  },
+  "explicit_information": [
+    "Let's move on to the other side and let's move on to the other side."
+  ],
+  "inferred_information": [],
+  "coreference_resolutions": [],
+  "explanation_state": {
+    "current_topic": "general",
+    "active_concept": "statement",
+    "recent_entities": []
+  }
+}

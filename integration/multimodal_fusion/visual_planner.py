@@ -110,7 +110,8 @@ class VisualPlanner:
         semantic_state = SemanticState(
             entities=[e.id for e in nlp_event.entities],
             actions=[act.intent.value for act in nlp_event.speaker_activity],
-            relationships=[f"{r.subject}_{r.predicate}_{r.object}" for r in nlp_event.relationships]
+            relationships=[f"{r.subject}_{r.predicate}_{r.object}" for r in nlp_event.relationships],
+            properties=[f"{r.predicate}:{r.object}" for r in nlp_event.relationships if r.type == "property"],
         )
 
         # Grounding with Vision

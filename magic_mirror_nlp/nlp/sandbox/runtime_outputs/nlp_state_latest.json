@@ -1,84 +1,49 @@
 {
+  "timestamp": 1794738052,
+  "is_partial": false,
+  "text_segment": "Now rotate it clockwise.",
   "speaker_activity": [
     {
       "intent": "explaining",
-      "confidence": 0.95
+      "confidence": 0.9
     }
   ],
   "semantic_graph": {
     "entities": [
       {
-        "id": "Earth",
-        "name": "planet",
-        "class": "geographic",
-        "status": "new_explicit"
+        "id": "it",
+        "name": "it",
+        "class": "inferred",
+        "status": "inferred_context"
       },
       {
-        "id": "Sun",
-        "name": "star",
-        "class": "celestial",
-        "status": "new_explicit"
-      },
-      {
-        "id": "Moon",
-        "name": "natural satellite",
-        "class": "celestial",
-        "status": "new_explicit"
-      },
-      {
-        "id": "military",
-        "name": "military",
-        "class": "inferred_candidate",
-        "status": "auto_detected"
+        "id": "turn",
+        "name": "turn",
+        "class": "inferred",
+        "status": "inferred_context"
       }
     ],
     "relationships": [
       {
-        "subject": "Earth",
-        "predicate": "rotates around",
-        "object": "Sun",
-        "type": "composition",
-        "confidence": 0.95
-      },
-      {
-        "subject": "Sun",
-        "predicate": "rotates around",
-        "object": "Moon",
-        "type": "composition",
-        "confidence": 0.95
+        "subject": "it",
+        "predicate": "rotate",
+        "object": "turn",
+        "type": "action"
       }
     ],
-    "quantities": [
-      {
-        "entity": "Sun",
-        "amount": 1,
-        "unit": "celestial body"
-      }
-    ]
+    "quantities": []
   },
-  "explicit_information": [
-    "The Earth rotates around the Sun.",
-    "The Sun rotates around the Moon."
-  ],
-  "inferred_information": [
-    "The Sun is a star.",
-    "Astronomical objects reference orbital scales; render planetary bodies with comparative scaling."
-  ],
+  "explicit_information": [],
+  "inferred_information": [],
   "coreference_resolutions": [
     {
       "text_reference": "it",
-      "resolved_entity": "Sun"
+      "resolved_entity": "turn"
     }
   ],
   "explanation_state": {
-    "current_topic": "Earth's and Sun's rotation",
-    "active_concept": "rotation",
-    "recent_entities": [
-      "Earth",
-      "Sun"
-    ]
-  },
-  "timestamp": 1791184866,
-  "is_partial": false,
-  "text_segment": "The Earth is rotating around the Sun and the Sun, is rotating around the Moon. But the Sun belongs to the military and the Sun belongs to the Moon."
+    "current_topic": "",
+    "active_concept": "it",
+    "recent_entities": []
+  }
 }

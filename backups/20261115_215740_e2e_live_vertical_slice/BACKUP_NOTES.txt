@@ -1,0 +1,1 @@
+Backup created before E2E milestone edits. Preserves relative paths for the live demo, NLP adapters/extractors, fusion/runtime, asset store, generation/resolver, and relevant asset-pack tests. integration/generation/models_ordinary.py is the CURRENT state at backup time; it is not the pre-asset-pack original omitted from backup 20261115_212506_local_asset_registry.

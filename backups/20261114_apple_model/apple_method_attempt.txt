@@ -1,0 +1,186 @@
+
+    def _build_apple(self, concept: str) -> Model3D:
+        root = ModelNode3D(name="apple_root")
+
+        # ---------------------------------------------------------------
+        # Apple body: fuller shoulders, subtle five-lobed profile,
+        # recessed crown and a gently flattened base.
+        # ---------------------------------------------------------------
+        body = create_uv_sphere(
+            radius=0.72,
+            lat_segs=28,
+            lon_segs=40,
+            color=(32, 42, 190),
+            name="apple_body",
+        )
+
+        v = body.vertices
+        x = v[:, 0].copy()
+        y = v[:, 1].copy()
+        z = v[:, 2].copy()
+
+        radial = np.sqrt(x * x + z * z)
+        angle = np.arctan2(z, x)
+
+        # Natural, subtle lobing around the circumference.
+        lobe = 1.0 + 0.035 * np.cos(5.0 * angle) * np.clip(
+            radial / 0.72, 0.0, 1.0
+        )
+
+        v[:, 0] = x * lobe
+        v[:, 2] = z * lobe
+
+        # Slightly broaden the shoulders and narrow the lower body.
+        shoulder = 1.0 + 0.10 * np.exp(-((y - 0.18) / 0.24) ** 2)
+        lower_taper = 1.0 - 0.07 * np.exp(-((y + 0.38) / 0.20) ** 2)
+        v[:, 0] *= shoulder * lower_taper
+        v[:, 2] *= shoulder * lower_taper
+
+        # Recess the crown around the stem.
+        top_mask = y > 0.42
+        top_amount = np.clip((y[top_mask] - 0.42) / 0.30, 0.0, 1.0)
+        v[top_mask, 1] -= 0.12 * top_amount
+
+        # Gentle bottom indentation.
+        bottom_mask = y < -0.48
+        bottom_amount = np.clip((-y[bottom_mask] - 0.48) / 0.24, 0.0, 1.0)
+        v[bottom_mask, 1] += 0.045 * bottom_amount
+
+        body.material = Material3D(
+            diffuse_color=(32, 42, 190),
+            ambient_coeff=0.28,
+            diffuse_coeff=0.72,
+            specular_coeff=0.30,
+            shininess=24.0,
+            double_sided=True,
+        )
+        body.compute_face_normals()
+        root.add_child(ModelNode3D(name="body_node", mesh=body))
+
+        # ---------------------------------------------------------------
+        # Curved stem: tapered tube following a slightly bent path.
+        # ---------------------------------------------------------------
+        stem_rings = 8
+        stem_segments = 10
+        stem_height = 0.27
+
+        stem_vertices = []
+        stem_faces = []
+
+        for i in range(stem_rings):
+            t = i / (stem_rings - 1)
+            center_x = 0.035 * t + 0.025 * math.sin(t * math.pi)
+            center_y = stem_height * t
+            radius = 0.026 * (1.0 - 0.25 * t)
+
+            for j in range(stem_segments):
+                a = 2.0 * math.pi * j / stem_segments
+                stem_vertices.append([
+                    center_x + radius * math.cos(a),
+                    center_y,
+                    radius * math.sin(a),
+                ])
+
+        for i in range(stem_rings - 1):
+            for j in range(stem_segments):
+                a = i * stem_segments + j
+                b = i * stem_segments + (j + 1) % stem_segments
+                c = (i + 1) * stem_segments + (j + 1) % stem_segments
+                d = (i + 1) * stem_segments + j
+                stem_faces.append([a, b, c])
+                stem_faces.append([a, c, d])
+
+        stem = Mesh3D(
+            vertices=np.asarray(stem_vertices, dtype=np.float32),
+            faces=np.asarray(stem_faces, dtype=np.int32),
+            material=Material3D(
+                diffuse_color=(32, 75, 115),
+                specular_coeff=0.12,
+                shininess=10.0,
+            ),
+            name="curved_stem",
+        )
+        stem.compute_face_normals()
+
+        stem_node = ModelNode3D(
+            name="stem_node",
+            mesh=stem,
+            position=np.array([0.0, 0.57, 0.0], dtype=np.float32),
+        )
+        root.add_child(stem_node)
+
+        # ---------------------------------------------------------------
+        # Leaf: flattened, pointed ellipsoid with a visible central vein.
+        # ---------------------------------------------------------------
+        leaf = create_uv_sphere(
+            radius=1.0,
+            lat_segs=12,
+            lon_segs=20,
+            color=(35, 145, 35),
+            name="apple_leaf",
+        )
+
+        lv = leaf.vertices
+        lx = lv[:, 0].copy()
+        ly = lv[:, 1].copy()
+        lz = lv[:, 2].copy()
+
+        # Long axis is X. Taper the width toward both ends.
+        width_factor = np.sqrt(np.clip(1.0 - lx * lx, 0.0, 1.0))
+        lv[:, 0] = lx * 0.23
+        lv[:, 1] = ly * 0.018
+        lv[:, 2] = lz * 0.105 * width_factor
+
+        leaf.material = Material3D(
+            diffuse_color=(35, 145, 35),
+            specular_coeff=0.18,
+            shininess=16.0,
+            double_sided=True,
+        )
+        leaf.compute_face_normals()
+
+        leaf_node = ModelNode3D(
+            name="leaf_node",
+            mesh=leaf,
+            position=np.array([0.16, 0.79, 0.0], dtype=np.float32),
+            rotation=np.array([
+                math.radians(12),
+                0.0,
+                math.radians(28),
+            ], dtype=np.float32),
+        )
+        root.add_child(leaf_node)
+
+        # Leaf midrib: thin, tapered, and aligned with the leaf.
+        vein = create_cylinder(
+            radius_top=0.004,
+            radius_bottom=0.006,
+            height=0.32,
+            segs=6,
+            color=(45, 105, 25),
+            name="leaf_midvein",
+        )
+        vein_node = ModelNode3D(
+            name="leaf_vein_node",
+            mesh=vein,
+            position=np.array([0.16, 0.795, 0.0], dtype=np.float32),
+            rotation=np.array([
+                math.radians(12),
+                0.0,
+                math.radians(118),
+            ], dtype=np.float32),
+            scale=np.array([0.72, 1.0, 0.72], dtype=np.float32),
+        )
+        root.add_child(vein_node)
+
+        # Preserve the existing gentle rotation behavior.
+        def _anim(m: Model3D, t: float):
+            root.rotation[1] = t * 0.5
+
+        return Model3D(
+            concept=concept,
+            root=root,
+            category="3D_OBJECT",
+            animation_fn=_anim,
+            description="Procedural 3D Red Apple with Lobed Body, Curved Stem and Leaf",
+        )

@@ -259,6 +259,9 @@ class LiveState:
                 return
 
             if plan.action == ActionType.REMOVE:
+                target_id = plan.visual_id or self.active_visual_id
+                if self.gen_engine and target_id:
+                    self.gen_engine.remove_representation(target_id)
                 self.active_concept = None
                 self.active_visual_id = None
 
@@ -277,9 +280,15 @@ class LiveState:
                         self.gen_engine.request_generation(req)
 
             elif plan.action == ActionType.MOVE:
-                # MOVE reuses existing visual ID and asset; do not re-request generation
-                if plan.visual_id:
-                    self.active_visual_id = plan.visual_id
+                # Spatial placement comes from the fused vision/spatial plan. Reuse its model.
+                target_id = plan.visual_id or self.active_visual_id
+                if target_id:
+                    self.active_visual_id = target_id
+                if self.gen_engine and target_id and plan.spatial:
+                    self.gen_engine.update_representation(target_id, {
+                        "scale": plan.spatial.scale,
+                        "position": plan.spatial.position,
+                    })
                 if self.active_concept is None and self._is_valid_concept(plan.concept):
                     self.active_concept = plan.concept.strip()
 
@@ -288,7 +297,18 @@ class LiveState:
                 if self.gen_engine and target_id:
                     scale = plan.spatial.scale if plan.spatial else None
                     pos = plan.spatial.position if plan.spatial else None
-                    self.gen_engine.update_representation(target_id, {"scale": scale, "position": pos})
+                    updates = {"scale": scale, "position": pos}
+                    color_names = {
+                        "red": (0, 0, 220), "blue": (220, 0, 0), "green": (0, 170, 0),
+                        "yellow": (0, 220, 220), "black": (0, 0, 0), "white": (220, 220, 220),
+                        "orange": (0, 140, 255), "purple": (160, 40, 160), "pink": (180, 150, 230),
+                        "brown": (40, 80, 130), "gray": (128, 128, 128), "grey": (128, 128, 128),
+                    }
+                    for prop in (plan.semantic_state.properties if plan.semantic_state else []):
+                        name, _, value = prop.partition(":")
+                        if name.casefold() == "color" and value.casefold() in color_names:
+                            updates["color"] = color_names[value.casefold()]
+                    self.gen_engine.update_representation(target_id, updates)
                 if self._is_valid_concept(plan.concept):
                     self.active_concept = plan.concept.strip()
 
