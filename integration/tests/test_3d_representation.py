@@ -491,17 +491,92 @@ def test_graceful_failure_and_fallback(temp_model_dir):
     req = GenerationRequest(concept="xyz_unknown_unprecedented_widget")
     job = engine.request_generation(req)
 
-    assert job.status == JobState.READY
-    asset = store.get_asset("xyz_unknown_unprecedented_widget")
-    assert asset is not None
-    assert asset.is_3d
-
-    # Renders inside box with fallback geometry
-    frame = np.zeros((200, 200, 3), dtype=np.uint8)
-    render_box_and_asset(frame, bbox=(0.1, 0.1, 0.9, 0.9), concept_label=req.concept, asset=asset)
-    assert np.any(frame > 0)
+    assert job.status == JobState.FAILED
+    assert job.result.metadata["representation_fidelity"] == "unavailable"
+    assert "no verified exact identity" in job.error
 
     engine.shutdown()
+
+
+def test_concept_accuracy_and_unavailable_distinctions(temp_model_dir):
+    from integration.generation.instant_engine import RepresentationUnavailableError
+    from integration.generation.representation_planner import FidelityLevel, validate_concept
+
+    assert validate_concept("apple").identity.canonical_id == "object.apple"
+    assert validate_concept("water molecule").identity.canonical_id == "object.water"
+    assert validate_concept("solar system").identity.canonical_id == "system.solar"
+    assert validate_concept("Jupiter").identity.canonical_id != "system.solar"
+    assert validate_concept("Earth").identity.canonical_id == "planet.earth"
+    assert validate_concept("planet").available is False
+    assert validate_concept("apple").identity.aliases == ("apple",)
+    assert validate_concept("O2").identity.canonical_id == "molecule.oxygen"
+    assert validate_concept("oxygen atom").fidelity is FidelityLevel.UNAVAILABLE
+    assert validate_concept("oxygen molecule").fidelity is FidelityLevel.UNAVAILABLE
+    assert validate_concept("red sphere").identity is None
+    assert validate_concept("unlisted widget").fidelity is FidelityLevel.UNAVAILABLE
+
+    engine = InstantRepresentationEngine(library_dir=temp_model_dir)
+    try:
+        apple, _ = engine.get_or_create_representation("apple")
+        assert apple.metadata["canonical_concept_id"] == "object.apple"
+        assert apple.metadata["representation_fidelity"] == "illustrative"
+        for concept in ("Jupiter", "Earth", "oxygen atom", "oxygen molecule", "red sphere", "unlisted widget"):
+            with pytest.raises(RepresentationUnavailableError):
+                engine.get_or_create_representation(concept)
+    finally:
+        engine.shutdown()
+
+
+def test_broad_catalogue_match_cannot_override_specific_concept(temp_model_dir):
+    from integration.generation.asset_retrieval import RetrievalResult
+
+    class BroadMatchRetriever:
+        def resolve(self, concept):
+            wrong = build_solar_system_model("solar system")
+            return wrong, {"match_rank": 2, "asset_source": "red_sphere.glb"}
+
+    engine = InstantRepresentationEngine(library_dir=temp_model_dir, asset_retriever=BroadMatchRetriever())
+    try:
+        model, _ = engine.get_or_create_representation("apple")
+        assert model.metadata["canonical_concept_id"] == "object.apple"
+        assert "apple_body" in [mesh.name for mesh, _ in model.get_all_meshes_with_transforms()]
+    finally:
+        engine.shutdown()
+
+
+def test_visual_quality_profiles_validate_parts_and_apply_materials():
+    from integration.generation.visual_quality import enhance_and_validate
+
+    apple = OrdinaryObject3DBuilder()._build_apple("apple")
+    result = enhance_and_validate(apple, "object.apple")
+    assert result.passed, result.reasons
+    meshes = {mesh.name: mesh for mesh, _ in apple.get_all_meshes_with_transforms()}
+    assert meshes["apple_body"].material.diffuse_color[2] > 150  # BGR red
+    assert meshes["apple_body"].material.roughness < 0.5
+    assert apple.metadata.get("visual_quality") is None  # quality caller owns report attachment
+
+    incomplete = Model3D(concept="apple", root=ModelNode3D(name="root", mesh=create_uv_sphere(name="sphere")))
+    rejected = enhance_and_validate(incomplete, "object.apple")
+    assert not rejected.passed
+    assert any("distinguishing component" in reason for reason in rejected.reasons)
+
+    dark = Model3D(concept="unlisted", root=ModelNode3D(
+        name="root", mesh=create_uv_sphere(color=(0, 0, 0), name="mesh")))
+    dark_result = enhance_and_validate(dark, "custom.asset")
+    assert not dark_result.passed
+    assert any("too dark" in reason for reason in dark_result.reasons)
+
+
+def test_renderer_ambient_specular_and_contact_shadow_are_visible():
+    model = OrdinaryObject3DBuilder()._build_apple("apple")
+    from integration.generation.visual_quality import enhance_and_validate
+    assert enhance_and_validate(model, "object.apple").passed
+    canvas = np.zeros((256, 256, 3), dtype=np.uint8)
+    renderer = SoftwareRenderer3D()
+    assert renderer.render(canvas, model, bbox=(0.1, 0.1, 0.9, 0.9), t=0.0)
+    visible = canvas[np.any(canvas > 0, axis=2)]
+    assert len(visible) > 100
+    assert float(visible.mean()) > 20.0
 
 
 # ---------------------------------------------------------------------------

@@ -93,7 +93,11 @@ class VisualPlanner:
         if "remove" in text_lower or "delete" in text_lower or "hide" in text_lower:
             if target_visual:
                 action_type = ActionType.REMOVE
-        elif "animate" in text_lower or "make it rotate" in text_lower or "make it run" in text_lower or "stand" in text_lower:
+        elif any(term in text_lower for term in (
+            "animate", "rotate", "orbit", "bounce", "fall", "hover", "pulse", "swing",
+            "shake", "spin", "flip", "make it run", "running", "stand", "pause animation",
+            "resume animation", "stop animation",
+        )):
              if target_visual:
                  action_type = ActionType.ANIMATE
         elif "move" in text_lower or "put" in text_lower:
@@ -147,13 +151,21 @@ class VisualPlanner:
 
         animation_info = None
         if action_type == ActionType.ANIMATE:
-             # simple extraction
+             animation_type = "procedural"
              anim_state = "moving"
-             if "rotate" in text_lower: anim_state = "rotating"
-             elif "run" in text_lower: anim_state = "running"
-             elif "stand" in text_lower: anim_state = "standing"
-             
-             animation_info = AnimationInfo(type="procedural", state=anim_state)
+             for phrase, name in (("pause animation", "pause"), ("resume animation", "resume"),
+                                  ("stop animation", "stop"), ("rotate", "rotate"), ("orbit", "orbit"),
+                                  ("bounce", "bounce"), ("fall", "fall"), ("hover", "hover"),
+                                  ("pulse", "pulse"), ("swing", "swing"), ("shake", "shake"),
+                                  ("spin", "spin"), ("flip", "flip")):
+                 if phrase in text_lower:
+                     animation_type = name
+                     anim_state = name
+                     break
+             if animation_type == "procedural":
+                 if "run" in text_lower: anim_state = "running"
+                 elif "stand" in text_lower: anim_state = "standing"
+             animation_info = AnimationInfo(type=animation_type, state=anim_state)
 
         # Confidence calculation
         semantic_conf = sum(a.confidence for a in nlp_event.speaker_activity) / max(1, len(nlp_event.speaker_activity))

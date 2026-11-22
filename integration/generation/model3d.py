@@ -29,6 +29,8 @@ class Material3D:
     diffuse_coeff: float = 0.75
     specular_coeff: float = 0.2
     shininess: float = 16.0
+    roughness: float = 0.7
+    metallic: float = 0.0
     opacity: float = 1.0
     wireframe: bool = False
     double_sided: bool = True
@@ -110,10 +112,11 @@ class Model3D:
     category: str = "3D_OBJECT"  # "3D_OBJECT" | "SCIENTIFIC_MODEL" | "TECHNICAL_ASSEMBLY"
     description: str = ""
     metadata: Dict[str, Any] = field(default_factory=dict)
+    animation_suspended: bool = False
 
     def get_all_meshes_with_transforms(self, t: float = 0.0) -> List[Tuple[Mesh3D, np.ndarray]]:
         """Applies animation tick and traverses hierarchy to collect meshes with world matrices."""
-        if self.animation_fn is not None:
+        if self.animation_fn is not None and not self.animation_suspended:
             try:
                 self.animation_fn(self, t)
             except Exception:

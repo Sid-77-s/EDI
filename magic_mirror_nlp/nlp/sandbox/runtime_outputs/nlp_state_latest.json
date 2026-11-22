@@ -1,7 +1,7 @@
 {
-  "timestamp": 1794738052,
+  "timestamp": 1795341687,
   "is_partial": false,
-  "text_segment": "Now rotate it clockwise.",
+  "text_segment": "Now show an oxygen item.",
   "speaker_activity": [
     {
       "intent": "explaining",
@@ -11,39 +11,31 @@
   "semantic_graph": {
     "entities": [
       {
-        "id": "it",
-        "name": "it",
-        "class": "inferred",
-        "status": "inferred_context"
+        "id": "oxygen",
+        "name": "oxygen",
+        "class": "object",
+        "status": "new_explicit"
       },
       {
-        "id": "turn",
-        "name": "turn",
+        "id": "jupiter",
+        "name": "Jupiter",
         "class": "inferred",
         "status": "inferred_context"
       }
     ],
-    "relationships": [
-      {
-        "subject": "it",
-        "predicate": "rotate",
-        "object": "turn",
-        "type": "action"
-      }
-    ],
+    "relationships": [],
     "quantities": []
   },
   "explicit_information": [],
-  "inferred_information": [],
-  "coreference_resolutions": [
-    {
-      "text_reference": "it",
-      "resolved_entity": "turn"
-    }
+  "inferred_information": [
+    "The discourse references molecular composition; downstream renderer should project molecular bonds and 3D atomic structures."
   ],
+  "coreference_resolutions": [],
   "explanation_state": {
     "current_topic": "",
-    "active_concept": "it",
-    "recent_entities": []
+    "active_concept": "oxygen",
+    "recent_entities": [
+      "oxygen"
+    ]
   }
 }

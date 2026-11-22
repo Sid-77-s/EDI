@@ -152,6 +152,15 @@ class SpatialInfo(BaseModel):
 class AnimationInfo(BaseModel):
     type: Optional[str] = None
     state: Optional[str] = None
+    speed: float = 1.0
+    direction: float = 1.0
+    intensity: float = 1.0
+    transition_seconds: float = 0.25
+    axis: str = "y"
+    distance: float = 0.5
+    loop: bool = True
+    target_node: Optional[str] = None
+    pivot_node: Optional[str] = None
 
 class ConfidenceScore(BaseModel):
     overall: float

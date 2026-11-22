@@ -25,7 +25,12 @@ from MagicMirror_Visualisation.src.perception.assets import (
     get_global_asset_store,
 )
 from integration.generation.cache import AssetCache
-from integration.generation.instant_engine import InstantRepresentationEngine
+from integration.generation.animation_engine import AnimationConfig
+from integration.generation.instant_engine import (
+    InstantRepresentationEngine,
+    RepresentationQualityError,
+    RepresentationUnavailableError,
+)
 from integration.generation.model3d import Model3D
 from integration.generation.providers.base import BaseImageProvider
 from integration.generation.providers.flux_cloud import FluxCloudProvider
@@ -63,6 +68,8 @@ class GenerationEngine:
         asset_pack_dir: Optional[Union[str, Path]] = None,
         allowed_asset_licenses=None,
         allow_unknown_asset_licenses: bool = False,
+        asset_retriever: Optional[Any] = None,
+        catalogue_db: Optional[Union[str, Path]] = None,
         on_asset_ready: Optional[Callable[[str, ConceptAsset], None]] = None,
         on_asset_failed: Optional[Callable[[str, str], None]] = None,
         max_workers: int = 2,
@@ -79,6 +86,8 @@ class GenerationEngine:
             asset_pack_dir=asset_pack_dir or self.asset_dir / "models",
             allowed_asset_licenses=allowed_asset_licenses,
             allow_unknown_asset_licenses=allow_unknown_asset_licenses,
+            asset_retriever=asset_retriever,
+            catalogue_db=catalogue_db,
         )
 
         # Instantiate secondary 2D providers
@@ -132,10 +141,39 @@ class GenerationEngine:
 
             # Instant 3D Representation (Primary Output Path)
             if is_3d_request:
-                model, latency_ms = self.instant_engine.get_or_create_representation(
-                    concept=request.concept,
-                    visual_id=request.visual_id,
-                )
+                try:
+                    model, latency_ms = self.instant_engine.get_or_create_representation(
+                        concept=request.concept,
+                        visual_id=request.visual_id,
+                    )
+                except (RepresentationUnavailableError, RepresentationQualityError) as exc:
+                    now = time.time()
+                    unavailable = isinstance(exc, RepresentationUnavailableError)
+                    failure_metadata = {
+                        "representation_fidelity": "unavailable" if unavailable else "rejected",
+                        "validation_reasons": list(exc.eligibility.validation_reasons) if unavailable else list(exc.result.reasons),
+                    }
+                    if unavailable:
+                        failure_metadata["canonical_concept_id"] = getattr(exc.eligibility.identity, "canonical_id", None)
+                    else:
+                        failure_metadata["visual_quality"] = {"passed": False, "score": exc.result.score,
+                                                               "reasons": list(exc.result.reasons),
+                                                               "mesh_count": exc.result.mesh_count,
+                                                               "triangle_count": exc.result.triangle_count}
+                    job = JobStatus(
+                        job_id=f"unavailable_{key}_{int(now * 1000)}", concept=request.concept,
+                        status=JobState.FAILED, progress=1.0, provider="concept_validation",
+                        error=str(exc),
+                        result=GenerationResult(
+                            concept=request.concept, visual_id=request.visual_id, status=JobState.FAILED,
+                            provider="concept_validation", error_message=str(exc),
+                            metadata=failure_metadata,
+                        ), created_at=now, updated_at=now,
+                    )
+                    self._active_jobs[key] = job
+                    if self.on_asset_failed:
+                        self.on_asset_failed(request.concept, str(exc))
+                    return job
 
                 # Render preview snapshot for 2D asset compatibility
                 preview_img = np.zeros((256, 256, 3), dtype=np.uint8)
@@ -252,6 +290,24 @@ class GenerationEngine:
         self.instant_engine.remove_representation(visual_id)
         self.asset_store.remove_visual(visual_id)
 
+    def animate_representation(self, visual_id: str, config: AnimationConfig, request_id: Optional[str] = None) -> str:
+        return self.instant_engine.animate_representation(visual_id, config, request_id=request_id)
+
+    def pause_animation(self, visual_id: str, track_id: Optional[str] = None) -> bool:
+        return self.instant_engine.pause_animation(visual_id, track_id)
+
+    def resume_animation(self, visual_id: str, track_id: Optional[str] = None) -> bool:
+        return self.instant_engine.resume_animation(visual_id, track_id)
+
+    def stop_animation(self, visual_id: str, track_id: Optional[str] = None) -> bool:
+        return self.instant_engine.stop_animation(visual_id, track_id)
+
+    def set_animation_diagnostic_sink(self, sink) -> None:
+        self.instant_engine.set_animation_diagnostic_sink(sink)
+
+    def animation_compatibility(self, visual_id: str, config: AnimationConfig):
+        return self.instant_engine.animation_compatibility(visual_id, config)
+
     def _execute_generation_task(self, request: GenerationRequest, job_id: str, key: str) -> None:
         """Background thread worker function."""
         logger.info("Starting visual generation for concept '%s' (job: %s)", key, job_id)
@@ -367,4 +423,5 @@ class GenerationEngine:
     def shutdown(self, wait: bool = False) -> None:
         """Shuts down background generation worker threads."""
         self._executor.shutdown(wait=wait)
+        self.instant_engine.shutdown()
 

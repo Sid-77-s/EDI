@@ -35,8 +35,8 @@ class SoftwareRenderer3D:
         self,
         fov_deg: float = 45.0,
         light_dir: Optional[np.ndarray] = None,
-        ambient_intensity: float = 0.35,
-        diffuse_intensity: float = 0.75,
+        ambient_intensity: float = 0.48,
+        diffuse_intensity: float = 0.82,
     ) -> None:
         self.fov_deg = fov_deg
         ld = light_dir if light_dir is not None else np.array([0.4, 0.7, 0.8], dtype=np.float32)
@@ -139,7 +139,17 @@ class SoftwareRenderer3D:
             dots = np.clip(np.sum(world_normals * self.light_dir, axis=1), 0.0, 1.0)
             amb = mesh.material.ambient_coeff
             diff = mesh.material.diffuse_coeff
-            intensities = amb + diff * dots
+            ambient_fill = max(0.25, amb * self.ambient_intensity)
+            diffuse_fill = self.diffuse_intensity * diff * dots
+            view_dir = np.array([0.0, 0.0, 1.0], dtype=np.float32)
+            half_vector = self.light_dir + view_dir
+            half_vector /= np.linalg.norm(half_vector) + 1e-8
+            spec_dot = np.clip(np.sum(world_normals * half_vector, axis=1), 0.0, 1.0)
+            roughness = float(np.clip(mesh.material.roughness, 0.04, 1.0))
+            spec_power = max(4.0, min(float(mesh.material.shininess), 96.0) * (1.0 - 0.55 * roughness))
+            spec = (np.power(spec_dot, spec_power) * mesh.material.specular_coeff *
+                    (1.0 - 0.55 * roughness))
+            intensities = np.clip(ambient_fill + diffuse_fill + spec, 0.12, 1.25)
 
             mat_color = np.array(mesh.material.diffuse_color, dtype=np.float32)
             face_colors = mesh.colors if mesh.colors is not None and len(mesh.colors) == len(mesh.faces) else None
@@ -197,6 +207,19 @@ class SoftwareRenderer3D:
         # Rasterize triangles
         roi = canvas[vy1:vy2, vx1:vx2]
         needs_alpha = any(item[3] < 0.99 for item in render_queue)
+
+        # Cheap soft contact shadow helps separate the object from the camera image.
+        all_points = np.concatenate([item[1] for item in render_queue], axis=0)
+        object_left = int(np.clip(all_points[:, 0].min() - vx1, 0, vw - 1))
+        object_right = int(np.clip(all_points[:, 0].max() - vx1, 0, vw - 1))
+        object_bottom = int(np.clip(all_points[:, 1].max() - vy1, 0, vh - 1))
+        shadow_center = ((object_left + object_right) // 2, min(vh - 1, object_bottom + max(2, vh // 36)))
+        shadow_mask = np.zeros((vh, vw), dtype=np.uint8)
+        shadow_axes = (max(3, (object_right - object_left) // 3), max(2, vh // 32))
+        cv2.ellipse(shadow_mask, shadow_center, shadow_axes, 0, 0, 360, 70, -1, cv2.LINE_AA)
+        shadow_mask = cv2.GaussianBlur(shadow_mask, (0, 0), sigmaX=max(1.0, vw / 180.0))
+        shadow_alpha = (shadow_mask.astype(np.float32) / 255.0 * 0.16)[..., None]
+        canvas[vy1:vy2, vx1:vx2] = (roi.astype(np.float32) * (1.0 - shadow_alpha)).astype(np.uint8)
 
         if needs_alpha:
             layer = roi.copy()

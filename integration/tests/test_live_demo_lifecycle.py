@@ -127,20 +127,13 @@ def test_spoken_lifecycle_local_glb_update_move_remove_and_fallback(tmp_path):
         assert generation.instant_engine._active_visuals.get(create_plan.visual_id) is None
         assert store.get_asset("fixture box").is_3d is False
 
-        # FALLBACK: unavailable local asset still becomes a procedural renderable 3D asset.
+        # An unverified concept reports unavailable instead of showing the generic fallback shape.
         fallback_plan = runtime.process_nlp_update(json.dumps(_command_payload("show me missing widget")))
         assert fallback_plan.action.value == "CREATE"
         live.update_plan(fallback_plan)
-        fallback_asset = store.get_asset("missing widget")
-        assert fallback_asset and fallback_asset.is_3d
-        assert fallback_asset.model_3d.visual_id == fallback_plan.visual_id
-        assert generation.get_job_status("missing widget").provider == "instant_3d"
-        assert fallback_asset.model_3d.category == "3D_OBJECT"
-        assert fallback_asset.model_3d.root.children
-        assert "asset_source" not in fallback_asset.model_3d.metadata
-        fallback_frame = np.zeros((256, 256, 3), dtype=np.uint8)
-        assert SoftwareRenderer3D().render(fallback_frame, fallback_asset.model_3d, bbox=(0, 0, 1, 1), t=0.0)
-        assert np.count_nonzero(fallback_frame) > 0
+        unavailable = generation.get_job_status("missing widget")
+        assert unavailable.status.value == "failed"
+        assert unavailable.result.metadata["representation_fidelity"] == "unavailable"
     finally:
         generation.shutdown(wait=True)
         generation.instant_engine.shutdown()

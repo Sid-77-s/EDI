@@ -13,6 +13,7 @@ from integration.generation.schemas import (
     RoutingDecision,
 )
 from integration.generation.cache import AssetCache
+from integration.generation.animation_engine import AnimationConfig, AnimationEngine, AnimationType
 from integration.generation.router import GenerationRouter
 from integration.generation.providers.base import BaseImageProvider
 from integration.generation.providers.flux_cloud import FluxCloudProvider
@@ -31,6 +32,11 @@ from integration.generation.renderer3d import SoftwareRenderer3D
 from integration.generation.representation_planner import (
     RepresentationCategory,
     RepresentationPlanner,
+)
+from integration.generation.asset_retrieval import (
+    LicensePolicy,
+    Local3DAssetRetriever,
+    RetrievalResult,
 )
 from integration.generation.instant_engine import InstantRepresentationEngine
 from integration.generation.models_ordinary import OrdinaryObject3DBuilder
@@ -54,6 +60,9 @@ __all__ = [
     "QualityTier",
     "RoutingDecision",
     "AssetCache",
+    "AnimationConfig",
+    "AnimationEngine",
+    "AnimationType",
     "GenerationRouter",
     "BaseImageProvider",
     "FluxCloudProvider",
@@ -69,6 +78,9 @@ __all__ = [
     "SoftwareRenderer3D",
     "RepresentationCategory",
     "RepresentationPlanner",
+    "LicensePolicy",
+    "Local3DAssetRetriever",
+    "RetrievalResult",
     "InstantRepresentationEngine",
     "OrdinaryObject3DBuilder",
     "build_atom_model",

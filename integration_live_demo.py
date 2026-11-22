@@ -89,6 +89,7 @@ from integration.generation import (
     GenerationMode,
     QualityTier,
 )
+from integration.generation.animation_engine import AnimationConfig, AnimationType
 
 _ASSET_STORE = ConceptAssetStore(asset_dir=_ROOT / "assets")
 _GEN_ENGINE = GenerationEngine(asset_store=_ASSET_STORE, asset_dir=_ROOT / "assets")
@@ -189,7 +190,7 @@ _C_ACTION        = (50,  200, 255)  # bright for active action
 class LiveState:
     """Thread-safe container for latest NLP + multimodal data."""
 
-    def __init__(self, generation_engine: Optional[GenerationEngine] = None) -> None:
+    def __init__(self, generation_engine: Optional[GenerationEngine] = None, diagnostic_sink=None) -> None:
         self._lock = threading.Lock()
         self.transcript: str = ""
         self.is_partial: bool = False
@@ -200,6 +201,19 @@ class LiveState:
         self.active_concept: Optional[str] = None
         self.active_visual_id: Optional[str] = None
         self.gen_engine: Optional[GenerationEngine] = generation_engine or _GEN_ENGINE
+        self.diagnostic_sink = diagnostic_sink
+        if self.gen_engine and diagnostic_sink:
+            self.gen_engine.set_animation_diagnostic_sink(self._emit_diagnostic)
+
+    def _emit_diagnostic(self, event: dict) -> None:
+        if not self.diagnostic_sink:
+            return
+        try:
+            fields = dict(event)
+            stage = fields.pop("stage")
+            self.diagnostic_sink(stage, **fields)
+        except Exception:
+            pass
 
     def update_transcript(self, text: str, partial: bool) -> None:
         with self._lock:
@@ -252,11 +266,16 @@ class LiveState:
             return False
         return True
 
-    def update_plan(self, plan: VisualPlan) -> None:
+    def update_plan(self, plan: VisualPlan, correlation_id: Optional[str] = None) -> None:
         with self._lock:
             self.plan = plan
             if not plan:
                 return
+            self._emit_diagnostic({"stage": "visualplan_action", "request_id": plan.event_id,
+                                   "correlation_id": correlation_id,
+                                   "action": getattr(plan.action, "value", plan.action),
+                                   "visual_id": plan.visual_id,
+                                   "animation_type": getattr(plan.animation, "type", None) if plan.animation else None})
 
             if plan.action == ActionType.REMOVE:
                 target_id = plan.visual_id or self.active_visual_id
@@ -318,6 +337,44 @@ class LiveState:
                     self.active_visual_id = plan.visual_id
                 if self._is_valid_concept(plan.concept):
                     self.active_concept = plan.concept.strip()
+                animation_target = plan.visual_id or self.active_visual_id
+                if self.gen_engine and animation_target and plan.animation:
+                    command = (plan.animation.type or plan.animation.state or "").casefold()
+                    state = (plan.animation.state or "").casefold()
+                    controls = {"pause", "paused", "resume", "resumed", "stop", "stopped"}
+                    if command in controls or state in controls:
+                        control = command if command in controls else state
+                        if control in ("pause", "paused"):
+                            self.gen_engine.pause_animation(animation_target)
+                        elif control in ("resume", "resumed"):
+                            self.gen_engine.resume_animation(animation_target)
+                        else:
+                            self.gen_engine.stop_animation(animation_target)
+                    else:
+                        requested = command if command in {x.value for x in AnimationType} else state
+                        aliases = {"rotating": "rotate", "running": "bounce", "moving": "move",
+                                   "standing": "stop", "orbiting": "orbit", "bouncing": "bounce",
+                                   "falling": "fall", "hovering": "hover", "pulsing": "pulse",
+                                   "swinging": "swing", "shaking": "shake", "spinning": "spin",
+                                   "flipping": "flip", "scaling": "scale"}
+                        requested = aliases.get(requested, requested)
+                        if requested == "stop":
+                            self.gen_engine.stop_animation(animation_target)
+                        elif requested in {x.value for x in AnimationType}:
+                            try:
+                                config = AnimationConfig(
+                                    type=AnimationType(requested), speed=plan.animation.speed,
+                                    direction=plan.animation.direction, intensity=plan.animation.intensity,
+                                    transition_seconds=plan.animation.transition_seconds,
+                                    axis=plan.animation.axis, distance=plan.animation.distance,
+                                    loop=plan.animation.loop, target_node=plan.animation.target_node,
+                                    pivot_node=plan.animation.pivot_node,
+                                )
+                                self.gen_engine.animate_representation(
+                                    animation_target, config, request_id=plan.event_id
+                                )
+                            except ValueError:
+                                pass
 
             elif plan.action not in (ActionType.NONE, None):
                 if self._is_valid_concept(plan.concept):
@@ -631,6 +688,15 @@ def _nlp_thread(
                     continue
 
                 live_state.update_nlp(raw)
+                if trace:
+                    text_segment = raw.get("text_segment", "")
+                    corr_id = msg.get("correlation_id") or diag._ids_by_text.get(text_segment.strip())
+                    trace.record("qwen_output", correlation_id=corr_id,
+                                 parser=msg.get("parser", "qwen"),
+                                 text_segment=text_segment,
+                                 speaker_activity=raw.get("speaker_activity", []),
+                                 entities=raw.get("semantic_graph", {}).get("entities", []),
+                                 relationships=raw.get("semantic_graph", {}).get("relationships", []))
 
                 try:
                     runtime.process_nlp_update(json.dumps(raw))
@@ -890,16 +956,17 @@ def run(
         print("[VISION] Warning: perception failed to init (%s). Running without." % exc)
 
     # ── 3. Integration runtime ────────────────────────────────────
-    live_state = LiveState()
     trace = _LatencyTrace(_ROOT / "latency_trace.jsonl")
+    live_state = LiveState(diagnostic_sink=trace.record)
     print("[LATENCY] Writing monotonic stage records to %s" % trace.path)
 
     def _on_plan_emitted(plan):
         if plan.visual_id:
             trace._render_correlation_by_visual[plan.visual_id] = trace.current_id
-        trace.record("visualplan_emitted", action=getattr(getattr(plan, "action", None), "value", None),
+        trace.record("visualplan_emitted", request_id=getattr(plan, "event_id", None),
+                     action=getattr(getattr(plan, "action", None), "value", None),
                      concept=getattr(plan, "concept", None), visual_id=getattr(plan, "visual_id", None))
-        live_state.update_plan(plan)
+        live_state.update_plan(plan, correlation_id=trace.current_id)
 
     _draw_visual_opportunity._trace = trace
     runtime = MultimodalRuntime(on_plan_emitted=_on_plan_emitted)
