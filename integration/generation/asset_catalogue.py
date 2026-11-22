@@ -37,6 +37,7 @@ class LocalAssetPackResolver:
                                  if allowed_licenses is not None else None)
         self.allow_unknown_license = allow_unknown_license
         self._index: Optional[dict[str, list[tuple[int, str, Path, dict]]]] = None
+        self._ensure_index()
 
     def _ensure_index(self) -> dict[str, list[tuple[int, str, Path, dict]]]:
         if self._index is not None:

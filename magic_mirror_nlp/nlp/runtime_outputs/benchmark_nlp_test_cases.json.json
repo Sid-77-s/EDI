@@ -2,14 +2,14 @@
   "stats": {
     "total": 20,
     "schema_passes": 20,
-    "semantic_passes": 16,
-    "activity_passes": 17,
-    "entities_passes": 18,
-    "total_latency": 28.65015959739685,
-    "avg_latency": 1.4325079798698426,
-    "min_latency": 0.9109907150268555,
-    "max_latency": 2.469562530517578,
-    "median_latency": 1.3386890888214111
+    "semantic_passes": 7,
+    "activity_passes": 16,
+    "entities_passes": 9,
+    "total_latency": 107.31574130058289,
+    "avg_latency": 5.365787065029144,
+    "min_latency": 3.3576269149780273,
+    "max_latency": 15.241198062896729,
+    "median_latency": 4.534843564033508
   },
   "results": [
     {
@@ -28,14 +28,21 @@
         "semantic_pass": true,
         "activity_pass": true,
         "entities_pass": true,
-        "latency": 1.8333539962768555,
+        "latency": 7.809940338134766,
         "err": null,
         "details": "",
         "extracted": {
+          "timestamp": 1795359329,
+          "is_partial": false,
+          "text_segment": "Water is made up of two hydrogen atoms and one oxygen atom.",
           "speaker_activity": [
             {
+              "intent": "describing",
+              "confidence": 1
+            },
+            {
               "intent": "explaining",
-              "confidence": 0.95
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
@@ -49,63 +56,33 @@
               {
                 "id": "hydrogen",
                 "name": "hydrogen",
-                "class": "element",
+                "class": "object",
                 "status": "new_explicit"
               },
               {
                 "id": "oxygen",
                 "name": "oxygen",
-                "class": "element",
+                "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "atom",
-                "name": "atom",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
               }
             ],
-            "relationships": [
-              {
-                "subject": "water",
-                "predicate": "composed_of",
-                "object": "hydrogen",
-                "type": "composition",
-                "confidence": 0.95
-              },
-              {
-                "subject": "water",
-                "predicate": "composed_of",
-                "object": "oxygen",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
-          "explicit_information": [
-            "Water is made up of two hydrogen atoms and one oxygen atom."
-          ],
+          "explicit_information": [],
           "inferred_information": [
             "The discourse references molecular composition; downstream renderer should project molecular bonds and 3D atomic structures."
           ],
-          "coreference_resolutions": [
-            {
-              "text_reference": "it",
-              "resolved_entity": "water"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "Water Composition",
-            "active_concept": "Composition",
+            "current_topic": "composition of water",
+            "active_concept": "water",
             "recent_entities": [
+              "water",
               "hydrogen",
               "oxygen"
             ]
-          },
-          "timestamp": 1791186337,
-          "is_partial": false,
-          "text_segment": "Water is made up of two hydrogen atoms and one oxygen atom."
+          }
         }
       }
     },
@@ -123,81 +100,62 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 1.2284908294677734,
+        "entities_pass": false,
+        "latency": 4.558667182922363,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['spacetime', 'gravity'].",
         "extracted": {
+          "timestamp": 1795359333,
+          "is_partial": false,
+          "text_segment": "A black hole is a region of spacetime where gravity is so strong that nothing can escape from it.",
           "speaker_activity": [
             {
               "intent": "defining",
-              "confidence": 0.95
+              "confidence": 1
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "black hole",
-                "name": "black hole",
+                "id": "black_hole",
+                "name": "black_hole",
                 "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "spacetime",
-                "name": "spacetime",
-                "class": "space",
+                "id": "region",
+                "name": "region",
+                "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "region_of_spacetime",
-                "name": "region of spacetime",
-                "class": "inferred",
-                "status": "inferred_context"
+                "id": "nothing_can_escape",
+                "name": "nothing can escape",
+                "class": "object",
+                "status": "new_explicit"
               },
               {
-                "id": "gravity",
-                "name": "gravity",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              },
-              {
-                "id": "nothing",
-                "name": "nothing",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
+                "id": "black_hole_is",
+                "name": "black hole is",
+                "class": "object",
+                "status": "new_explicit"
               }
             ],
-            "relationships": [
-              {
-                "subject": "black hole",
-                "predicate": "is",
-                "object": "region of spacetime",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "black hole",
-              "resolved_entity": "black hole"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "black hole",
-            "active_concept": "black hole",
+            "current_topic": "",
+            "active_concept": "black_hole",
             "recent_entities": [
-              "{'text_reference': 'black hole', 'resolved_entity': 'black hole'}"
+              "black_hole"
             ]
-          },
-          "timestamp": 1791186338,
-          "is_partial": false,
-          "text_segment": "A black hole is a region of spacetime where gravity is so strong that nothing can escape from it."
+          }
         }
       }
     },
@@ -218,10 +176,13 @@
         "semantic_pass": true,
         "activity_pass": true,
         "entities_pass": true,
-        "latency": 2.469562530517578,
+        "latency": 15.241198062896729,
         "err": null,
         "details": "",
         "extracted": {
+          "timestamp": 1795359349,
+          "is_partial": false,
+          "text_segment": "The surface of Mars is rocky, with canyons, volcanoes, and dry lake beds.",
           "speaker_activity": [
             {
               "intent": "describing",
@@ -231,70 +192,60 @@
           "semantic_graph": {
             "entities": [
               {
-                "id": "surface",
-                "name": "surface",
+                "id": "mars",
+                "name": "Mars",
                 "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "rocky",
-                "name": "rocky",
-                "class": "material",
+                "id": "rocky_surface",
+                "name": "rocky surface",
+                "class": "attribute",
                 "status": "new_explicit"
               },
               {
                 "id": "canyons",
                 "name": "canyons",
-                "class": "geological_feature",
-                "status": "new_explicit"
+                "class": "inferred",
+                "status": "inferred_context"
               },
               {
                 "id": "volcanoes",
                 "name": "volcanoes",
-                "class": "geological_feature",
-                "status": "new_explicit"
+                "class": "inferred",
+                "status": "inferred_context"
               },
               {
-                "id": "dry lake beds",
-                "name": "dry lake beds",
-                "class": "geological_feature",
-                "status": "new_explicit"
-              },
-              {
-                "id": "mars",
-                "name": "Mars",
-                "class": "inferred_candidate",
+                "id": "dry_lake_beds",
+                "name": "dry_lake_beds",
+                "class": "inferred",
                 "status": "inferred_context"
               }
             ],
             "relationships": [
               {
-                "subject": "surface",
-                "predicate": "is",
-                "object": "rocky",
-                "type": "composition",
-                "confidence": 0.95
+                "subject": "mars",
+                "predicate": "--has--",
+                "object": "rocky_surface",
+                "type": "spatial"
               },
               {
-                "subject": "surface",
-                "predicate": "has",
+                "subject": "mars",
+                "predicate": "--contains--",
                 "object": "canyons",
-                "type": "composition",
-                "confidence": 0.95
+                "type": "property"
               },
               {
-                "subject": "surface",
-                "predicate": "has",
+                "subject": "mars",
+                "predicate": "--contains--",
                 "object": "volcanoes",
-                "type": "composition",
-                "confidence": 0.95
+                "type": "property"
               },
               {
-                "subject": "surface",
-                "predicate": "has",
-                "object": "dry lake beds",
-                "type": "composition",
-                "confidence": 0.95
+                "subject": "mars",
+                "predicate": "--contains--",
+                "object": "dry_lake_beds",
+                "type": "property"
               }
             ],
             "quantities": []
@@ -303,22 +254,12 @@
           "inferred_information": [
             "Astronomical objects reference orbital scales; render planetary bodies with comparative scaling."
           ],
-          "coreference_resolutions": [
-            {
-              "text_reference": "surface",
-              "resolved_entity": "surface"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "Mars",
-            "active_concept": "surface",
-            "recent_entities": [
-              "{'text_reference': 'surface', 'resolved_entity': 'surface'}"
-            ]
-          },
-          "timestamp": 1791186341,
-          "is_partial": false,
-          "text_segment": "The surface of Mars is rocky, with canyons, volcanoes, and dry lake beds."
+            "current_topic": "",
+            "active_concept": "Mars",
+            "recent_entities": []
+          }
         }
       }
     },
@@ -336,64 +277,39 @@
         "semantic_pass": true,
         "activity_pass": true,
         "entities_pass": true,
-        "latency": 1.1283493041992188,
+        "latency": 3.3576269149780273,
         "err": null,
         "details": "",
         "extracted": {
+          "timestamp": 1795359352,
+          "is_partial": false,
+          "text_segment": "For instance, consider a simple pendulum swinging back and forth.",
           "speaker_activity": [
             {
               "intent": "giving_example",
-              "confidence": 0.95
+              "confidence": 1
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "simple pendulum",
-                "name": "simple pendulum",
+                "id": "simple_pendulum_swinging",
+                "name": "simple pendulum swinging",
                 "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "back_and_forth",
-                "name": "back and forth",
-                "class": "inferred",
-                "status": "inferred_context"
-              },
-              {
-                "id": "instance",
-                "name": "instance",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
               }
             ],
-            "relationships": [
-              {
-                "subject": "simple pendulum",
-                "predicate": "swinging",
-                "object": "back and forth",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "simple pendulum",
-              "resolved_entity": "simple pendulum"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "pendulum",
-            "active_concept": "simple pendulum",
+            "current_topic": "",
+            "active_concept": "simple pendulum swinging",
             "recent_entities": []
-          },
-          "timestamp": 1791186342,
-          "is_partial": false,
-          "text_segment": "For instance, consider a simple pendulum swinging back and forth."
+          }
         }
       }
     },
@@ -412,14 +328,21 @@
         "semantic_pass": true,
         "activity_pass": true,
         "entities_pass": true,
-        "latency": 1.3897244930267334,
+        "latency": 5.430898427963257,
         "err": null,
         "details": "",
         "extracted": {
+          "timestamp": 1795359357,
+          "is_partial": false,
+          "text_segment": "If you look right here on my palm, imagine a small mechanical gear.",
           "speaker_activity": [
             {
               "intent": "demonstrating",
-              "confidence": 0.95
+              "confidence": 1
+            },
+            {
+              "intent": "demonstrating",
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
@@ -427,7 +350,7 @@
               {
                 "id": "palm",
                 "name": "palm",
-                "class": "object",
+                "class": "spatial_anchor",
                 "status": "new_explicit"
               },
               {
@@ -437,15 +360,7 @@
                 "status": "new_explicit"
               }
             ],
-            "relationships": [
-              {
-                "subject": "palm",
-                "predicate": "contains",
-                "object": "gear",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
@@ -453,22 +368,15 @@
             "The speaker's palm surface serves as the real-world spatial coordinate anchor in the camera workspace.",
             "The visual asset ('gear') should be tracked and pinned directly to the speaker's palm surface."
           ],
-          "coreference_resolutions": [
-            {
-              "text_reference": "this",
-              "resolved_entity": "palm"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "The user's hand",
+            "current_topic": "",
             "active_concept": "palm",
             "recent_entities": [
-              "palm"
+              "palm",
+              "gear"
             ]
-          },
-          "timestamp": 1791186343,
-          "is_partial": false,
-          "text_segment": "If you look right here on my palm, imagine a small mechanical gear."
+          }
         }
       }
     },
@@ -489,81 +397,61 @@
         "semantic_pass": true,
         "activity_pass": true,
         "entities_pass": true,
-        "latency": 1.4331345558166504,
+        "latency": 3.7783963680267334,
         "err": null,
         "details": "",
         "extracted": {
+          "timestamp": 1795359361,
+          "is_partial": false,
+          "text_segment": "Unlike the Earth, Jupiter is a gas giant and does not have a solid surface.",
           "speaker_activity": [
             {
               "intent": "comparing",
-              "confidence": 0.95
+              "confidence": 1
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "Jupiter",
+                "id": "jupiter",
                 "name": "Jupiter",
-                "class": "planet",
+                "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "solid surface",
+                "id": "solid_surface",
                 "name": "solid surface",
-                "class": "surface",
+                "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "gas_giant",
-                "name": "gas giant",
-                "class": "inferred",
-                "status": "inferred_context"
               },
               {
                 "id": "earth",
-                "name": "the Earth",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              }
-            ],
-            "relationships": [
-              {
-                "subject": "Jupiter",
-                "predicate": "is",
-                "object": "gas giant",
-                "type": "composition",
-                "confidence": 0.95
+                "name": "earth",
+                "class": "object",
+                "status": "new_explicit"
               },
               {
-                "subject": "Jupiter",
-                "predicate": "does not have",
-                "object": "solid surface",
-                "type": "composition",
-                "confidence": 0.95
+                "id": "gas_giant_and",
+                "name": "gas giant and",
+                "class": "object",
+                "status": "new_explicit"
               }
             ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [
             "Astronomical objects reference orbital scales; render planetary bodies with comparative scaling."
           ],
-          "coreference_resolutions": [
-            {
-              "text_reference": "Jupiter",
-              "resolved_entity": "Jupiter"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "Jupiter",
+            "current_topic": "",
             "active_concept": "Jupiter",
             "recent_entities": [
-              "{'text_reference': 'Jupiter', 'resolved_entity': 'Jupiter'}"
+              "jupiter"
             ]
-          },
-          "timestamp": 1791186345,
-          "is_partial": false,
-          "text_segment": "Unlike the Earth, Jupiter is a gas giant and does not have a solid surface."
+          }
         }
       }
     },
@@ -580,69 +468,48 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 1.246513843536377,
+        "entities_pass": false,
+        "latency": 3.438511848449707,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['brain'].",
         "extracted": {
+          "timestamp": 1795359365,
+          "is_partial": false,
+          "text_segment": "You can think of the CPU as the brain of the computer.",
           "speaker_activity": [
             {
               "intent": "analogy",
-              "confidence": 0.95
+              "confidence": 1
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "CPU",
-                "name": "CPU",
-                "class": "object",
-                "status": "new_explicit"
-              },
-              {
-                "id": "brain",
-                "name": "brain",
-                "class": "object",
-                "status": "new_explicit"
-              },
-              {
                 "id": "computer",
                 "name": "computer",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              }
-            ],
-            "relationships": [
+                "class": "object",
+                "status": "new_explicit"
+              },
               {
-                "subject": "CPU",
-                "predicate": "is_like",
-                "object": "brain",
-                "type": "composition",
-                "confidence": 0.95
+                "id": "cpu_as",
+                "name": "cpu as",
+                "class": "object",
+                "status": "new_explicit"
               }
             ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "it",
-              "resolved_entity": "CPU"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "Computer Components",
-            "active_concept": "CPU",
-            "recent_entities": [
-              "CPU"
-            ]
-          },
-          "timestamp": 1791186346,
-          "is_partial": false,
-          "text_segment": "You can think of the CPU as the brain of the computer."
+            "current_topic": "CPU",
+            "active_concept": "computer",
+            "recent_entities": []
+          }
         }
       }
     },
@@ -662,18 +529,27 @@
         "semantic_pass": true,
         "activity_pass": true,
         "entities_pass": true,
-        "latency": 1.5363941192626953,
+        "latency": 7.843227863311768,
         "err": null,
         "details": "",
         "extracted": {
+          "timestamp": 1795359372,
+          "is_partial": false,
+          "text_segment": "Suppose we were to drop a feather and a hammer on the moon at the exact same time.",
           "speaker_activity": [
             {
               "intent": "hypothetical",
-              "confidence": 0.95
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
             "entities": [
+              {
+                "id": "moon",
+                "name": "moon",
+                "class": "object",
+                "status": "new_explicit"
+              },
               {
                 "id": "feather",
                 "name": "feather",
@@ -685,58 +561,23 @@
                 "name": "hammer",
                 "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "moon",
-                "name": "moon",
-                "class": "location",
-                "status": "new_explicit"
-              },
-              {
-                "id": "time",
-                "name": "time",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
               }
             ],
-            "relationships": [
-              {
-                "subject": "feather",
-                "predicate": "falls",
-                "object": "moon",
-                "type": "composition",
-                "confidence": 0.95
-              },
-              {
-                "subject": "hammer",
-                "predicate": "falls",
-                "object": "moon",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "feather",
-              "resolved_entity": "feather"
-            },
-            {
-              "text_reference": "hammer",
-              "resolved_entity": "hammer"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "falling objects on the moon",
-            "active_concept": "falling objects",
-            "recent_entities": []
-          },
-          "timestamp": 1791186348,
-          "is_partial": false,
-          "text_segment": "Suppose we were to drop a feather and a hammer on the moon at the exact same time."
+            "current_topic": "physics_of_gravity_and_acceleration_on_moon",
+            "active_concept": "moon",
+            "recent_entities": [
+              "moon",
+              "feather",
+              "hammer"
+            ]
+          }
         }
       }
     },
@@ -753,62 +594,42 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 1.9644811153411865,
+        "entities_pass": false,
+        "latency": 4.859421014785767,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['ice crystals'].",
         "extracted": {
+          "timestamp": 1795359377,
+          "is_partial": false,
+          "text_segment": "When the temperature drops below freezing, the water molecules slow down and form ice crystals.",
           "speaker_activity": [
             {
               "intent": "cause_effect",
-              "confidence": 0.95
+              "confidence": 1
+            },
+            {
+              "intent": "cause_effect",
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "temperature",
-                "name": "temperature",
-                "class": "quantity",
+                "id": "temperature_drops",
+                "name": "temperature drops",
+                "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "water_molecules",
-                "name": "water molecules",
-                "class": "quantity",
+                "id": "water_molecules_slow",
+                "name": "water molecules slow",
+                "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "ice_crystals",
-                "name": "ice crystals",
-                "class": "quantity",
-                "status": "new_explicit"
-              },
-              {
-                "id": "freezing",
-                "name": "freezing",
-                "class": "inferred",
-                "status": "inferred_context"
               }
             ],
-            "relationships": [
-              {
-                "subject": "temperature",
-                "predicate": "drops",
-                "object": "freezing",
-                "type": "causal",
-                "confidence": 0.95
-              },
-              {
-                "subject": "water_molecules",
-                "predicate": "slow down",
-                "object": "ice_crystals",
-                "type": "causal",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
@@ -817,13 +638,14 @@
           ],
           "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "freezing and water molecules",
-            "active_concept": "water molecules",
-            "recent_entities": []
-          },
-          "timestamp": 1791186350,
-          "is_partial": false,
-          "text_segment": "When the temperature drops below freezing, the water molecules slow down and form ice crystals."
+            "current_topic": "water phase changes",
+            "active_concept": "temperature drops",
+            "recent_entities": [
+              "temperature",
+              "freezing point of water",
+              "water molecules"
+            ]
+          }
         }
       }
     },
@@ -840,78 +662,48 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 2.0201478004455566,
+        "entities_pass": false,
+        "latency": 4.511019945144653,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['right atrium'].",
         "extracted": {
+          "timestamp": 1795359382,
+          "is_partial": false,
+          "text_segment": "First, the blood enters the right atrium, then it is pumped into the right ventricle.",
           "speaker_activity": [
             {
               "intent": "process_sequencing",
-              "confidence": 0.95
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "blood",
-                "name": "blood",
-                "class": "fluid",
-                "status": "new_explicit"
-              },
-              {
-                "id": "right_atrium",
-                "name": "right atrium",
-                "class": "structure",
-                "status": "new_explicit"
-              },
-              {
                 "id": "right_ventricle",
                 "name": "right ventricle",
-                "class": "structure",
+                "class": "object",
+                "status": "new_explicit"
+              },
+              {
+                "id": "blood_enters",
+                "name": "blood enters",
+                "class": "object",
                 "status": "new_explicit"
               }
             ],
-            "relationships": [
-              {
-                "subject": "blood",
-                "predicate": "enters",
-                "object": "right_atrium",
-                "type": "composition",
-                "confidence": 0.95
-              },
-              {
-                "subject": "right_atrium",
-                "predicate": "pumped",
-                "object": "right_ventricle",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "it",
-              "resolved_entity": "right_atrium"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "Heart",
-            "active_concept": "Blood Flow Through the Heart",
-            "recent_entities": [
-              "blood",
-              "right_atrium",
-              "right_ventricle"
-            ]
-          },
-          "timestamp": 1791186352,
-          "is_partial": false,
-          "text_segment": "First, the blood enters the right atrium, then it is pumped into the right ventricle."
+            "current_topic": "",
+            "active_concept": "right ventricle",
+            "recent_entities": []
+          }
         }
       }
     },
@@ -927,73 +719,46 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 0.9109907150268555,
+        "entities_pass": false,
+        "latency": 4.307664394378662,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['system'].",
         "extracted": {
+          "timestamp": 1795359386,
+          "is_partial": false,
+          "text_segment": "But what happens to the energy if the system is completely closed?",
           "speaker_activity": [
             {
               "intent": "questioning",
-              "confidence": 0.95
+              "confidence": 1
+            },
+            {
+              "intent": "questioning",
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "energy",
-                "name": "energy",
-                "class": "energy",
+                "id": "energy_if",
+                "name": "energy if",
+                "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "system",
-                "name": "system",
-                "class": "inferred",
-                "status": "inferred_context"
-              },
-              {
-                "id": "closed_system",
-                "name": "closed system",
-                "class": "inferred",
-                "status": "inferred_context"
-              },
-              {
-                "id": "what",
-                "name": "what",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
               }
             ],
-            "relationships": [
-              {
-                "subject": "energy",
-                "predicate": "if",
-                "object": "system",
-                "type": "causal",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "system",
-              "resolved_entity": "closed system"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "closed system",
-            "active_concept": "energy",
+            "current_topic": "",
+            "active_concept": "energy if",
             "recent_entities": []
-          },
-          "timestamp": 1791186353,
-          "is_partial": false,
-          "text_segment": "But what happens to the energy if the system is completely closed?"
+          }
         }
       }
     },
@@ -1010,17 +775,20 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
-        "activity_pass": true,
+        "semantic_pass": false,
+        "activity_pass": false,
         "entities_pass": true,
-        "latency": 1.7906746864318848,
+        "latency": 5.948911428451538,
         "err": null,
-        "details": "",
+        "details": "Activity mismatch (expected 'correcting', got ['explaining']).",
         "extracted": {
+          "timestamp": 1795359392,
+          "is_partial": false,
+          "text_segment": "So the electron moves into the... wait, no, the proton stays in the nucleus.",
           "speaker_activity": [
             {
-              "intent": "correcting",
-              "confidence": 0.95
+              "intent": "explaining",
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
@@ -1028,65 +796,36 @@
               {
                 "id": "electron",
                 "name": "electron",
-                "class": "subatomic",
+                "class": "object",
                 "status": "new_explicit"
               },
               {
                 "id": "proton",
                 "name": "proton",
-                "class": "subatomic",
+                "class": "object",
                 "status": "new_explicit"
               },
               {
                 "id": "nucleus",
                 "name": "nucleus",
-                "class": "subatomic",
+                "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "wait",
-                "name": "wait",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
               }
             ],
-            "relationships": [
-              {
-                "subject": "electron",
-                "predicate": "moves",
-                "object": "nucleus",
-                "type": "composition",
-                "confidence": 0.95
-              },
-              {
-                "subject": "proton",
-                "predicate": "stays",
-                "object": "nucleus",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "it",
-              "resolved_entity": "proton"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "atomic structure",
-            "active_concept": "subatomic particles",
+            "current_topic": "",
+            "active_concept": "electron",
             "recent_entities": [
               "electron",
               "proton"
             ]
-          },
-          "timestamp": 1791186354,
-          "is_partial": false,
-          "text_segment": "So the electron moves into the... wait, no, the proton stays in the nucleus."
+          }
         }
       }
     },
@@ -1105,60 +844,52 @@
         "semantic_pass": false,
         "activity_pass": false,
         "entities_pass": true,
-        "latency": 1.2876536846160889,
+        "latency": 5.9447643756866455,
         "err": null,
-        "details": "Activity mismatch (expected 'clarifying', got ['explaining']).",
+        "details": "Activity mismatch (expected 'clarifying', got ['explaining', 'describing']).",
         "extracted": {
+          "timestamp": 1795359398,
+          "is_partial": false,
+          "text_segment": "To be more specific, I'm talking about the mitochondria, not the entire cell.",
           "speaker_activity": [
             {
               "intent": "explaining",
-              "confidence": 0.95
+              "confidence": 1
+            },
+            {
+              "intent": "describing",
+              "confidence": 1
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "mitochondria",
-                "name": "mitochondria",
-                "class": "cell_component",
+                "id": "cell",
+                "name": "cell",
+                "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "cell",
-                "name": "cell",
-                "class": "cell",
+                "id": "mitochondria",
+                "name": "mitochondria",
+                "class": "object",
                 "status": "new_explicit"
               }
             ],
-            "relationships": [
-              {
-                "subject": "mitochondria",
-                "predicate": "part_of",
-                "object": "cell",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "this",
-              "resolved_entity": "mitochondria"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "cellular organelles",
-            "active_concept": "mitochondria",
+            "current_topic": "cellular_structure",
+            "active_concept": "cell",
             "recent_entities": [
+              "cell",
               "mitochondria"
             ]
-          },
-          "timestamp": 1791186356,
-          "is_partial": false,
-          "text_segment": "To be more specific, I'm talking about the mitochondria, not the entire cell."
+          }
         }
       }
     },
@@ -1176,90 +907,54 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 1.7493820190429688,
+        "entities_pass": false,
+        "latency": 3.661710023880005,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['heat', 'mantle'].",
         "extracted": {
+          "timestamp": 1795359402,
+          "is_partial": false,
+          "text_segment": "In short, the entire process is driven by the transfer of heat from the core to the mantle.",
           "speaker_activity": [
             {
               "intent": "summarizing",
-              "confidence": 0.95
+              "confidence": 1
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "core",
-                "name": "core",
+                "id": "entire_process_is",
+                "name": "entire process is",
                 "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "heat",
-                "name": "heat",
-                "class": "energy",
-                "status": "new_explicit"
-              },
-              {
-                "id": "mantle",
-                "name": "mantle",
-                "class": "object",
-                "status": "new_explicit"
-              },
-              {
-                "id": "process",
-                "name": "process",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
               },
               {
                 "id": "transfer",
                 "name": "transfer",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              }
-            ],
-            "relationships": [
-              {
-                "subject": "core",
-                "predicate": "transfers",
-                "object": "heat",
-                "type": "causal",
-                "confidence": 0.95
+                "class": "object",
+                "status": "new_explicit"
               },
               {
-                "subject": "heat",
-                "predicate": "to",
-                "object": "mantle",
-                "type": "causal",
-                "confidence": 0.95
+                "id": "core_to",
+                "name": "core to",
+                "class": "object",
+                "status": "new_explicit"
               }
             ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "heat",
-              "resolved_entity": "core"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "heat transfer process",
-            "active_concept": "heat",
-            "recent_entities": [
-              "core",
-              "heat",
-              "mantle"
-            ]
-          },
-          "timestamp": 1791186357,
-          "is_partial": false,
-          "text_segment": "In short, the entire process is driven by the transfer of heat from the core to the mantle."
+            "current_topic": "",
+            "active_concept": "entire process is",
+            "recent_entities": []
+          }
         }
       }
     },
@@ -1277,15 +972,18 @@
         "schema_pass": true,
         "semantic_pass": false,
         "activity_pass": false,
-        "entities_pass": true,
-        "latency": 1.28179931640625,
+        "entities_pass": false,
+        "latency": 3.929809331893921,
         "err": null,
-        "details": "Activity mismatch (expected 'describing', got ['explaining']).",
+        "details": "Activity mismatch (expected 'describing', got ['explaining']). Missing entities: ['legs']. Note: Expected coreference not captured.",
         "extracted": {
+          "timestamp": 1795359406,
+          "is_partial": false,
+          "text_segment": "A dog has four legs. It can run very quickly.",
           "speaker_activity": [
             {
               "intent": "explaining",
-              "confidence": 0.95
+              "confidence": 1
             }
           ],
           "semantic_graph": {
@@ -1293,47 +991,23 @@
               {
                 "id": "dog",
                 "name": "dog",
-                "class": "animal",
-                "status": "new_explicit"
-              },
-              {
-                "id": "legs",
-                "name": "legs",
-                "class": "body_part",
+                "class": "object",
                 "status": "new_explicit"
               }
             ],
-            "relationships": [
-              {
-                "subject": "dog",
-                "predicate": "has",
-                "object": "legs",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
-          "explicit_information": [
-            "A dog has four legs."
-          ],
+          "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "it",
-              "resolved_entity": "dog"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "Animals",
-            "active_concept": "Dogs",
+            "current_topic": "",
+            "active_concept": "dog",
             "recent_entities": [
               "dog"
             ]
-          },
-          "timestamp": 1791186359,
-          "is_partial": false,
-          "text_segment": "A dog has four legs. It can run very quickly."
+          }
         }
       }
     },
@@ -1349,17 +1023,20 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": false,
+        "semantic_pass": true,
         "activity_pass": true,
-        "entities_pass": false,
-        "latency": 0.9724311828613281,
+        "entities_pass": true,
+        "latency": 4.994483232498169,
         "err": null,
-        "details": "Missing entities: ['first one'].",
+        "details": "",
         "extracted": {
+          "timestamp": 1795359411,
+          "is_partial": false,
+          "text_segment": "Now take this block and place it exactly above the first one.",
           "speaker_activity": [
             {
               "intent": "instructing",
-              "confidence": 0.95
+              "confidence": 1
             }
           ],
           "semantic_graph": {
@@ -1371,41 +1048,26 @@
                 "status": "new_explicit"
               },
               {
-                "id": "above",
-                "name": "above",
-                "class": "inferred",
-                "status": "inferred_context"
+                "id": "first_one",
+                "name": "first_one",
+                "class": "conceptual_location",
+                "status": "new_explicit"
               }
             ],
-            "relationships": [
-              {
-                "subject": "block",
-                "predicate": "placed",
-                "object": "above",
-                "type": "causal",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "block",
-              "resolved_entity": "block"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "placement",
-            "active_concept": "placement",
+            "current_topic": "",
+            "active_concept": "block",
             "recent_entities": [
-              "{'text_reference': 'block', 'resolved_entity': 'block'}"
+              "block",
+              "first_one"
             ]
-          },
-          "timestamp": 1791186360,
-          "is_partial": false,
-          "text_segment": "Now take this block and place it exactly above the first one."
+          }
         }
       }
     },
@@ -1422,74 +1084,48 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 1.405324935913086,
+        "entities_pass": false,
+        "latency": 3.721115827560425,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['altitude'].",
         "extracted": {
+          "timestamp": 1795359414,
+          "is_partial": false,
+          "text_segment": "For example, look at this graph; it clearly shows how the pressure decreases as altitude increases.",
           "speaker_activity": [
             {
               "intent": "giving_example",
-              "confidence": 0.95
+              "confidence": 1
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "graph",
-                "name": "graph",
+                "id": "pressure_decreases_as",
+                "name": "pressure decreases as",
                 "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "pressure",
-                "name": "pressure",
-                "class": "quantity",
+                "id": "graph",
+                "name": "graph",
+                "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "altitude",
-                "name": "altitude",
-                "class": "quantity",
-                "status": "new_explicit"
-              },
-              {
-                "id": "how_the_pressure_decreases_as_altitude_increases",
-                "name": "how the pressure decreases as altitude increases",
-                "class": "inferred",
-                "status": "inferred_context"
-              },
-              {
-                "id": "example",
-                "name": "example",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
               }
             ],
-            "relationships": [
-              {
-                "subject": "graph",
-                "predicate": "shows",
-                "object": "how the pressure decreases as altitude increases",
-                "type": "composition",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
           "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "graph",
-            "active_concept": "pressure and altitude",
+            "current_topic": "pressure changes with altitude",
+            "active_concept": "pressure decreases as",
             "recent_entities": []
-          },
-          "timestamp": 1791186361,
-          "is_partial": false,
-          "text_segment": "For example, look at this graph; it clearly shows how the pressure decreases as altitude increases."
+          }
         }
       }
     },
@@ -1508,60 +1144,41 @@
         "semantic_pass": false,
         "activity_pass": false,
         "entities_pass": false,
-        "latency": 0.947934627532959,
+        "latency": 4.415484666824341,
         "err": null,
         "details": "Activity mismatch (expected 'describing', got ['explaining']). Missing entities: ['It'].",
         "extracted": {
+          "timestamp": 1795359419,
+          "is_partial": false,
+          "text_segment": "It just kind of goes around that thing over there.",
           "speaker_activity": [
             {
               "intent": "explaining",
-              "confidence": 0.95
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
             "entities": [
               {
                 "id": "thing",
-                "name": "thing",
+                "name": "that thing over there",
                 "class": "object",
                 "status": "new_explicit"
-              },
-              {
-                "id": "around",
-                "name": "around",
-                "class": "inferred",
-                "status": "inferred_context"
               }
             ],
-            "relationships": [
-              {
-                "subject": "thing",
-                "predicate": "goes",
-                "object": "around",
-                "type": "causal",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
-          "coreference_resolutions": [
-            {
-              "text_reference": "it",
-              "resolved_entity": "thing"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "thing",
-            "active_concept": "thing",
+            "current_topic": "",
+            "active_concept": "that thing over there",
             "recent_entities": [
-              "{'text_reference': 'thing', 'resolved_entity': 'thing'}"
+              "thing"
             ]
-          },
-          "timestamp": 1791186362,
-          "is_partial": false,
-          "text_segment": "It just kind of goes around that thing over there."
+          }
         }
       }
     },
@@ -1577,74 +1194,52 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 1.058743953704834,
+        "entities_pass": false,
+        "latency": 4.431880474090576,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['coffee'].",
         "extracted": {
+          "timestamp": 1795359423,
+          "is_partial": false,
+          "text_segment": "Hey, can you grab me a cup of coffee before we start the next section?",
           "speaker_activity": [
             {
               "intent": "casual",
-              "confidence": 0.95
+              "confidence": 1
+            },
+            {
+              "intent": "casual",
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "coffee",
-                "name": "coffee",
+                "id": "next_section",
+                "name": "next section",
                 "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "drinking",
-                "name": "drinking",
-                "class": "inferred",
-                "status": "inferred_context"
-              },
-              {
                 "id": "cup",
                 "name": "cup",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              },
-              {
-                "id": "next_section",
-                "name": "the next section",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              },
-              {
-                "id": "me",
-                "name": "me",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
+                "class": "object",
+                "status": "new_explicit"
               }
             ],
-            "relationships": [
-              {
-                "subject": "coffee",
-                "predicate": "needed_for",
-                "object": "drinking",
-                "type": "causal",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [],
           "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "drinking",
-            "active_concept": "coffee",
+            "current_topic": "",
+            "active_concept": "next section",
             "recent_entities": []
-          },
-          "timestamp": 1791186363,
-          "is_partial": false,
-          "text_segment": "Hey, can you grab me a cup of coffee before we start the next section?"
+          }
         }
       }
     },
@@ -1662,95 +1257,52 @@
       ],
       "res": {
         "schema_pass": true,
-        "semantic_pass": true,
+        "semantic_pass": false,
         "activity_pass": true,
-        "entities_pass": true,
-        "latency": 0.9950718879699707,
+        "entities_pass": false,
+        "latency": 5.131009578704834,
         "err": null,
-        "details": "",
+        "details": "Missing entities: ['axis', 'seasons']. Note: Expected coreference not captured.",
         "extracted": {
+          "timestamp": 1795359428,
+          "is_partial": false,
+          "text_segment": "Let's look at the Earth. Notice how it tilts on its axis. This tilt is what gives us our seasons.",
           "speaker_activity": [
             {
               "intent": "explaining",
-              "confidence": 0.95
+              "confidence": 0.9
             }
           ],
           "semantic_graph": {
             "entities": [
               {
-                "id": "Earth",
+                "id": "earth",
                 "name": "Earth",
                 "class": "object",
                 "status": "new_explicit"
               },
               {
-                "id": "axis",
-                "name": "axis",
-                "class": "inferred",
-                "status": "inferred_context"
-              },
-              {
-                "id": "this_tilt",
-                "name": "This tilt",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              },
-              {
-                "id": "seasons",
-                "name": "seasons",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              },
-              {
-                "id": "s",
-                "name": "'s",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              },
-              {
-                "id": "us",
-                "name": "us",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
-              },
-              {
-                "id": "what",
-                "name": "what",
-                "class": "inferred_candidate",
-                "status": "inferred_context"
+                "id": "tilt_is_what",
+                "name": "tilt is what",
+                "class": "object",
+                "status": "new_explicit"
               }
             ],
-            "relationships": [
-              {
-                "subject": "Earth",
-                "predicate": "tilts",
-                "object": "axis",
-                "type": "causal",
-                "confidence": 0.95
-              }
-            ],
+            "relationships": [],
             "quantities": []
           },
           "explicit_information": [],
           "inferred_information": [
             "Astronomical objects reference orbital scales; render planetary bodies with comparative scaling."
           ],
-          "coreference_resolutions": [
-            {
-              "text_reference": "it",
-              "resolved_entity": "Earth"
-            }
-          ],
+          "coreference_resolutions": [],
           "explanation_state": {
-            "current_topic": "Earth",
-            "active_concept": "tilt",
+            "current_topic": "Earth's axial tilt and seasons",
+            "active_concept": "Earth",
             "recent_entities": [
-              "{'text_reference': 'axis', 'resolved_entity': 'axis'}"
+              "earth"
             ]
-          },
-          "timestamp": 1791186364,
-          "is_partial": false,
-          "text_segment": "Let's look at the Earth. Notice how it tilts on its axis. This tilt is what gives us our seasons."
+          }
         }
       }
     }

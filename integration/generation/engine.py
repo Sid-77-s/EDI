@@ -175,12 +175,15 @@ class GenerationEngine:
                         self.on_asset_failed(request.concept, str(exc))
                     return job
 
-                # Render preview snapshot for 2D asset compatibility
-                preview_img = np.zeros((256, 256, 3), dtype=np.uint8)
+                # Render preview snapshot for 2D asset compatibility with transparent BGRA
+                preview_img = None
                 try:
                     from integration.generation.renderer3d import SoftwareRenderer3D
+                    rgb_buf = np.zeros((256, 256, 3), dtype=np.uint8)
                     renderer = SoftwareRenderer3D()
-                    renderer.render(preview_img, model, bbox=(0.0, 0.0, 1.0, 1.0), t=0.0)
+                    renderer.render(rgb_buf, model, bbox=(0.0, 0.0, 1.0, 1.0), t=0.0)
+                    alpha = (np.any(rgb_buf > 0, axis=2).astype(np.uint8)) * 255
+                    preview_img = np.dstack([rgb_buf, alpha])
                 except Exception:
                     preview_img = None
 

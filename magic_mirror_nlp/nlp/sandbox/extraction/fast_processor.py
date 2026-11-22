@@ -5,21 +5,37 @@ import queue
 
 
 _FAST_COMMAND = re.compile(
-    r"^(?:(show me|create|draw|make)|(?P<action>update|change|move|put|animate|remove|delete|hide))\s+"
+    r"^(?:(show me|visualize|display|render|bring up|give me|create|draw|make|show)|(?P<action>update|change|move|put|animate|remove|delete|hide))\s+"
     r"(?:(?:a|an|the)\s+)?(?P<body>.+?)[.!]?$", re.IGNORECASE
 )
 _COLORS = {"red", "blue", "green", "yellow", "black", "white", "orange", "purple", "pink", "brown", "gray", "grey"}
-_ANCHORS = {"on my hand": "hand", "on my palm": "hand", "in front of me": "person"}
+_ANCHORS = {
+    "on my hand": "hand", "on my palm": "hand",
+    "on the desk": "desk", "on the table": "desk", "on my desk": "desk",
+    "in front of me": "person"
+}
 
 
 def parse_simple_command(text):
-    """Parse only single-object, literal commands; return None when anything is uncertain."""
-    match = _FAST_COMMAND.fullmatch(text.strip())
-    if not match or re.search(r"\b(it|this|that|these|those|not|don't|do not|but|and|or|then|left|right|above|below|beside|behind|between)\b", text, re.I):
+    """Parse single-object, literal commands at sub-millisecond speeds; return None when uncertain."""
+    text_clean = text.strip()
+    if re.search(r"\b(it|this|that|these|those|not|don't|do not|but|and|or|then|left|right|above|below|beside|behind|between)\b", text_clean, re.I):
         return None
-    lead = match.group(1)
-    action = match.group("action") or "create"
-    body = match.group("body").strip().lower()
+    match = _FAST_COMMAND.fullmatch(text_clean)
+    if not match:
+        # Check conversational formulations like 'explain how a volcano works' or 'structure of an oxygen atom'
+        m2 = re.match(r"^(?:explain how (?:a|an|the)?\s*(?P<exp>.+?)\s*works|show (?:me )?(?:the )?structure of (?:a|an|the )?(?P<struct>.+?))[.!]?$", text_clean, re.I)
+        if m2:
+            body = (m2.group("exp") or m2.group("struct")).strip().lower()
+            lead = "explain" if m2.group("exp") else "show me"
+            action = None
+        else:
+            return None
+    else:
+        lead = match.group(1)
+        action = match.group("action") or "create"
+        body = match.group("body").strip().lower()
+
     anchor = None
     action_detail = None
     verb = (lead or action).lower()
@@ -39,24 +55,28 @@ def parse_simple_command(text):
             break
     if verb in {"move", "put"} and anchor is None:
         return None
+
+    # Strip prefixes like "the structure of" or "structure of"
+    body = re.sub(r"^(?:the\s+)?(?:structure|shape|model|diagram)\s+of\s+(?:an?|the\s+)?", "", body, flags=re.I).strip()
+
     words = body.split()
     modifier = words[0] if words and words[0] in _COLORS else None
     concept_words = words[1:] if modifier else words
-    if not concept_words or len(concept_words) > 3 or any(w in _COLORS for w in concept_words):
+    if not concept_words or len(concept_words) > 4 or any(w in _COLORS for w in concept_words):
         return None
     concept = " ".join(concept_words)
-    if not re.fullmatch(r"[a-z]+(?: [a-z]+){0,2}", concept):
+    if not re.fullmatch(r"[a-z0-9]+(?: [a-z0-9]+){0,3}", concept):
         return None
-    if verb in {"show me", "create", "draw", "make"}:
+
+    if verb in {"show me", "visualize", "display", "render", "bring up", "give me", "create", "draw", "make", "show"}:
         intent = "demonstrating"
-    elif verb in {"remove", "delete", "hide"}:
-        intent = "instructing"
-    elif verb in {"move", "put"}:
-        intent = "instructing"
-    elif verb == "animate":
+    elif verb == "explain":
+        intent = "explaining"
+    elif verb in {"remove", "delete", "hide", "move", "put", "animate"}:
         intent = "instructing"
     else:
         return None
+
     relationships = []
     if modifier:
         relationships.append({"subject": concept, "predicate": "color", "object": modifier, "type": "property", "confidence": 1.0})

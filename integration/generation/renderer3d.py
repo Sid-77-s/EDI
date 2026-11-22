@@ -156,18 +156,23 @@ class SoftwareRenderer3D:
             norm_lengths[norm_lengths == 0] = 1.0
             world_normals /= norm_lengths
 
-            # Diffuse lighting (Lambertian)
-            dots = np.clip(np.sum(world_normals * self.light_dir, axis=1), 0.0, 1.0)
+            # Key light (directional, upper-right front)
+            key_dots = np.clip(np.sum(world_normals * self.light_dir, axis=1), 0.0, 1.0)
+            # Fill light (camera view direction, ensures visible unlit surfaces remain richly illuminated)
+            fill_dots = np.clip(np.sum(world_normals * view_dir, axis=1), 0.0, 1.0)
+
             amb = mesh.material.ambient_coeff
             diff = mesh.material.diffuse_coeff
-            ambient_fill = max(0.25, amb * self.ambient_intensity)
-            diffuse_fill = self.diffuse_intensity * diff * dots
+            ambient_fill = max(0.52, amb * self.ambient_intensity)
+            diffuse_fill = self.diffuse_intensity * diff * key_dots
+            fill_light = 0.35 * fill_dots
+
             spec_dot = np.clip(np.sum(world_normals * half_vector, axis=1), 0.0, 1.0)
             roughness = float(np.clip(mesh.material.roughness, 0.04, 1.0))
             spec_power = max(4.0, min(float(mesh.material.shininess), 96.0) * (1.0 - 0.55 * roughness))
             spec = (np.power(spec_dot, spec_power) * mesh.material.specular_coeff *
                     (1.0 - 0.55 * roughness))
-            intensities = np.clip(ambient_fill + diffuse_fill + spec, 0.12, 1.25)
+            intensities = np.clip(ambient_fill + diffuse_fill + fill_light + spec, 0.52, 1.35)
 
             mat_color = np.array(mesh.material.diffuse_color, dtype=np.float32)
             face_colors = mesh.colors if mesh.colors is not None and len(mesh.colors) == len(mesh.faces) else None
@@ -216,28 +221,43 @@ class SoftwareRenderer3D:
         roi = canvas[vy1:vy2, vx1:vx2]
         needs_alpha = any(item[3] < 0.99 for item in render_queue)
 
-        # Contact shadow beneath object to ground it
+        # Contact shadow beneath object to ground it gently without opaque black blocks
         all_points = np.concatenate([item[1] for item in render_queue], axis=0)
         object_left = int(np.clip(all_points[:, 0].min() - vx1, 0, vw - 1))
         object_right = int(np.clip(all_points[:, 0].max() - vx1, 0, vw - 1))
         object_bottom = int(np.clip(all_points[:, 1].max() - vy1, 0, vh - 1))
         shadow_center = (vx1 + (object_left + object_right) // 2, min(vy2 - 1, vy1 + object_bottom + max(2, vh // 36)))
-        shadow_axes = (max(3, (object_right - object_left) // 3), max(2, vh // 32))
-        cv2.ellipse(canvas, shadow_center, shadow_axes, 0, 0, 360, (15, 15, 15), -1, cv2.LINE_8)
+        shadow_axes = (max(4, (object_right - object_left) // 3), max(2, vh // 32))
+
+        sy1 = max(0, shadow_center[1] - shadow_axes[1] * 2)
+        sy2 = min(h, shadow_center[1] + shadow_axes[1] * 2 + 1)
+        sx1 = max(0, shadow_center[0] - shadow_axes[0] * 2)
+        sx2 = min(w, shadow_center[0] + shadow_axes[0] * 2 + 1)
+        if sy2 > sy1 and sx2 > sx1:
+            s_patch = np.zeros((sy2 - sy1, sx2 - sx1), dtype=np.uint8)
+            cv2.ellipse(s_patch, (shadow_center[0] - sx1, shadow_center[1] - sy1), shadow_axes, 0, 0, 360, 255, -1, cv2.LINE_AA)
+            s_patch = cv2.GaussianBlur(s_patch, (0, 0), sigmaX=max(1.5, vw / 90.0))
+            s_alpha = (s_patch.astype(np.float32) / 255.0 * 0.28)[..., None]
+            canvas[sy1:sy2, sx1:sx2] = (canvas[sy1:sy2, sx1:sx2].astype(np.float32) * (1.0 - s_alpha)).astype(np.uint8)
 
         if needs_alpha:
-            layer = roi.copy()
             for _, poly, color, alpha in render_queue:
                 poly_local = poly - np.array([vx1, vy1], dtype=np.int32)
                 if alpha >= 0.99:
-                    cv2.fillConvexPoly(layer, poly_local, color, cv2.LINE_8)
+                    cv2.fillConvexPoly(roi, poly_local, color, cv2.LINE_8)
                 else:
-                    poly_mask = np.zeros(layer.shape[:2], dtype=np.uint8)
-                    cv2.fillConvexPoly(poly_mask, poly_local, 255, cv2.LINE_8)
-                    cv2.fillConvexPoly(layer, poly_local, color, cv2.LINE_8)
-                    m_bool = poly_mask > 0
-                    roi[m_bool] = (layer[m_bool].astype(np.float32) * alpha + roi[m_bool].astype(np.float32) * (1.0 - alpha)).astype(np.uint8)
-            canvas[vy1:vy2, vx1:vx2] = layer
+                    bx1 = max(0, int(poly_local[:, 0].min()))
+                    by1 = max(0, int(poly_local[:, 1].min()))
+                    bx2 = min(vw, int(poly_local[:, 0].max()) + 1)
+                    by2 = min(vh, int(poly_local[:, 1].max()) + 1)
+                    if bx2 > bx1 and by2 > by1:
+                        p_sub = poly_local - np.array([bx1, by1], dtype=np.int32)
+                        sub_mask = np.zeros((by2 - by1, bx2 - bx1), dtype=np.uint8)
+                        cv2.fillConvexPoly(sub_mask, p_sub, 255, cv2.LINE_8)
+                        m = sub_mask > 0
+                        sub_roi = roi[by1:by2, bx1:bx2]
+                        c_arr = np.array(color, dtype=np.float32)
+                        sub_roi[m] = (c_arr * alpha + sub_roi[m].astype(np.float32) * (1.0 - alpha)).astype(np.uint8)
         else:
             for _, poly, color, _ in render_queue:
                 cv2.fillConvexPoly(canvas, poly, color, cv2.LINE_8)

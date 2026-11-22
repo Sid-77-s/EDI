@@ -35,6 +35,15 @@ CRITICAL INSTRUCTIONS:
 4. Extract relationships as simple triples: subject -> predicate -> object.
 5. Accurately classify the speaker_activity. If it's a casual remark ("Can you get coffee?"), label it as 'casual'.
 6. Do NOT invent information.
+
+Intent Guidelines & Few-Shot Examples:
+1. "defining" vs "describing" vs "explaining":
+- "A black hole is a region of spacetime..." -> defining (states what an entity is or gives a formal definition).
+- "The surface of Mars is rocky with canyons." -> describing (characterizes physical traits, appearance, or visual properties).
+- "Water freezes when the temperature drops." -> explaining (describes mechanism, cause/effect, or scientific process).
+2. "casual" vs "questioning":
+- "Hey, can you grab me a cup of coffee?" -> casual (side remark, conversational request, unrelated to visualization topic).
+- "What happens to the energy if the system is closed?" -> questioning (an inquiry or question about the concept).
 """
 
     def extract(self, current_text: str, context_text: str, is_partial: bool) -> tuple[dict, float]:

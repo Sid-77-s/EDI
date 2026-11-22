@@ -48,18 +48,18 @@ class WhisperTranscriber:
         # Audio buffer for the rolling streaming window
         self.audio_buffer = np.array([], dtype=np.float32)
         self.max_window_seconds = 30
-        self.transcribe_interval = 2.0
+        self.transcribe_interval = 0.5
         self.last_transcribe_time = 0.0
 
         # Silence detection
         self.silence_threshold = 0.01
         self.silence_duration = 0.0
-        self.max_silence = 1.0  # seconds of silence before committing buffer
+        self.max_silence = 0.45  # seconds of silence before committing buffer
 
     def transcribe(
         self,
         audio_data: np.ndarray,
-        beam_size: int = 5,
+        beam_size: int = 1,
         initial_prompt: str = None
     ) -> tuple[str, float]:
         """
@@ -173,7 +173,7 @@ class WhisperTranscriber:
     ):
         last_chunk_print = 0.0
         last_diag_print = 0.0
-        min_window_duration = 1.5
+        min_window_duration = 0.6
 
         while self.is_transcribing:
             try:

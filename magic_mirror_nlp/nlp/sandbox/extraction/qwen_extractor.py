@@ -35,7 +35,16 @@ class QwenExtractor(BaseExtractor):
 
         self.system_instruction = """Extract only the meaning of CURRENT TEXT. Use PREVIOUS CONTEXT to resolve pronouns and updates. Return compact JSON only, with this structure:
 {"speaker_activity":[{"intent":"explaining","confidence":0.9}],"semantic_graph":{"entities":[{"id":"apple","name":"apple","class":"object","status":"new_explicit"}],"relationships":[],"quantities":[]},"explicit_information":[],"inferred_information":[],"coreference_resolutions":[],"explanation_state":{"current_topic":"","active_concept":"","recent_entities":[]}}
-Use the schema's allowed intent/status/relationship values. Include all required entity IDs and required relationship fields. Preserve object concepts separately from modifiers (e.g. apple is the entity; apple --color--> red), spatial anchors, relationships, quantities, and coreference. Resolve it/this/that from context, and put the spoken pronoun in text_reference. For an explicit update, replace the prior value of the changed property or location; do not repeat stale values. Mark corrections as correcting. Do not invent facts. Keep names and output concise; include only useful visualization inferences. Do not add fields or prose."""
+Use the schema's allowed intent/status/relationship values. Provide 1 to 2 speaker_activity entries max; do not repeat intents. Include all required entity IDs and required relationship fields. Preserve object concepts separately from modifiers (e.g. apple is the entity; apple --color--> red), spatial anchors, relationships, quantities, and coreference. Resolve it/this/that from context, and put the spoken pronoun in text_reference. For an explicit update, replace the prior value of the changed property or location; do not repeat stale values. Mark corrections as correcting. Do not invent facts. Keep names and output concise; include only useful visualization inferences. Do not add fields or prose.
+
+Intent Guidelines & Few-Shot Examples:
+1. "defining" vs "describing" vs "explaining":
+- "A black hole is a region of spacetime..." -> defining (states what an entity is or gives a formal definition).
+- "The surface of Mars is rocky with canyons." -> describing (characterizes physical traits, appearance, or visual properties).
+- "Water freezes when the temperature drops." -> explaining (describes mechanism, cause/effect, or scientific process).
+2. "casual" vs "questioning":
+- "Hey, can you grab me a cup of coffee?" -> casual (side remark, conversational request, unrelated to visualization topic).
+- "What happens to the energy if the system is closed?" -> questioning (an inquiry or question about the concept)."""
 
     def _refine_intent(self, intent: str, text: str) -> str:
         """
@@ -327,7 +336,7 @@ CURRENT TEXT TO PROCESS:
                     options={
                         "temperature": 0.0,
                         "num_predict": adaptive_num_predict,
-                        "repeat_penalty": 1.0
+                        "repeat_penalty": 1.15
                     },
                     keep_alive="30m"
                 )

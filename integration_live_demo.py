@@ -91,8 +91,11 @@ from integration.generation import (
 )
 from integration.generation.animation_engine import AnimationConfig, AnimationType
 
+from integration.generation.renderer3d import SoftwareRenderer3D
+
 _ASSET_STORE = ConceptAssetStore(asset_dir=_ROOT / "assets")
 _GEN_ENGINE = GenerationEngine(asset_store=_ASSET_STORE, asset_dir=_ROOT / "assets")
+_3D_RENDERER = SoftwareRenderer3D()
 
 # ---------------------------------------------------------------------------
 # Logging
@@ -756,45 +759,91 @@ def _draw_visual_opportunity(
     asset_store: Optional[ConceptAssetStore] = None,
 ) -> None:
     """
-    Renders the yellow VisualOpportunity box with:
-    - proportional image asset if available for the active concept
-    - high-contrast concept label badge
-    - yellow dashed border (always on top)
+    Renders the active visual opportunity:
+    - Real-time 3D polygonal model rendered directly on the frame with turntable rotation if available
+    - Proportional 2D fallback image if only 2D is available
+    - High-contrast concept label badge and dashed framing border
     """
-    if scene_state is None:
+    opp = getattr(scene_state, "visual_opportunity", None) if scene_state else None
+    has_opp = opp is not None and getattr(opp, "available", False)
+
+    # Target bounding box: use detected opportunity bbox, or fallback to center viewport if concept is active
+    if has_opp:
+        target_bbox = opp.bbox
+    elif concept_label:
+        target_bbox = (0.28, 0.18, 0.72, 0.78)
+    else:
         return
-    opp = scene_state.visual_opportunity
-    if opp and opp.available:
-        # Resolve concept: explicit arg > opp.concept_label > None
-        active_concept = concept_label or getattr(opp, "concept_label", None)
 
-        # Fetch matching asset (returns None or ConceptAsset with status info)
-        store = asset_store or _ASSET_STORE
-        asset_started_ns = time.perf_counter_ns()
-        asset = store.get_asset(active_concept) if active_concept else None
-        trace = getattr(_draw_visual_opportunity, "_trace", None)
-        frame_id = getattr(_draw_visual_opportunity, "_frame_id", None)
-        if trace:
-            trace.record("asset_retrieval", started_ns=asset_started_ns,
-                         concept=active_concept or "", frame_id=frame_id)
+    active_concept = concept_label or getattr(opp, "concept_label", None)
+    if not active_concept:
+        return
 
-        # render_box_and_asset handles border, label badge, and 3D model/image all in one pass
-        has_content = asset is not None and (asset.is_valid_image or getattr(asset, "is_3d", False))
-        render_started_ns = time.perf_counter_ns()
+    # Fetch matching asset
+    store = asset_store or _ASSET_STORE
+    asset_started_ns = time.perf_counter_ns()
+    asset = store.get_asset(active_concept)
+    trace = getattr(_draw_visual_opportunity, "_trace", None)
+    frame_id = getattr(_draw_visual_opportunity, "_frame_id", None)
+    if trace:
+        trace.record("asset_retrieval", started_ns=asset_started_ns,
+                     concept=active_concept or "", frame_id=frame_id)
+
+    model_3d = getattr(asset, "model_3d", None) if asset else None
+    has_3d = model_3d is not None
+    has_image = asset is not None and getattr(asset, "is_valid_image", False)
+    has_content = has_3d or has_image
+
+    render_started_ns = time.perf_counter_ns()
+    if has_3d:
+        # 1. Render true 3D model in real time on the video frame with turntable animation
+        current_t = time.monotonic()
+        _3D_RENDERER.render(
+            frame,
+            model_3d,
+            bbox=target_bbox,
+            t=current_t,
+        )
+        # 2. Draw border and high-contrast concept badge
+        x1 = int(round(target_bbox[0] * frame.shape[1]))
+        y1 = int(round(target_bbox[1] * frame.shape[0]))
+        x2 = int(round(target_bbox[2] * frame.shape[1]))
+        y2 = int(round(target_bbox[3] * frame.shape[0]))
+        _draw_dashed_rect(frame, (x1, y1), (x2, y2), _C_BORDER, thickness=2, dash_length=15)
+        display_concept = format_concept_label(active_concept)
+        box_w = max(10, x2 - x1)
+        clipped_label = clip_text_to_width(display_concept, max(30, box_w - 12), scale=_FS_LABEL, thickness=_FT)
+        (tw, th), baseline = cv2.getTextSize(clipped_label, _FONT, _FS_LABEL, _FT)
+        badge_x1 = x1 + 6
+        badge_y1 = max(0, y1 - th - 8)
+        badge_x2 = badge_x1 + tw + 12
+        badge_y2 = y1
+        cv2.rectangle(frame, (badge_x1, badge_y1), (badge_x2, badge_y2), (20, 20, 20), -1)
+        cv2.rectangle(frame, (badge_x1, badge_y1), (badge_x2, badge_y2), _C_BORDER, 1)
+        cv2.putText(frame, clipped_label, (badge_x1 + 6, y1 - 4), _FONT, _FS_LABEL, _C_BORDER, _FT, _LT)
+    elif has_content:
         render_box_and_asset(
             frame,
-            bbox=opp.bbox,
+            bbox=target_bbox,
             concept_label=active_concept,
-            asset=asset if has_content else None,
+            asset=asset,
         )
-        if trace:
-            trace.record("render", started_ns=render_started_ns, frame_id=frame_id)
-            visual_id = getattr(_draw_visual_opportunity, "_active_visual_id", None)
-            corr_id = trace._render_correlation_by_visual.get(visual_id)
-            started_ns = trace.first_render_start(corr_id, visual_id) if has_content else None
-            if started_ns is not None:
-                trace.record("first_visual_render", correlation_id=corr_id, started_ns=started_ns,
-                             visual_id=visual_id, concept=active_concept or "", frame_id=frame_id)
+    elif has_opp:
+        render_box_and_asset(
+            frame,
+            bbox=target_bbox,
+            concept_label=active_concept,
+            asset=None,
+        )
+
+    if trace:
+        trace.record("render", started_ns=render_started_ns, frame_id=frame_id)
+        visual_id = getattr(_draw_visual_opportunity, "_active_visual_id", None)
+        corr_id = trace._render_correlation_by_visual.get(visual_id)
+        started_ns = trace.first_render_start(corr_id, visual_id) if has_content else None
+        if started_ns is not None:
+            trace.record("first_visual_render", correlation_id=corr_id, started_ns=started_ns,
+                         visual_id=visual_id, concept=active_concept or "", frame_id=frame_id)
 
 
 def _draw_integration_hud(frame, transcript, is_partial, intent, intent_conf, entities, plan) -> None:
