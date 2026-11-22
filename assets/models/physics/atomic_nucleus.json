@@ -1,0 +1,29 @@
+{
+  "name": "Atomic Nucleus",
+  "aliases": [
+    "atomic core",
+    "nuclear cluster",
+    "nucleon cluster"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "subatomic",
+  "description": "Dense central core of an atom consisting of tightly bound protons and neutrons held by the strong force.",
+  "distinguishing_features": [
+    "Tightly bound nucleon cluster",
+    "Red protons and grey neutrons",
+    "Strong nuclear force demonstration"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Atomic Nucleus.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_atomic_nucleus",
+  "fileIdentifier": "atomic_nucleus.glb",
+  "statistics": {
+    "triangle_count": 5760,
+    "vertex_count": 2896,
+    "file_size_bytes": 145592
+  }
+}

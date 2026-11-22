@@ -1,0 +1,29 @@
+{
+  "name": "Proton",
+  "aliases": [
+    "p+",
+    "proton particle",
+    "positive nucleon"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "subatomic",
+  "description": "Positively charged subatomic nucleon with distinctive red coloration and positive charge sign.",
+  "distinguishing_features": [
+    "Spherical subatomic nucleon",
+    "Red standard color-coding",
+    "White positive (+) charge marker"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Proton.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_proton",
+  "fileIdentifier": "proton.glb",
+  "statistics": {
+    "triangle_count": 744,
+    "vertex_count": 378,
+    "file_size_bytes": 20940
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Jupiter",
+  "aliases": [
+    "Planet Jupiter",
+    "Gas giant Jupiter",
+    "fifth planet",
+    "king of planets"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "planets",
+  "description": "Largest planet in solar system, prominent atmospheric banding and Great Red Spot anticyclonic storm.",
+  "distinguishing_features": [
+    "Gas giant scale",
+    "Atmospheric cloud bands",
+    "Distinguishable Great Red Spot oval"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Jupiter.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_jupiter",
+  "fileIdentifier": "jupiter.glb",
+  "statistics": {
+    "triangle_count": 1512,
+    "vertex_count": 762,
+    "file_size_bytes": 39536
+  }
+}

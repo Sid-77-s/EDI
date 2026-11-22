@@ -1,0 +1,30 @@
+{
+  "name": "Space Shuttle",
+  "aliases": [
+    "NASA Space Shuttle",
+    "Orbiter",
+    "Spaceplane",
+    "shuttle orbiter"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "space_exploration",
+  "description": "Reusable orbital spacecraft with delta wings, cargo payload bay, and vertical rudder tailfin.",
+  "distinguishing_features": [
+    "Aerodynamic orbiter fuselage",
+    "Delta wing geometry",
+    "Vertical tailfin stabilizer"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Space Shuttle.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_space_shuttle",
+  "fileIdentifier": "space_shuttle.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5788
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Sodium Chloride",
+  "aliases": [
+    "NaCl",
+    "table salt",
+    "salt crystal",
+    "halite crystal"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Face-centered cubic (FCC) ionic crystal lattice of alternating sodium cations and chloride anions.",
+  "distinguishing_features": [
+    "Cubic crystal arrangement",
+    "Purple sodium cations (Na+)",
+    "Larger green chloride anions (Cl-)"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Sodium Chloride.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_sodium_chloride",
+  "fileIdentifier": "sodium_chloride.glb",
+  "statistics": {
+    "triangle_count": 5760,
+    "vertex_count": 2896,
+    "file_size_bytes": 145628
+  }
+}

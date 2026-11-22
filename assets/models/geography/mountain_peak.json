@@ -1,0 +1,30 @@
+{
+  "name": "Mountain Peak",
+  "aliases": [
+    "mountain",
+    "alpine peak",
+    "summit",
+    "snowy mountain"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "landforms",
+  "description": "Prominent elevated landform rising conspicuously above surroundings, with rugged crags and perennial glacial snowcap.",
+  "distinguishing_features": [
+    "Steep conical elevated rocky summit",
+    "High-albedo perennial snow/ice cap",
+    "Rugged alpine terrain silhouette"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Mountain Peak.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_mountain_peak",
+  "fileIdentifier": "mountain_peak.glb",
+  "statistics": {
+    "triangle_count": 128,
+    "vertex_count": 68,
+    "file_size_bytes": 5300
+  }
+}

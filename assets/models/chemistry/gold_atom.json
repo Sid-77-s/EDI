@@ -1,0 +1,30 @@
+{
+  "name": "Gold Atom",
+  "aliases": [
+    "Gold",
+    "Au atom",
+    "aurum",
+    "noble metal gold"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Dense noble metal resistant to oxidation with relativistic electron stabilization.",
+  "distinguishing_features": [
+    "Heavy mass nucleus",
+    "Lustrous golden core",
+    "Five electron shells represented"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Gold Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_gold_atom",
+  "fileIdentifier": "gold_atom.glb",
+  "statistics": {
+    "triangle_count": 35280,
+    "vertex_count": 17736,
+    "file_size_bytes": 892028
+  }
+}

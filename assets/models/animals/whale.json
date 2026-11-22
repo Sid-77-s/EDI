@@ -1,0 +1,30 @@
+{
+  "name": "Whale",
+  "aliases": [
+    "blue whale",
+    "cetacean",
+    "humpback whale",
+    "baleen whale"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "marine_life",
+  "description": "Massive aquatic cetacean mammal with colossal streamlined body and broad horizontal fluke propulsion blades.",
+  "distinguishing_features": [
+    "Massive colossal cetacean fuselage",
+    "Wide horizontal caudal fluke blades",
+    "Ventral throat pleats contour"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Whale.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_whale",
+  "fileIdentifier": "whale.glb",
+  "statistics": {
+    "triangle_count": 732,
+    "vertex_count": 370,
+    "file_size_bytes": 19804
+  }
+}

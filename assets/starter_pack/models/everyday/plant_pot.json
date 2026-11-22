@@ -1,0 +1,30 @@
+{
+  "name": "Plant Pot",
+  "aliases": [
+    "flowerpot",
+    "planter",
+    "indoor plant",
+    "potted plant"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "home_decor",
+  "description": "Container in which flowers and other plants are cultivated and displayed, made of terracotta with soil and shoot.",
+  "distinguishing_features": [
+    "Tapered conical terracotta pottery body",
+    "Dark interior nutrient soil bed surface",
+    "Emerging central photosynthetic green sprout"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Plant Pot.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_plant_pot",
+  "fileIdentifier": "plant_pot.glb",
+  "statistics": {
+    "triangle_count": 216,
+    "vertex_count": 114,
+    "file_size_bytes": 8504
+  }
+}

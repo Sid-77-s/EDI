@@ -1,0 +1,30 @@
+{
+  "name": "Volcano",
+  "aliases": [
+    "active volcano",
+    "stratovolcano",
+    "volcano cone",
+    "caldera"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "volcanology",
+  "description": "Stratovolcano rupture in the crust where molten lava, volcanic ash, and gases escape from a summit caldera crater.",
+  "distinguishing_features": [
+    "Conical basaltic volcanic edifice",
+    "Summit caldera summit crater depression",
+    "Incandescent molten magma/lava vent pool"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Volcano.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_volcano",
+  "fileIdentifier": "volcano.glb",
+  "statistics": {
+    "triangle_count": 144,
+    "vertex_count": 76,
+    "file_size_bytes": 5744
+  }
+}

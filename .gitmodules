@@ -1,0 +1,3 @@
+[submodule "MagicMirror_Visualisation"]
+	path = MagicMirror_Visualisation
+	url = https://github.com/Yash-P29/Magic_Mirror_Visualisation.git

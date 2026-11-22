@@ -1,0 +1,29 @@
+{
+  "name": "Pluto",
+  "aliases": [
+    "Dwarf Planet Pluto",
+    "Pluto dwarf planet",
+    "Kuiper Belt object Pluto"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "dwarf_planets",
+  "description": "Famous dwarf planet in the Kuiper Belt with heart-shaped nitrogen glacier (Tombaugh Regio).",
+  "distinguishing_features": [
+    "Reddish-tan surface",
+    "Bright heart-shaped nitrogen plain (Tombaugh Regio)",
+    "Dwarf planet scale"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Pluto.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_pluto",
+  "fileIdentifier": "pluto.glb",
+  "statistics": {
+    "triangle_count": 1440,
+    "vertex_count": 724,
+    "file_size_bytes": 36672
+  }
+}

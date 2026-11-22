@@ -1,0 +1,29 @@
+{
+  "name": "Titan",
+  "aliases": [
+    "Saturn Moon Titan",
+    "Moon Titan",
+    "Titan moon"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "moons",
+  "description": "Saturn's largest moon, only moon with a substantial nitrogen-rich atmosphere and methane lakes.",
+  "distinguishing_features": [
+    "Dense golden-orange smog layer",
+    "Spherical moon form",
+    "Atmospheric obscuration"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Titan.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_titan",
+  "fileIdentifier": "titan.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 362,
+    "file_size_bytes": 18460
+  }
+}

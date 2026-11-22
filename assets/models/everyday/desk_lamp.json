@@ -1,0 +1,30 @@
+{
+  "name": "Desk Lamp",
+  "aliases": [
+    "table lamp",
+    "task light",
+    "reading lamp",
+    "study light"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "lighting",
+  "description": "Adjustable directional luminaire with weighted circular base, articulated neck column, and conical reflector shade.",
+  "distinguishing_features": [
+    "Stable weighted circular counterbase",
+    "Articulated elevating support gooseneck column",
+    "Conical downward directional reflector hood"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Desk Lamp.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_desk_lamp",
+  "fileIdentifier": "desk_lamp.glb",
+  "statistics": {
+    "triangle_count": 216,
+    "vertex_count": 114,
+    "file_size_bytes": 8432
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Cube",
+  "aliases": [
+    "regular hexahedron",
+    "geometric cube",
+    "3d square"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "geometry",
+  "description": "Platonic solid with six congruent square faces, twelve straight edges, and eight vertices.",
+  "distinguishing_features": [
+    "Six congruent square faces",
+    "Right angles (90 deg) throughout",
+    "Platonic regular hexahedron"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Cube.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_cube",
+  "fileIdentifier": "cube.glb",
+  "statistics": {
+    "triangle_count": 12,
+    "vertex_count": 8,
+    "file_size_bytes": 1436
+  }
+}

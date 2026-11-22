@@ -1,0 +1,29 @@
+{
+  "name": "Neuron",
+  "aliases": [
+    "nerve cell",
+    "brain neuron",
+    "multipolar neuron"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "cellular_biology",
+  "description": "Electrically excitable cell communicating via synapses, with cell body soma, radiating dendrites, and elongated axon.",
+  "distinguishing_features": [
+    "Cell soma with central nucleus",
+    "Branching radiating dendrite tree",
+    "Elongated axon transmission cable"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Neuron.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_neuron",
+  "fileIdentifier": "neuron.glb",
+  "statistics": {
+    "triangle_count": 1080,
+    "vertex_count": 552,
+    "file_size_bytes": 32192
+  }
+}

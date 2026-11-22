@@ -1,0 +1,30 @@
+{
+  "name": "Lion",
+  "aliases": [
+    "panthera leo",
+    "king of beasts",
+    "male lion",
+    "big cat"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Apex feline predator of the savanna with muscular build and prominent magnificent male mane encircling head.",
+  "distinguishing_features": [
+    "Prominent dark masculine facial mane ruff",
+    "Tawny golden coat coloration",
+    "Powerful predatory feline torso"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Lion.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_lion",
+  "fileIdentifier": "lion.glb",
+  "statistics": {
+    "triangle_count": 2448,
+    "vertex_count": 1238,
+    "file_size_bytes": 65584
+  }
+}

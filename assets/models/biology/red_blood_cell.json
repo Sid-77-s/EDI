@@ -1,0 +1,29 @@
+{
+  "name": "Red Blood Cell",
+  "aliases": [
+    "erythrocyte",
+    "RBC",
+    "blood cell"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "cellular_biology",
+  "description": "Biconcave circular disc shaped erythrocyte maximizing surface area for oxygen transport via hemoglobin.",
+  "distinguishing_features": [
+    "Biconcave circular disc profile",
+    "Indented central dimple on both faces",
+    "Vivid crimson erythrocyte color"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Red Blood Cell.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_red_blood_cell",
+  "fileIdentifier": "red_blood_cell.glb",
+  "statistics": {
+    "triangle_count": 1536,
+    "vertex_count": 774,
+    "file_size_bytes": 39836
+  }
+}

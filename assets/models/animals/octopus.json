@@ -1,0 +1,29 @@
+{
+  "name": "Octopus",
+  "aliases": [
+    "octopod",
+    "cephalopod",
+    "eight-armed mollusc"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "marine_life",
+  "description": "Soft-bodied eight-limbed cephalopod mollusc with large bulbous mantle head and radial prehensile tentacles.",
+  "distinguishing_features": [
+    "Bulbous cranial mantle sac",
+    "Eight radial flexible grasping tentacles",
+    "Bilaterally symmetric cephalopod"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Octopus.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_octopus",
+  "fileIdentifier": "octopus.glb",
+  "statistics": {
+    "triangle_count": 1296,
+    "vertex_count": 666,
+    "file_size_bytes": 40168
+  }
+}

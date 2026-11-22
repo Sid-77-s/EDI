@@ -1,0 +1,5030 @@
+{
+  "manifest_version": "2.0.0",
+  "library_name": "Magic Mirror Multimodal Spatial 3D Asset Library",
+  "description": "Comprehensive local-first, low-latency, educationally accurate 3D model library for Magic Mirror.",
+  "build_timestamp": "2026-11-22T17:00:00Z",
+  "license": "CC0-1.0 Universal",
+  "author": "Magic Mirror Spatial AI Team",
+  "total_models": 220,
+  "total_categories": 11,
+  "total_triangles": 442404,
+  "total_vertices": 223366,
+  "total_bytes": 11758756,
+  "build_duration_seconds": 12.03,
+  "categories_summary": {
+    "Astronomy and Space": {
+      "slug": "astronomy",
+      "count": 25
+    },
+    "Chemistry and the Periodic Table": {
+      "slug": "chemistry",
+      "count": 30
+    },
+    "Physics and Mathematics": {
+      "slug": "physics",
+      "count": 20
+    },
+    "Biology and Human Anatomy": {
+      "slug": "biology",
+      "count": 25
+    },
+    "Animals and Wildlife": {
+      "slug": "animals",
+      "count": 20
+    },
+    "Sports Equipment and Balls": {
+      "slug": "sports",
+      "count": 15
+    },
+    "Vehicles and Transportation": {
+      "slug": "vehicles",
+      "count": 20
+    },
+    "Engineering, Machines and Technology": {
+      "slug": "engineering",
+      "count": 15
+    },
+    "Everyday Objects and Furniture": {
+      "slug": "everyday",
+      "count": 25
+    },
+    "Geography, Earth Science and Environment": {
+      "slug": "geography",
+      "count": 15
+    },
+    "History, Architecture and Culture": {
+      "slug": "history",
+      "count": 10
+    }
+  },
+  "models": [
+    {
+      "uid": "mm_astronomy_mercury",
+      "name": "Mercury",
+      "category": "Astronomy and Space",
+      "subcategory": "planets",
+      "file": "astronomy/mercury.glb",
+      "aliases": [
+        "Planet Mercury",
+        "Mercury planet",
+        "first planet"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18444,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cratered surface",
+        "Terrestrial rocky sphere",
+        "Dark grey appearance"
+      ],
+      "description": "Smallest terrestrial planet, cratered grey surface with high iron core."
+    },
+    {
+      "uid": "mm_astronomy_venus",
+      "name": "Venus",
+      "category": "Astronomy and Space",
+      "subcategory": "planets",
+      "file": "astronomy/venus.glb",
+      "aliases": [
+        "Planet Venus",
+        "Venus planet",
+        "morning star"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18448,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Dense cloud atmosphere",
+        "Warm yellowish-cream hue",
+        "Spherical planetary form"
+      ],
+      "description": "Second planet from Sun, shrouded in thick yellowish-white sulfuric acid clouds."
+    },
+    {
+      "uid": "mm_astronomy_earth",
+      "name": "Earth",
+      "category": "Astronomy and Space",
+      "subcategory": "planets",
+      "file": "astronomy/earth.glb",
+      "aliases": [
+        "Planet Earth",
+        "The Earth",
+        "Blue planet",
+        "world globe"
+      ],
+      "triangles": 2160,
+      "vertices": 1086,
+      "size_bytes": 55012,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Blue ocean base",
+        "Green continental landmasses",
+        "White polar ice cap"
+      ],
+      "description": "Third planet from Sun, ocean world with continents and polar ice caps."
+    },
+    {
+      "uid": "mm_astronomy_mars",
+      "name": "Mars",
+      "category": "Astronomy and Space",
+      "subcategory": "planets",
+      "file": "astronomy/mars.glb",
+      "aliases": [
+        "Planet Mars",
+        "Red planet",
+        "fourth planet"
+      ],
+      "triangles": 1440,
+      "vertices": 724,
+      "size_bytes": 36740,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Rusty red-orange surface",
+        "White northern polar cap",
+        "Rocky desert terrain"
+      ],
+      "description": "Fourth planet, iron-oxide rich red surface and bright white carbon-dioxide/water ice cap."
+    },
+    {
+      "uid": "mm_astronomy_jupiter",
+      "name": "Jupiter",
+      "category": "Astronomy and Space",
+      "subcategory": "planets",
+      "file": "astronomy/jupiter.glb",
+      "aliases": [
+        "Planet Jupiter",
+        "Gas giant Jupiter",
+        "fifth planet",
+        "king of planets"
+      ],
+      "triangles": 1512,
+      "vertices": 762,
+      "size_bytes": 39536,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Gas giant scale",
+        "Atmospheric cloud bands",
+        "Distinguishable Great Red Spot oval"
+      ],
+      "description": "Largest planet in solar system, prominent atmospheric banding and Great Red Spot anticyclonic storm."
+    },
+    {
+      "uid": "mm_astronomy_saturn",
+      "name": "Saturn",
+      "category": "Astronomy and Space",
+      "subcategory": "planets",
+      "file": "astronomy/saturn.glb",
+      "aliases": [
+        "Planet Saturn",
+        "Ringed planet",
+        "sixth planet"
+      ],
+      "triangles": 912,
+      "vertices": 458,
+      "size_bytes": 24036,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Gas giant body",
+        "Prominent concentric ring disc",
+        "Tilted orbital ring plane"
+      ],
+      "description": "Second largest planet, distinguished by its magnificent, highly reflective icy ring system."
+    },
+    {
+      "uid": "mm_astronomy_uranus",
+      "name": "Uranus",
+      "category": "Astronomy and Space",
+      "subcategory": "planets",
+      "file": "astronomy/uranus.glb",
+      "aliases": [
+        "Planet Uranus",
+        "Ice giant Uranus",
+        "seventh planet"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18464,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Pale cyan-aquamarine colour",
+        "Ice giant sphere",
+        "Methane absorption tint"
+      ],
+      "description": "Ice giant composed of water, ammonia, and methane ices with featureless cyan-blue appearance."
+    },
+    {
+      "uid": "mm_astronomy_neptune",
+      "name": "Neptune",
+      "category": "Astronomy and Space",
+      "subcategory": "planets",
+      "file": "astronomy/neptune.glb",
+      "aliases": [
+        "Planet Neptune",
+        "Eighth planet",
+        "deep blue planet"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18456,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Vivid deep azure blue colour",
+        "Ice giant spherical form",
+        "Atmospheric haze depth"
+      ],
+      "description": "Outermost major planet, intense deep azure blue atmosphere shaped by supersonic winds."
+    },
+    {
+      "uid": "mm_astronomy_sun",
+      "name": "Sun",
+      "category": "Astronomy and Space",
+      "subcategory": "celestial_bodies",
+      "file": "astronomy/sun.glb",
+      "aliases": [
+        "The Sun",
+        "Solar star",
+        "Sol",
+        "our star"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18436,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Large central sphere",
+        "Radiant golden-yellow surface",
+        "Stellar scale"
+      ],
+      "description": "G-type main-sequence star at the center of the solar system, radiating heat and light."
+    },
+    {
+      "uid": "mm_astronomy_moon",
+      "name": "Moon",
+      "category": "Astronomy and Space",
+      "subcategory": "moons",
+      "file": "astronomy/moon.glb",
+      "aliases": [
+        "Earth Moon",
+        "The Moon",
+        "Luna",
+        "Earth's moon"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18452,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Light grey regolith",
+        "Spherical natural satellite",
+        "Cratered body representation"
+      ],
+      "description": "Earth's sole natural satellite, airless world with cratered highlands and basaltic maria."
+    },
+    {
+      "uid": "mm_astronomy_europa",
+      "name": "Europa",
+      "category": "Astronomy and Space",
+      "subcategory": "moons",
+      "file": "astronomy/europa.glb",
+      "aliases": [
+        "Jupiter Moon Europa",
+        "Moon Europa",
+        "Jovian moon Europa"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18448,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Bright reflective water-ice crust",
+        "Slight brownish fracture markings",
+        "Spherical moon form"
+      ],
+      "description": "Icy Jovian moon harboring a subsurface liquid water ocean beneath a fractured ice crust."
+    },
+    {
+      "uid": "mm_astronomy_titan",
+      "name": "Titan",
+      "category": "Astronomy and Space",
+      "subcategory": "moons",
+      "file": "astronomy/titan.glb",
+      "aliases": [
+        "Saturn Moon Titan",
+        "Moon Titan",
+        "Titan moon"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18460,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Dense golden-orange smog layer",
+        "Spherical moon form",
+        "Atmospheric obscuration"
+      ],
+      "description": "Saturn's largest moon, only moon with a substantial nitrogen-rich atmosphere and methane lakes."
+    },
+    {
+      "uid": "mm_astronomy_ganymede",
+      "name": "Ganymede",
+      "category": "Astronomy and Space",
+      "subcategory": "moons",
+      "file": "astronomy/ganymede.glb",
+      "aliases": [
+        "Jupiter Moon Ganymede",
+        "Moon Ganymede",
+        "largest moon"
+      ],
+      "triangles": 720,
+      "vertices": 362,
+      "size_bytes": 18456,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Dark and light grooved terrain",
+        "Large Jovian moon scale",
+        "Rocky-ice surface"
+      ],
+      "description": "Largest moon in the Solar System, larger than Mercury, grooved icy-rock terrain."
+    },
+    {
+      "uid": "mm_astronomy_pluto",
+      "name": "Pluto",
+      "category": "Astronomy and Space",
+      "subcategory": "dwarf_planets",
+      "file": "astronomy/pluto.glb",
+      "aliases": [
+        "Dwarf Planet Pluto",
+        "Pluto dwarf planet",
+        "Kuiper Belt object Pluto"
+      ],
+      "triangles": 1440,
+      "vertices": 724,
+      "size_bytes": 36672,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Reddish-tan surface",
+        "Bright heart-shaped nitrogen plain (Tombaugh Regio)",
+        "Dwarf planet scale"
+      ],
+      "description": "Famous dwarf planet in the Kuiper Belt with heart-shaped nitrogen glacier (Tombaugh Regio)."
+    },
+    {
+      "uid": "mm_astronomy_asteroid",
+      "name": "Asteroid",
+      "category": "Astronomy and Space",
+      "subcategory": "small_bodies",
+      "file": "astronomy/asteroid.glb",
+      "aliases": [
+        "Space asteroid",
+        "space rock",
+        "Ceres asteroid",
+        "minor planet"
+      ],
+      "triangles": 252,
+      "vertices": 128,
+      "size_bytes": 7248,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Non-spherical tumbling shape",
+        "Cratered rocky facets",
+        "Dark stony-carbonaceous surface"
+      ],
+      "description": "Irregular rocky remnant from the early solar system, lacking sufficient gravity to form a sphere."
+    },
+    {
+      "uid": "mm_astronomy_comet",
+      "name": "Comet",
+      "category": "Astronomy and Space",
+      "subcategory": "small_bodies",
+      "file": "astronomy/comet.glb",
+      "aliases": [
+        "Halley's Comet",
+        "ice comet",
+        "dirty snowball",
+        "comet with tail"
+      ],
+      "triangles": 1512,
+      "vertices": 762,
+      "size_bytes": 39432,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Dark icy nucleus",
+        "Luminous gas coma",
+        "Elongated dust and ion tail streamer"
+      ],
+      "description": "Small Solar System body composed of ice, dust and rock with a glowing coma and extended dust tail."
+    },
+    {
+      "uid": "mm_astronomy_meteorite",
+      "name": "Meteorite",
+      "category": "Astronomy and Space",
+      "subcategory": "small_bodies",
+      "file": "astronomy/meteorite.glb",
+      "aliases": [
+        "Fallen meteorite",
+        "meteorite rock",
+        "stony-iron meteorite",
+        "space fragment"
+      ],
+      "triangles": 12,
+      "vertices": 8,
+      "size_bytes": 1512,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Dark fusion-crust exterior",
+        "Irregular fractured facets",
+        "Metallic sheen"
+      ],
+      "description": "Extraterrestrial rock specimen that survived transit through Earth's atmosphere to reach the ground."
+    },
+    {
+      "uid": "mm_astronomy_black_hole",
+      "name": "Black Hole",
+      "category": "Astronomy and Space",
+      "subcategory": "astronomical_phenomena",
+      "file": "astronomy/black_hole.glb",
+      "aliases": [
+        "Singularity",
+        "Supermassive black hole",
+        "stellar black hole",
+        "event horizon"
+      ],
+      "triangles": 864,
+      "vertices": 434,
+      "size_bytes": 22868,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central black event horizon",
+        "Glowing incandescent accretion disk",
+        "Relativistic visual silhouette"
+      ],
+      "description": "Educational visualization of a black hole showing the central event horizon and glowing swirling accretion disk."
+    },
+    {
+      "uid": "mm_astronomy_solar_system",
+      "name": "Solar System",
+      "category": "Astronomy and Space",
+      "subcategory": "astronomical_systems",
+      "file": "astronomy/solar_system.glb",
+      "aliases": [
+        "Our solar system",
+        "heliocentric system",
+        "planetary system"
+      ],
+      "triangles": 4112,
+      "vertices": 2066,
+      "size_bytes": 106880,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central luminous Sun",
+        "Concentric orbital boundary rings",
+        "Multiple distinct orbiting planetary bodies"
+      ],
+      "description": "Overview model showing the central Sun, concentric orbital tracks, and orbiting terrestrial planets."
+    },
+    {
+      "uid": "mm_astronomy_space_rocket",
+      "name": "Space Rocket",
+      "category": "Astronomy and Space",
+      "subcategory": "space_exploration",
+      "file": "astronomy/space_rocket.glb",
+      "aliases": [
+        "Rocket",
+        "Launch vehicle",
+        "Moon rocket",
+        "Saturn V rocket",
+        "Falcon rocket"
+      ],
+      "triangles": 168,
+      "vertices": 92,
+      "size_bytes": 8300,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical booster fuselage",
+        "Aerodynamic nose fairing",
+        "Cruciform stabilizing launch fins"
+      ],
+      "description": "Multistage space launch vehicle with cylindrical body, aerodynamic nose cone fairing, and stabilization fins."
+    },
+    {
+      "uid": "mm_astronomy_space_shuttle",
+      "name": "Space Shuttle",
+      "category": "Astronomy and Space",
+      "subcategory": "space_exploration",
+      "file": "astronomy/space_shuttle.glb",
+      "aliases": [
+        "NASA Space Shuttle",
+        "Orbiter",
+        "Spaceplane",
+        "shuttle orbiter"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5788,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Aerodynamic orbiter fuselage",
+        "Delta wing geometry",
+        "Vertical tailfin stabilizer"
+      ],
+      "description": "Reusable orbital spacecraft with delta wings, cargo payload bay, and vertical rudder tailfin."
+    },
+    {
+      "uid": "mm_astronomy_satellite",
+      "name": "Satellite",
+      "category": "Astronomy and Space",
+      "subcategory": "space_exploration",
+      "file": "astronomy/satellite.glb",
+      "aliases": [
+        "Communications satellite",
+        "orbital satellite",
+        "weather satellite",
+        "space probe"
+      ],
+      "triangles": 108,
+      "vertices": 62,
+      "size_bytes": 6884,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central instrument bus body",
+        "Dual lateral solar panel wings",
+        "Communication parabolic dish"
+      ],
+      "description": "Orbital satellite featuring instrument payload bus, dual deployable solar cell arrays, and high-gain dish antenna."
+    },
+    {
+      "uid": "mm_astronomy_space_station",
+      "name": "Space Station",
+      "category": "Astronomy and Space",
+      "subcategory": "space_exploration",
+      "file": "astronomy/space_station.glb",
+      "aliases": [
+        "International Space Station",
+        "ISS",
+        "orbital station",
+        "space outpost"
+      ],
+      "triangles": 108,
+      "vertices": 62,
+      "size_bytes": 6916,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Habitation module core",
+        "Long structural support truss",
+        "Twin high-capacity solar wing arrays"
+      ],
+      "description": "Modular orbital research laboratory with pressurized living habitats, structural truss, and massive solar power arrays."
+    },
+    {
+      "uid": "mm_astronomy_mars_rover",
+      "name": "Mars Rover",
+      "category": "Astronomy and Space",
+      "subcategory": "space_exploration",
+      "file": "astronomy/mars_rover.glb",
+      "aliases": [
+        "Curiosity rover",
+        "Perseverance rover",
+        "robotic rover",
+        "Mars exploration rover"
+      ],
+      "triangles": 384,
+      "vertices": 206,
+      "size_bytes": 16696,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Rectangular electronics chassis",
+        "Articulated mast camera (Mastcam)",
+        "Rugged planetary rover wheels"
+      ],
+      "description": "Robotic exploratory vehicle equipped with instrument chassis, high mast camera, and rugged all-terrain wheels."
+    },
+    {
+      "uid": "mm_astronomy_space_telescope",
+      "name": "Space Telescope",
+      "category": "Astronomy and Space",
+      "subcategory": "space_exploration",
+      "file": "astronomy/space_telescope.glb",
+      "aliases": [
+        "Hubble space telescope",
+        "James Webb space telescope",
+        "orbital telescope",
+        "astronomical observatory"
+      ],
+      "triangles": 156,
+      "vertices": 84,
+      "size_bytes": 7272,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical optical baffle barrel",
+        "Reflective optical aperture mirror",
+        "Broad planar thermal sunshield"
+      ],
+      "description": "Space-borne astronomical observatory with light baffle barrel, optical mirror, and protective sunshield."
+    },
+    {
+      "uid": "mm_chemistry_hydrogen_atom",
+      "name": "Hydrogen Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/hydrogen_atom.glb",
+      "aliases": [
+        "Hydrogen",
+        "H atom",
+        "Bohr hydrogen model"
+      ],
+      "triangles": 1584,
+      "vertices": 796,
+      "size_bytes": 41064,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central proton nucleus",
+        "Single K-shell orbit",
+        "One valence electron"
+      ],
+      "description": "Simplest chemical element consisting of 1 proton nucleus orbited by 1 electron."
+    },
+    {
+      "uid": "mm_chemistry_helium_atom",
+      "name": "Helium Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/helium_atom.glb",
+      "aliases": [
+        "Helium",
+        "He atom",
+        "Bohr helium model",
+        "noble gas helium"
+      ],
+      "triangles": 2304,
+      "vertices": 1158,
+      "size_bytes": 59184,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Two-proton nucleus",
+        "Stable filled K-shell",
+        "Two paired orbital electrons"
+      ],
+      "description": "Noble gas element with full valence K-shell containing 2 electrons."
+    },
+    {
+      "uid": "mm_chemistry_lithium_atom",
+      "name": "Lithium Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/lithium_atom.glb",
+      "aliases": [
+        "Lithium",
+        "Li atom",
+        "alkali metal lithium"
+      ],
+      "triangles": 3168,
+      "vertices": 1592,
+      "size_bytes": 81448,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Nucleus with 3 protons",
+        "Inner filled K-shell (2 e-)",
+        "Single outer L-shell valence electron (1 e-)"
+      ],
+      "description": "Lightest alkali metal with 2 core electrons and 1 reactive valence electron in L shell."
+    },
+    {
+      "uid": "mm_chemistry_carbon_atom",
+      "name": "Carbon Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/carbon_atom.glb",
+      "aliases": [
+        "Carbon",
+        "C atom",
+        "Bohr carbon model"
+      ],
+      "triangles": 5328,
+      "vertices": 2678,
+      "size_bytes": 135860,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Carbon nucleus",
+        "Inner shell with 2 electrons",
+        "Outer valence shell with 4 electrons"
+      ],
+      "description": "Fundamental tetravalent element of organic chemistry with 4 valence electrons in L shell."
+    },
+    {
+      "uid": "mm_chemistry_nitrogen_atom",
+      "name": "Nitrogen Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/nitrogen_atom.glb",
+      "aliases": [
+        "Nitrogen",
+        "N atom",
+        "Bohr nitrogen model"
+      ],
+      "triangles": 6048,
+      "vertices": 3040,
+      "size_bytes": 153988,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Seven-proton nucleus",
+        "Inner shell with 2 electrons",
+        "Outer valence shell with 5 electrons"
+      ],
+      "description": "Pnictogen element forming 78% of Earth's atmosphere with 5 valence electrons."
+    },
+    {
+      "uid": "mm_chemistry_oxygen_atom",
+      "name": "Oxygen Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/oxygen_atom.glb",
+      "aliases": [
+        "Oxygen",
+        "O atom",
+        "atomic oxygen",
+        "Bohr oxygen model"
+      ],
+      "triangles": 6768,
+      "vertices": 3402,
+      "size_bytes": 172128,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Eight-proton nucleus",
+        "Inner shell with 2 electrons",
+        "Outer shell with 6 valence electrons"
+      ],
+      "description": "Chalcogen element with 8 protons and 6 valence electrons; distinct from diatomic oxygen molecule O2."
+    },
+    {
+      "uid": "mm_chemistry_sodium_atom",
+      "name": "Sodium Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/sodium_atom.glb",
+      "aliases": [
+        "Sodium",
+        "Na atom",
+        "alkali metal sodium"
+      ],
+      "triangles": 9072,
+      "vertices": 4560,
+      "size_bytes": 230676,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Three concentric electron shells",
+        "Filled K (2) and L (8) shells",
+        "Single reactive M-shell electron"
+      ],
+      "description": "Highly reactive alkali metal with a single valence electron in the M shell."
+    },
+    {
+      "uid": "mm_chemistry_chlorine_atom",
+      "name": "Chlorine Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/chlorine_atom.glb",
+      "aliases": [
+        "Chlorine",
+        "Cl atom",
+        "halogen chlorine"
+      ],
+      "triangles": 13392,
+      "vertices": 6732,
+      "size_bytes": 339496,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Three electron shells",
+        "Seven valence electrons in M shell",
+        "Greenish halogen identity"
+      ],
+      "description": "Halogen element requiring 1 electron to complete its outer octet shell."
+    },
+    {
+      "uid": "mm_chemistry_iron_atom",
+      "name": "Iron Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/iron_atom.glb",
+      "aliases": [
+        "Iron",
+        "Fe atom",
+        "transition metal iron",
+        "ferrum"
+      ],
+      "triangles": 20016,
+      "vertices": 10062,
+      "size_bytes": 506884,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Dense transition metal nucleus",
+        "Four distinct electron shells",
+        "Partially filled d-subshell"
+      ],
+      "description": "Transition metal element central to planetary cores, metallurgy, and hemoglobin."
+    },
+    {
+      "uid": "mm_chemistry_gold_atom",
+      "name": "Gold Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/gold_atom.glb",
+      "aliases": [
+        "Gold",
+        "Au atom",
+        "aurum",
+        "noble metal gold"
+      ],
+      "triangles": 35280,
+      "vertices": 17736,
+      "size_bytes": 892028,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Heavy mass nucleus",
+        "Lustrous golden core",
+        "Five electron shells represented"
+      ],
+      "description": "Dense noble metal resistant to oxidation with relativistic electron stabilization."
+    },
+    {
+      "uid": "mm_chemistry_copper_atom",
+      "name": "Copper Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/copper_atom.glb",
+      "aliases": [
+        "Copper",
+        "Cu atom",
+        "cuprum"
+      ],
+      "triangles": 22176,
+      "vertices": 11148,
+      "size_bytes": 561296,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Reddish-bronze nucleus",
+        "Four electron shells",
+        "Single valence conduction electron"
+      ],
+      "description": "High electrical conductivity transition metal with filled 3d subshell and 1 4s electron."
+    },
+    {
+      "uid": "mm_chemistry_silicon_atom",
+      "name": "Silicon Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/silicon_atom.glb",
+      "aliases": [
+        "Silicon",
+        "Si atom",
+        "semiconductor silicon"
+      ],
+      "triangles": 11232,
+      "vertices": 5646,
+      "size_bytes": 285096,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Four valence electrons",
+        "Three concentric shells",
+        "Tetravalent bonding potential"
+      ],
+      "description": "Semiconductor metalloid forming the foundation of modern computer microelectronics."
+    },
+    {
+      "uid": "mm_chemistry_sulfur_atom",
+      "name": "Sulfur Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/sulfur_atom.glb",
+      "aliases": [
+        "Sulfur",
+        "S atom",
+        "brimstone"
+      ],
+      "triangles": 12672,
+      "vertices": 6370,
+      "size_bytes": 321360,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Bright yellow elemental nucleus",
+        "Six valence electrons",
+        "Three electron shells"
+      ],
+      "description": "Non-metal element essential to proteins and disulfide cross-links."
+    },
+    {
+      "uid": "mm_chemistry_uranium_atom",
+      "name": "Uranium Atom",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "elements_and_atoms",
+      "file": "chemistry/uranium_atom.glb",
+      "aliases": [
+        "Uranium",
+        "U atom",
+        "actinide uranium"
+      ],
+      "triangles": 42624,
+      "vertices": 21428,
+      "size_bytes": 1077576,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Massive actinide nucleus",
+        "Six electron shell levels",
+        "Heavy radioisotope representation"
+      ],
+      "description": "Dense actinide element with 92 protons, naturally occurring fissile isotope U-235."
+    },
+    {
+      "uid": "mm_chemistry_water_molecule",
+      "name": "Water Molecule",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/water_molecule.glb",
+      "aliases": [
+        "Water",
+        "H2O",
+        "H2O molecule",
+        "water chemical structure"
+      ],
+      "triangles": 2304,
+      "vertices": 1162,
+      "size_bytes": 60256,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central red oxygen atom",
+        "Two white hydrogen atoms",
+        "Characteristic 104.5 degree bent bond angle"
+      ],
+      "description": "Polar molecule consisting of 1 oxygen atom bonded to 2 hydrogen atoms at a 104.5 degree bent angle."
+    },
+    {
+      "uid": "mm_chemistry_carbon_dioxide",
+      "name": "Carbon Dioxide",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/carbon_dioxide.glb",
+      "aliases": [
+        "CO2",
+        "CO2 molecule",
+        "carbon dioxide gas"
+      ],
+      "triangles": 2304,
+      "vertices": 1162,
+      "size_bytes": 60364,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central black carbon atom",
+        "Two opposing red oxygen atoms",
+        "Linear 180-degree bond geometry"
+      ],
+      "description": "Linear nonpolar molecule composed of a central carbon atom double-bonded to two flanking oxygen atoms."
+    },
+    {
+      "uid": "mm_chemistry_oxygen_molecule",
+      "name": "Oxygen Molecule",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/oxygen_molecule.glb",
+      "aliases": [
+        "O2",
+        "O2 molecule",
+        "dioxygen",
+        "molecular oxygen"
+      ],
+      "triangles": 1512,
+      "vertices": 762,
+      "size_bytes": 39452,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Two identical red oxygen atoms",
+        "Covalent double-bond bridge",
+        "Diatomic molecular symmetry"
+      ],
+      "description": "Diatomic oxygen gas (O2) comprising two covalently bonded oxygen atoms; distinct from atomic oxygen."
+    },
+    {
+      "uid": "mm_chemistry_nitrogen_molecule",
+      "name": "Nitrogen Molecule",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/nitrogen_molecule.glb",
+      "aliases": [
+        "N2",
+        "N2 molecule",
+        "dinitrogen",
+        "molecular nitrogen"
+      ],
+      "triangles": 1512,
+      "vertices": 762,
+      "size_bytes": 39432,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Two blue nitrogen atoms",
+        "Covalent triple bond cylinder",
+        "Diatomic molecule"
+      ],
+      "description": "Diatomic nitrogen molecule held together by an exceptionally strong covalent triple bond."
+    },
+    {
+      "uid": "mm_chemistry_hydrogen_molecule",
+      "name": "Hydrogen Molecule",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/hydrogen_molecule.glb",
+      "aliases": [
+        "H2",
+        "H2 molecule",
+        "dihydrogen",
+        "molecular hydrogen"
+      ],
+      "triangles": 1512,
+      "vertices": 762,
+      "size_bytes": 39424,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Two white hydrogen atoms",
+        "Single covalent bond",
+        "Smallest diatomic molecule"
+      ],
+      "description": "Lightest molecule in the universe, consisting of two hydrogen atoms sharing a single covalent bond."
+    },
+    {
+      "uid": "mm_chemistry_methane",
+      "name": "Methane",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/methane.glb",
+      "aliases": [
+        "CH4",
+        "CH4 molecule",
+        "natural gas methane"
+      ],
+      "triangles": 3888,
+      "vertices": 1962,
+      "size_bytes": 101624,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central black carbon atom",
+        "Four white hydrogen ligands",
+        "Regular tetrahedral geometry"
+      ],
+      "description": "Simplest alkane hydrocarbon with tetrahedral symmetry (109.5 degree bond angles)."
+    },
+    {
+      "uid": "mm_chemistry_ammonia",
+      "name": "Ammonia",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/ammonia.glb",
+      "aliases": [
+        "NH3",
+        "NH3 molecule",
+        "ammonia chemical structure"
+      ],
+      "triangles": 3096,
+      "vertices": 1562,
+      "size_bytes": 81032,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central blue nitrogen atom",
+        "Three white hydrogen base atoms",
+        "Trigonal pyramidal geometry"
+      ],
+      "description": "Inorganic nitrogen hydride with trigonal pyramidal geometry and a lone electron pair at the apex."
+    },
+    {
+      "uid": "mm_chemistry_sodium_chloride",
+      "name": "Sodium Chloride",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/sodium_chloride.glb",
+      "aliases": [
+        "NaCl",
+        "table salt",
+        "salt crystal",
+        "halite crystal"
+      ],
+      "triangles": 5760,
+      "vertices": 2896,
+      "size_bytes": 145628,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cubic crystal arrangement",
+        "Purple sodium cations (Na+)",
+        "Larger green chloride anions (Cl-)"
+      ],
+      "description": "Face-centered cubic (FCC) ionic crystal lattice of alternating sodium cations and chloride anions."
+    },
+    {
+      "uid": "mm_chemistry_glucose",
+      "name": "Glucose",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/glucose.glb",
+      "aliases": [
+        "C6H12O6",
+        "blood sugar",
+        "dextrose",
+        "glucose molecule"
+      ],
+      "triangles": 4320,
+      "vertices": 2172,
+      "size_bytes": 109344,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Six-membered pyranose chair ring",
+        "Red ring oxygen heteroatom",
+        "Hydrocarbon ring scaffold"
+      ],
+      "description": "Primary biological monosaccharide energy source with six-membered pyranose ring backbone."
+    },
+    {
+      "uid": "mm_chemistry_ethanol",
+      "name": "Ethanol",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/ethanol.glb",
+      "aliases": [
+        "C2H5OH",
+        "ethyl alcohol",
+        "grain alcohol",
+        "alcohol molecule"
+      ],
+      "triangles": 2880,
+      "vertices": 1448,
+      "size_bytes": 73168,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Two-carbon alkane chain",
+        "Red hydroxyl oxygen atom",
+        "White terminal hydrogen"
+      ],
+      "description": "Two-carbon primary alcohol with an ethyl group connected to a terminal hydroxyl group."
+    },
+    {
+      "uid": "mm_chemistry_dna_double_helix",
+      "name": "DNA Double Helix",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "molecules",
+      "file": "chemistry/dna_double_helix.glb",
+      "aliases": [
+        "DNA",
+        "deoxyribonucleic acid",
+        "DNA molecule",
+        "double helix"
+      ],
+      "triangles": 47232,
+      "vertices": 23776,
+      "size_bytes": 1205540,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Dual intertwined helical strands",
+        "Antiparallel right-handed spiral",
+        "Horizontal base-pair rungs (A-T, G-C)"
+      ],
+      "description": "Biological macromolecule storing genetic instructions in two intertwined helical strands connected by base-pair rungs."
+    },
+    {
+      "uid": "mm_chemistry_chemistry_beaker",
+      "name": "Chemistry Beaker",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "chemistry_equipment",
+      "file": "chemistry/chemistry_beaker.glb",
+      "aliases": [
+        "Beaker",
+        "glass beaker",
+        "laboratory beaker",
+        "lab beaker"
+      ],
+      "triangles": 144,
+      "vertices": 76,
+      "size_bytes": 5732,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical transparent glass vessel",
+        "Flat stable base",
+        "Colored solution liquid interior"
+      ],
+      "description": "Standard laboratory glassware container for stirring, mixing and heating chemical liquids."
+    },
+    {
+      "uid": "mm_chemistry_erlenmeyer_flask",
+      "name": "Erlenmeyer Flask",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "chemistry_equipment",
+      "file": "chemistry/erlenmeyer_flask.glb",
+      "aliases": [
+        "Conical flask",
+        "titration flask",
+        "science flask",
+        "lab flask"
+      ],
+      "triangles": 144,
+      "vertices": 76,
+      "size_bytes": 5624,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Conical glassware body",
+        "Narrow cylindrical neck",
+        "Transparent glass material"
+      ],
+      "description": "Conical laboratory flask with wide flat base and narrow neck for swirling liquids without splashing."
+    },
+    {
+      "uid": "mm_chemistry_test_tube",
+      "name": "Test Tube",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "chemistry_equipment",
+      "file": "chemistry/test_tube.glb",
+      "aliases": [
+        "Laboratory test tube",
+        "glass test tube",
+        "culture tube",
+        "chemical test tube"
+      ],
+      "triangles": 864,
+      "vertices": 438,
+      "size_bytes": 24044,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical glass body",
+        "Rounded hemispherical bottom",
+        "Colored chemical liquid reagent"
+      ],
+      "description": "Slender cylindrical glass container with rounded U-shaped hemispherical bottom for chemical tests."
+    },
+    {
+      "uid": "mm_chemistry_bunsen_burner",
+      "name": "Bunsen Burner",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "chemistry_equipment",
+      "file": "chemistry/bunsen_burner.glb",
+      "aliases": [
+        "Lab burner",
+        "gas burner",
+        "laboratory flame"
+      ],
+      "triangles": 288,
+      "vertices": 152,
+      "size_bytes": 11320,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Heavy cast iron base",
+        "Vertical metal barrel tube",
+        "Adjustable air collar and cone flame"
+      ],
+      "description": "Laboratory gas burner producing a single open gas flame for heating and sterilization."
+    },
+    {
+      "uid": "mm_chemistry_pipette",
+      "name": "Pipette",
+      "category": "Chemistry and the Periodic Table",
+      "subcategory": "chemistry_equipment",
+      "file": "chemistry/pipette.glb",
+      "aliases": [
+        "Eye dropper",
+        "dropper pipette",
+        "laboratory pipette",
+        "transfer pipette"
+      ],
+      "triangles": 864,
+      "vertices": 438,
+      "size_bytes": 23920,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Narrow dispensing glass stem",
+        "Tapered delivery tip",
+        "Flexible rubber suction bulb"
+      ],
+      "description": "Precision laboratory liquid measurement tool featuring a narrow graduated glass stem and rubber suction bulb."
+    },
+    {
+      "uid": "mm_physics_proton",
+      "name": "Proton",
+      "category": "Physics and Mathematics",
+      "subcategory": "subatomic",
+      "file": "physics/proton.glb",
+      "aliases": [
+        "p+",
+        "proton particle",
+        "positive nucleon"
+      ],
+      "triangles": 744,
+      "vertices": 378,
+      "size_bytes": 20940,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Spherical subatomic nucleon",
+        "Red standard color-coding",
+        "White positive (+) charge marker"
+      ],
+      "description": "Positively charged subatomic nucleon with distinctive red coloration and positive charge sign."
+    },
+    {
+      "uid": "mm_physics_neutron",
+      "name": "Neutron",
+      "category": "Physics and Mathematics",
+      "subcategory": "subatomic",
+      "file": "physics/neutron.glb",
+      "aliases": [
+        "n0",
+        "neutron particle",
+        "neutral nucleon"
+      ],
+      "triangles": 1296,
+      "vertices": 650,
+      "size_bytes": 33232,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Spherical neutral nucleon",
+        "Grey neutral color-coding",
+        "Distinct zero-charge equatorial guide"
+      ],
+      "description": "Electrically neutral hadron found in atomic nuclei, composed of two down quarks and one up quark."
+    },
+    {
+      "uid": "mm_physics_electron",
+      "name": "Electron",
+      "category": "Physics and Mathematics",
+      "subcategory": "subatomic",
+      "file": "physics/electron.glb",
+      "aliases": [
+        "e-",
+        "beta particle",
+        "elementary lepton"
+      ],
+      "triangles": 732,
+      "vertices": 370,
+      "size_bytes": 19836,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Compact elementary particle radius",
+        "Electric blue color-coding",
+        "White negative (-) charge bar"
+      ],
+      "description": "Subatomic elementary particle with negative elementary electric charge, represented as small blue sphere with minus marker."
+    },
+    {
+      "uid": "mm_physics_atomic_nucleus",
+      "name": "Atomic Nucleus",
+      "category": "Physics and Mathematics",
+      "subcategory": "subatomic",
+      "file": "physics/atomic_nucleus.glb",
+      "aliases": [
+        "atomic core",
+        "nuclear cluster",
+        "nucleon cluster"
+      ],
+      "triangles": 5760,
+      "vertices": 2896,
+      "size_bytes": 145592,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Tightly bound nucleon cluster",
+        "Red protons and grey neutrons",
+        "Strong nuclear force demonstration"
+      ],
+      "description": "Dense central core of an atom consisting of tightly bound protons and neutrons held by the strong force."
+    },
+    {
+      "uid": "mm_physics_bar_magnet",
+      "name": "Bar Magnet",
+      "category": "Physics and Mathematics",
+      "subcategory": "electromagnetism",
+      "file": "physics/bar_magnet.glb",
+      "aliases": [
+        "permanent magnet",
+        "dipole magnet",
+        "magnetic bar"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 2952,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Bicolor magnetic dipole",
+        "Red North pole segment",
+        "Blue South pole segment"
+      ],
+      "description": "Rectangular permanent magnetic dipole featuring marked North (red) and South (blue) magnetic poles."
+    },
+    {
+      "uid": "mm_physics_horseshoe_magnet",
+      "name": "Horseshoe Magnet",
+      "category": "Physics and Mathematics",
+      "subcategory": "electromagnetism",
+      "file": "physics/horseshoe_magnet.glb",
+      "aliases": [
+        "U magnet",
+        "horseshoe dipole"
+      ],
+      "triangles": 120,
+      "vertices": 66,
+      "size_bytes": 6304,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Characteristic U-shape geometry",
+        "Red North and blue South tips",
+        "Concentrated air gap field"
+      ],
+      "description": "U-shaped permanent magnet concentrating magnetic flux between closely spaced opposite poles."
+    },
+    {
+      "uid": "mm_physics_magnetic_field",
+      "name": "Magnetic Field",
+      "category": "Physics and Mathematics",
+      "subcategory": "electromagnetism",
+      "file": "physics/magnetic_field.glb",
+      "aliases": [
+        "magnetic flux lines",
+        "dipole field lines",
+        "magnetic demonstration"
+      ],
+      "triangles": 1740,
+      "vertices": 872,
+      "size_bytes": 45536,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central dipole magnet",
+        "Elliptical concentric magnetic flux loops",
+        "Dipole field distribution"
+      ],
+      "description": "Visual demonstration of magnetic field lines (flux loops) emerging from north pole and curving to south pole."
+    },
+    {
+      "uid": "mm_physics_pendulum",
+      "name": "Pendulum",
+      "category": "Physics and Mathematics",
+      "subcategory": "mechanics",
+      "file": "physics/pendulum.glb",
+      "aliases": [
+        "simple pendulum",
+        "harmonic oscillator",
+        "clock pendulum"
+      ],
+      "triangles": 864,
+      "vertices": 438,
+      "size_bytes": 24020,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Vertical support pivot",
+        "Inelastic suspension wire",
+        "Spherical metallic pendulum bob"
+      ],
+      "description": "Classic harmonic oscillator consisting of a mass bob suspended from a pivot by a light string."
+    },
+    {
+      "uid": "mm_physics_spring",
+      "name": "Spring",
+      "category": "Physics and Mathematics",
+      "subcategory": "mechanics",
+      "file": "physics/spring.glb",
+      "aliases": [
+        "helical spring",
+        "coil spring",
+        "Hooke spring"
+      ],
+      "triangles": 944,
+      "vertices": 480,
+      "size_bytes": 24088,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Continuous helical coil winding",
+        "Uniform pitch and diameter",
+        "Metallic wire cross-section"
+      ],
+      "description": "Mechanical elastic coil demonstrating Hooke's Law of elasticity (F = -kx)."
+    },
+    {
+      "uid": "mm_physics_gears",
+      "name": "Gears",
+      "category": "Physics and Mathematics",
+      "subcategory": "mechanics",
+      "file": "physics/gears.glb",
+      "aliases": [
+        "gear pair",
+        "interlocking gears",
+        "spur gears",
+        "transmission"
+      ],
+      "triangles": 112,
+      "vertices": 60,
+      "size_bytes": 5000,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Driver and driven spur gear cylinders",
+        "Segmented perimeter gear teeth",
+        "Distinct gear reduction ratio"
+      ],
+      "description": "Pair of intermeshing toothed spur gears demonstrating mechanical advantage and rotational transmission."
+    },
+    {
+      "uid": "mm_physics_pulley",
+      "name": "Pulley",
+      "category": "Physics and Mathematics",
+      "subcategory": "mechanics",
+      "file": "physics/pulley.glb",
+      "aliases": [
+        "simple machine pulley",
+        "sheave",
+        "pulley system"
+      ],
+      "triangles": 156,
+      "vertices": 84,
+      "size_bytes": 7184,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Grooved rim wheel sheave",
+        "Central axle pin and suspension bracket",
+        "Mechanical advantage demonstration"
+      ],
+      "description": "Grooved wheel turned by a cord or rope, used to change direction of force and gain mechanical advantage."
+    },
+    {
+      "uid": "mm_physics_lever",
+      "name": "Lever",
+      "category": "Physics and Mathematics",
+      "subcategory": "mechanics",
+      "file": "physics/lever.glb",
+      "aliases": [
+        "simple lever",
+        "class 1 lever",
+        "fulcrum beam"
+      ],
+      "triangles": 88,
+      "vertices": 50,
+      "size_bytes": 5496,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Rigid horizontal lever beam",
+        "Triangular pivot fulcrum",
+        "Counterbalancing load mass"
+      ],
+      "description": "First-class lever demonstrating torque equilibrium where effort arm balances load arm over a pivot fulcrum."
+    },
+    {
+      "uid": "mm_physics_inclined_plane",
+      "name": "Inclined Plane",
+      "category": "Physics and Mathematics",
+      "subcategory": "mechanics",
+      "file": "physics/inclined_plane.glb",
+      "aliases": [
+        "ramp",
+        "slope",
+        "simple machine plane"
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "size_bytes": 4440,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Tilted inclined plane surface",
+        "Sliding friction block",
+        "Horizontal ground reference"
+      ],
+      "description": "Sloping ramp enabling heavy loads to be raised using less applied force over a longer distance."
+    },
+    {
+      "uid": "mm_physics_prism",
+      "name": "Prism",
+      "category": "Physics and Mathematics",
+      "subcategory": "optics",
+      "file": "physics/prism.glb",
+      "aliases": [
+        "optical prism",
+        "triangular prism",
+        "refraction prism"
+      ],
+      "triangles": 84,
+      "vertices": 46,
+      "size_bytes": 4292,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Triangular prism cross-section",
+        "Translucent optical glass medium",
+        "Incident light refraction beam"
+      ],
+      "description": "Transparent triangular optical prism refracting and dispersing incident light into constituent wavelengths."
+    },
+    {
+      "uid": "mm_physics_wave",
+      "name": "Wave",
+      "category": "Physics and Mathematics",
+      "subcategory": "waves",
+      "file": "physics/wave.glb",
+      "aliases": [
+        "sine wave",
+        "transverse wave",
+        "harmonic wave",
+        "oscillation"
+      ],
+      "triangles": 18000,
+      "vertices": 9050,
+      "size_bytes": 457384,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Sinusoidal spatial profile",
+        "Periodic crests and troughs",
+        "Wavelength oscillation demonstration"
+      ],
+      "description": "Sinusoidal transverse wave demonstrating wavelength, amplitude, crests, and troughs of harmonic propagation."
+    },
+    {
+      "uid": "mm_physics_cube",
+      "name": "Cube",
+      "category": "Physics and Mathematics",
+      "subcategory": "geometry",
+      "file": "physics/cube.glb",
+      "aliases": [
+        "regular hexahedron",
+        "geometric cube",
+        "3d square"
+      ],
+      "triangles": 12,
+      "vertices": 8,
+      "size_bytes": 1436,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Six congruent square faces",
+        "Right angles (90 deg) throughout",
+        "Platonic regular hexahedron"
+      ],
+      "description": "Platonic solid with six congruent square faces, twelve straight edges, and eight vertices."
+    },
+    {
+      "uid": "mm_physics_tetrahedron",
+      "name": "Tetrahedron",
+      "category": "Physics and Mathematics",
+      "subcategory": "geometry",
+      "file": "physics/tetrahedron.glb",
+      "aliases": [
+        "regular tetrahedron",
+        "triangular pyramid",
+        "4-faced polyhedron"
+      ],
+      "triangles": 4,
+      "vertices": 4,
+      "size_bytes": 1336,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Four equilateral triangular faces",
+        "Four vertices and six edges",
+        "Self-dual Platonic solid"
+      ],
+      "description": "Simplest Platonic solid having four congruent equilateral triangular faces and four vertices."
+    },
+    {
+      "uid": "mm_physics_octahedron",
+      "name": "Octahedron",
+      "category": "Physics and Mathematics",
+      "subcategory": "geometry",
+      "file": "physics/octahedron.glb",
+      "aliases": [
+        "regular octahedron",
+        "8-faced polyhedron"
+      ],
+      "triangles": 8,
+      "vertices": 6,
+      "size_bytes": 1252,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Eight equilateral triangular faces",
+        "Six vertices and twelve edges",
+        "Platonic octahedron geometry"
+      ],
+      "description": "Platonic solid having eight congruent equilateral triangular faces and six vertices, dual of the cube."
+    },
+    {
+      "uid": "mm_physics_icosahedron",
+      "name": "Icosahedron",
+      "category": "Physics and Mathematics",
+      "subcategory": "geometry",
+      "file": "physics/icosahedron.glb",
+      "aliases": [
+        "regular icosahedron",
+        "20-faced polyhedron"
+      ],
+      "triangles": 20,
+      "vertices": 12,
+      "size_bytes": 1728,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Twenty equilateral triangular faces",
+        "Twelve vertices with five faces meeting at each",
+        "Golden ratio proportions"
+      ],
+      "description": "Platonic solid possessing twenty congruent equilateral triangular faces and twelve vertices."
+    },
+    {
+      "uid": "mm_physics_coordinate_axes",
+      "name": "Coordinate Axes",
+      "category": "Physics and Mathematics",
+      "subcategory": "geometry",
+      "file": "physics/coordinate_axes.glb",
+      "aliases": [
+        "3D axes",
+        "Cartesian coordinate system",
+        "XYZ axes",
+        "spatial coordinates"
+      ],
+      "triangles": 432,
+      "vertices": 228,
+      "size_bytes": 16440,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Three orthogonal 90-degree axes",
+        "Standard RGB (XYZ) vector color-coding",
+        "Directional cone arrowheads"
+      ],
+      "description": "Standard 3D Cartesian coordinate frame with orthogonal X (red), Y (green), and Z (blue) directional vectors."
+    },
+    {
+      "uid": "mm_biology_human_heart",
+      "name": "Human Heart",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/human_heart.glb",
+      "aliases": [
+        "heart",
+        "cardiac muscle",
+        "cor",
+        "human heart model"
+      ],
+      "triangles": 1368,
+      "vertices": 688,
+      "size_bytes": 36208,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Muscular conical ventricular mass",
+        "Prominent aortic arch curve",
+        "Pulmonary artery bifurcations"
+      ],
+      "description": "Four-chambered muscular organ pumping blood through the circulatory system, with ventricles, aortic arch, and pulmonary trunk."
+    },
+    {
+      "uid": "mm_biology_human_brain",
+      "name": "Human Brain",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/human_brain.glb",
+      "aliases": [
+        "brain",
+        "cerebrum",
+        "human brain model",
+        "encephalon"
+      ],
+      "triangles": 2232,
+      "vertices": 1124,
+      "size_bytes": 57868,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Bilateral cerebral hemispheres with longitudinal fissure",
+        "Posterior inferior cerebellum",
+        "Inferior projecting brainstem"
+      ],
+      "description": "Central organ of the human nervous system with bilateral cerebral hemispheres, cerebellum, and brainstem."
+    },
+    {
+      "uid": "mm_biology_human_skull",
+      "name": "Human Skull",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/human_skull.glb",
+      "aliases": [
+        "skull",
+        "cranium",
+        "cranium bone",
+        "human skull model"
+      ],
+      "triangles": 2172,
+      "vertices": 1094,
+      "size_bytes": 56268,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Rounded neurocranium vault",
+        "Bilateral orbital eye sockets",
+        "Articulated mandible jaw region"
+      ],
+      "description": "Bony structure forming the head in human skeleton, encasing the brain and featuring orbits and lower jaw."
+    },
+    {
+      "uid": "mm_biology_human_lungs",
+      "name": "Human Lungs",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/human_lungs.glb",
+      "aliases": [
+        "lungs",
+        "respiratory system",
+        "pulmonary organs",
+        "pulmo"
+      ],
+      "triangles": 1512,
+      "vertices": 762,
+      "size_bytes": 39356,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central vertical cartilaginous trachea",
+        "Bilateral spongeous pulmonary lobes",
+        "Asymmetrical left cardiac notch"
+      ],
+      "description": "Essential respiratory organs with superior trachea tube and asymmetric right (three lobes) and left lobes."
+    },
+    {
+      "uid": "mm_biology_human_eye",
+      "name": "Human Eye",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/human_eye.glb",
+      "aliases": [
+        "eyeball",
+        "oculus",
+        "eye model",
+        "vision organ"
+      ],
+      "triangles": 1656,
+      "vertices": 838,
+      "size_bytes": 45228,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Spherical white sclera eyeball",
+        "Anterior curved cornea and colored iris",
+        "Posterior projecting optic nerve"
+      ],
+      "description": "Sensory visual organ showing outer white sclera, bulging cornea, colored iris disc, pupil, and posterior optic nerve."
+    },
+    {
+      "uid": "mm_biology_human_tooth",
+      "name": "Human Tooth",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/human_tooth.glb",
+      "aliases": [
+        "molar",
+        "tooth",
+        "incisor",
+        "dental anatomy"
+      ],
+      "triangles": 156,
+      "vertices": 84,
+      "size_bytes": 6948,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "White enamelled occlusal crown",
+        "Cervical line anatomical neck",
+        "Bifurcated root projections"
+      ],
+      "description": "Molar tooth structure displaying enamelled crown with cusps, cervical neck, and bifurcated root anchors."
+    },
+    {
+      "uid": "mm_biology_red_blood_cell",
+      "name": "Red Blood Cell",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "cellular_biology",
+      "file": "biology/red_blood_cell.glb",
+      "aliases": [
+        "erythrocyte",
+        "RBC",
+        "blood cell"
+      ],
+      "triangles": 1536,
+      "vertices": 774,
+      "size_bytes": 39836,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Biconcave circular disc profile",
+        "Indented central dimple on both faces",
+        "Vivid crimson erythrocyte color"
+      ],
+      "description": "Biconcave circular disc shaped erythrocyte maximizing surface area for oxygen transport via hemoglobin."
+    },
+    {
+      "uid": "mm_biology_neuron",
+      "name": "Neuron",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "cellular_biology",
+      "file": "biology/neuron.glb",
+      "aliases": [
+        "nerve cell",
+        "brain neuron",
+        "multipolar neuron"
+      ],
+      "triangles": 1080,
+      "vertices": 552,
+      "size_bytes": 32192,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cell soma with central nucleus",
+        "Branching radiating dendrite tree",
+        "Elongated axon transmission cable"
+      ],
+      "description": "Electrically excitable cell communicating via synapses, with cell body soma, radiating dendrites, and elongated axon."
+    },
+    {
+      "uid": "mm_biology_animal_cell",
+      "name": "Animal Cell",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "cellular_biology",
+      "file": "biology/animal_cell.glb",
+      "aliases": [
+        "eukaryotic animal cell",
+        "typical animal cell",
+        "cell model"
+      ],
+      "triangles": 2880,
+      "vertices": 1448,
+      "size_bytes": 73392,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Flexible spherical plasma membrane",
+        "Distinct spherical nucleus with genetic material",
+        "Suspended cytoplasmic organelles"
+      ],
+      "description": "Typical eukaryotic animal cell with flexible outer plasma membrane, prominent nucleus, and organelles."
+    },
+    {
+      "uid": "mm_biology_plant_cell",
+      "name": "Plant Cell",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "cellular_biology",
+      "file": "biology/plant_cell.glb",
+      "aliases": [
+        "eukaryotic plant cell",
+        "plant cell model"
+      ],
+      "triangles": 2892,
+      "vertices": 1456,
+      "size_bytes": 74396,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Rigid rectangular cellulose cell wall",
+        "Large central fluid-filled vacuole",
+        "Green chloroplast organelles for photosynthesis"
+      ],
+      "description": "Eukaryotic plant cell featuring rigid cellulosic cell wall, large central sap vacuole, and photosynthetic chloroplasts."
+    },
+    {
+      "uid": "mm_biology_bacterium",
+      "name": "Bacterium",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "microbiology",
+      "file": "biology/bacterium.glb",
+      "aliases": [
+        "bacteria",
+        "bacillus",
+        "prokaryote",
+        "microbe"
+      ],
+      "triangles": 2456,
+      "vertices": 1242,
+      "size_bytes": 63124,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical rod-shaped bacillus capsule",
+        "Hemispherical polar ends",
+        "Whip-like rotary flagellum tail"
+      ],
+      "description": "Single-celled prokaryotic microorganism with rod-shaped capsule and locomotory helical flagellum."
+    },
+    {
+      "uid": "mm_biology_virus",
+      "name": "Virus",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "microbiology",
+      "file": "biology/virus.glb",
+      "aliases": [
+        "bacteriophage",
+        "phage",
+        "viral particle",
+        "capsid"
+      ],
+      "triangles": 596,
+      "vertices": 316,
+      "size_bytes": 23644,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Icosahedral protein capsid head",
+        "Contractile cylindrical tail sheath",
+        "Six radial tail fiber landing pins"
+      ],
+      "description": "Bacteriophage T4 viral particle with icosahedral capsid head containing genome, contractile sheath, and tail fibers."
+    },
+    {
+      "uid": "mm_biology_mitochondrion",
+      "name": "Mitochondrion",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "cellular_biology",
+      "file": "biology/mitochondrion.glb",
+      "aliases": [
+        "mitochondria",
+        "cellular powerhouse",
+        "chondriosome"
+      ],
+      "triangles": 1664,
+      "vertices": 842,
+      "size_bytes": 42320,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Oval rod-shaped outer membrane",
+        "Extensively folded inner cristae convolutions",
+        "Cellular energy generation site"
+      ],
+      "description": "Double-membrane-bound cellular organelle generating most chemical energy ATP via deeply folded internal cristae."
+    },
+    {
+      "uid": "mm_biology_chloroplast",
+      "name": "Chloroplast",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "cellular_biology",
+      "file": "biology/chloroplast.glb",
+      "aliases": [
+        "chloroplast organelle",
+        "plastid",
+        "photosynthetic organelle"
+      ],
+      "triangles": 1008,
+      "vertices": 514,
+      "size_bytes": 29136,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Biconvex lens outer envelope",
+        "Stacked disc-like thylakoid grana columns",
+        "Chlorophyll pigmentation site"
+      ],
+      "description": "Photosynthetic organelle in plant cells with double envelope containing stacked thylakoid grana discs."
+    },
+    {
+      "uid": "mm_biology_chromosome",
+      "name": "Chromosome",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "genetics",
+      "file": "biology/chromosome.glb",
+      "aliases": [
+        "sister chromatids",
+        "human chromosome",
+        "genetic chromosome"
+      ],
+      "triangles": 864,
+      "vertices": 438,
+      "size_bytes": 23904,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Characteristic X-shaped sister chromatid arms",
+        "Central constricted centromere junction",
+        "Evenly dense chromatin arms"
+      ],
+      "description": "Duplicated thread-like structure of nucleic acids and protein forming characteristic X-shape joined at centromere."
+    },
+    {
+      "uid": "mm_biology_leaf",
+      "name": "Leaf",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "botany",
+      "file": "biology/leaf.glb",
+      "aliases": [
+        "plant leaf",
+        "foliage",
+        "tree leaf",
+        "green leaf"
+      ],
+      "triangles": 792,
+      "vertices": 400,
+      "size_bytes": 21372,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Flat elliptical lamina blade",
+        "Central longitudinal midrib axis",
+        "Basal petiole stem attachment"
+      ],
+      "description": "Dorsiventral photosynthetic plant leaf with broad flat lamina blade, central midrib vein, and supporting petiole stalk."
+    },
+    {
+      "uid": "mm_biology_flower",
+      "name": "Flower",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "botany",
+      "file": "biology/flower.glb",
+      "aliases": [
+        "blossom",
+        "angiosperm flower",
+        "floral bloom"
+      ],
+      "triangles": 5112,
+      "vertices": 2572,
+      "size_bytes": 130320,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central circular floral disc",
+        "Six symmetric radiating floral petals",
+        "Inferior supporting pedicel stem"
+      ],
+      "description": "Reproductive structure of angiosperms consisting of central nectar-rich receptacle disc surrounded by radial colored petals."
+    },
+    {
+      "uid": "mm_biology_tree",
+      "name": "Tree",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "botany",
+      "file": "biology/tree.glb",
+      "aliases": [
+        "deciduous tree",
+        "forest tree",
+        "timber tree"
+      ],
+      "triangles": 792,
+      "vertices": 400,
+      "size_bytes": 21140,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Tapered woody trunk cylinder with bark texture",
+        "Elevated globular photosynthetic canopy crown",
+        "Arboreal proportion and scale"
+      ],
+      "description": "Perennial woody plant featuring an upright supporting trunk cylinder and broad spherical photosynthetic foliage canopy."
+    },
+    {
+      "uid": "mm_biology_mushroom",
+      "name": "Mushroom",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "mycology",
+      "file": "biology/mushroom.glb",
+      "aliases": [
+        "toadstool",
+        "fungus",
+        "mushroom fruiting body",
+        "agaric"
+      ],
+      "triangles": 152,
+      "vertices": 80,
+      "size_bytes": 5924,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Conical umbrella-shaped pileus cap",
+        "Vertical fleshy stipe stalk",
+        "Fungal fruiting anatomy"
+      ],
+      "description": "Fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, with stipe stem and domed cap."
+    },
+    {
+      "uid": "mm_biology_bone",
+      "name": "Bone",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/bone.glb",
+      "aliases": [
+        "femur",
+        "thigh bone",
+        "human bone",
+        "skeletal bone"
+      ],
+      "triangles": 2232,
+      "vertices": 1124,
+      "size_bytes": 57444,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Long cylindrical cortical diaphysis shaft",
+        "Angled proximal femoral head sphere",
+        "Bilateral distal articular condyles"
+      ],
+      "description": "Human femur thigh bone, the longest and strongest bone in the human skeleton, with femoral head and dual condyles."
+    },
+    {
+      "uid": "mm_biology_dna_double_helix",
+      "name": "DNA Double Helix",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "molecular_biology",
+      "file": "biology/dna_double_helix.glb",
+      "aliases": [
+        "DNA",
+        "deoxyribonucleic acid",
+        "double helix",
+        "genetic helix"
+      ],
+      "triangles": 2752,
+      "vertices": 1416,
+      "size_bytes": 80500,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Antiparallel intertwined double helices",
+        "Connecting transverse base pair rungs",
+        "Accurate helical pitch and major/minor grooves"
+      ],
+      "description": "Molecular double helix of DNA consisting of complementary antiparallel polynucleotide chains connected by base pair rungs."
+    },
+    {
+      "uid": "mm_biology_ribosome",
+      "name": "Ribosome",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "molecular_biology",
+      "file": "biology/ribosome.glb",
+      "aliases": [
+        "ribosomal complex",
+        "protein factory",
+        "70S/80S ribosome"
+      ],
+      "triangles": 1440,
+      "vertices": 724,
+      "size_bytes": 36736,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Asymmetric large ribosomal subunit",
+        "Interlocking small ribosomal subunit",
+        "Inter-subunit mRNA/tRNA binding cleft"
+      ],
+      "description": "Complex cellular machine consisting of large and small ribonucleoprotein subunits responsible for biological protein synthesis."
+    },
+    {
+      "uid": "mm_biology_stomach",
+      "name": "Stomach",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/stomach.glb",
+      "aliases": [
+        "human stomach",
+        "gastric organ",
+        "ventriculus"
+      ],
+      "triangles": 720,
+      "vertices": 364,
+      "size_bytes": 20568,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "C-shaped greater and lesser curvatures",
+        "Superior cardiac esophageal inlet",
+        "Inferior pyloric duodenal outlet"
+      ],
+      "description": "Muscular, hollow organ in the gastrointestinal tract with greater and lesser curvatures, fundus, and pylorus."
+    },
+    {
+      "uid": "mm_biology_kidney",
+      "name": "Kidney",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/kidney.glb",
+      "aliases": [
+        "human kidney",
+        "renal organ",
+        "ren"
+      ],
+      "triangles": 864,
+      "vertices": 438,
+      "size_bytes": 24176,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Characteristic reniform bean silhouette",
+        "Medial concave hilum indentation",
+        "Emerging renal vascular pedicle and ureter"
+      ],
+      "description": "Bean-shaped organ filtering blood to extract waste, with medial indented hilum providing entry for renal vessels and ureter."
+    },
+    {
+      "uid": "mm_biology_skeleton_torso",
+      "name": "Skeleton Torso",
+      "category": "Biology and Human Anatomy",
+      "subcategory": "human_anatomy",
+      "file": "biology/skeleton_torso.glb",
+      "aliases": [
+        "ribcage",
+        "thoracic cage",
+        "skeleton chest",
+        "ribs"
+      ],
+      "triangles": 2964,
+      "vertices": 1486,
+      "size_bytes": 77568,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Posterior segmented vertebral column",
+        "Curved bilateral thoracic ribs",
+        "Anterior central breastbone sternum"
+      ],
+      "description": "Thoracic cage formed by the vertebral column, twelve pairs of curved ribs, and anterior breastbone sternum."
+    },
+    {
+      "uid": "mm_animals_dog",
+      "name": "Dog",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/dog.glb",
+      "aliases": [
+        "domestic dog",
+        "canine",
+        "canis familiaris",
+        "puppy"
+      ],
+      "triangles": 1812,
+      "vertices": 922,
+      "size_bytes": 51444,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Quadruped mammalian anatomy",
+        "Elongated canine snout and jaw",
+        "Upright wagging tail"
+      ],
+      "description": "Domesticated carnivorous quadruped mammal with characteristic muzzle snout, erect/floppy ears, and tail."
+    },
+    {
+      "uid": "mm_animals_cat",
+      "name": "Cat",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/cat.glb",
+      "aliases": [
+        "domestic cat",
+        "feline",
+        "felis catus",
+        "kitten"
+      ],
+      "triangles": 1944,
+      "vertices": 990,
+      "size_bytes": 55608,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Compact feline quadruped body",
+        "Upright pointed triangular ears",
+        "Curved balancing caudal tail"
+      ],
+      "description": "Small carnivorous mammal with sleek body, upright pointed triangular ears, and long curved balancing tail."
+    },
+    {
+      "uid": "mm_animals_horse",
+      "name": "Horse",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/horse.glb",
+      "aliases": [
+        "equine",
+        "stallion",
+        "equus caballus",
+        "mare"
+      ],
+      "triangles": 1800,
+      "vertices": 914,
+      "size_bytes": 50172,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Equine arched neck carriage",
+        "Slender athletic ungulate legs",
+        "Elongated equine head and muzzle"
+      ],
+      "description": "Large, single-toed, ungulate mammal with long muscular legs, arched neck, and elongated equine skull."
+    },
+    {
+      "uid": "mm_animals_cow",
+      "name": "Cow",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/cow.glb",
+      "aliases": [
+        "bovine",
+        "cattle",
+        "bos taurus",
+        "dairy cow"
+      ],
+      "triangles": 468,
+      "vertices": 252,
+      "size_bytes": 20528,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Heavy barrel torso with black-and-white patch markings",
+        "Bilateral cranial horns",
+        "Sturdy columnar limbs"
+      ],
+      "description": "Large domesticated bovine herbivore with distinctive piebald black-and-white patched coat and horns."
+    },
+    {
+      "uid": "mm_animals_lion",
+      "name": "Lion",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/lion.glb",
+      "aliases": [
+        "panthera leo",
+        "king of beasts",
+        "male lion",
+        "big cat"
+      ],
+      "triangles": 2448,
+      "vertices": 1238,
+      "size_bytes": 65584,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Prominent dark masculine facial mane ruff",
+        "Tawny golden coat coloration",
+        "Powerful predatory feline torso"
+      ],
+      "description": "Apex feline predator of the savanna with muscular build and prominent magnificent male mane encircling head."
+    },
+    {
+      "uid": "mm_animals_tiger",
+      "name": "Tiger",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/tiger.glb",
+      "aliases": [
+        "panthera tigris",
+        "bengal tiger",
+        "siberian tiger"
+      ],
+      "triangles": 1740,
+      "vertices": 884,
+      "size_bytes": 48668,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Reddish-orange ground coloration",
+        "Transverse black camouflage stripes",
+        "Muscular apex predator frame"
+      ],
+      "description": "Largest extant feline species characterized by reddish-orange coat with dark vertical predatory camouflage stripes."
+    },
+    {
+      "uid": "mm_animals_elephant",
+      "name": "Elephant",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/elephant.glb",
+      "aliases": [
+        "pachyderm",
+        "loxodonta",
+        "african elephant",
+        "asian elephant"
+      ],
+      "triangles": 1944,
+      "vertices": 990,
+      "size_bytes": 55816,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Prehensile cranial proboscis trunk",
+        "Bilateral curved ivory tusks",
+        "Massive columnar pillar legs"
+      ],
+      "description": "Largest living terrestrial animal with massive grey body, long prehensile proboscis trunk, and ivory tusks."
+    },
+    {
+      "uid": "mm_animals_giraffe",
+      "name": "Giraffe",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/giraffe.glb",
+      "aliases": [
+        "giraffa camelopardalis",
+        "tallest mammal",
+        "spotted giraffe"
+      ],
+      "triangles": 1800,
+      "vertices": 914,
+      "size_bytes": 50240,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Extraordinarily elongated cervical neck",
+        "Tall slender stilt-like limbs",
+        "Reticulated coat color pattern"
+      ],
+      "description": "Tallest living terrestrial animal characterized by extraordinarily long cervical neck, tall legs, and coat patterning."
+    },
+    {
+      "uid": "mm_animals_zebra",
+      "name": "Zebra",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/zebra.glb",
+      "aliases": [
+        "equus quagga",
+        "wild horse",
+        "striped zebra"
+      ],
+      "triangles": 1740,
+      "vertices": 884,
+      "size_bytes": 48860,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Striking black and white striped patterning",
+        "Equid quadruped morphology",
+        "Erect dorsal mane ridge"
+      ],
+      "description": "African wild equids famous for distinctive black-and-white vertical striped camouflage patterns."
+    },
+    {
+      "uid": "mm_animals_bear",
+      "name": "Bear",
+      "category": "Animals and Wildlife",
+      "subcategory": "mammals",
+      "file": "animals/bear.glb",
+      "aliases": [
+        "grizzly bear",
+        "brown bear",
+        "ursus arctos",
+        "ursine"
+      ],
+      "triangles": 1740,
+      "vertices": 884,
+      "size_bytes": 48788,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Stocky robust muscular barrel torso",
+        "Broad round ursid head and snout",
+        "Stout columnar plantigrade limbs"
+      ],
+      "description": "Heavy ursid carnivoran with stocky physique, heavy brown fur, non-retractile claws, and broad snout."
+    },
+    {
+      "uid": "mm_animals_penguin",
+      "name": "Penguin",
+      "category": "Animals and Wildlife",
+      "subcategory": "birds",
+      "file": "animals/penguin.glb",
+      "aliases": [
+        "emperor penguin",
+        "spheniscidae",
+        "antarctic penguin",
+        "seabird"
+      ],
+      "triangles": 888,
+      "vertices": 454,
+      "size_bytes": 26804,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Upright bipedal tuxedo countershading",
+        "Rigid paddle-like flipper wings",
+        "Anterior tapered orange bill"
+      ],
+      "description": "Upright aquatic flightless bird with countershaded white breast and black plumage, flipper wings, and tapered beak."
+    },
+    {
+      "uid": "mm_animals_eagle",
+      "name": "Eagle",
+      "category": "Animals and Wildlife",
+      "subcategory": "birds",
+      "file": "animals/eagle.glb",
+      "aliases": [
+        "bald eagle",
+        "raptor",
+        "bird of prey",
+        "aquila"
+      ],
+      "triangles": 1536,
+      "vertices": 778,
+      "size_bytes": 42108,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Wide outstretched aerofoil wingspan",
+        "Contrasting white cranial plumage",
+        "Curved hooked predatory beak"
+      ],
+      "description": "Large bird of prey with wide outstretched soaring wings, pure white head plumage, and hooked raptorial beak."
+    },
+    {
+      "uid": "mm_animals_owl",
+      "name": "Owl",
+      "category": "Animals and Wildlife",
+      "subcategory": "birds",
+      "file": "animals/owl.glb",
+      "aliases": [
+        "strigiformes",
+        "barn owl",
+        "nocturnal bird",
+        "horned owl"
+      ],
+      "triangles": 2232,
+      "vertices": 1124,
+      "size_bytes": 57672,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Upright compact cylindrical posture",
+        "Prominent forward-facing binocular eyes",
+        "Facial disc plumage architecture"
+      ],
+      "description": "Nocturnal bird of prey with upright stance, large forward-facing circular facial discs, and large yellow eyes."
+    },
+    {
+      "uid": "mm_animals_dolphin",
+      "name": "Dolphin",
+      "category": "Animals and Wildlife",
+      "subcategory": "marine_life",
+      "file": "animals/dolphin.glb",
+      "aliases": [
+        "delphinus",
+        "bottlenose dolphin",
+        "marine cetacean",
+        "porpoise"
+      ],
+      "triangles": 804,
+      "vertices": 408,
+      "size_bytes": 22640,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Hydrodynamic fusiform marine body",
+        "Falcate curved dorsal fin",
+        "Horizontal propulsion tail flukes"
+      ],
+      "description": "Streamlined marine mammal with sleek hydrodynamic body, falcate dorsal fin, and horizontal caudal tail flukes."
+    },
+    {
+      "uid": "mm_animals_shark",
+      "name": "Shark",
+      "category": "Animals and Wildlife",
+      "subcategory": "marine_life",
+      "file": "animals/shark.glb",
+      "aliases": [
+        "selachimorpha",
+        "great white shark",
+        "predatory fish"
+      ],
+      "triangles": 804,
+      "vertices": 408,
+      "size_bytes": 22752,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Fusiform torpedo hydrodynamic body",
+        "Prominent sharp triangular dorsal fin",
+        "Heterocercal vertical caudal tail fin"
+      ],
+      "description": "Apex marine cartilaginous predator with torpedo-shaped fuselage, prominent sharp dorsal fin, and vertical tail fin."
+    },
+    {
+      "uid": "mm_animals_whale",
+      "name": "Whale",
+      "category": "Animals and Wildlife",
+      "subcategory": "marine_life",
+      "file": "animals/whale.glb",
+      "aliases": [
+        "blue whale",
+        "cetacean",
+        "humpback whale",
+        "baleen whale"
+      ],
+      "triangles": 732,
+      "vertices": 370,
+      "size_bytes": 19804,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Massive colossal cetacean fuselage",
+        "Wide horizontal caudal fluke blades",
+        "Ventral throat pleats contour"
+      ],
+      "description": "Massive aquatic cetacean mammal with colossal streamlined body and broad horizontal fluke propulsion blades."
+    },
+    {
+      "uid": "mm_animals_octopus",
+      "name": "Octopus",
+      "category": "Animals and Wildlife",
+      "subcategory": "marine_life",
+      "file": "animals/octopus.glb",
+      "aliases": [
+        "octopod",
+        "cephalopod",
+        "eight-armed mollusc"
+      ],
+      "triangles": 1296,
+      "vertices": 666,
+      "size_bytes": 40168,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Bulbous cranial mantle sac",
+        "Eight radial flexible grasping tentacles",
+        "Bilaterally symmetric cephalopod"
+      ],
+      "description": "Soft-bodied eight-limbed cephalopod mollusc with large bulbous mantle head and radial prehensile tentacles."
+    },
+    {
+      "uid": "mm_animals_butterfly",
+      "name": "Butterfly",
+      "category": "Animals and Wildlife",
+      "subcategory": "insects",
+      "file": "animals/butterfly.glb",
+      "aliases": [
+        "lepidoptera",
+        "monarch butterfly",
+        "winged insect"
+      ],
+      "triangles": 1512,
+      "vertices": 762,
+      "size_bytes": 39600,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Slender segmented insect body",
+        "Broad paired membranous aerofoil wings",
+        "Bilateral scale pigmentation display"
+      ],
+      "description": "Four-winged insect of the order Lepidoptera with segmented body and broad, brightly patterned membrane wings."
+    },
+    {
+      "uid": "mm_animals_bee",
+      "name": "Bee",
+      "category": "Animals and Wildlife",
+      "subcategory": "insects",
+      "file": "animals/bee.glb",
+      "aliases": [
+        "honeybee",
+        "bumblebee",
+        "apis mellifera",
+        "pollinator"
+      ],
+      "triangles": 744,
+      "vertices": 378,
+      "size_bytes": 21144,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Yellow and black striped abdomen",
+        "Translucent vibrating flight wings",
+        "Hymenopteran waist constriction"
+      ],
+      "description": "Social winged flying insect known for honey production, pollination, and vivid yellow-and-black abdominal bands."
+    },
+    {
+      "uid": "mm_animals_turtle",
+      "name": "Turtle",
+      "category": "Animals and Wildlife",
+      "subcategory": "reptiles",
+      "file": "animals/turtle.glb",
+      "aliases": [
+        "testudines",
+        "sea turtle",
+        "tortoise",
+        "chelonian"
+      ],
+      "triangles": 4320,
+      "vertices": 2172,
+      "size_bytes": 109276,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Domed protective bony carapace",
+        "Projecting cranial neck and head",
+        "Paddle-like swimming flippers"
+      ],
+      "description": "Reptile with domed bony carapace shell protecting body, outstretched flippers, and projecting head."
+    },
+    {
+      "uid": "mm_sports_football",
+      "name": "Football",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "balls",
+      "file": "sports/football.glb",
+      "aliases": [
+        "soccer ball",
+        "association football",
+        "match ball",
+        "fifa ball"
+      ],
+      "triangles": 840,
+      "vertices": 434,
+      "size_bytes": 26784,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Spherical leather surface with white hexagonal ground",
+        "Distinct black pentagonal patch distribution",
+        "Regulation soccer ball proportions"
+      ],
+      "description": "Standard association soccer ball featuring classic 32-panel truncated icosahedron white leather with black pentagons."
+    },
+    {
+      "uid": "mm_sports_basketball",
+      "name": "Basketball",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "balls",
+      "file": "sports/basketball.glb",
+      "aliases": [
+        "nba ball",
+        "hoop ball",
+        "basketball sphere"
+      ],
+      "triangles": 1872,
+      "vertices": 938,
+      "size_bytes": 47808,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Pebbled orange high-grip composite leather",
+        "Contrasting inset black channel seam ribs",
+        "Regulation spherical size 7 geometry"
+      ],
+      "description": "Regulation basketball with pebbled high-friction orange composite leather surface and inlaid black channel seams."
+    },
+    {
+      "uid": "mm_sports_tennis_ball",
+      "name": "Tennis Ball",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "balls",
+      "file": "sports/tennis_ball.glb",
+      "aliases": [
+        "tennis sphere",
+        "felt ball",
+        "yellow tennis ball"
+      ],
+      "triangles": 1296,
+      "vertices": 650,
+      "size_bytes": 33320,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Optic yellow fluorescent fibrous felt cover",
+        "Continuous curved vulcanized white rubber seam",
+        "Pressurized hollow core bounce sphere"
+      ],
+      "description": "Pressurized regulation tennis ball covered in fibrous optic yellow felt with distinctive curved white vulcanized rubber seam."
+    },
+    {
+      "uid": "mm_sports_cricket_ball",
+      "name": "Cricket Ball",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "balls",
+      "file": "sports/cricket_ball.glb",
+      "aliases": [
+        "leather cricket ball",
+        "red ball",
+        "match cricket ball"
+      ],
+      "triangles": 1296,
+      "vertices": 650,
+      "size_bytes": 33236,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Polished red leather hemispherical quarters",
+        "Raised equatorially stitched string seam",
+        "Hard regulation cork and twine core"
+      ],
+      "description": "Hard solid cork core sphere covered with polished deep red leather halves joined by a prominent raised white stitched seam."
+    },
+    {
+      "uid": "mm_sports_baseball",
+      "name": "Baseball",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "balls",
+      "file": "sports/baseball.glb",
+      "aliases": [
+        "hardball",
+        "mlb baseball",
+        "stitched baseball"
+      ],
+      "triangles": 1872,
+      "vertices": 938,
+      "size_bytes": 47996,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "White genuine cowhide leather panels",
+        "Double-curved raised red waxed thread stitches",
+        "Regulation cork and rubber pill core"
+      ],
+      "description": "White cowhide or horsehide sphere bound tightly with two interlocking pieces featuring 108 double raised red stitches."
+    },
+    {
+      "uid": "mm_sports_golf_ball",
+      "name": "Golf Ball",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "balls",
+      "file": "sports/golf_ball.glb",
+      "aliases": [
+        "dimpled ball",
+        "pga golf ball",
+        "golf sphere"
+      ],
+      "triangles": 1872,
+      "vertices": 938,
+      "size_bytes": 47792,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Aerodynamic dimpled surface indentations",
+        "Pure white ionomer/urethane protective cover",
+        "Compact regulation 42.7mm diameter"
+      ],
+      "description": "Small, hard white ball designed for golf, covered in aerodynamic dimples to reduce aerodynamic drag and optimize lift."
+    },
+    {
+      "uid": "mm_sports_table_tennis_paddle",
+      "name": "Table Tennis Paddle",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "equipment",
+      "file": "sports/table_tennis_paddle.glb",
+      "aliases": [
+        "ping pong paddle",
+        "table tennis bat",
+        "ping pong racket"
+      ],
+      "triangles": 168,
+      "vertices": 88,
+      "size_bytes": 6404,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Circular laminated wooden blade with rubber sheet",
+        "Vivid competition red rubber surface",
+        "Ergonomic flared wooden grip handle"
+      ],
+      "description": "Laminated wooden paddle with circular red rubber pimpled/smooth hitting surface and flared ergonomic grip handle."
+    },
+    {
+      "uid": "mm_sports_shuttlecock",
+      "name": "Shuttlecock",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "equipment",
+      "file": "sports/shuttlecock.glb",
+      "aliases": [
+        "birdie",
+        "badminton shuttlecock",
+        "feather shuttle"
+      ],
+      "triangles": 784,
+      "vertices": 396,
+      "size_bytes": 21088,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Hemispherical white leather-covered cork nose",
+        "Flared aerodynamic conical feather skirt",
+        "High drag aerodynamic orientation"
+      ],
+      "description": "High-drag projectile used in badminton consisting of rounded cork nose base and flared conical skirt of 16 goose feathers."
+    },
+    {
+      "uid": "mm_sports_tennis_racket",
+      "name": "Tennis Racket",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "equipment",
+      "file": "sports/tennis_racket.glb",
+      "aliases": [
+        "tennis racquet",
+        "strung racket",
+        "graphite racket"
+      ],
+      "triangles": 816,
+      "vertices": 412,
+      "size_bytes": 22872,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Oval strung head hoop frame",
+        "Open aerodynamic bifurcated throat",
+        "Cushioned non-slip overgrip handle"
+      ],
+      "description": "Strung sports implement with oval aerodynamic graphite composite frame hoop, open throat, and wrapped grip handle."
+    },
+    {
+      "uid": "mm_sports_cricket_bat",
+      "name": "Cricket Bat",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "equipment",
+      "file": "sports/cricket_bat.glb",
+      "aliases": [
+        "willow bat",
+        "cricket paddle",
+        "english willow"
+      ],
+      "triangles": 84,
+      "vertices": 46,
+      "size_bytes": 4372,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Flat front striking face with rear spine ridge",
+        "Natural English willow wood grain finish",
+        "Round cane handle wrapped in white rubber grip"
+      ],
+      "description": "Wood bat consisting of cane handle attached to flat-fronted, ridge-backed English willow blade."
+    },
+    {
+      "uid": "mm_sports_baseball_bat",
+      "name": "Baseball Bat",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "equipment",
+      "file": "sports/baseball_bat.glb",
+      "aliases": [
+        "wooden bat",
+        "ash bat",
+        "baseball club",
+        "slugger"
+      ],
+      "triangles": 144,
+      "vertices": 76,
+      "size_bytes": 5708,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Tapered cylindrical contour from thin handle to thick barrel",
+        "Rounded end cap hitting surface",
+        "Flared safety knob at handle base"
+      ],
+      "description": "Smooth tapered wooden club used in baseball to hit the ball, with thick barrel hitting zone and flared handle knob."
+    },
+    {
+      "uid": "mm_sports_hockey_stick",
+      "name": "Hockey Stick",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "equipment",
+      "file": "sports/hockey_stick.glb",
+      "aliases": [
+        "field hockey stick",
+        "ice hockey stick",
+        "hockey shaft"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 2812,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Long straight composite rectangular shaft",
+        "Sharp perpendicular curved lower blade",
+        "Grip taper at proximal butt end"
+      ],
+      "description": "Long sporting shaft with angled lower curved blade used to drive a puck or ball into the opponent's goal."
+    },
+    {
+      "uid": "mm_sports_dumbbell",
+      "name": "Dumbbell",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "gym_equipment",
+      "file": "sports/dumbbell.glb",
+      "aliases": [
+        "hand weight",
+        "free weight",
+        "hex dumbbell",
+        "gym weight"
+      ],
+      "triangles": 120,
+      "vertices": 66,
+      "size_bytes": 6204,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central knurled steel hand grip bar",
+        "Twin hexagonal rubber-encased weight heads",
+        "Balanced free-weight resistance design"
+      ],
+      "description": "Short barbell weight consisting of central knurled steel handle bar capped at each end with equal hexagonal rubber weights."
+    },
+    {
+      "uid": "mm_sports_barbell",
+      "name": "Barbell",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "gym_equipment",
+      "file": "sports/barbell.glb",
+      "aliases": [
+        "olympic barbell",
+        "weightlifting bar",
+        "weight plate bar"
+      ],
+      "triangles": 216,
+      "vertices": 114,
+      "size_bytes": 8568,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Long straight knurled steel Olympic bar",
+        "Large circular Olympic bumper weight plates",
+        "Rotating sleeve collar assemblies"
+      ],
+      "description": "Full-length Olympic steel bar with rotating end sleeves holding large circular black Olympic bumper weight plates."
+    },
+    {
+      "uid": "mm_sports_sports_helmet",
+      "name": "Sports Helmet",
+      "category": "Sports Equipment and Balls",
+      "subcategory": "equipment",
+      "file": "sports/sports_helmet.glb",
+      "aliases": [
+        "protective helmet",
+        "cycling helmet",
+        "baseball helmet",
+        "headgear"
+      ],
+      "triangles": 732,
+      "vertices": 370,
+      "size_bytes": 19904,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Curved impact-resistant outer polycarbonate shell",
+        "Anterior sun visor / protective brim",
+        "Cranial protective ergonomic contour"
+      ],
+      "description": "Hard protective impact-absorbing outer helmet shell with aerodynamic ventilation contours and front sun visor."
+    },
+    {
+      "uid": "mm_vehicles_formula_1_car",
+      "name": "Formula 1 Car",
+      "category": "Vehicles and Transportation",
+      "subcategory": "road",
+      "file": "vehicles/formula_1_car.glb",
+      "aliases": [
+        "f1 car",
+        "grand prix racer",
+        "formula one",
+        "racing single seater"
+      ],
+      "triangles": 964,
+      "vertices": 498,
+      "size_bytes": 32452,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Open-wheel racing configuration with 4 exposed slick tires",
+        "Wide front and high rear downforce aerofoil wings",
+        "Distinctive protective cockpit halo arc"
+      ],
+      "description": "Single-seat, open-cockpit, open-wheel formula racing car with prominent front/rear aerofoil downforce wings and halo safety frame."
+    },
+    {
+      "uid": "mm_vehicles_sports_car",
+      "name": "Sports Car",
+      "category": "Vehicles and Transportation",
+      "subcategory": "road",
+      "file": "vehicles/sports_car.glb",
+      "aliases": [
+        "supercar",
+        "fast car",
+        "sports coupe",
+        "performance car"
+      ],
+      "triangles": 324,
+      "vertices": 176,
+      "size_bytes": 15176,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Low-profile aerodynamic sports coupe silhouette",
+        "Glossy automotive paintwork finish",
+        "Raised rear downforce aerofoil spoiler"
+      ],
+      "description": "Low-slung, aerodynamic high-performance passenger automobile with low ground clearance and rear aerofoil spoiler."
+    },
+    {
+      "uid": "mm_vehicles_sedan",
+      "name": "Sedan",
+      "category": "Vehicles and Transportation",
+      "subcategory": "road",
+      "file": "vehicles/sedan.glb",
+      "aliases": [
+        "passenger car",
+        "saloon car",
+        "family car",
+        "automobile"
+      ],
+      "triangles": 312,
+      "vertices": 168,
+      "size_bytes": 13924,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Three-box classic automobile profile",
+        "Elevated four-door passenger compartment",
+        "Four standard road wheels with silver rims"
+      ],
+      "description": "Three-box passenger car configuration with separate compartments for engine hood, passenger cabin, and boot trunk."
+    },
+    {
+      "uid": "mm_vehicles_truck",
+      "name": "Truck",
+      "category": "Vehicles and Transportation",
+      "subcategory": "road",
+      "file": "vehicles/truck.glb",
+      "aliases": [
+        "semi truck",
+        "lorry",
+        "cargo truck",
+        "heavy hauler"
+      ],
+      "triangles": 456,
+      "vertices": 244,
+      "size_bytes": 19344,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Upright forward commercial operator cabin",
+        "Long rear heavy-duty cargo haulage bed",
+        "Six heavy-duty radial truck wheels"
+      ],
+      "description": "Heavy commercial motor vehicle with upright forward operator cabin and elongated rear cargo load bed on 6 heavy wheels."
+    },
+    {
+      "uid": "mm_vehicles_bus",
+      "name": "Bus",
+      "category": "Vehicles and Transportation",
+      "subcategory": "road",
+      "file": "vehicles/bus.glb",
+      "aliases": [
+        "city bus",
+        "transit bus",
+        "coach",
+        "public transit"
+      ],
+      "triangles": 312,
+      "vertices": 168,
+      "size_bytes": 13928,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Long rectangular mass transit monocoque body",
+        "Continuous horizontal panoramic window glazing",
+        "Vivid high-visibility transit coach livery"
+      ],
+      "description": "Public transit passenger vehicle with long rectangular body, continuous side glazing window bands, and high passenger capacity."
+    },
+    {
+      "uid": "mm_vehicles_ambulance",
+      "name": "Ambulance",
+      "category": "Vehicles and Transportation",
+      "subcategory": "emergency",
+      "file": "vehicles/ambulance.glb",
+      "aliases": [
+        "emergency vehicle",
+        "paramedic van",
+        "medical transport"
+      ],
+      "triangles": 336,
+      "vertices": 184,
+      "size_bytes": 16556,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "White emergency medical van coachwork",
+        "Roof-mounted emergency strobe lightbar",
+        "Contrasting medical Red Cross lateral insignia"
+      ],
+      "description": "Medically equipped emergency vehicle with white high-roof body, roof flashing emergency lightbar, and red cross insignia."
+    },
+    {
+      "uid": "mm_vehicles_police_car",
+      "name": "Police Car",
+      "category": "Vehicles and Transportation",
+      "subcategory": "emergency",
+      "file": "vehicles/police_car.glb",
+      "aliases": [
+        "police cruiser",
+        "patrol car",
+        "cop car",
+        "law enforcement vehicle"
+      ],
+      "triangles": 336,
+      "vertices": 184,
+      "size_bytes": 16624,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "High-contrast black-and-white police livery",
+        "Roof emergency dual red and blue strobe lightbar",
+        "Reinforced sedan pursuit chassis"
+      ],
+      "description": "Law enforcement patrol cruiser with black-and-white livery and roof-mounted dual red and blue emergency strobe beacons."
+    },
+    {
+      "uid": "mm_vehicles_motorcycle",
+      "name": "Motorcycle",
+      "category": "Vehicles and Transportation",
+      "subcategory": "road",
+      "file": "vehicles/motorcycle.glb",
+      "aliases": [
+        "motorbike",
+        "cycle",
+        "motor racer",
+        "chopper"
+      ],
+      "triangles": 948,
+      "vertices": 484,
+      "size_bytes": 28256,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Two in-line road wheels on single track",
+        "Central internal combustion engine block",
+        "Ergonomic top fuel tank and saddle frame"
+      ],
+      "description": "Two-wheeled single-track motorized vehicle powered by internal combustion engine with frame, fuel tank, and wheels."
+    },
+    {
+      "uid": "mm_vehicles_bicycle",
+      "name": "Bicycle",
+      "category": "Vehicles and Transportation",
+      "subcategory": "road",
+      "file": "vehicles/bicycle.glb",
+      "aliases": [
+        "bike",
+        "pushbike",
+        "cycle",
+        "pedal bicycle"
+      ],
+      "triangles": 1308,
+      "vertices": 660,
+      "size_bytes": 36920,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Tubular diamond geometric bicycle frame",
+        "Two slender spoked pneumatic rim wheels",
+        "Elevated handlebar steering and saddle"
+      ],
+      "description": "Human-powered pedal-driven single-track vehicle with two spoked wheels attached to diamond frame structure."
+    },
+    {
+      "uid": "mm_vehicles_airplane",
+      "name": "Airplane",
+      "category": "Vehicles and Transportation",
+      "subcategory": "aviation",
+      "file": "vehicles/airplane.glb",
+      "aliases": [
+        "passenger jet",
+        "airliner",
+        "commercial aircraft",
+        "aeroplane"
+      ],
+      "triangles": 168,
+      "vertices": 92,
+      "size_bytes": 8440,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Long cylindrical pressurized passenger fuselage",
+        "Wide aerofoil lift wings",
+        "Vertical tail stabilizer fin with airline livery"
+      ],
+      "description": "Fixed-wing commercial passenger aircraft with pressurized cylindrical fuselage, main aerofoil wings, and empennage tail."
+    },
+    {
+      "uid": "mm_vehicles_fighter_jet",
+      "name": "Fighter Jet",
+      "category": "Vehicles and Transportation",
+      "subcategory": "aviation",
+      "file": "vehicles/fighter_jet.glb",
+      "aliases": [
+        "supersonic fighter",
+        "combat aircraft",
+        "jet fighter",
+        "stealth jet"
+      ],
+      "triangles": 804,
+      "vertices": 408,
+      "size_bytes": 22656,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Sleek aerodynamic supersonic delta wings",
+        "Tinted bubble pilot cockpit canopy",
+        "Needle-point supersonic radome nose"
+      ],
+      "description": "High-speed tactical military jet aircraft featuring sharp delta-wing planform, bubble canopy, and afterburning exhaust."
+    },
+    {
+      "uid": "mm_vehicles_helicopter",
+      "name": "Helicopter",
+      "category": "Vehicles and Transportation",
+      "subcategory": "aviation",
+      "file": "vehicles/helicopter.glb",
+      "aliases": [
+        "chopper",
+        "rotary aircraft",
+        "whirlybird",
+        "helo"
+      ],
+      "triangles": 804,
+      "vertices": 408,
+      "size_bytes": 22652,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Aerodynamic aerodynamic cabin fuselage",
+        "Large horizontal overhead main rotor blades",
+        "Elongated tail boom with anti-torque rotor"
+      ],
+      "description": "Rotorcraft in which lift and thrust are supplied by horizontally-spinning main rotors, with tail boom stabilizer."
+    },
+    {
+      "uid": "mm_vehicles_drone",
+      "name": "Drone",
+      "category": "Vehicles and Transportation",
+      "subcategory": "aviation",
+      "file": "vehicles/drone.glb",
+      "aliases": [
+        "quadcopter",
+        "UAV",
+        "multirotor",
+        "camera drone"
+      ],
+      "triangles": 204,
+      "vertices": 116,
+      "size_bytes": 11984,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central flight controller avionics hub",
+        "Four radial cross arms in X-configuration",
+        "Four independent vertical rotor propellers"
+      ],
+      "description": "Unmanned aerial vehicle with four horizontal rotor arms generating vertical lift and precision maneuvering."
+    },
+    {
+      "uid": "mm_vehicles_hot_air_balloon",
+      "name": "Hot Air Balloon",
+      "category": "Vehicles and Transportation",
+      "subcategory": "aviation",
+      "file": "vehicles/hot_air_balloon.glb",
+      "aliases": [
+        "aerostat",
+        "hot air aerostat",
+        "thermal balloon"
+      ],
+      "triangles": 732,
+      "vertices": 370,
+      "size_bytes": 19912,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Large tear-shaped thermal air envelope",
+        "Suspended passenger wicker gondola basket",
+        "Vertical buoyancy aerostat principle"
+      ],
+      "description": "Lighter-than-air aerostat consisting of a large heated air fabric envelope bag and suspended passenger wicker basket."
+    },
+    {
+      "uid": "mm_vehicles_speedboat",
+      "name": "Speedboat",
+      "category": "Vehicles and Transportation",
+      "subcategory": "maritime",
+      "file": "vehicles/speedboat.glb",
+      "aliases": [
+        "motorboat",
+        "powerboat",
+        "runabout",
+        "speedboat craft"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5812,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Sharp hydrodynamic V-hull entry bow",
+        "Tinted aerodynamic cockpit windshield",
+        "Planing hull surface for marine velocity"
+      ],
+      "description": "High-speed watercraft featuring sharp V-shaped hydrodynamic planing hull, tinted wrap-around windshield, and stern motor."
+    },
+    {
+      "uid": "mm_vehicles_sailboat",
+      "name": "Sailboat",
+      "category": "Vehicles and Transportation",
+      "subcategory": "maritime",
+      "file": "vehicles/sailboat.glb",
+      "aliases": [
+        "sailing yacht",
+        "monohull",
+        "sail vessel",
+        "sloop"
+      ],
+      "triangles": 804,
+      "vertices": 408,
+      "size_bytes": 22552,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Sleek marine displacement monohull",
+        "Tall vertical aluminum/carbon mast spar",
+        "High-aspect triangular canvas mainsail"
+      ],
+      "description": "Wind-propelled watercraft with displacement monohull, tall vertical mast spar, and broad triangular mainsail cloth."
+    },
+    {
+      "uid": "mm_vehicles_submarine",
+      "name": "Submarine",
+      "category": "Vehicles and Transportation",
+      "subcategory": "maritime",
+      "file": "vehicles/submarine.glb",
+      "aliases": [
+        "naval sub",
+        "underwater vessel",
+        "submersible",
+        "u-boat"
+      ],
+      "triangles": 804,
+      "vertices": 408,
+      "size_bytes": 22684,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Elongated cylindrical pressure hull fuselage",
+        "Elevated conning tower sail with periscope mast",
+        "Submersible naval architecture"
+      ],
+      "description": "Naval watercraft capable of independent underwater operation with cylindrical pressure hull and elevated conning tower sail."
+    },
+    {
+      "uid": "mm_vehicles_bullet_train",
+      "name": "Bullet Train",
+      "category": "Vehicles and Transportation",
+      "subcategory": "rail",
+      "file": "vehicles/bullet_train.glb",
+      "aliases": [
+        "shinkansen",
+        "high-speed train",
+        "maglev",
+        "tgy"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5748,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Aerodynamic elongated needle-nose front taper",
+        "Smooth streamlined high-speed train carriage",
+        "Distinctive high-speed livery striping"
+      ],
+      "description": "High-speed aerodynamic passenger railway locomotive featuring a streamlined long needle-nose to reduce tunnel boom."
+    },
+    {
+      "uid": "mm_vehicles_cargo_ship",
+      "name": "Cargo Ship",
+      "category": "Vehicles and Transportation",
+      "subcategory": "maritime",
+      "file": "vehicles/cargo_ship.glb",
+      "aliases": [
+        "container ship",
+        "freighter",
+        "merchant vessel",
+        "cargo vessel"
+      ],
+      "triangles": 48,
+      "vertices": 32,
+      "size_bytes": 5488,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Broad heavy displacement merchant hull",
+        "Multi-tiered stern navigation bridge deck",
+        "Stacked intermodal ISO shipping containers"
+      ],
+      "description": "Commercial maritime merchant freighter with broad cargo hull carrying intermodal shipping containers and stern bridge."
+    },
+    {
+      "uid": "mm_vehicles_locomotive",
+      "name": "Locomotive",
+      "category": "Vehicles and Transportation",
+      "subcategory": "rail",
+      "file": "vehicles/locomotive.glb",
+      "aliases": [
+        "train engine",
+        "diesel locomotive",
+        "railroad engine",
+        "rail locomotive"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5728,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Heavy diesel-electric hood engine body",
+        "Elevated forward engineer observation cab",
+        "Industrial railroad motive power proportions"
+      ],
+      "description": "Railway vehicle that provides motive power for a train, with heavy diesel-electric hood chassis and elevated cab."
+    },
+    {
+      "uid": "mm_engineering_robotic_arm",
+      "name": "Robotic Arm",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "mechanical",
+      "file": "engineering/robotic_arm.glb",
+      "aliases": [
+        "industrial robot",
+        "articulated arm",
+        "6-axis robot",
+        "manipulator"
+      ],
+      "triangles": 240,
+      "vertices": 130,
+      "size_bytes": 11036,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Articulated multi-axis robotic joints",
+        "Vivid safety industrial orange finish",
+        "Precision parallel mechanical gripper end effector"
+      ],
+      "description": "Articulated multi-axis industrial manipulator with revolving pedestal base, shoulder, forearm, and parallel-jaw end effector gripper."
+    },
+    {
+      "uid": "mm_engineering_jet_engine",
+      "name": "Jet Engine",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "aviation_engineering",
+      "file": "engineering/jet_engine.glb",
+      "aliases": [
+        "turbofan",
+        "aircraft engine",
+        "gas turbine",
+        "jet turbine"
+      ],
+      "triangles": 216,
+      "vertices": 114,
+      "size_bytes": 8656,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Aerodynamic cylindrical bypass nacelle casing",
+        "Forward rotating aerodynamic spinner cone",
+        "High-bypass propulsion nozzle geometry"
+      ],
+      "description": "Aviation high-bypass turbofan engine with aerodynamic nacelle cowl, forward fan spinner cone, and exhaust plug nozzle."
+    },
+    {
+      "uid": "mm_engineering_planetary_gear",
+      "name": "Planetary Gear",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "mechanical",
+      "file": "engineering/planetary_gear.glb",
+      "aliases": [
+        "epicyclic gear",
+        "gear train",
+        "sun and planet gear",
+        "planetary transmission"
+      ],
+      "triangles": 280,
+      "vertices": 148,
+      "size_bytes": 11572,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Central drive sun gear cylinder",
+        "Three symmetrically meshed planet gears",
+        "Outer concentric annular internal ring gear"
+      ],
+      "description": "Epicyclic gear system consisting of central sun gear, three revolving planet gears, and outer annular ring gear."
+    },
+    {
+      "uid": "mm_engineering_cpu",
+      "name": "CPU",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "electronics",
+      "file": "engineering/cpu.glb",
+      "aliases": [
+        "microprocessor",
+        "central processing unit",
+        "processor chip",
+        "computer chip"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5680,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Square multi-layer PCB carrier substrate",
+        "Metallic nickel-plated integrated heat spreader (IHS)",
+        "Gold corner index alignment mark"
+      ],
+      "description": "Semiconductor microprocessor package with green FR4 substrate, metallic nickel-plated integrated heat spreader (IHS), and pin-1 marker."
+    },
+    {
+      "uid": "mm_engineering_circuit_board",
+      "name": "Circuit Board",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "electronics",
+      "file": "engineering/circuit_board.glb",
+      "aliases": [
+        "PCB",
+        "printed circuit board",
+        "motherboard",
+        "electronics board"
+      ],
+      "triangles": 168,
+      "vertices": 92,
+      "size_bytes": 8308,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Green solder mask laminate substrate plate",
+        "Surface mount black IC chip packages",
+        "Vertical cylindrical electrolytic capacitors"
+      ],
+      "description": "Printed circuit board (PCB) featuring characteristic green solder mask, soldered integrated circuit IC chips, and cylindrical electrolytic capacitors."
+    },
+    {
+      "uid": "mm_engineering_3d_printer",
+      "name": "3D Printer",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "mechanical",
+      "file": "engineering/3d_printer.glb",
+      "aliases": [
+        "additive manufacturing",
+        "fdm printer",
+        "rapid prototyper"
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "size_bytes": 4316,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cartesian axis aluminum gantry frame",
+        "Square horizontal heated build plate",
+        "Precision hotend extruder carriage"
+      ],
+      "description": "Fused deposition modeling (FDM) 3D printer with vertical Cartesian gantry frame, square heated build plate bed, and toolhead extruder."
+    },
+    {
+      "uid": "mm_engineering_wind_turbine",
+      "name": "Wind Turbine",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "renewable_energy",
+      "file": "engineering/wind_turbine.glb",
+      "aliases": [
+        "wind generator",
+        "wind mill",
+        "renewable energy turbine"
+      ],
+      "triangles": 192,
+      "vertices": 108,
+      "size_bytes": 10728,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Tall slender tapered tubular steel tower",
+        "Overhead generator nacelle pod",
+        "Three-bladed aerodynamic rotor assembly"
+      ],
+      "description": "Renewable wind power electricity generator featuring tall conical tubular steel tower, nacelle housing, and 3 aerodynamic rotor blades."
+    },
+    {
+      "uid": "mm_engineering_solar_panel",
+      "name": "Solar Panel",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "renewable_energy",
+      "file": "engineering/solar_panel.glb",
+      "aliases": [
+        "photovoltaic module",
+        "pv panel",
+        "solar module",
+        "solar array"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 3020,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Extruded anodized aluminum perimeter frame",
+        "Deep blue anti-reflective crystalline silicon cell matrix",
+        "Tilted incident angle mounting orientation"
+      ],
+      "description": "Photovoltaic module designed to absorb sun rays as source of energy, with protective extruded aluminum frame and blue crystalline cells."
+    },
+    {
+      "uid": "mm_engineering_electric_motor",
+      "name": "Electric Motor",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "electrical_engineering",
+      "file": "engineering/electric_motor.glb",
+      "aliases": [
+        "induction motor",
+        "AC motor",
+        "electromotor",
+        "drive motor"
+      ],
+      "triangles": 156,
+      "vertices": 84,
+      "size_bytes": 7204,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical ribbed stator housing",
+        "Protruding hardened steel drive rotor shaft",
+        "Top mounted electrical terminal junction box"
+      ],
+      "description": "Electromechanical machine converting electrical energy into mechanical energy, with cast iron stator body, drive shaft, and conduit terminal box."
+    },
+    {
+      "uid": "mm_engineering_hydraulic_cylinder",
+      "name": "Hydraulic Cylinder",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "mechanical",
+      "file": "engineering/hydraulic_cylinder.glb",
+      "aliases": [
+        "hydraulic actuator",
+        "ram",
+        "pneumatic piston",
+        "piston actuator"
+      ],
+      "triangles": 144,
+      "vertices": 76,
+      "size_bytes": 5696,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Heavy seamless steel cylinder barrel tube",
+        "Extending polished hard-chrome plated piston rod",
+        "High-pressure fluid actuation geometry"
+      ],
+      "description": "Mechanical actuator used to give unidirectional force through unidirectional stroke, with heavy barrel and extending hard-chromed rod."
+    },
+    {
+      "uid": "mm_engineering_water_pump",
+      "name": "Water Pump",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "fluid_mechanics",
+      "file": "engineering/water_pump.glb",
+      "aliases": [
+        "centrifugal pump",
+        "fluid pump",
+        "impeller pump"
+      ],
+      "triangles": 720,
+      "vertices": 364,
+      "size_bytes": 20400,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Spiral hydrodynamic volute casing",
+        "Central axial suction eye inlet",
+        "Tangential discharge pressure flange"
+      ],
+      "description": "Centrifugal water pump with spiral volute casing, axial suction inlet flange, and tangential vertical discharge outlet."
+    },
+    {
+      "uid": "mm_engineering_steam_turbine",
+      "name": "Steam Turbine",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "mechanical",
+      "file": "engineering/steam_turbine.glb",
+      "aliases": [
+        "power turbine",
+        "rotary steam engine",
+        "turbogenerator"
+      ],
+      "triangles": 144,
+      "vertices": 76,
+      "size_bytes": 5816,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Heavy cast steel split casing shell",
+        "Concentric high-speed rotor shaft axis",
+        "Multi-stage thermodynamic expansion architecture"
+      ],
+      "description": "Turbomachine extracting thermal energy from pressurized steam to perform mechanical work on rotating bladed shaft stages."
+    },
+    {
+      "uid": "mm_engineering_camera",
+      "name": "Camera",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "optics_electronics",
+      "file": "engineering/camera.glb",
+      "aliases": [
+        "dslr",
+        "digital camera",
+        "slr camera",
+        "photo camera"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5524,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Ergonomic matte black magnesium chassis body",
+        "Top pentaprism optical viewfinder hump",
+        "Cylindrical optical glass zoom lens barrel"
+      ],
+      "description": "Digital single-lens reflex (DSLR) camera with ergonomic grip body, prominent top pentaprism optical viewfinder, and barrel lens."
+    },
+    {
+      "uid": "mm_engineering_microphone",
+      "name": "Microphone",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "audio_engineering",
+      "file": "engineering/microphone.glb",
+      "aliases": [
+        "mic",
+        "dynamic mic",
+        "studio condenser",
+        "vocal mic"
+      ],
+      "triangles": 792,
+      "vertices": 400,
+      "size_bytes": 21296,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical die-cast zinc handheld handle",
+        "Spherical woven steel mesh acoustic capsule grille",
+        "Acoustic transducer diaphragm architecture"
+      ],
+      "description": "Acoustic-to-electric transducer with cylindrical handheld body and spherical steel mesh pop filter capsule grille."
+    },
+    {
+      "uid": "mm_engineering_speaker",
+      "name": "Speaker",
+      "category": "Engineering, Machines and Technology",
+      "subcategory": "audio_engineering",
+      "file": "engineering/speaker.glb",
+      "aliases": [
+        "loudspeaker",
+        "studio monitor",
+        "audio speaker",
+        "woofer"
+      ],
+      "triangles": 804,
+      "vertices": 408,
+      "size_bytes": 22708,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Solid acoustic cabinet enclosure",
+        "Large cone-shaped low frequency woofer driver",
+        "High frequency silk dome tweeter aperture"
+      ],
+      "description": "Two-way acoustic loudspeaker monitor featuring cuboid resonance enclosure, large low-frequency woofer cone, and dome tweeter."
+    },
+    {
+      "uid": "mm_everyday_chair",
+      "name": "Chair",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "furniture",
+      "file": "everyday/chair.glb",
+      "aliases": [
+        "wooden chair",
+        "dining chair",
+        "seat"
+      ],
+      "triangles": 312,
+      "vertices": 168,
+      "size_bytes": 13504,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Horizontal supportive seat cushion pan",
+        "Four vertical ground-contact legs",
+        "Upright lumbar backrest support"
+      ],
+      "description": "Four-legged seating furniture with flat seat pan, supporting legs, and upright lumbar backrest."
+    },
+    {
+      "uid": "mm_everyday_table",
+      "name": "Table",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "furniture",
+      "file": "everyday/table.glb",
+      "aliases": [
+        "dining table",
+        "wooden table",
+        "desk table"
+      ],
+      "triangles": 300,
+      "vertices": 160,
+      "size_bytes": 12276,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Broad flat rectangular work tabletop",
+        "Four perimeter vertical supporting legs",
+        "Stable dining/work height proportion"
+      ],
+      "description": "Piece of furniture with flat horizontal work or dining surface supported by four perimeter corner legs."
+    },
+    {
+      "uid": "mm_everyday_sofa",
+      "name": "Sofa",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "furniture",
+      "file": "everyday/sofa.glb",
+      "aliases": [
+        "couch",
+        "davenport",
+        "living room sofa",
+        "settee"
+      ],
+      "triangles": 48,
+      "vertices": 32,
+      "size_bytes": 5384,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Upholstered multi-person seat bench cushion",
+        "Padded upright backrest support",
+        "Twin flanking upholstered armrests"
+      ],
+      "description": "Upholstered furniture piece for seating multiple persons, with cushioned bench, high backrest, and padded side armrests."
+    },
+    {
+      "uid": "mm_everyday_bed",
+      "name": "Bed",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "furniture",
+      "file": "everyday/bed.glb",
+      "aliases": [
+        "mattress bed",
+        "single bed",
+        "sleeping bed"
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "size_bytes": 4220,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Horizontal sleep mattress box",
+        "Elevated vertical wooden headboard",
+        "Soft resting head pillow cushion"
+      ],
+      "description": "Piece of furniture used for sleeping, consisting of a supportive mattress, pillow, and raised wooden headboard."
+    },
+    {
+      "uid": "mm_everyday_desk",
+      "name": "Desk",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "furniture",
+      "file": "everyday/desk.glb",
+      "aliases": [
+        "office desk",
+        "workstation",
+        "computer desk",
+        "study desk"
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "size_bytes": 4288,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Spacious rectangular desktop surface",
+        "Side pedestal filing drawer unit",
+        "Asymmetric functional workstation geometry"
+      ],
+      "description": "Office workstation table with flat desktop work plane and integrated side drawer pedestal cabinet."
+    },
+    {
+      "uid": "mm_everyday_coffee_mug",
+      "name": "Coffee Mug",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "kitchenware",
+      "file": "everyday/coffee_mug.glb",
+      "aliases": [
+        "mug",
+        "coffee cup",
+        "tea cup",
+        "ceramic mug"
+      ],
+      "triangles": 648,
+      "vertices": 326,
+      "size_bytes": 17836,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical glazed ceramic beverage vessel",
+        "Lateral curved D-shaped finger grip handle",
+        "Hollow top drinking cavity"
+      ],
+      "description": "Cylindrical ceramic vessel used for drinking hot beverages with lateral D-shaped handle loop."
+    },
+    {
+      "uid": "mm_everyday_water_bottle",
+      "name": "Water Bottle",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "kitchenware",
+      "file": "everyday/water_bottle.glb",
+      "aliases": [
+        "bottle",
+        "drink bottle",
+        "flask",
+        "reusable bottle"
+      ],
+      "triangles": 216,
+      "vertices": 114,
+      "size_bytes": 8336,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Cylindrical liquid containment body",
+        "Tapered shoulder narrowing to neck",
+        "Hermetic threaded top screw cap"
+      ],
+      "description": "Portable cylindrical container for liquids with tapered shoulder neck and sealed threaded screw cap."
+    },
+    {
+      "uid": "mm_everyday_plate",
+      "name": "Plate",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "kitchenware",
+      "file": "everyday/plate.glb",
+      "aliases": [
+        "dinner plate",
+        "dish",
+        "ceramic plate"
+      ],
+      "triangles": 112,
+      "vertices": 58,
+      "size_bytes": 3856,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Circular shallow ceramic disc",
+        "Raised concave outer rim edge",
+        "Glazed smooth porcelain surface"
+      ],
+      "description": "Broad, mainly flat vessel on which food is served, with raised rim edge to prevent spillage."
+    },
+    {
+      "uid": "mm_everyday_spoon",
+      "name": "Spoon",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "kitchenware",
+      "file": "everyday/spoon.glb",
+      "aliases": [
+        "soup spoon",
+        "eating utensil",
+        "tablespoon",
+        "metal spoon"
+      ],
+      "triangles": 792,
+      "vertices": 400,
+      "size_bytes": 21328,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Concave oval scoop bowl",
+        "Elongated flat handle shank",
+        "Polished stainless steel finish"
+      ],
+      "description": "Utensil consisting of a small, shallow oval bowl on a long handle, used in preparing, serving, or eating liquid food."
+    },
+    {
+      "uid": "mm_everyday_fork",
+      "name": "Fork",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "kitchenware",
+      "file": "everyday/fork.glb",
+      "aliases": [
+        "dinner fork",
+        "table fork",
+        "eating utensil"
+      ],
+      "triangles": 84,
+      "vertices": 46,
+      "size_bytes": 4384,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Parallel piercing tines / prongs",
+        "Ergonomic slender handle shank",
+        "Reflective stainless steel cutlery finish"
+      ],
+      "description": "Cutlery item with long handle terminating in a head that branches into several parallel prongs or tines."
+    },
+    {
+      "uid": "mm_everyday_knife",
+      "name": "Knife",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "kitchenware",
+      "file": "everyday/knife.glb",
+      "aliases": [
+        "table knife",
+        "dinner knife",
+        "butter knife",
+        "cutlery knife"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 2932,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Straight steel cutting blade with bevel edge",
+        "Solid ergonomic hand grip scales",
+        "Balanced table cutlery proportions"
+      ],
+      "description": "Utensil with a handle and flat blade with a cutting edge used for cutting and preparing food."
+    },
+    {
+      "uid": "mm_everyday_smartphone",
+      "name": "Smartphone",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "consumer_electronics",
+      "file": "everyday/smartphone.glb",
+      "aliases": [
+        "phone",
+        "mobile phone",
+        "cell phone",
+        "touchscreen phone"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5764,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Slim rectangular rounded-corner chassis slab",
+        "Full-face glossy touchscreen glass display",
+        "Rear camera lens array bump"
+      ],
+      "description": "Handheld personal computer with touchscreen interface, slim slab form factor, and multi-lens camera module."
+    },
+    {
+      "uid": "mm_everyday_laptop",
+      "name": "Laptop",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "consumer_electronics",
+      "file": "everyday/laptop.glb",
+      "aliases": [
+        "notebook computer",
+        "laptop computer",
+        "macbook",
+        "pc laptop"
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "size_bytes": 4248,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Clamshell folding hinge design",
+        "Keyboard and trackpad lower base deck",
+        "Thin upright widescreen LCD panel"
+      ],
+      "description": "Portable personal computer with clamshell form factor consisting of keyboard base unit and hinged display screen."
+    },
+    {
+      "uid": "mm_everyday_keyboard",
+      "name": "Keyboard",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "computer_peripherals",
+      "file": "everyday/keyboard.glb",
+      "aliases": [
+        "computer keyboard",
+        "typing keyboard",
+        "qwerty keyboard"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 2880,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Low-profile rectangular base deck",
+        "Grid of typewriter keycaps",
+        "Ergonomic tilted typing plane"
+      ],
+      "description": "Typewriter-style input device which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches."
+    },
+    {
+      "uid": "mm_everyday_computer_mouse",
+      "name": "Computer Mouse",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "computer_peripherals",
+      "file": "everyday/computer_mouse.glb",
+      "aliases": [
+        "mouse",
+        "optical mouse",
+        "wireless mouse",
+        "track mouse"
+      ],
+      "triangles": 792,
+      "vertices": 400,
+      "size_bytes": 21344,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Ergonomic palm-contoured dome shell",
+        "Split primary left/right clicking buttons",
+        "Central tactile rotating scroll wheel"
+      ],
+      "description": "Hand-held pointing device that detects two-dimensional motion relative to a surface, with ergonomic palm dome and scroll wheel."
+    },
+    {
+      "uid": "mm_everyday_headphones",
+      "name": "Headphones",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "audio_peripherals",
+      "file": "everyday/headphones.glb",
+      "aliases": [
+        "headset",
+        "earphones",
+        "audio headphones",
+        "cans"
+      ],
+      "triangles": 720,
+      "vertices": 364,
+      "size_bytes": 20552,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Padded flexible cranial headband arch",
+        "Twin circumaural acoustic earcups",
+        "Cushioned noise-isolating earpads"
+      ],
+      "description": "Pair of small loudspeaker drivers worn on or around the head over user's ears, joined by a springy headband."
+    },
+    {
+      "uid": "mm_everyday_watch",
+      "name": "Watch",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "accessories",
+      "file": "everyday/watch.glb",
+      "aliases": [
+        "wristwatch",
+        "timepiece",
+        "chronometer",
+        "wrist watch"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5520,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Circular metallic watchcase with dial face",
+        "Twin flexible leather wrist attachment straps",
+        "Lateral winding/adjustment crown knob"
+      ],
+      "description": "Timepiece intended to be carried or worn by a person on wrist, with circular dial case, bezel, and leather strap bands."
+    },
+    {
+      "uid": "mm_everyday_backpack",
+      "name": "Backpack",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "travel_accessories",
+      "file": "everyday/backpack.glb",
+      "aliases": [
+        "rucksack",
+        "knapsack",
+        "bookbag",
+        "school bag"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 2892,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Voluminous zippered main canvas compartment",
+        "Protruding front utility storage pocket",
+        "Ergonomic dual shoulder harness orientation"
+      ],
+      "description": "Cloth sack carried on one's back and secured with two straps that go over shoulders, with zippered front compartments."
+    },
+    {
+      "uid": "mm_everyday_book",
+      "name": "Book",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "stationery",
+      "file": "everyday/book.glb",
+      "aliases": [
+        "hardcover book",
+        "novel",
+        "textbook",
+        "bound volume"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 2912,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Stiff protective cloth/board hardcover binding",
+        "Squared bound paper leaf edge block",
+        "Distinct longitudinal binding spine"
+      ],
+      "description": "Bound collection of printed paper pages encased within protective rigid hardcover binding with squared spine."
+    },
+    {
+      "uid": "mm_everyday_pen",
+      "name": "Pen",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "stationery",
+      "file": "everyday/pen.glb",
+      "aliases": [
+        "ballpoint pen",
+        "biro",
+        "ink pen",
+        "writing pen"
+      ],
+      "triangles": 156,
+      "vertices": 84,
+      "size_bytes": 7112,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Slender cylindrical plastic/metal grip barrel",
+        "Tapered metallic writing point nib",
+        "Top pocket retention spring clip"
+      ],
+      "description": "Writing instrument that dispenses ink over a metal ball at its point, with slender cylindrical barrel and pocket clip."
+    },
+    {
+      "uid": "mm_everyday_desk_lamp",
+      "name": "Desk Lamp",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "lighting",
+      "file": "everyday/desk_lamp.glb",
+      "aliases": [
+        "table lamp",
+        "task light",
+        "reading lamp",
+        "study light"
+      ],
+      "triangles": 216,
+      "vertices": 114,
+      "size_bytes": 8432,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Stable weighted circular counterbase",
+        "Articulated elevating support gooseneck column",
+        "Conical downward directional reflector hood"
+      ],
+      "description": "Adjustable directional luminaire with weighted circular base, articulated neck column, and conical reflector shade."
+    },
+    {
+      "uid": "mm_everyday_fan",
+      "name": "Fan",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "appliances",
+      "file": "everyday/fan.glb",
+      "aliases": [
+        "desk fan",
+        "table fan",
+        "cooling fan",
+        "electric fan"
+      ],
+      "triangles": 732,
+      "vertices": 372,
+      "size_bytes": 21764,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Circular protective wire guard grille",
+        "Internal rotating multi-fin airflow impeller",
+        "Elevated tabletop pedestal stand"
+      ],
+      "description": "Powered machine used to create flow of air for cooling, with circular safety guard cage and rotating impeller blades."
+    },
+    {
+      "uid": "mm_everyday_clock",
+      "name": "Clock",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "appliances",
+      "file": "everyday/clock.glb",
+      "aliases": [
+        "wall clock",
+        "analog clock",
+        "timepiece",
+        "dial clock"
+      ],
+      "triangles": 712,
+      "vertices": 362,
+      "size_bytes": 21412,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Circular analog dial face with contrast bezel",
+        "Coaxial rotating hour and minute indicator hands",
+        "Wall-mounted chronometric proportion"
+      ],
+      "description": "Instrument used to measure and indicate time with circular numbered analog dial face and rotating hour/minute hands."
+    },
+    {
+      "uid": "mm_everyday_plant_pot",
+      "name": "Plant Pot",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "home_decor",
+      "file": "everyday/plant_pot.glb",
+      "aliases": [
+        "flowerpot",
+        "planter",
+        "indoor plant",
+        "potted plant"
+      ],
+      "triangles": 216,
+      "vertices": 114,
+      "size_bytes": 8504,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Tapered conical terracotta pottery body",
+        "Dark interior nutrient soil bed surface",
+        "Emerging central photosynthetic green sprout"
+      ],
+      "description": "Container in which flowers and other plants are cultivated and displayed, made of terracotta with soil and shoot."
+    },
+    {
+      "uid": "mm_everyday_umbrella",
+      "name": "Umbrella",
+      "category": "Everyday Objects and Furniture",
+      "subcategory": "accessories",
+      "file": "everyday/umbrella.glb",
+      "aliases": [
+        "parasol",
+        "rain umbrella",
+        "brolly"
+      ],
+      "triangles": 712,
+      "vertices": 360,
+      "size_bytes": 20356,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Domed protective waterproof fabric canopy",
+        "Central supporting metal runner shaft",
+        "Curved ergonomic J-hook hand grip handle"
+      ],
+      "description": "Collapsible canopy designed to protect against rain or sunlight, supported by ribs on a central shaft with curved hook handle."
+    },
+    {
+      "uid": "mm_geography_globe",
+      "name": "Globe",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "cartography",
+      "file": "geography/globe.glb",
+      "aliases": [
+        "terrestrial globe",
+        "world globe",
+        "earth globe",
+        "desk globe"
+      ],
+      "triangles": 1368,
+      "vertices": 688,
+      "size_bytes": 36052,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Spherical planetary representation",
+        "Standard 23.5-degree axial tilt angle",
+        "Semi-meridian calibrated support arc and pedestal base"
+      ],
+      "description": "Three-dimensional spherical scale model of Earth mounted on an inclined 23.5-degree meridian arc and tabletop stand."
+    },
+    {
+      "uid": "mm_geography_mountain_peak",
+      "name": "Mountain Peak",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "landforms",
+      "file": "geography/mountain_peak.glb",
+      "aliases": [
+        "mountain",
+        "alpine peak",
+        "summit",
+        "snowy mountain"
+      ],
+      "triangles": 128,
+      "vertices": 68,
+      "size_bytes": 5300,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Steep conical elevated rocky summit",
+        "High-albedo perennial snow/ice cap",
+        "Rugged alpine terrain silhouette"
+      ],
+      "description": "Prominent elevated landform rising conspicuously above surroundings, with rugged crags and perennial glacial snowcap."
+    },
+    {
+      "uid": "mm_geography_volcano",
+      "name": "Volcano",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "volcanology",
+      "file": "geography/volcano.glb",
+      "aliases": [
+        "active volcano",
+        "stratovolcano",
+        "volcano cone",
+        "caldera"
+      ],
+      "triangles": 144,
+      "vertices": 76,
+      "size_bytes": 5744,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Conical basaltic volcanic edifice",
+        "Summit caldera summit crater depression",
+        "Incandescent molten magma/lava vent pool"
+      ],
+      "description": "Stratovolcano rupture in the crust where molten lava, volcanic ash, and gases escape from a summit caldera crater."
+    },
+    {
+      "uid": "mm_geography_earth_layers",
+      "name": "Earth Layers",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "geology",
+      "file": "geography/earth_layers.glb",
+      "aliases": [
+        "internal earth structure",
+        "earth core",
+        "geosphere layers"
+      ],
+      "triangles": 2160,
+      "vertices": 1086,
+      "size_bytes": 54912,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Concentric spherical geological shells",
+        "Dense solid iron-nickel inner core",
+        "Silicate upper mantle and molten outer core zones"
+      ],
+      "description": "Internal concentric mechanical and compositional layers of Earth: solid inner core, liquid outer core, and mantle."
+    },
+    {
+      "uid": "mm_geography_coral_reef",
+      "name": "Coral Reef",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "marine_ecology",
+      "file": "geography/coral_reef.glb",
+      "aliases": [
+        "marine reef",
+        "coral ecosystem",
+        "barrier reef"
+      ],
+      "triangles": 200,
+      "vertices": 110,
+      "size_bytes": 10320,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Calcium carbonate substrate bedrock",
+        "Diverse pigmented branching coral polyp structures",
+        "Marine biodiversity reef habitat architecture"
+      ],
+      "description": "Underwater ecosystem characterized by reef-building corals formed of colonies of coral polyps held together by calcium carbonate."
+    },
+    {
+      "uid": "mm_geography_glacier",
+      "name": "Glacier",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "glaciology",
+      "file": "geography/glacier.glb",
+      "aliases": [
+        "valley glacier",
+        "alpine glacier",
+        "ice stream",
+        "serac"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 2980,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "High-density compacted blue ice tongue",
+        "Glaciated mountain valley trough",
+        "Gravitational downhill ice flow gradient"
+      ],
+      "description": "Persistent body of dense ice that is constantly moving under its own weight, carving a distinctive U-shaped valley."
+    },
+    {
+      "uid": "mm_geography_tectonic_plates",
+      "name": "Tectonic Plates",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "tectonics",
+      "file": "geography/tectonic_plates.glb",
+      "aliases": [
+        "plate tectonics",
+        "subduction zone",
+        "lithospheric plates",
+        "convergent boundary"
+      ],
+      "triangles": 24,
+      "vertices": 16,
+      "size_bytes": 3024,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Thick continental lithospheric slab",
+        "Subducting dense oceanic crustal slab",
+        "Deep oceanic trench convergent margin"
+      ],
+      "description": "Convergent lithospheric plate boundary where a denser oceanic plate undergoes subduction beneath lighter continental crust."
+    },
+    {
+      "uid": "mm_geography_crystal",
+      "name": "Crystal",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "mineralogy",
+      "file": "geography/crystal.glb",
+      "aliases": [
+        "quartz crystal",
+        "mineral cluster",
+        "crystalline prism",
+        "rock crystal"
+      ],
+      "triangles": 204,
+      "vertices": 120,
+      "size_bytes": 13364,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Hexagonal columnar prismatic crystal habit",
+        "Pointed six-sided pyramidal apex terminations",
+        "Translucent mineral cluster matrix"
+      ],
+      "description": "Cluster of prismatic quartz crystals displaying hexagonal columnar habits terminated by sharp six-sided pyramidal facets."
+    },
+    {
+      "uid": "mm_geography_waterfall",
+      "name": "Waterfall",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "hydrology",
+      "file": "geography/waterfall.glb",
+      "aliases": [
+        "cascade",
+        "falls",
+        "plunge waterfall",
+        "cataract"
+      ],
+      "triangles": 96,
+      "vertices": 54,
+      "size_bytes": 5736,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Vertical rock cliff escarpment ledge",
+        "Cascading vertical fluid water sheet",
+        "Basal plunge pool splash basin"
+      ],
+      "description": "River or other body of water's steep fall over a rocky ledge into a plunge pool below."
+    },
+    {
+      "uid": "mm_geography_cloud",
+      "name": "Cloud",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "meteorology",
+      "file": "geography/cloud.glb",
+      "aliases": [
+        "cumulus",
+        "cumulus cloud",
+        "fluffy cloud",
+        "rain cloud"
+      ],
+      "triangles": 2160,
+      "vertices": 1086,
+      "size_bytes": 54676,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Billowing cauliflower-like globular tops",
+        "Flat horizontal condensation cloud base",
+        "High-albedo white condensed water droplet volume"
+      ],
+      "description": "Clouds having flat bases and distinct lumpy, cauliflower-like globular billowing outlines."
+    },
+    {
+      "uid": "mm_geography_tornado",
+      "name": "Tornado",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "meteorology",
+      "file": "geography/tornado.glb",
+      "aliases": [
+        "twister",
+        "funnel cloud",
+        "cyclone",
+        "whirlwind"
+      ],
+      "triangles": 80,
+      "vertices": 42,
+      "size_bytes": 3252,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Inverted narrow vortex funnel cone",
+        "Extreme rotational updraft column",
+        "Atmospheric condensation funnel sheath"
+      ],
+      "description": "Violently rotating column of air extending between the surface of the Earth and a cumulonimbus cloud."
+    },
+    {
+      "uid": "mm_geography_water_cycle",
+      "name": "Water Cycle",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "hydrology",
+      "file": "geography/water_cycle.glb",
+      "aliases": [
+        "hydrologic cycle",
+        "hydrological cycle",
+        "evaporation cycle"
+      ],
+      "triangles": 744,
+      "vertices": 378,
+      "size_bytes": 21204,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Integrated ocean reservoir and terrestrial landscape",
+        "Atmospheric condensation cloud phase",
+        "Continuous hydrological cycle representation"
+      ],
+      "description": "Biogeochemical cycle describing continuous movement of water on, above, and below surface of the Earth via evaporation and precipitation."
+    },
+    {
+      "uid": "mm_geography_fossil",
+      "name": "Fossil",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "paleontology",
+      "file": "geography/fossil.glb",
+      "aliases": [
+        "ammonite",
+        "fossil shell",
+        "paleontology specimen",
+        "ammonite fossil"
+      ],
+      "triangles": 944,
+      "vertices": 480,
+      "size_bytes": 24168,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Planispiral logarithmic shell coiling",
+        "Ribbed chambered shell ornamentation",
+        "Mineralized fossil sedimentary petrifaction"
+      ],
+      "description": "Extinct marine mollusc cephalopod shell preserved in sedimentary rock showing characteristic logarithmic planispiral coiling."
+    },
+    {
+      "uid": "mm_geography_sand_dune",
+      "name": "Sand Dune",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "geomorphology",
+      "file": "geography/sand_dune.glb",
+      "aliases": [
+        "dune",
+        "desert dune",
+        "barchan dune",
+        "sand hill"
+      ],
+      "triangles": 64,
+      "vertices": 34,
+      "size_bytes": 2856,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Asymmetric windward slope and steep slip face",
+        "Golden desert aeolian sand coloration",
+        "Crescentic barchan landform morphology"
+      ],
+      "description": "Hill of loose sand built by aeolian processes (wind action), characterized by gentle windward slope and steep slip face."
+    },
+    {
+      "uid": "mm_geography_canyon",
+      "name": "Canyon",
+      "category": "Geography, Earth Science and Environment",
+      "subcategory": "geomorphology",
+      "file": "geography/canyon.glb",
+      "aliases": [
+        "gorge",
+        "river canyon",
+        "ravine",
+        "grand canyon"
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "size_bytes": 4136,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Steep stratified sedimentary canyon walls",
+        "Deep erosional incision gorge profile",
+        "Incised meandering river channel floor"
+      ],
+      "description": "Deep cleft between escarpments or cliffs resulting from weathering and the erosive activity of a river over geologic time."
+    },
+    {
+      "uid": "mm_history_pyramid",
+      "name": "Pyramid",
+      "category": "History, Architecture and Culture",
+      "subcategory": "monuments",
+      "file": "history/pyramid.glb",
+      "aliases": [
+        "great pyramid",
+        "giza pyramid",
+        "egyptian pyramid",
+        "khufu pyramid"
+      ],
+      "triangles": 32,
+      "vertices": 20,
+      "size_bytes": 3180,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Square monumental stone masonry foundation",
+        "Four converging equilateral triangular sloping faces",
+        "Gilded electrum apex pyramidion capstone"
+      ],
+      "description": "Ancient Egyptian monumental masonry tomb with square base and four sloping triangular faces meeting at gilded pyramidion capstone."
+    },
+    {
+      "uid": "mm_history_column",
+      "name": "Column",
+      "category": "History, Architecture and Culture",
+      "subcategory": "classical_architecture",
+      "file": "history/column.glb",
+      "aliases": [
+        "greek column",
+        "corinthian column",
+        "classical pillar",
+        "marble column"
+      ],
+      "triangles": 104,
+      "vertices": 58,
+      "size_bytes": 5808,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Fluted vertical cylindrical marble shaft",
+        "Classical architectural proportion with entasis taper",
+        "Ornamented capital and square plinth base"
+      ],
+      "description": "Classical architectural vertical structural element consisting of circular fluted marble shaft, base plinth, and decorative capital."
+    },
+    {
+      "uid": "mm_history_castle_tower",
+      "name": "Castle Tower",
+      "category": "History, Architecture and Culture",
+      "subcategory": "medieval_architecture",
+      "file": "history/castle_tower.glb",
+      "aliases": [
+        "keep",
+        "castle turret",
+        "medieval tower",
+        "fortress keep"
+      ],
+      "triangles": 136,
+      "vertices": 72,
+      "size_bytes": 5552,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Heavy cylindrical stone ashlar masonry core",
+        "Projecting corbelled machicolation crown",
+        "Crenellated defensive parapet battlements"
+      ],
+      "description": "Medieval defensive stone masonry tower fortification featuring thick walls and projecting machicolated crenellated battlements."
+    },
+    {
+      "uid": "mm_history_colosseum",
+      "name": "Colosseum",
+      "category": "History, Architecture and Culture",
+      "subcategory": "monuments",
+      "file": "history/colosseum.glb",
+      "aliases": [
+        "roman amphitheatre",
+        "amphitheatrum flavium",
+        "flavian amphitheatre"
+      ],
+      "triangles": 184,
+      "vertices": 96,
+      "size_bytes": 6656,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Elliptical multi-tiered arcade monument",
+        "Central gladiatorial arena combat floor",
+        "Monumental Roman travertine stone arches"
+      ],
+      "description": "Elliptical amphitheatre in center of Rome, the largest ancient amphitheatre ever built, constructed of travertine stone."
+    },
+    {
+      "uid": "mm_history_obelisk",
+      "name": "Obelisk",
+      "category": "History, Architecture and Culture",
+      "subcategory": "monuments",
+      "file": "history/obelisk.glb",
+      "aliases": [
+        "monolithic obelisk",
+        "egyptian obelisk",
+        "stone monument"
+      ],
+      "triangles": 32,
+      "vertices": 20,
+      "size_bytes": 3144,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Monolithic four-sided tapering granite pillar",
+        "Gilded summit pyramidion apex",
+        "Ancient Egyptian monumental solar symbol"
+      ],
+      "description": "Tall, four-sided, narrow tapering monument which ends in a pyramid-like shape or pyramidion at the top."
+    },
+    {
+      "uid": "mm_history_amphora",
+      "name": "Amphora",
+      "category": "History, Architecture and Culture",
+      "subcategory": "archaeology",
+      "file": "history/amphora.glb",
+      "aliases": [
+        "greek amphora",
+        "ancient vase",
+        "terracotta vessel",
+        "urn"
+      ],
+      "triangles": 1944,
+      "vertices": 976,
+      "size_bytes": 50804,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Ovoid tapered terracotta ceramic body",
+        "Two vertical curved arching handles",
+        "Slender cylindrical pouring neck"
+      ],
+      "description": "Classical ceramic container with characteristic ovoid shape and two curved vertical handles for carrying wine and olive oil."
+    },
+    {
+      "uid": "mm_history_stone_monument",
+      "name": "Stone Monument",
+      "category": "History, Architecture and Culture",
+      "subcategory": "archaeology",
+      "file": "history/stone_monument.glb",
+      "aliases": [
+        "stonehenge",
+        "trilithon",
+        "megalith",
+        "standing stone",
+        "dolmen"
+      ],
+      "triangles": 36,
+      "vertices": 24,
+      "size_bytes": 4080,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Two vertical upright megalithic stone pillars",
+        "Horizontal spanning lintel capstone beam",
+        "Neolithic dressed sarsen megalith architecture"
+      ],
+      "description": "Prehistoric megalithic structure consisting of two large vertical upright megaliths supporting a third horizontal stone lintel across top."
+    },
+    {
+      "uid": "mm_history_handaxe",
+      "name": "Handaxe",
+      "category": "History, Architecture and Culture",
+      "subcategory": "archaeology",
+      "file": "history/handaxe.glb",
+      "aliases": [
+        "biface",
+        "paleolithic tool",
+        "flint tool",
+        "acheulean axe"
+      ],
+      "triangles": 32,
+      "vertices": 18,
+      "size_bytes": 2024,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Bifacial flaked teardrop silhouette",
+        "Sharp worked lateral cutting perimeter edges",
+        "Flint knapped lithic texture"
+      ],
+      "description": "Prehistoric stone tool with two faces that is the longest-used tool in human history, bifacially flaked into teardrop shape."
+    },
+    {
+      "uid": "mm_history_astrolabe",
+      "name": "Astrolabe",
+      "category": "History, Architecture and Culture",
+      "subcategory": "historical_instruments",
+      "file": "history/astrolabe.glb",
+      "aliases": [
+        "planispheric astrolabe",
+        "navigational instrument",
+        "brass astrolabe"
+      ],
+      "triangles": 180,
+      "vertices": 94,
+      "size_bytes": 7560,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Circular brass graduated mater disc rim",
+        "Rotating openwork star-pointer rete disc",
+        "Pivoting alidade sighting rule arm"
+      ],
+      "description": "Ancient astronomical instrument that was a handheld model of the universe used by astronomers and navigators."
+    },
+    {
+      "uid": "mm_history_arch",
+      "name": "Arch",
+      "category": "History, Architecture and Culture",
+      "subcategory": "classical_architecture",
+      "file": "history/arch.glb",
+      "aliases": [
+        "roman arch",
+        "triumphal arch",
+        "stone archway",
+        "semicircular arch"
+      ],
+      "triangles": 612,
+      "vertices": 312,
+      "size_bytes": 18948,
+      "license": "CC0-1.0",
+      "distinguishing_features": [
+        "Two vertical supporting stone masonry piers",
+        "Semicircular voussoir curved arch vault",
+        "Central locking keystone wedge at crown"
+      ],
+      "description": "True semicircular masonry arch constructed of wedge-shaped voussoir stones culminating in a central keystone."
+    }
+  ]
+}

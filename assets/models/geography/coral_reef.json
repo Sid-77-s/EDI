@@ -1,0 +1,29 @@
+{
+  "name": "Coral Reef",
+  "aliases": [
+    "marine reef",
+    "coral ecosystem",
+    "barrier reef"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "marine_ecology",
+  "description": "Underwater ecosystem characterized by reef-building corals formed of colonies of coral polyps held together by calcium carbonate.",
+  "distinguishing_features": [
+    "Calcium carbonate substrate bedrock",
+    "Diverse pigmented branching coral polyp structures",
+    "Marine biodiversity reef habitat architecture"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Coral Reef.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_coral_reef",
+  "fileIdentifier": "coral_reef.glb",
+  "statistics": {
+    "triangle_count": 200,
+    "vertex_count": 110,
+    "file_size_bytes": 10320
+  }
+}

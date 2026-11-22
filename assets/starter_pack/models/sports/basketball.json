@@ -1,0 +1,29 @@
+{
+  "name": "Basketball",
+  "aliases": [
+    "nba ball",
+    "hoop ball",
+    "basketball sphere"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "balls",
+  "description": "Regulation basketball with pebbled high-friction orange composite leather surface and inlaid black channel seams.",
+  "distinguishing_features": [
+    "Pebbled orange high-grip composite leather",
+    "Contrasting inset black channel seam ribs",
+    "Regulation spherical size 7 geometry"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Basketball.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_basketball",
+  "fileIdentifier": "basketball.glb",
+  "statistics": {
+    "triangle_count": 1872,
+    "vertex_count": 938,
+    "file_size_bytes": 47808
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Inclined Plane",
+  "aliases": [
+    "ramp",
+    "slope",
+    "simple machine plane"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "mechanics",
+  "description": "Sloping ramp enabling heavy loads to be raised using less applied force over a longer distance.",
+  "distinguishing_features": [
+    "Tilted inclined plane surface",
+    "Sliding friction block",
+    "Horizontal ground reference"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Inclined Plane.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_inclined_plane",
+  "fileIdentifier": "inclined_plane.glb",
+  "statistics": {
+    "triangle_count": 36,
+    "vertex_count": 24,
+    "file_size_bytes": 4440
+  }
+}

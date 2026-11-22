@@ -1,0 +1,30 @@
+{
+  "name": "Arch",
+  "aliases": [
+    "roman arch",
+    "triumphal arch",
+    "stone archway",
+    "semicircular arch"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "classical_architecture",
+  "description": "True semicircular masonry arch constructed of wedge-shaped voussoir stones culminating in a central keystone.",
+  "distinguishing_features": [
+    "Two vertical supporting stone masonry piers",
+    "Semicircular voussoir curved arch vault",
+    "Central locking keystone wedge at crown"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Arch.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_arch",
+  "fileIdentifier": "arch.glb",
+  "statistics": {
+    "triangle_count": 612,
+    "vertex_count": 312,
+    "file_size_bytes": 18948
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Submarine",
+  "aliases": [
+    "naval sub",
+    "underwater vessel",
+    "submersible",
+    "u-boat"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "maritime",
+  "description": "Naval watercraft capable of independent underwater operation with cylindrical pressure hull and elevated conning tower sail.",
+  "distinguishing_features": [
+    "Elongated cylindrical pressure hull fuselage",
+    "Elevated conning tower sail with periscope mast",
+    "Submersible naval architecture"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Submarine.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_submarine",
+  "fileIdentifier": "submarine.glb",
+  "statistics": {
+    "triangle_count": 804,
+    "vertex_count": 408,
+    "file_size_bytes": 22684
+  }
+}

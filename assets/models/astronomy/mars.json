@@ -1,0 +1,29 @@
+{
+  "name": "Mars",
+  "aliases": [
+    "Planet Mars",
+    "Red planet",
+    "fourth planet"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "planets",
+  "description": "Fourth planet, iron-oxide rich red surface and bright white carbon-dioxide/water ice cap.",
+  "distinguishing_features": [
+    "Rusty red-orange surface",
+    "White northern polar cap",
+    "Rocky desert terrain"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Mars.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_mars",
+  "fileIdentifier": "mars.glb",
+  "statistics": {
+    "triangle_count": 1440,
+    "vertex_count": 724,
+    "file_size_bytes": 36740
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Pen",
+  "aliases": [
+    "ballpoint pen",
+    "biro",
+    "ink pen",
+    "writing pen"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "stationery",
+  "description": "Writing instrument that dispenses ink over a metal ball at its point, with slender cylindrical barrel and pocket clip.",
+  "distinguishing_features": [
+    "Slender cylindrical plastic/metal grip barrel",
+    "Tapered metallic writing point nib",
+    "Top pocket retention spring clip"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Pen.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_pen",
+  "fileIdentifier": "pen.glb",
+  "statistics": {
+    "triangle_count": 156,
+    "vertex_count": 84,
+    "file_size_bytes": 7112
+  }
+}

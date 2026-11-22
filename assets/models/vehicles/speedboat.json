@@ -1,0 +1,30 @@
+{
+  "name": "Speedboat",
+  "aliases": [
+    "motorboat",
+    "powerboat",
+    "runabout",
+    "speedboat craft"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "maritime",
+  "description": "High-speed watercraft featuring sharp V-shaped hydrodynamic planing hull, tinted wrap-around windshield, and stern motor.",
+  "distinguishing_features": [
+    "Sharp hydrodynamic V-hull entry bow",
+    "Tinted aerodynamic cockpit windshield",
+    "Planing hull surface for marine velocity"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Speedboat.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_speedboat",
+  "fileIdentifier": "speedboat.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5812
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Mushroom",
+  "aliases": [
+    "toadstool",
+    "fungus",
+    "mushroom fruiting body",
+    "agaric"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "mycology",
+  "description": "Fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, with stipe stem and domed cap.",
+  "distinguishing_features": [
+    "Conical umbrella-shaped pileus cap",
+    "Vertical fleshy stipe stalk",
+    "Fungal fruiting anatomy"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Mushroom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_mushroom",
+  "fileIdentifier": "mushroom.glb",
+  "statistics": {
+    "triangle_count": 152,
+    "vertex_count": 80,
+    "file_size_bytes": 5924
+  }
+}

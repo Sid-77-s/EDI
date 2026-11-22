@@ -1,0 +1,29 @@
+{
+  "name": "Sulfur Atom",
+  "aliases": [
+    "Sulfur",
+    "S atom",
+    "brimstone"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Non-metal element essential to proteins and disulfide cross-links.",
+  "distinguishing_features": [
+    "Bright yellow elemental nucleus",
+    "Six valence electrons",
+    "Three electron shells"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Sulfur Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_sulfur_atom",
+  "fileIdentifier": "sulfur_atom.glb",
+  "statistics": {
+    "triangle_count": 12672,
+    "vertex_count": 6370,
+    "file_size_bytes": 321360
+  }
+}

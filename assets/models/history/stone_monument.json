@@ -1,0 +1,31 @@
+{
+  "name": "Stone Monument",
+  "aliases": [
+    "stonehenge",
+    "trilithon",
+    "megalith",
+    "standing stone",
+    "dolmen"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "archaeology",
+  "description": "Prehistoric megalithic structure consisting of two large vertical upright megaliths supporting a third horizontal stone lintel across top.",
+  "distinguishing_features": [
+    "Two vertical upright megalithic stone pillars",
+    "Horizontal spanning lintel capstone beam",
+    "Neolithic dressed sarsen megalith architecture"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Stone Monument.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_stone_monument",
+  "fileIdentifier": "stone_monument.glb",
+  "statistics": {
+    "triangle_count": 36,
+    "vertex_count": 24,
+    "file_size_bytes": 4080
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Fighter Jet",
+  "aliases": [
+    "supersonic fighter",
+    "combat aircraft",
+    "jet fighter",
+    "stealth jet"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "aviation",
+  "description": "High-speed tactical military jet aircraft featuring sharp delta-wing planform, bubble canopy, and afterburning exhaust.",
+  "distinguishing_features": [
+    "Sleek aerodynamic supersonic delta wings",
+    "Tinted bubble pilot cockpit canopy",
+    "Needle-point supersonic radome nose"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Fighter Jet.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_fighter_jet",
+  "fileIdentifier": "fighter_jet.glb",
+  "statistics": {
+    "triangle_count": 804,
+    "vertex_count": 408,
+    "file_size_bytes": 22656
+  }
+}

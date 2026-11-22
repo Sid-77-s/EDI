@@ -1,0 +1,30 @@
+{
+  "name": "Cat",
+  "aliases": [
+    "domestic cat",
+    "feline",
+    "felis catus",
+    "kitten"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Small carnivorous mammal with sleek body, upright pointed triangular ears, and long curved balancing tail.",
+  "distinguishing_features": [
+    "Compact feline quadruped body",
+    "Upright pointed triangular ears",
+    "Curved balancing caudal tail"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Cat.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_cat",
+  "fileIdentifier": "cat.glb",
+  "statistics": {
+    "triangle_count": 1944,
+    "vertex_count": 990,
+    "file_size_bytes": 55608
+  }
+}

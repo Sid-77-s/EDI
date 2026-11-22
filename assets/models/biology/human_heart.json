@@ -1,0 +1,30 @@
+{
+  "name": "Human Heart",
+  "aliases": [
+    "heart",
+    "cardiac muscle",
+    "cor",
+    "human heart model"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Four-chambered muscular organ pumping blood through the circulatory system, with ventricles, aortic arch, and pulmonary trunk.",
+  "distinguishing_features": [
+    "Muscular conical ventricular mass",
+    "Prominent aortic arch curve",
+    "Pulmonary artery bifurcations"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Human Heart.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_human_heart",
+  "fileIdentifier": "human_heart.glb",
+  "statistics": {
+    "triangle_count": 1368,
+    "vertex_count": 688,
+    "file_size_bytes": 36208
+  }
+}

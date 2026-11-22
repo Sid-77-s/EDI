@@ -1,0 +1,30 @@
+{
+  "name": "Bicycle",
+  "aliases": [
+    "bike",
+    "pushbike",
+    "cycle",
+    "pedal bicycle"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "road",
+  "description": "Human-powered pedal-driven single-track vehicle with two spoked wheels attached to diamond frame structure.",
+  "distinguishing_features": [
+    "Tubular diamond geometric bicycle frame",
+    "Two slender spoked pneumatic rim wheels",
+    "Elevated handlebar steering and saddle"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Bicycle.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_bicycle",
+  "fileIdentifier": "bicycle.glb",
+  "statistics": {
+    "triangle_count": 1308,
+    "vertex_count": 660,
+    "file_size_bytes": 36920
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Electric Motor",
+  "aliases": [
+    "induction motor",
+    "AC motor",
+    "electromotor",
+    "drive motor"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "electrical_engineering",
+  "description": "Electromechanical machine converting electrical energy into mechanical energy, with cast iron stator body, drive shaft, and conduit terminal box.",
+  "distinguishing_features": [
+    "Cylindrical ribbed stator housing",
+    "Protruding hardened steel drive rotor shaft",
+    "Top mounted electrical terminal junction box"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Electric Motor.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_electric_motor",
+  "fileIdentifier": "electric_motor.glb",
+  "statistics": {
+    "triangle_count": 156,
+    "vertex_count": 84,
+    "file_size_bytes": 7204
+  }
+}

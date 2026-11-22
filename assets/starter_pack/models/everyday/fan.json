@@ -1,0 +1,30 @@
+{
+  "name": "Fan",
+  "aliases": [
+    "desk fan",
+    "table fan",
+    "cooling fan",
+    "electric fan"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "appliances",
+  "description": "Powered machine used to create flow of air for cooling, with circular safety guard cage and rotating impeller blades.",
+  "distinguishing_features": [
+    "Circular protective wire guard grille",
+    "Internal rotating multi-fin airflow impeller",
+    "Elevated tabletop pedestal stand"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Fan.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_fan",
+  "fileIdentifier": "fan.glb",
+  "statistics": {
+    "triangle_count": 732,
+    "vertex_count": 372,
+    "file_size_bytes": 21764
+  }
+}

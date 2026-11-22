@@ -1,0 +1,29 @@
+{
+  "name": "Stomach",
+  "aliases": [
+    "human stomach",
+    "gastric organ",
+    "ventriculus"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Muscular, hollow organ in the gastrointestinal tract with greater and lesser curvatures, fundus, and pylorus.",
+  "distinguishing_features": [
+    "C-shaped greater and lesser curvatures",
+    "Superior cardiac esophageal inlet",
+    "Inferior pyloric duodenal outlet"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Stomach.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_stomach",
+  "fileIdentifier": "stomach.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 364,
+    "file_size_bytes": 20568
+  }
+}

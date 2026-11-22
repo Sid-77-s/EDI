@@ -1,0 +1,30 @@
+{
+  "name": "Sports Car",
+  "aliases": [
+    "supercar",
+    "fast car",
+    "sports coupe",
+    "performance car"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "road",
+  "description": "Low-slung, aerodynamic high-performance passenger automobile with low ground clearance and rear aerofoil spoiler.",
+  "distinguishing_features": [
+    "Low-profile aerodynamic sports coupe silhouette",
+    "Glossy automotive paintwork finish",
+    "Raised rear downforce aerofoil spoiler"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Sports Car.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_sports_car",
+  "fileIdentifier": "sports_car.glb",
+  "statistics": {
+    "triangle_count": 324,
+    "vertex_count": 176,
+    "file_size_bytes": 15176
+  }
+}

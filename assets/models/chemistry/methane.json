@@ -1,0 +1,29 @@
+{
+  "name": "Methane",
+  "aliases": [
+    "CH4",
+    "CH4 molecule",
+    "natural gas methane"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Simplest alkane hydrocarbon with tetrahedral symmetry (109.5 degree bond angles).",
+  "distinguishing_features": [
+    "Central black carbon atom",
+    "Four white hydrogen ligands",
+    "Regular tetrahedral geometry"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Methane.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_methane",
+  "fileIdentifier": "methane.glb",
+  "statistics": {
+    "triangle_count": 3888,
+    "vertex_count": 1962,
+    "file_size_bytes": 101624
+  }
+}

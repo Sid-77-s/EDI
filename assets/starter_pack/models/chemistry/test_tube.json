@@ -1,0 +1,30 @@
+{
+  "name": "Test Tube",
+  "aliases": [
+    "Laboratory test tube",
+    "glass test tube",
+    "culture tube",
+    "chemical test tube"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "chemistry_equipment",
+  "description": "Slender cylindrical glass container with rounded U-shaped hemispherical bottom for chemical tests.",
+  "distinguishing_features": [
+    "Cylindrical glass body",
+    "Rounded hemispherical bottom",
+    "Colored chemical liquid reagent"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Test Tube.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_test_tube",
+  "fileIdentifier": "test_tube.glb",
+  "statistics": {
+    "triangle_count": 864,
+    "vertex_count": 438,
+    "file_size_bytes": 24044
+  }
+}

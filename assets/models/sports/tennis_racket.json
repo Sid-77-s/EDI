@@ -1,0 +1,29 @@
+{
+  "name": "Tennis Racket",
+  "aliases": [
+    "tennis racquet",
+    "strung racket",
+    "graphite racket"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "equipment",
+  "description": "Strung sports implement with oval aerodynamic graphite composite frame hoop, open throat, and wrapped grip handle.",
+  "distinguishing_features": [
+    "Oval strung head hoop frame",
+    "Open aerodynamic bifurcated throat",
+    "Cushioned non-slip overgrip handle"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Tennis Racket.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_tennis_racket",
+  "fileIdentifier": "tennis_racket.glb",
+  "statistics": {
+    "triangle_count": 816,
+    "vertex_count": 412,
+    "file_size_bytes": 22872
+  }
+}

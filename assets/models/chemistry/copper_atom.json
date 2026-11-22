@@ -1,0 +1,29 @@
+{
+  "name": "Copper Atom",
+  "aliases": [
+    "Copper",
+    "Cu atom",
+    "cuprum"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "High electrical conductivity transition metal with filled 3d subshell and 1 4s electron.",
+  "distinguishing_features": [
+    "Reddish-bronze nucleus",
+    "Four electron shells",
+    "Single valence conduction electron"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Copper Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_copper_atom",
+  "fileIdentifier": "copper_atom.glb",
+  "statistics": {
+    "triangle_count": 22176,
+    "vertex_count": 11148,
+    "file_size_bytes": 561296
+  }
+}

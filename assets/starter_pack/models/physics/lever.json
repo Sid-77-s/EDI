@@ -1,0 +1,29 @@
+{
+  "name": "Lever",
+  "aliases": [
+    "simple lever",
+    "class 1 lever",
+    "fulcrum beam"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "mechanics",
+  "description": "First-class lever demonstrating torque equilibrium where effort arm balances load arm over a pivot fulcrum.",
+  "distinguishing_features": [
+    "Rigid horizontal lever beam",
+    "Triangular pivot fulcrum",
+    "Counterbalancing load mass"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Lever.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_lever",
+  "fileIdentifier": "lever.glb",
+  "statistics": {
+    "triangle_count": 88,
+    "vertex_count": 50,
+    "file_size_bytes": 5496
+  }
+}

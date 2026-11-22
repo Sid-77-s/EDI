@@ -1,0 +1,29 @@
+{
+  "name": "Carbon Dioxide",
+  "aliases": [
+    "CO2",
+    "CO2 molecule",
+    "carbon dioxide gas"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Linear nonpolar molecule composed of a central carbon atom double-bonded to two flanking oxygen atoms.",
+  "distinguishing_features": [
+    "Central black carbon atom",
+    "Two opposing red oxygen atoms",
+    "Linear 180-degree bond geometry"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Carbon Dioxide.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_carbon_dioxide",
+  "fileIdentifier": "carbon_dioxide.glb",
+  "statistics": {
+    "triangle_count": 2304,
+    "vertex_count": 1162,
+    "file_size_bytes": 60364
+  }
+}

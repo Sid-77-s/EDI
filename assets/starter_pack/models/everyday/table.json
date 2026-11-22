@@ -1,0 +1,29 @@
+{
+  "name": "Table",
+  "aliases": [
+    "dining table",
+    "wooden table",
+    "desk table"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "furniture",
+  "description": "Piece of furniture with flat horizontal work or dining surface supported by four perimeter corner legs.",
+  "distinguishing_features": [
+    "Broad flat rectangular work tabletop",
+    "Four perimeter vertical supporting legs",
+    "Stable dining/work height proportion"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Table.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_table",
+  "fileIdentifier": "table.glb",
+  "statistics": {
+    "triangle_count": 300,
+    "vertex_count": 160,
+    "file_size_bytes": 12276
+  }
+}

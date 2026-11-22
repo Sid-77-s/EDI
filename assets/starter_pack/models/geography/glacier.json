@@ -1,0 +1,30 @@
+{
+  "name": "Glacier",
+  "aliases": [
+    "valley glacier",
+    "alpine glacier",
+    "ice stream",
+    "serac"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "glaciology",
+  "description": "Persistent body of dense ice that is constantly moving under its own weight, carving a distinctive U-shaped valley.",
+  "distinguishing_features": [
+    "High-density compacted blue ice tongue",
+    "Glaciated mountain valley trough",
+    "Gravitational downhill ice flow gradient"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Glacier.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_glacier",
+  "fileIdentifier": "glacier.glb",
+  "statistics": {
+    "triangle_count": 24,
+    "vertex_count": 16,
+    "file_size_bytes": 2980
+  }
+}

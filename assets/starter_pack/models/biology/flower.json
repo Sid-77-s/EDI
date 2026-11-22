@@ -1,0 +1,29 @@
+{
+  "name": "Flower",
+  "aliases": [
+    "blossom",
+    "angiosperm flower",
+    "floral bloom"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "botany",
+  "description": "Reproductive structure of angiosperms consisting of central nectar-rich receptacle disc surrounded by radial colored petals.",
+  "distinguishing_features": [
+    "Central circular floral disc",
+    "Six symmetric radiating floral petals",
+    "Inferior supporting pedicel stem"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Flower.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_flower",
+  "fileIdentifier": "flower.glb",
+  "statistics": {
+    "triangle_count": 5112,
+    "vertex_count": 2572,
+    "file_size_bytes": 130320
+  }
+}

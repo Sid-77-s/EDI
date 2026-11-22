@@ -1,0 +1,30 @@
+{
+  "name": "Erlenmeyer Flask",
+  "aliases": [
+    "Conical flask",
+    "titration flask",
+    "science flask",
+    "lab flask"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "chemistry_equipment",
+  "description": "Conical laboratory flask with wide flat base and narrow neck for swirling liquids without splashing.",
+  "distinguishing_features": [
+    "Conical glassware body",
+    "Narrow cylindrical neck",
+    "Transparent glass material"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Erlenmeyer Flask.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_erlenmeyer_flask",
+  "fileIdentifier": "erlenmeyer_flask.glb",
+  "statistics": {
+    "triangle_count": 144,
+    "vertex_count": 76,
+    "file_size_bytes": 5624
+  }
+}

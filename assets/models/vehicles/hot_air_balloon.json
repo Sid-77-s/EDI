@@ -1,0 +1,29 @@
+{
+  "name": "Hot Air Balloon",
+  "aliases": [
+    "aerostat",
+    "hot air aerostat",
+    "thermal balloon"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "aviation",
+  "description": "Lighter-than-air aerostat consisting of a large heated air fabric envelope bag and suspended passenger wicker basket.",
+  "distinguishing_features": [
+    "Large tear-shaped thermal air envelope",
+    "Suspended passenger wicker gondola basket",
+    "Vertical buoyancy aerostat principle"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Hot Air Balloon.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_hot_air_balloon",
+  "fileIdentifier": "hot_air_balloon.glb",
+  "statistics": {
+    "triangle_count": 732,
+    "vertex_count": 370,
+    "file_size_bytes": 19912
+  }
+}

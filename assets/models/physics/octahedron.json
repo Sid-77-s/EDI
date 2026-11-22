@@ -1,0 +1,28 @@
+{
+  "name": "Octahedron",
+  "aliases": [
+    "regular octahedron",
+    "8-faced polyhedron"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "geometry",
+  "description": "Platonic solid having eight congruent equilateral triangular faces and six vertices, dual of the cube.",
+  "distinguishing_features": [
+    "Eight equilateral triangular faces",
+    "Six vertices and twelve edges",
+    "Platonic octahedron geometry"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Octahedron.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_octahedron",
+  "fileIdentifier": "octahedron.glb",
+  "statistics": {
+    "triangle_count": 8,
+    "vertex_count": 6,
+    "file_size_bytes": 1252
+  }
+}

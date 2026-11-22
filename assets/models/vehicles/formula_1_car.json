@@ -1,0 +1,30 @@
+{
+  "name": "Formula 1 Car",
+  "aliases": [
+    "f1 car",
+    "grand prix racer",
+    "formula one",
+    "racing single seater"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "road",
+  "description": "Single-seat, open-cockpit, open-wheel formula racing car with prominent front/rear aerofoil downforce wings and halo safety frame.",
+  "distinguishing_features": [
+    "Open-wheel racing configuration with 4 exposed slick tires",
+    "Wide front and high rear downforce aerofoil wings",
+    "Distinctive protective cockpit halo arc"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Formula 1 Car.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_formula_1_car",
+  "fileIdentifier": "formula_1_car.glb",
+  "statistics": {
+    "triangle_count": 964,
+    "vertex_count": 498,
+    "file_size_bytes": 32452
+  }
+}

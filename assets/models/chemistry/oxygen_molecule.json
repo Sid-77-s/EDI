@@ -1,0 +1,30 @@
+{
+  "name": "Oxygen Molecule",
+  "aliases": [
+    "O2",
+    "O2 molecule",
+    "dioxygen",
+    "molecular oxygen"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Diatomic oxygen gas (O2) comprising two covalently bonded oxygen atoms; distinct from atomic oxygen.",
+  "distinguishing_features": [
+    "Two identical red oxygen atoms",
+    "Covalent double-bond bridge",
+    "Diatomic molecular symmetry"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Oxygen Molecule.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_oxygen_molecule",
+  "fileIdentifier": "oxygen_molecule.glb",
+  "statistics": {
+    "triangle_count": 1512,
+    "vertex_count": 762,
+    "file_size_bytes": 39452
+  }
+}

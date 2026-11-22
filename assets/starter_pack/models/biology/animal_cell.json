@@ -1,0 +1,29 @@
+{
+  "name": "Animal Cell",
+  "aliases": [
+    "eukaryotic animal cell",
+    "typical animal cell",
+    "cell model"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "cellular_biology",
+  "description": "Typical eukaryotic animal cell with flexible outer plasma membrane, prominent nucleus, and organelles.",
+  "distinguishing_features": [
+    "Flexible spherical plasma membrane",
+    "Distinct spherical nucleus with genetic material",
+    "Suspended cytoplasmic organelles"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Animal Cell.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_animal_cell",
+  "fileIdentifier": "animal_cell.glb",
+  "statistics": {
+    "triangle_count": 2880,
+    "vertex_count": 1448,
+    "file_size_bytes": 73392
+  }
+}

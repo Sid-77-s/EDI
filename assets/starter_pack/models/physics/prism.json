@@ -1,0 +1,29 @@
+{
+  "name": "Prism",
+  "aliases": [
+    "optical prism",
+    "triangular prism",
+    "refraction prism"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "optics",
+  "description": "Transparent triangular optical prism refracting and dispersing incident light into constituent wavelengths.",
+  "distinguishing_features": [
+    "Triangular prism cross-section",
+    "Translucent optical glass medium",
+    "Incident light refraction beam"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Prism.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_prism",
+  "fileIdentifier": "prism.glb",
+  "statistics": {
+    "triangle_count": 84,
+    "vertex_count": 46,
+    "file_size_bytes": 4292
+  }
+}

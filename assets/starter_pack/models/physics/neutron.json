@@ -1,0 +1,29 @@
+{
+  "name": "Neutron",
+  "aliases": [
+    "n0",
+    "neutron particle",
+    "neutral nucleon"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "subatomic",
+  "description": "Electrically neutral hadron found in atomic nuclei, composed of two down quarks and one up quark.",
+  "distinguishing_features": [
+    "Spherical neutral nucleon",
+    "Grey neutral color-coding",
+    "Distinct zero-charge equatorial guide"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Neutron.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_neutron",
+  "fileIdentifier": "neutron.glb",
+  "statistics": {
+    "triangle_count": 1296,
+    "vertex_count": 650,
+    "file_size_bytes": 33232
+  }
+}

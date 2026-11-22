@@ -1,0 +1,30 @@
+{
+  "name": "Comet",
+  "aliases": [
+    "Halley's Comet",
+    "ice comet",
+    "dirty snowball",
+    "comet with tail"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "small_bodies",
+  "description": "Small Solar System body composed of ice, dust and rock with a glowing coma and extended dust tail.",
+  "distinguishing_features": [
+    "Dark icy nucleus",
+    "Luminous gas coma",
+    "Elongated dust and ion tail streamer"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Comet.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_comet",
+  "fileIdentifier": "comet.glb",
+  "statistics": {
+    "triangle_count": 1512,
+    "vertex_count": 762,
+    "file_size_bytes": 39432
+  }
+}

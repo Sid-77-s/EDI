@@ -1,0 +1,29 @@
+{
+  "name": "Spring",
+  "aliases": [
+    "helical spring",
+    "coil spring",
+    "Hooke spring"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "mechanics",
+  "description": "Mechanical elastic coil demonstrating Hooke's Law of elasticity (F = -kx).",
+  "distinguishing_features": [
+    "Continuous helical coil winding",
+    "Uniform pitch and diameter",
+    "Metallic wire cross-section"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Spring.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_spring",
+  "fileIdentifier": "spring.glb",
+  "statistics": {
+    "triangle_count": 944,
+    "vertex_count": 480,
+    "file_size_bytes": 24088
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Smartphone",
+  "aliases": [
+    "phone",
+    "mobile phone",
+    "cell phone",
+    "touchscreen phone"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "consumer_electronics",
+  "description": "Handheld personal computer with touchscreen interface, slim slab form factor, and multi-lens camera module.",
+  "distinguishing_features": [
+    "Slim rectangular rounded-corner chassis slab",
+    "Full-face glossy touchscreen glass display",
+    "Rear camera lens array bump"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Smartphone.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_smartphone",
+  "fileIdentifier": "smartphone.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5764
+  }
+}

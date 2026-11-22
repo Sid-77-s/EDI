@@ -1,0 +1,29 @@
+{
+  "name": "Hockey Stick",
+  "aliases": [
+    "field hockey stick",
+    "ice hockey stick",
+    "hockey shaft"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "equipment",
+  "description": "Long sporting shaft with angled lower curved blade used to drive a puck or ball into the opponent's goal.",
+  "distinguishing_features": [
+    "Long straight composite rectangular shaft",
+    "Sharp perpendicular curved lower blade",
+    "Grip taper at proximal butt end"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Hockey Stick.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_hockey_stick",
+  "fileIdentifier": "hockey_stick.glb",
+  "statistics": {
+    "triangle_count": 24,
+    "vertex_count": 16,
+    "file_size_bytes": 2812
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Bar Magnet",
+  "aliases": [
+    "permanent magnet",
+    "dipole magnet",
+    "magnetic bar"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "electromagnetism",
+  "description": "Rectangular permanent magnetic dipole featuring marked North (red) and South (blue) magnetic poles.",
+  "distinguishing_features": [
+    "Bicolor magnetic dipole",
+    "Red North pole segment",
+    "Blue South pole segment"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Bar Magnet.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_bar_magnet",
+  "fileIdentifier": "bar_magnet.glb",
+  "statistics": {
+    "triangle_count": 24,
+    "vertex_count": 16,
+    "file_size_bytes": 2952
+  }
+}

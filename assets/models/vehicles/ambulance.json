@@ -1,0 +1,29 @@
+{
+  "name": "Ambulance",
+  "aliases": [
+    "emergency vehicle",
+    "paramedic van",
+    "medical transport"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "emergency",
+  "description": "Medically equipped emergency vehicle with white high-roof body, roof flashing emergency lightbar, and red cross insignia.",
+  "distinguishing_features": [
+    "White emergency medical van coachwork",
+    "Roof-mounted emergency strobe lightbar",
+    "Contrasting medical Red Cross lateral insignia"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Ambulance.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_ambulance",
+  "fileIdentifier": "ambulance.glb",
+  "statistics": {
+    "triangle_count": 336,
+    "vertex_count": 184,
+    "file_size_bytes": 16556
+  }
+}

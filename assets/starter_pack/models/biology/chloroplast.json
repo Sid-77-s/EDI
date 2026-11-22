@@ -1,0 +1,29 @@
+{
+  "name": "Chloroplast",
+  "aliases": [
+    "chloroplast organelle",
+    "plastid",
+    "photosynthetic organelle"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "cellular_biology",
+  "description": "Photosynthetic organelle in plant cells with double envelope containing stacked thylakoid grana discs.",
+  "distinguishing_features": [
+    "Biconvex lens outer envelope",
+    "Stacked disc-like thylakoid grana columns",
+    "Chlorophyll pigmentation site"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Chloroplast.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_chloroplast",
+  "fileIdentifier": "chloroplast.glb",
+  "statistics": {
+    "triangle_count": 1008,
+    "vertex_count": 514,
+    "file_size_bytes": 29136
+  }
+}

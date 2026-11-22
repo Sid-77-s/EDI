@@ -1,0 +1,30 @@
+{
+  "name": "Cow",
+  "aliases": [
+    "bovine",
+    "cattle",
+    "bos taurus",
+    "dairy cow"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Large domesticated bovine herbivore with distinctive piebald black-and-white patched coat and horns.",
+  "distinguishing_features": [
+    "Heavy barrel torso with black-and-white patch markings",
+    "Bilateral cranial horns",
+    "Sturdy columnar limbs"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Cow.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_cow",
+  "fileIdentifier": "cow.glb",
+  "statistics": {
+    "triangle_count": 468,
+    "vertex_count": 252,
+    "file_size_bytes": 20528
+  }
+}

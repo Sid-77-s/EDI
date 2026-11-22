@@ -1,0 +1,30 @@
+{
+  "name": "Bacterium",
+  "aliases": [
+    "bacteria",
+    "bacillus",
+    "prokaryote",
+    "microbe"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "microbiology",
+  "description": "Single-celled prokaryotic microorganism with rod-shaped capsule and locomotory helical flagellum.",
+  "distinguishing_features": [
+    "Cylindrical rod-shaped bacillus capsule",
+    "Hemispherical polar ends",
+    "Whip-like rotary flagellum tail"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Bacterium.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_bacterium",
+  "fileIdentifier": "bacterium.glb",
+  "statistics": {
+    "triangle_count": 2456,
+    "vertex_count": 1242,
+    "file_size_bytes": 63124
+  }
+}

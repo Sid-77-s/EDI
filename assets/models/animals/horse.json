@@ -1,0 +1,30 @@
+{
+  "name": "Horse",
+  "aliases": [
+    "equine",
+    "stallion",
+    "equus caballus",
+    "mare"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Large, single-toed, ungulate mammal with long muscular legs, arched neck, and elongated equine skull.",
+  "distinguishing_features": [
+    "Equine arched neck carriage",
+    "Slender athletic ungulate legs",
+    "Elongated equine head and muzzle"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Horse.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_horse",
+  "fileIdentifier": "horse.glb",
+  "statistics": {
+    "triangle_count": 1800,
+    "vertex_count": 914,
+    "file_size_bytes": 50172
+  }
+}

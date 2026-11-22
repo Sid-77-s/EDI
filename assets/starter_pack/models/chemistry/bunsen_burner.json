@@ -1,0 +1,29 @@
+{
+  "name": "Bunsen Burner",
+  "aliases": [
+    "Lab burner",
+    "gas burner",
+    "laboratory flame"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "chemistry_equipment",
+  "description": "Laboratory gas burner producing a single open gas flame for heating and sterilization.",
+  "distinguishing_features": [
+    "Heavy cast iron base",
+    "Vertical metal barrel tube",
+    "Adjustable air collar and cone flame"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Bunsen Burner.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_bunsen_burner",
+  "fileIdentifier": "bunsen_burner.glb",
+  "statistics": {
+    "triangle_count": 288,
+    "vertex_count": 152,
+    "file_size_bytes": 11320
+  }
+}

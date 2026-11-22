@@ -1,0 +1,30 @@
+{
+  "name": "Owl",
+  "aliases": [
+    "strigiformes",
+    "barn owl",
+    "nocturnal bird",
+    "horned owl"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "birds",
+  "description": "Nocturnal bird of prey with upright stance, large forward-facing circular facial discs, and large yellow eyes.",
+  "distinguishing_features": [
+    "Upright compact cylindrical posture",
+    "Prominent forward-facing binocular eyes",
+    "Facial disc plumage architecture"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Owl.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_owl",
+  "fileIdentifier": "owl.glb",
+  "statistics": {
+    "triangle_count": 2232,
+    "vertex_count": 1124,
+    "file_size_bytes": 57672
+  }
+}

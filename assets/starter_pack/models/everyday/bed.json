@@ -1,0 +1,29 @@
+{
+  "name": "Bed",
+  "aliases": [
+    "mattress bed",
+    "single bed",
+    "sleeping bed"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "furniture",
+  "description": "Piece of furniture used for sleeping, consisting of a supportive mattress, pillow, and raised wooden headboard.",
+  "distinguishing_features": [
+    "Horizontal sleep mattress box",
+    "Elevated vertical wooden headboard",
+    "Soft resting head pillow cushion"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Bed.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_bed",
+  "fileIdentifier": "bed.glb",
+  "statistics": {
+    "triangle_count": 36,
+    "vertex_count": 24,
+    "file_size_bytes": 4220
+  }
+}

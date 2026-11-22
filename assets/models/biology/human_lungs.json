@@ -1,0 +1,30 @@
+{
+  "name": "Human Lungs",
+  "aliases": [
+    "lungs",
+    "respiratory system",
+    "pulmonary organs",
+    "pulmo"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Essential respiratory organs with superior trachea tube and asymmetric right (three lobes) and left lobes.",
+  "distinguishing_features": [
+    "Central vertical cartilaginous trachea",
+    "Bilateral spongeous pulmonary lobes",
+    "Asymmetrical left cardiac notch"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Human Lungs.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_human_lungs",
+  "fileIdentifier": "human_lungs.glb",
+  "statistics": {
+    "triangle_count": 1512,
+    "vertex_count": 762,
+    "file_size_bytes": 39356
+  }
+}

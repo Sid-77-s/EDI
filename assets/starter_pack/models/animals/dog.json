@@ -1,0 +1,30 @@
+{
+  "name": "Dog",
+  "aliases": [
+    "domestic dog",
+    "canine",
+    "canis familiaris",
+    "puppy"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Domesticated carnivorous quadruped mammal with characteristic muzzle snout, erect/floppy ears, and tail.",
+  "distinguishing_features": [
+    "Quadruped mammalian anatomy",
+    "Elongated canine snout and jaw",
+    "Upright wagging tail"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Dog.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_dog",
+  "fileIdentifier": "dog.glb",
+  "statistics": {
+    "triangle_count": 1812,
+    "vertex_count": 922,
+    "file_size_bytes": 51444
+  }
+}

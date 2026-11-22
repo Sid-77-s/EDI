@@ -1,0 +1,29 @@
+{
+  "name": "Barbell",
+  "aliases": [
+    "olympic barbell",
+    "weightlifting bar",
+    "weight plate bar"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "gym_equipment",
+  "description": "Full-length Olympic steel bar with rotating end sleeves holding large circular black Olympic bumper weight plates.",
+  "distinguishing_features": [
+    "Long straight knurled steel Olympic bar",
+    "Large circular Olympic bumper weight plates",
+    "Rotating sleeve collar assemblies"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Barbell.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_barbell",
+  "fileIdentifier": "barbell.glb",
+  "statistics": {
+    "triangle_count": 216,
+    "vertex_count": 114,
+    "file_size_bytes": 8568
+  }
+}

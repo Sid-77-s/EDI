@@ -1,0 +1,29 @@
+{
+  "name": "Tetrahedron",
+  "aliases": [
+    "regular tetrahedron",
+    "triangular pyramid",
+    "4-faced polyhedron"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "geometry",
+  "description": "Simplest Platonic solid having four congruent equilateral triangular faces and four vertices.",
+  "distinguishing_features": [
+    "Four equilateral triangular faces",
+    "Four vertices and six edges",
+    "Self-dual Platonic solid"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Tetrahedron.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_tetrahedron",
+  "fileIdentifier": "tetrahedron.glb",
+  "statistics": {
+    "triangle_count": 4,
+    "vertex_count": 4,
+    "file_size_bytes": 1336
+  }
+}

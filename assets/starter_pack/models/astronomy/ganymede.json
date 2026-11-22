@@ -1,0 +1,29 @@
+{
+  "name": "Ganymede",
+  "aliases": [
+    "Jupiter Moon Ganymede",
+    "Moon Ganymede",
+    "largest moon"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "moons",
+  "description": "Largest moon in the Solar System, larger than Mercury, grooved icy-rock terrain.",
+  "distinguishing_features": [
+    "Dark and light grooved terrain",
+    "Large Jovian moon scale",
+    "Rocky-ice surface"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Ganymede.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_ganymede",
+  "fileIdentifier": "ganymede.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 362,
+    "file_size_bytes": 18456
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Fossil",
+  "aliases": [
+    "ammonite",
+    "fossil shell",
+    "paleontology specimen",
+    "ammonite fossil"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "paleontology",
+  "description": "Extinct marine mollusc cephalopod shell preserved in sedimentary rock showing characteristic logarithmic planispiral coiling.",
+  "distinguishing_features": [
+    "Planispiral logarithmic shell coiling",
+    "Ribbed chambered shell ornamentation",
+    "Mineralized fossil sedimentary petrifaction"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Fossil.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_fossil",
+  "fileIdentifier": "fossil.glb",
+  "statistics": {
+    "triangle_count": 944,
+    "vertex_count": 480,
+    "file_size_bytes": 24168
+  }
+}

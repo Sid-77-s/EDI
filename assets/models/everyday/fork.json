@@ -1,0 +1,29 @@
+{
+  "name": "Fork",
+  "aliases": [
+    "dinner fork",
+    "table fork",
+    "eating utensil"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "kitchenware",
+  "description": "Cutlery item with long handle terminating in a head that branches into several parallel prongs or tines.",
+  "distinguishing_features": [
+    "Parallel piercing tines / prongs",
+    "Ergonomic slender handle shank",
+    "Reflective stainless steel cutlery finish"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Fork.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_fork",
+  "fileIdentifier": "fork.glb",
+  "statistics": {
+    "triangle_count": 84,
+    "vertex_count": 46,
+    "file_size_bytes": 4384
+  }
+}

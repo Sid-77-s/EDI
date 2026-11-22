@@ -1,0 +1,30 @@
+{
+  "name": "Oxygen Atom",
+  "aliases": [
+    "Oxygen",
+    "O atom",
+    "atomic oxygen",
+    "Bohr oxygen model"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Chalcogen element with 8 protons and 6 valence electrons; distinct from diatomic oxygen molecule O2.",
+  "distinguishing_features": [
+    "Eight-proton nucleus",
+    "Inner shell with 2 electrons",
+    "Outer shell with 6 valence electrons"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Oxygen Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_oxygen_atom",
+  "fileIdentifier": "oxygen_atom.glb",
+  "statistics": {
+    "triangle_count": 6768,
+    "vertex_count": 3402,
+    "file_size_bytes": 172128
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Cargo Ship",
+  "aliases": [
+    "container ship",
+    "freighter",
+    "merchant vessel",
+    "cargo vessel"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "maritime",
+  "description": "Commercial maritime merchant freighter with broad cargo hull carrying intermodal shipping containers and stern bridge.",
+  "distinguishing_features": [
+    "Broad heavy displacement merchant hull",
+    "Multi-tiered stern navigation bridge deck",
+    "Stacked intermodal ISO shipping containers"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Cargo Ship.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_cargo_ship",
+  "fileIdentifier": "cargo_ship.glb",
+  "statistics": {
+    "triangle_count": 48,
+    "vertex_count": 32,
+    "file_size_bytes": 5488
+  }
+}

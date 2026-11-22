@@ -1,0 +1,30 @@
+{
+  "name": "Elephant",
+  "aliases": [
+    "pachyderm",
+    "loxodonta",
+    "african elephant",
+    "asian elephant"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Largest living terrestrial animal with massive grey body, long prehensile proboscis trunk, and ivory tusks.",
+  "distinguishing_features": [
+    "Prehensile cranial proboscis trunk",
+    "Bilateral curved ivory tusks",
+    "Massive columnar pillar legs"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Elephant.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_elephant",
+  "fileIdentifier": "elephant.glb",
+  "statistics": {
+    "triangle_count": 1944,
+    "vertex_count": 990,
+    "file_size_bytes": 55816
+  }
+}

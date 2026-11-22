@@ -1,0 +1,29 @@
+{
+  "name": "Lithium Atom",
+  "aliases": [
+    "Lithium",
+    "Li atom",
+    "alkali metal lithium"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Lightest alkali metal with 2 core electrons and 1 reactive valence electron in L shell.",
+  "distinguishing_features": [
+    "Nucleus with 3 protons",
+    "Inner filled K-shell (2 e-)",
+    "Single outer L-shell valence electron (1 e-)"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Lithium Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_lithium_atom",
+  "fileIdentifier": "lithium_atom.glb",
+  "statistics": {
+    "triangle_count": 3168,
+    "vertex_count": 1592,
+    "file_size_bytes": 81448
+  }
+}

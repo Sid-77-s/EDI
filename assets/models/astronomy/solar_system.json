@@ -1,0 +1,29 @@
+{
+  "name": "Solar System",
+  "aliases": [
+    "Our solar system",
+    "heliocentric system",
+    "planetary system"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "astronomical_systems",
+  "description": "Overview model showing the central Sun, concentric orbital tracks, and orbiting terrestrial planets.",
+  "distinguishing_features": [
+    "Central luminous Sun",
+    "Concentric orbital boundary rings",
+    "Multiple distinct orbiting planetary bodies"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Solar System.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_solar_system",
+  "fileIdentifier": "solar_system.glb",
+  "statistics": {
+    "triangle_count": 4112,
+    "vertex_count": 2066,
+    "file_size_bytes": 106880
+  }
+}

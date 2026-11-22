@@ -1,0 +1,30 @@
+{
+  "name": "Knife",
+  "aliases": [
+    "table knife",
+    "dinner knife",
+    "butter knife",
+    "cutlery knife"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "kitchenware",
+  "description": "Utensil with a handle and flat blade with a cutting edge used for cutting and preparing food.",
+  "distinguishing_features": [
+    "Straight steel cutting blade with bevel edge",
+    "Solid ergonomic hand grip scales",
+    "Balanced table cutlery proportions"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Knife.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_knife",
+  "fileIdentifier": "knife.glb",
+  "statistics": {
+    "triangle_count": 24,
+    "vertex_count": 16,
+    "file_size_bytes": 2932
+  }
+}

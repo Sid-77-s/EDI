@@ -1,0 +1,29 @@
+{
+  "name": "Pulley",
+  "aliases": [
+    "simple machine pulley",
+    "sheave",
+    "pulley system"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "mechanics",
+  "description": "Grooved wheel turned by a cord or rope, used to change direction of force and gain mechanical advantage.",
+  "distinguishing_features": [
+    "Grooved rim wheel sheave",
+    "Central axle pin and suspension bracket",
+    "Mechanical advantage demonstration"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Pulley.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_pulley",
+  "fileIdentifier": "pulley.glb",
+  "statistics": {
+    "triangle_count": 156,
+    "vertex_count": 84,
+    "file_size_bytes": 7184
+  }
+}

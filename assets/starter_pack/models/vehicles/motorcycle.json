@@ -1,0 +1,30 @@
+{
+  "name": "Motorcycle",
+  "aliases": [
+    "motorbike",
+    "cycle",
+    "motor racer",
+    "chopper"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "road",
+  "description": "Two-wheeled single-track motorized vehicle powered by internal combustion engine with frame, fuel tank, and wheels.",
+  "distinguishing_features": [
+    "Two in-line road wheels on single track",
+    "Central internal combustion engine block",
+    "Ergonomic top fuel tank and saddle frame"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Motorcycle.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_motorcycle",
+  "fileIdentifier": "motorcycle.glb",
+  "statistics": {
+    "triangle_count": 948,
+    "vertex_count": 484,
+    "file_size_bytes": 28256
+  }
+}

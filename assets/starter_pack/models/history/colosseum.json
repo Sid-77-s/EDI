@@ -1,0 +1,29 @@
+{
+  "name": "Colosseum",
+  "aliases": [
+    "roman amphitheatre",
+    "amphitheatrum flavium",
+    "flavian amphitheatre"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "monuments",
+  "description": "Elliptical amphitheatre in center of Rome, the largest ancient amphitheatre ever built, constructed of travertine stone.",
+  "distinguishing_features": [
+    "Elliptical multi-tiered arcade monument",
+    "Central gladiatorial arena combat floor",
+    "Monumental Roman travertine stone arches"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Colosseum.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_colosseum",
+  "fileIdentifier": "colosseum.glb",
+  "statistics": {
+    "triangle_count": 184,
+    "vertex_count": 96,
+    "file_size_bytes": 6656
+  }
+}

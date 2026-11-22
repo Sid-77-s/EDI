@@ -1,0 +1,30 @@
+{
+  "name": "Coordinate Axes",
+  "aliases": [
+    "3D axes",
+    "Cartesian coordinate system",
+    "XYZ axes",
+    "spatial coordinates"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "geometry",
+  "description": "Standard 3D Cartesian coordinate frame with orthogonal X (red), Y (green), and Z (blue) directional vectors.",
+  "distinguishing_features": [
+    "Three orthogonal 90-degree axes",
+    "Standard RGB (XYZ) vector color-coding",
+    "Directional cone arrowheads"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Coordinate Axes.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_coordinate_axes",
+  "fileIdentifier": "coordinate_axes.glb",
+  "statistics": {
+    "triangle_count": 432,
+    "vertex_count": 228,
+    "file_size_bytes": 16440
+  }
+}

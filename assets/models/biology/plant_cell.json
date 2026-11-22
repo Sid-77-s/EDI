@@ -1,0 +1,28 @@
+{
+  "name": "Plant Cell",
+  "aliases": [
+    "eukaryotic plant cell",
+    "plant cell model"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "cellular_biology",
+  "description": "Eukaryotic plant cell featuring rigid cellulosic cell wall, large central sap vacuole, and photosynthetic chloroplasts.",
+  "distinguishing_features": [
+    "Rigid rectangular cellulose cell wall",
+    "Large central fluid-filled vacuole",
+    "Green chloroplast organelles for photosynthesis"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Plant Cell.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_plant_cell",
+  "fileIdentifier": "plant_cell.glb",
+  "statistics": {
+    "triangle_count": 2892,
+    "vertex_count": 1456,
+    "file_size_bytes": 74396
+  }
+}

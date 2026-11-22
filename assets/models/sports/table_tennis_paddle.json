@@ -1,0 +1,29 @@
+{
+  "name": "Table Tennis Paddle",
+  "aliases": [
+    "ping pong paddle",
+    "table tennis bat",
+    "ping pong racket"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "equipment",
+  "description": "Laminated wooden paddle with circular red rubber pimpled/smooth hitting surface and flared ergonomic grip handle.",
+  "distinguishing_features": [
+    "Circular laminated wooden blade with rubber sheet",
+    "Vivid competition red rubber surface",
+    "Ergonomic flared wooden grip handle"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Table Tennis Paddle.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_table_tennis_paddle",
+  "fileIdentifier": "table_tennis_paddle.glb",
+  "statistics": {
+    "triangle_count": 168,
+    "vertex_count": 88,
+    "file_size_bytes": 6404
+  }
+}

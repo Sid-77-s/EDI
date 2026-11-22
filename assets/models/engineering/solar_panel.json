@@ -1,0 +1,30 @@
+{
+  "name": "Solar Panel",
+  "aliases": [
+    "photovoltaic module",
+    "pv panel",
+    "solar module",
+    "solar array"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "renewable_energy",
+  "description": "Photovoltaic module designed to absorb sun rays as source of energy, with protective extruded aluminum frame and blue crystalline cells.",
+  "distinguishing_features": [
+    "Extruded anodized aluminum perimeter frame",
+    "Deep blue anti-reflective crystalline silicon cell matrix",
+    "Tilted incident angle mounting orientation"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Solar Panel.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_solar_panel",
+  "fileIdentifier": "solar_panel.glb",
+  "statistics": {
+    "triangle_count": 24,
+    "vertex_count": 16,
+    "file_size_bytes": 3020
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Sand Dune",
+  "aliases": [
+    "dune",
+    "desert dune",
+    "barchan dune",
+    "sand hill"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "geomorphology",
+  "description": "Hill of loose sand built by aeolian processes (wind action), characterized by gentle windward slope and steep slip face.",
+  "distinguishing_features": [
+    "Asymmetric windward slope and steep slip face",
+    "Golden desert aeolian sand coloration",
+    "Crescentic barchan landform morphology"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Sand Dune.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_sand_dune",
+  "fileIdentifier": "sand_dune.glb",
+  "statistics": {
+    "triangle_count": 64,
+    "vertex_count": 34,
+    "file_size_bytes": 2856
+  }
+}

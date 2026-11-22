@@ -1,0 +1,30 @@
+{
+  "name": "DNA Double Helix",
+  "aliases": [
+    "DNA",
+    "deoxyribonucleic acid",
+    "DNA molecule",
+    "double helix"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Biological macromolecule storing genetic instructions in two intertwined helical strands connected by base-pair rungs.",
+  "distinguishing_features": [
+    "Dual intertwined helical strands",
+    "Antiparallel right-handed spiral",
+    "Horizontal base-pair rungs (A-T, G-C)"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of DNA Double Helix.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_dna_double_helix",
+  "fileIdentifier": "dna_double_helix.glb",
+  "statistics": {
+    "triangle_count": 47232,
+    "vertex_count": 23776,
+    "file_size_bytes": 1205540
+  }
+}

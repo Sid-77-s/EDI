@@ -1,0 +1,30 @@
+{
+  "name": "Football",
+  "aliases": [
+    "soccer ball",
+    "association football",
+    "match ball",
+    "fifa ball"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "balls",
+  "description": "Standard association soccer ball featuring classic 32-panel truncated icosahedron white leather with black pentagons.",
+  "distinguishing_features": [
+    "Spherical leather surface with white hexagonal ground",
+    "Distinct black pentagonal patch distribution",
+    "Regulation soccer ball proportions"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Football.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_football",
+  "fileIdentifier": "football.glb",
+  "statistics": {
+    "triangle_count": 840,
+    "vertex_count": 434,
+    "file_size_bytes": 26784
+  }
+}

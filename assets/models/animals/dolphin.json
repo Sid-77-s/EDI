@@ -1,0 +1,30 @@
+{
+  "name": "Dolphin",
+  "aliases": [
+    "delphinus",
+    "bottlenose dolphin",
+    "marine cetacean",
+    "porpoise"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "marine_life",
+  "description": "Streamlined marine mammal with sleek hydrodynamic body, falcate dorsal fin, and horizontal caudal tail flukes.",
+  "distinguishing_features": [
+    "Hydrodynamic fusiform marine body",
+    "Falcate curved dorsal fin",
+    "Horizontal propulsion tail flukes"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Dolphin.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_dolphin",
+  "fileIdentifier": "dolphin.glb",
+  "statistics": {
+    "triangle_count": 804,
+    "vertex_count": 408,
+    "file_size_bytes": 22640
+  }
+}

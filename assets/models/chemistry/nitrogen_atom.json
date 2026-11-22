@@ -1,0 +1,29 @@
+{
+  "name": "Nitrogen Atom",
+  "aliases": [
+    "Nitrogen",
+    "N atom",
+    "Bohr nitrogen model"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Pnictogen element forming 78% of Earth's atmosphere with 5 valence electrons.",
+  "distinguishing_features": [
+    "Seven-proton nucleus",
+    "Inner shell with 2 electrons",
+    "Outer valence shell with 5 electrons"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Nitrogen Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_nitrogen_atom",
+  "fileIdentifier": "nitrogen_atom.glb",
+  "statistics": {
+    "triangle_count": 6048,
+    "vertex_count": 3040,
+    "file_size_bytes": 153988
+  }
+}

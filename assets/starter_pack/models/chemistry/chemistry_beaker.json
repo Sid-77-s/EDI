@@ -1,0 +1,30 @@
+{
+  "name": "Chemistry Beaker",
+  "aliases": [
+    "Beaker",
+    "glass beaker",
+    "laboratory beaker",
+    "lab beaker"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "chemistry_equipment",
+  "description": "Standard laboratory glassware container for stirring, mixing and heating chemical liquids.",
+  "distinguishing_features": [
+    "Cylindrical transparent glass vessel",
+    "Flat stable base",
+    "Colored solution liquid interior"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Chemistry Beaker.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_chemistry_beaker",
+  "fileIdentifier": "chemistry_beaker.glb",
+  "statistics": {
+    "triangle_count": 144,
+    "vertex_count": 76,
+    "file_size_bytes": 5732
+  }
+}

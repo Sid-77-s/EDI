@@ -1,0 +1,30 @@
+{
+  "name": "Computer Mouse",
+  "aliases": [
+    "mouse",
+    "optical mouse",
+    "wireless mouse",
+    "track mouse"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "computer_peripherals",
+  "description": "Hand-held pointing device that detects two-dimensional motion relative to a surface, with ergonomic palm dome and scroll wheel.",
+  "distinguishing_features": [
+    "Ergonomic palm-contoured dome shell",
+    "Split primary left/right clicking buttons",
+    "Central tactile rotating scroll wheel"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Computer Mouse.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_computer_mouse",
+  "fileIdentifier": "computer_mouse.glb",
+  "statistics": {
+    "triangle_count": 792,
+    "vertex_count": 400,
+    "file_size_bytes": 21344
+  }
+}

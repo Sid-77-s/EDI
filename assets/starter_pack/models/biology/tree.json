@@ -1,0 +1,29 @@
+{
+  "name": "Tree",
+  "aliases": [
+    "deciduous tree",
+    "forest tree",
+    "timber tree"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "botany",
+  "description": "Perennial woody plant featuring an upright supporting trunk cylinder and broad spherical photosynthetic foliage canopy.",
+  "distinguishing_features": [
+    "Tapered woody trunk cylinder with bark texture",
+    "Elevated globular photosynthetic canopy crown",
+    "Arboreal proportion and scale"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Tree.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_tree",
+  "fileIdentifier": "tree.glb",
+  "statistics": {
+    "triangle_count": 792,
+    "vertex_count": 400,
+    "file_size_bytes": 21140
+  }
+}

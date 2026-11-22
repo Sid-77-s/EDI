@@ -1,0 +1,30 @@
+{
+  "name": "Water Bottle",
+  "aliases": [
+    "bottle",
+    "drink bottle",
+    "flask",
+    "reusable bottle"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "kitchenware",
+  "description": "Portable cylindrical container for liquids with tapered shoulder neck and sealed threaded screw cap.",
+  "distinguishing_features": [
+    "Cylindrical liquid containment body",
+    "Tapered shoulder narrowing to neck",
+    "Hermetic threaded top screw cap"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Water Bottle.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_water_bottle",
+  "fileIdentifier": "water_bottle.glb",
+  "statistics": {
+    "triangle_count": 216,
+    "vertex_count": 114,
+    "file_size_bytes": 8336
+  }
+}

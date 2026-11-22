@@ -1,0 +1,29 @@
+{
+  "name": "Tiger",
+  "aliases": [
+    "panthera tigris",
+    "bengal tiger",
+    "siberian tiger"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Largest extant feline species characterized by reddish-orange coat with dark vertical predatory camouflage stripes.",
+  "distinguishing_features": [
+    "Reddish-orange ground coloration",
+    "Transverse black camouflage stripes",
+    "Muscular apex predator frame"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Tiger.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_tiger",
+  "fileIdentifier": "tiger.glb",
+  "statistics": {
+    "triangle_count": 1740,
+    "vertex_count": 884,
+    "file_size_bytes": 48668
+  }
+}

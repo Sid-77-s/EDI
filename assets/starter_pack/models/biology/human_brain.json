@@ -1,0 +1,30 @@
+{
+  "name": "Human Brain",
+  "aliases": [
+    "brain",
+    "cerebrum",
+    "human brain model",
+    "encephalon"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Central organ of the human nervous system with bilateral cerebral hemispheres, cerebellum, and brainstem.",
+  "distinguishing_features": [
+    "Bilateral cerebral hemispheres with longitudinal fissure",
+    "Posterior inferior cerebellum",
+    "Inferior projecting brainstem"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Human Brain.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_human_brain",
+  "fileIdentifier": "human_brain.glb",
+  "statistics": {
+    "triangle_count": 2232,
+    "vertex_count": 1124,
+    "file_size_bytes": 57868
+  }
+}

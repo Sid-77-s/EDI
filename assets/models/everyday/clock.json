@@ -1,0 +1,30 @@
+{
+  "name": "Clock",
+  "aliases": [
+    "wall clock",
+    "analog clock",
+    "timepiece",
+    "dial clock"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "appliances",
+  "description": "Instrument used to measure and indicate time with circular numbered analog dial face and rotating hour/minute hands.",
+  "distinguishing_features": [
+    "Circular analog dial face with contrast bezel",
+    "Coaxial rotating hour and minute indicator hands",
+    "Wall-mounted chronometric proportion"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Clock.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_clock",
+  "fileIdentifier": "clock.glb",
+  "statistics": {
+    "triangle_count": 712,
+    "vertex_count": 362,
+    "file_size_bytes": 21412
+  }
+}

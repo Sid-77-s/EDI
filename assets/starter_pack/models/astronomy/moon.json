@@ -1,0 +1,30 @@
+{
+  "name": "Moon",
+  "aliases": [
+    "Earth Moon",
+    "The Moon",
+    "Luna",
+    "Earth's moon"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "moons",
+  "description": "Earth's sole natural satellite, airless world with cratered highlands and basaltic maria.",
+  "distinguishing_features": [
+    "Light grey regolith",
+    "Spherical natural satellite",
+    "Cratered body representation"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Moon.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_moon",
+  "fileIdentifier": "moon.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 362,
+    "file_size_bytes": 18452
+  }
+}

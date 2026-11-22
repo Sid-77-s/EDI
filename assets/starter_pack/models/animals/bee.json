@@ -1,0 +1,30 @@
+{
+  "name": "Bee",
+  "aliases": [
+    "honeybee",
+    "bumblebee",
+    "apis mellifera",
+    "pollinator"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "insects",
+  "description": "Social winged flying insect known for honey production, pollination, and vivid yellow-and-black abdominal bands.",
+  "distinguishing_features": [
+    "Yellow and black striped abdomen",
+    "Translucent vibrating flight wings",
+    "Hymenopteran waist constriction"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Bee.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_bee",
+  "fileIdentifier": "bee.glb",
+  "statistics": {
+    "triangle_count": 744,
+    "vertex_count": 378,
+    "file_size_bytes": 21144
+  }
+}

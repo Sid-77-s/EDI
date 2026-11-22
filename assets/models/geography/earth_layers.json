@@ -1,0 +1,29 @@
+{
+  "name": "Earth Layers",
+  "aliases": [
+    "internal earth structure",
+    "earth core",
+    "geosphere layers"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "geology",
+  "description": "Internal concentric mechanical and compositional layers of Earth: solid inner core, liquid outer core, and mantle.",
+  "distinguishing_features": [
+    "Concentric spherical geological shells",
+    "Dense solid iron-nickel inner core",
+    "Silicate upper mantle and molten outer core zones"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Earth Layers.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_earth_layers",
+  "fileIdentifier": "earth_layers.glb",
+  "statistics": {
+    "triangle_count": 2160,
+    "vertex_count": 1086,
+    "file_size_bytes": 54912
+  }
+}

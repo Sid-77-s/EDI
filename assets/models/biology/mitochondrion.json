@@ -1,0 +1,29 @@
+{
+  "name": "Mitochondrion",
+  "aliases": [
+    "mitochondria",
+    "cellular powerhouse",
+    "chondriosome"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "cellular_biology",
+  "description": "Double-membrane-bound cellular organelle generating most chemical energy ATP via deeply folded internal cristae.",
+  "distinguishing_features": [
+    "Oval rod-shaped outer membrane",
+    "Extensively folded inner cristae convolutions",
+    "Cellular energy generation site"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Mitochondrion.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_mitochondrion",
+  "fileIdentifier": "mitochondrion.glb",
+  "statistics": {
+    "triangle_count": 1664,
+    "vertex_count": 842,
+    "file_size_bytes": 42320
+  }
+}

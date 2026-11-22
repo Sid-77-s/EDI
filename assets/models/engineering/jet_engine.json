@@ -1,0 +1,30 @@
+{
+  "name": "Jet Engine",
+  "aliases": [
+    "turbofan",
+    "aircraft engine",
+    "gas turbine",
+    "jet turbine"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "aviation_engineering",
+  "description": "Aviation high-bypass turbofan engine with aerodynamic nacelle cowl, forward fan spinner cone, and exhaust plug nozzle.",
+  "distinguishing_features": [
+    "Aerodynamic cylindrical bypass nacelle casing",
+    "Forward rotating aerodynamic spinner cone",
+    "High-bypass propulsion nozzle geometry"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Jet Engine.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_jet_engine",
+  "fileIdentifier": "jet_engine.glb",
+  "statistics": {
+    "triangle_count": 216,
+    "vertex_count": 114,
+    "file_size_bytes": 8656
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Hydrogen Atom",
+  "aliases": [
+    "Hydrogen",
+    "H atom",
+    "Bohr hydrogen model"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Simplest chemical element consisting of 1 proton nucleus orbited by 1 electron.",
+  "distinguishing_features": [
+    "Central proton nucleus",
+    "Single K-shell orbit",
+    "One valence electron"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Hydrogen Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_hydrogen_atom",
+  "fileIdentifier": "hydrogen_atom.glb",
+  "statistics": {
+    "triangle_count": 1584,
+    "vertex_count": 796,
+    "file_size_bytes": 41064
+  }
+}

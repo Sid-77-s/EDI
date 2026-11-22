@@ -1,0 +1,29 @@
+{
+  "name": "Keyboard",
+  "aliases": [
+    "computer keyboard",
+    "typing keyboard",
+    "qwerty keyboard"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "computer_peripherals",
+  "description": "Typewriter-style input device which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches.",
+  "distinguishing_features": [
+    "Low-profile rectangular base deck",
+    "Grid of typewriter keycaps",
+    "Ergonomic tilted typing plane"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Keyboard.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_keyboard",
+  "fileIdentifier": "keyboard.glb",
+  "statistics": {
+    "triangle_count": 24,
+    "vertex_count": 16,
+    "file_size_bytes": 2880
+  }
+}

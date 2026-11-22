@@ -1,0 +1,29 @@
+{
+  "name": "Tennis Ball",
+  "aliases": [
+    "tennis sphere",
+    "felt ball",
+    "yellow tennis ball"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "balls",
+  "description": "Pressurized regulation tennis ball covered in fibrous optic yellow felt with distinctive curved white vulcanized rubber seam.",
+  "distinguishing_features": [
+    "Optic yellow fluorescent fibrous felt cover",
+    "Continuous curved vulcanized white rubber seam",
+    "Pressurized hollow core bounce sphere"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Tennis Ball.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_tennis_ball",
+  "fileIdentifier": "tennis_ball.glb",
+  "statistics": {
+    "triangle_count": 1296,
+    "vertex_count": 650,
+    "file_size_bytes": 33320
+  }
+}

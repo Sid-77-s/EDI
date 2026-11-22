@@ -1,0 +1,29 @@
+{
+  "name": "Chlorine Atom",
+  "aliases": [
+    "Chlorine",
+    "Cl atom",
+    "halogen chlorine"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Halogen element requiring 1 electron to complete its outer octet shell.",
+  "distinguishing_features": [
+    "Three electron shells",
+    "Seven valence electrons in M shell",
+    "Greenish halogen identity"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Chlorine Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_chlorine_atom",
+  "fileIdentifier": "chlorine_atom.glb",
+  "statistics": {
+    "triangle_count": 13392,
+    "vertex_count": 6732,
+    "file_size_bytes": 339496
+  }
+}

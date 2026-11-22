@@ -1,0 +1,30 @@
+{
+  "name": "Speaker",
+  "aliases": [
+    "loudspeaker",
+    "studio monitor",
+    "audio speaker",
+    "woofer"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "audio_engineering",
+  "description": "Two-way acoustic loudspeaker monitor featuring cuboid resonance enclosure, large low-frequency woofer cone, and dome tweeter.",
+  "distinguishing_features": [
+    "Solid acoustic cabinet enclosure",
+    "Large cone-shaped low frequency woofer driver",
+    "High frequency silk dome tweeter aperture"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Speaker.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_speaker",
+  "fileIdentifier": "speaker.glb",
+  "statistics": {
+    "triangle_count": 804,
+    "vertex_count": 408,
+    "file_size_bytes": 22708
+  }
+}

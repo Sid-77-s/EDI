@@ -1,0 +1,29 @@
+{
+  "name": "Golf Ball",
+  "aliases": [
+    "dimpled ball",
+    "pga golf ball",
+    "golf sphere"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "balls",
+  "description": "Small, hard white ball designed for golf, covered in aerodynamic dimples to reduce aerodynamic drag and optimize lift.",
+  "distinguishing_features": [
+    "Aerodynamic dimpled surface indentations",
+    "Pure white ionomer/urethane protective cover",
+    "Compact regulation 42.7mm diameter"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Golf Ball.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_golf_ball",
+  "fileIdentifier": "golf_ball.glb",
+  "statistics": {
+    "triangle_count": 1872,
+    "vertex_count": 938,
+    "file_size_bytes": 47792
+  }
+}

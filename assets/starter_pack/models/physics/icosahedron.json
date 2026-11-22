@@ -1,0 +1,28 @@
+{
+  "name": "Icosahedron",
+  "aliases": [
+    "regular icosahedron",
+    "20-faced polyhedron"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "geometry",
+  "description": "Platonic solid possessing twenty congruent equilateral triangular faces and twelve vertices.",
+  "distinguishing_features": [
+    "Twenty equilateral triangular faces",
+    "Twelve vertices with five faces meeting at each",
+    "Golden ratio proportions"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Icosahedron.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_icosahedron",
+  "fileIdentifier": "icosahedron.glb",
+  "statistics": {
+    "triangle_count": 20,
+    "vertex_count": 12,
+    "file_size_bytes": 1728
+  }
+}

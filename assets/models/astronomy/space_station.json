@@ -1,0 +1,30 @@
+{
+  "name": "Space Station",
+  "aliases": [
+    "International Space Station",
+    "ISS",
+    "orbital station",
+    "space outpost"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "space_exploration",
+  "description": "Modular orbital research laboratory with pressurized living habitats, structural truss, and massive solar power arrays.",
+  "distinguishing_features": [
+    "Habitation module core",
+    "Long structural support truss",
+    "Twin high-capacity solar wing arrays"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Space Station.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_space_station",
+  "fileIdentifier": "space_station.glb",
+  "statistics": {
+    "triangle_count": 108,
+    "vertex_count": 62,
+    "file_size_bytes": 6916
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Chromosome",
+  "aliases": [
+    "sister chromatids",
+    "human chromosome",
+    "genetic chromosome"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "genetics",
+  "description": "Duplicated thread-like structure of nucleic acids and protein forming characteristic X-shape joined at centromere.",
+  "distinguishing_features": [
+    "Characteristic X-shaped sister chromatid arms",
+    "Central constricted centromere junction",
+    "Evenly dense chromatin arms"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Chromosome.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_chromosome",
+  "fileIdentifier": "chromosome.glb",
+  "statistics": {
+    "triangle_count": 864,
+    "vertex_count": 438,
+    "file_size_bytes": 23904
+  }
+}

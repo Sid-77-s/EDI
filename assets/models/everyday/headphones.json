@@ -1,0 +1,30 @@
+{
+  "name": "Headphones",
+  "aliases": [
+    "headset",
+    "earphones",
+    "audio headphones",
+    "cans"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "audio_peripherals",
+  "description": "Pair of small loudspeaker drivers worn on or around the head over user's ears, joined by a springy headband.",
+  "distinguishing_features": [
+    "Padded flexible cranial headband arch",
+    "Twin circumaural acoustic earcups",
+    "Cushioned noise-isolating earpads"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Headphones.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_headphones",
+  "fileIdentifier": "headphones.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 364,
+    "file_size_bytes": 20552
+  }
+}

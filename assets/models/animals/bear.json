@@ -1,0 +1,30 @@
+{
+  "name": "Bear",
+  "aliases": [
+    "grizzly bear",
+    "brown bear",
+    "ursus arctos",
+    "ursine"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Heavy ursid carnivoran with stocky physique, heavy brown fur, non-retractile claws, and broad snout.",
+  "distinguishing_features": [
+    "Stocky robust muscular barrel torso",
+    "Broad round ursid head and snout",
+    "Stout columnar plantigrade limbs"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Bear.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_bear",
+  "fileIdentifier": "bear.glb",
+  "statistics": {
+    "triangle_count": 1740,
+    "vertex_count": 884,
+    "file_size_bytes": 48788
+  }
+}

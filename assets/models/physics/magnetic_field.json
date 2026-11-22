@@ -1,0 +1,29 @@
+{
+  "name": "Magnetic Field",
+  "aliases": [
+    "magnetic flux lines",
+    "dipole field lines",
+    "magnetic demonstration"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "electromagnetism",
+  "description": "Visual demonstration of magnetic field lines (flux loops) emerging from north pole and curving to south pole.",
+  "distinguishing_features": [
+    "Central dipole magnet",
+    "Elliptical concentric magnetic flux loops",
+    "Dipole field distribution"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Magnetic Field.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_magnetic_field",
+  "fileIdentifier": "magnetic_field.glb",
+  "statistics": {
+    "triangle_count": 1740,
+    "vertex_count": 872,
+    "file_size_bytes": 45536
+  }
+}

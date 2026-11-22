@@ -1,0 +1,30 @@
+{
+  "name": "Crystal",
+  "aliases": [
+    "quartz crystal",
+    "mineral cluster",
+    "crystalline prism",
+    "rock crystal"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "mineralogy",
+  "description": "Cluster of prismatic quartz crystals displaying hexagonal columnar habits terminated by sharp six-sided pyramidal facets.",
+  "distinguishing_features": [
+    "Hexagonal columnar prismatic crystal habit",
+    "Pointed six-sided pyramidal apex terminations",
+    "Translucent mineral cluster matrix"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Crystal.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_crystal",
+  "fileIdentifier": "crystal.glb",
+  "statistics": {
+    "triangle_count": 204,
+    "vertex_count": 120,
+    "file_size_bytes": 13364
+  }
+}

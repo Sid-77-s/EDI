@@ -1,0 +1,30 @@
+{
+  "name": "Black Hole",
+  "aliases": [
+    "Singularity",
+    "Supermassive black hole",
+    "stellar black hole",
+    "event horizon"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "astronomical_phenomena",
+  "description": "Educational visualization of a black hole showing the central event horizon and glowing swirling accretion disk.",
+  "distinguishing_features": [
+    "Central black event horizon",
+    "Glowing incandescent accretion disk",
+    "Relativistic visual silhouette"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Black Hole.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_black_hole",
+  "fileIdentifier": "black_hole.glb",
+  "statistics": {
+    "triangle_count": 864,
+    "vertex_count": 434,
+    "file_size_bytes": 22868
+  }
+}

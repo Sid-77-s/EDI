@@ -1,0 +1,29 @@
+{
+  "name": "Shark",
+  "aliases": [
+    "selachimorpha",
+    "great white shark",
+    "predatory fish"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "marine_life",
+  "description": "Apex marine cartilaginous predator with torpedo-shaped fuselage, prominent sharp dorsal fin, and vertical tail fin.",
+  "distinguishing_features": [
+    "Fusiform torpedo hydrodynamic body",
+    "Prominent sharp triangular dorsal fin",
+    "Heterocercal vertical caudal tail fin"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Shark.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_shark",
+  "fileIdentifier": "shark.glb",
+  "statistics": {
+    "triangle_count": 804,
+    "vertex_count": 408,
+    "file_size_bytes": 22752
+  }
+}

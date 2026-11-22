@@ -1,0 +1,30 @@
+{
+  "name": "Sedan",
+  "aliases": [
+    "passenger car",
+    "saloon car",
+    "family car",
+    "automobile"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "road",
+  "description": "Three-box passenger car configuration with separate compartments for engine hood, passenger cabin, and boot trunk.",
+  "distinguishing_features": [
+    "Three-box classic automobile profile",
+    "Elevated four-door passenger compartment",
+    "Four standard road wheels with silver rims"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Sedan.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_sedan",
+  "fileIdentifier": "sedan.glb",
+  "statistics": {
+    "triangle_count": 312,
+    "vertex_count": 168,
+    "file_size_bytes": 13924
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Cricket Bat",
+  "aliases": [
+    "willow bat",
+    "cricket paddle",
+    "english willow"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "equipment",
+  "description": "Wood bat consisting of cane handle attached to flat-fronted, ridge-backed English willow blade.",
+  "distinguishing_features": [
+    "Flat front striking face with rear spine ridge",
+    "Natural English willow wood grain finish",
+    "Round cane handle wrapped in white rubber grip"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Cricket Bat.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_cricket_bat",
+  "fileIdentifier": "cricket_bat.glb",
+  "statistics": {
+    "triangle_count": 84,
+    "vertex_count": 46,
+    "file_size_bytes": 4372
+  }
+}

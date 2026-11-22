@@ -1,0 +1,30 @@
+{
+  "name": "Tornado",
+  "aliases": [
+    "twister",
+    "funnel cloud",
+    "cyclone",
+    "whirlwind"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "meteorology",
+  "description": "Violently rotating column of air extending between the surface of the Earth and a cumulonimbus cloud.",
+  "distinguishing_features": [
+    "Inverted narrow vortex funnel cone",
+    "Extreme rotational updraft column",
+    "Atmospheric condensation funnel sheath"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Tornado.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_tornado",
+  "fileIdentifier": "tornado.glb",
+  "statistics": {
+    "triangle_count": 80,
+    "vertex_count": 42,
+    "file_size_bytes": 3252
+  }
+}

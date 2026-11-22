@@ -1,0 +1,30 @@
+{
+  "name": "Ethanol",
+  "aliases": [
+    "C2H5OH",
+    "ethyl alcohol",
+    "grain alcohol",
+    "alcohol molecule"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Two-carbon primary alcohol with an ethyl group connected to a terminal hydroxyl group.",
+  "distinguishing_features": [
+    "Two-carbon alkane chain",
+    "Red hydroxyl oxygen atom",
+    "White terminal hydrogen"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Ethanol.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_ethanol",
+  "fileIdentifier": "ethanol.glb",
+  "statistics": {
+    "triangle_count": 2880,
+    "vertex_count": 1448,
+    "file_size_bytes": 73168
+  }
+}

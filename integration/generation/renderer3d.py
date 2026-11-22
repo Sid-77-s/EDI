@@ -93,6 +93,11 @@ class SoftwareRenderer3D:
             base_rot_arr += np.array(manual_rotation, dtype=np.float32)
         base_model_rot = make_rotation_matrix(base_rot_arr)
 
+        # Half vector for Blinn-Phong specular calculation (constant per frame)
+        view_dir = np.array([0.0, 0.0, 1.0], dtype=np.float32)
+        half_vector = self.light_dir + view_dir
+        half_vector /= (np.linalg.norm(half_vector) + 1e-8)
+
         # Collect all active meshes with node hierarchy transforms
         mesh_instances = model.get_all_meshes_with_transforms(t=t)
         if not mesh_instances:
@@ -123,39 +128,7 @@ class SoftwareRenderer3D:
             sy = vy1 + (-ndc[:, 1] * 0.5 + 0.5) * vh
             screen_coords = np.column_stack([sx, sy])
 
-            # Transform surface normals for lighting
-            mesh_normals = mesh.normals
-            if mesh_normals is None or len(mesh_normals) != len(mesh.faces):
-                mesh_normals = mesh.compute_face_normals()
-
-            # Normal matrix is upper 3x3 of full_world
-            norm_mat = full_world[:3, :3]
-            world_normals = (norm_mat @ mesh_normals.T).T
-            norm_lengths = np.linalg.norm(world_normals, axis=1, keepdims=True)
-            norm_lengths[norm_lengths == 0] = 1.0
-            world_normals /= norm_lengths
-
-            # Diffuse lighting (Lambertian)
-            dots = np.clip(np.sum(world_normals * self.light_dir, axis=1), 0.0, 1.0)
-            amb = mesh.material.ambient_coeff
-            diff = mesh.material.diffuse_coeff
-            ambient_fill = max(0.25, amb * self.ambient_intensity)
-            diffuse_fill = self.diffuse_intensity * diff * dots
-            view_dir = np.array([0.0, 0.0, 1.0], dtype=np.float32)
-            half_vector = self.light_dir + view_dir
-            half_vector /= np.linalg.norm(half_vector) + 1e-8
-            spec_dot = np.clip(np.sum(world_normals * half_vector, axis=1), 0.0, 1.0)
-            roughness = float(np.clip(mesh.material.roughness, 0.04, 1.0))
-            spec_power = max(4.0, min(float(mesh.material.shininess), 96.0) * (1.0 - 0.55 * roughness))
-            spec = (np.power(spec_dot, spec_power) * mesh.material.specular_coeff *
-                    (1.0 - 0.55 * roughness))
-            intensities = np.clip(ambient_fill + diffuse_fill + spec, 0.12, 1.25)
-
-            mat_color = np.array(mesh.material.diffuse_color, dtype=np.float32)
-            face_colors = mesh.colors if mesh.colors is not None and len(mesh.colors) == len(mesh.faces) else None
-            opacity = mesh.material.opacity
-
-            # Vectorized backface and depth culling
+            # Vectorized backface and depth culling BEFORE expensive lighting
             faces = mesh.faces
             p0 = screen_coords[faces[:, 0]]
             p1 = screen_coords[faces[:, 1]]
@@ -171,13 +144,42 @@ class SoftwareRenderer3D:
             if len(valid_indices) == 0:
                 continue
 
+            # Transform surface normals only for visible faces
+            mesh_normals = mesh.normals
+            if mesh_normals is None or len(mesh_normals) != len(mesh.faces):
+                mesh_normals = mesh.compute_face_normals()
+
+            vis_normals = mesh_normals[valid_indices]
+            norm_mat = full_world[:3, :3]
+            world_normals = (norm_mat @ vis_normals.T).T
+            norm_lengths = np.linalg.norm(world_normals, axis=1, keepdims=True)
+            norm_lengths[norm_lengths == 0] = 1.0
+            world_normals /= norm_lengths
+
+            # Diffuse lighting (Lambertian)
+            dots = np.clip(np.sum(world_normals * self.light_dir, axis=1), 0.0, 1.0)
+            amb = mesh.material.ambient_coeff
+            diff = mesh.material.diffuse_coeff
+            ambient_fill = max(0.25, amb * self.ambient_intensity)
+            diffuse_fill = self.diffuse_intensity * diff * dots
+            spec_dot = np.clip(np.sum(world_normals * half_vector, axis=1), 0.0, 1.0)
+            roughness = float(np.clip(mesh.material.roughness, 0.04, 1.0))
+            spec_power = max(4.0, min(float(mesh.material.shininess), 96.0) * (1.0 - 0.55 * roughness))
+            spec = (np.power(spec_dot, spec_power) * mesh.material.specular_coeff *
+                    (1.0 - 0.55 * roughness))
+            intensities = np.clip(ambient_fill + diffuse_fill + spec, 0.12, 1.25)
+
+            mat_color = np.array(mesh.material.diffuse_color, dtype=np.float32)
+            face_colors = mesh.colors if mesh.colors is not None and len(mesh.colors) == len(mesh.faces) else None
+            opacity = mesh.material.opacity
+
             # Vectorized color calculation for visible faces
             if face_colors is not None:
                 base_c = face_colors[valid_indices].astype(np.float32)
             else:
                 base_c = mat_color
 
-            int_vals = intensities[valid_indices, None]
+            int_vals = intensities[:, None]
             lit_colors = np.clip(base_c * int_vals, 0, 255).astype(np.uint8)
 
             p0_v = p0[valid_indices]
@@ -185,18 +187,24 @@ class SoftwareRenderer3D:
             p2_v = p2[valid_indices]
             z_v = z_depths[valid_indices]
 
-            # Vectorized polygon construction
+            # Vectorized polygon construction and bounds check
             polys = np.stack([p0_v, p1_v, p2_v], axis=1).astype(np.int32)
+            min_x = np.min(polys[:, :, 0], axis=1)
+            max_x = np.max(polys[:, :, 0], axis=1)
+            min_y = np.min(polys[:, :, 1], axis=1)
+            max_y = np.max(polys[:, :, 1], axis=1)
+            in_bounds = (max_x >= vx1) & (min_x <= vx2) & (max_y >= vy1) & (min_y <= vy2)
 
-            for k in range(len(valid_indices)):
-                poly = polys[k]
-                # Viewport box bounds check
-                min_x, max_x = poly[:, 0].min(), poly[:, 0].max()
-                min_y, max_y = poly[:, 1].min(), poly[:, 1].max()
-                if max_x < vx1 or min_x > vx2 or max_y < vy1 or min_y > vy2:
-                    continue
+            if not np.any(in_bounds):
+                continue
+
+            polys = polys[in_bounds]
+            lit_colors = lit_colors[in_bounds]
+            z_v = z_v[in_bounds]
+
+            for k in range(len(polys)):
                 col = (int(lit_colors[k, 0]), int(lit_colors[k, 1]), int(lit_colors[k, 2]))
-                render_queue.append((float(z_v[k]), poly, col, opacity))
+                render_queue.append((float(z_v[k]), polys[k], col, opacity))
 
         if not render_queue:
             return False
@@ -208,18 +216,14 @@ class SoftwareRenderer3D:
         roi = canvas[vy1:vy2, vx1:vx2]
         needs_alpha = any(item[3] < 0.99 for item in render_queue)
 
-        # Cheap soft contact shadow helps separate the object from the camera image.
+        # Contact shadow beneath object to ground it
         all_points = np.concatenate([item[1] for item in render_queue], axis=0)
         object_left = int(np.clip(all_points[:, 0].min() - vx1, 0, vw - 1))
         object_right = int(np.clip(all_points[:, 0].max() - vx1, 0, vw - 1))
         object_bottom = int(np.clip(all_points[:, 1].max() - vy1, 0, vh - 1))
-        shadow_center = ((object_left + object_right) // 2, min(vh - 1, object_bottom + max(2, vh // 36)))
-        shadow_mask = np.zeros((vh, vw), dtype=np.uint8)
+        shadow_center = (vx1 + (object_left + object_right) // 2, min(vy2 - 1, vy1 + object_bottom + max(2, vh // 36)))
         shadow_axes = (max(3, (object_right - object_left) // 3), max(2, vh // 32))
-        cv2.ellipse(shadow_mask, shadow_center, shadow_axes, 0, 0, 360, 70, -1, cv2.LINE_AA)
-        shadow_mask = cv2.GaussianBlur(shadow_mask, (0, 0), sigmaX=max(1.0, vw / 180.0))
-        shadow_alpha = (shadow_mask.astype(np.float32) / 255.0 * 0.16)[..., None]
-        canvas[vy1:vy2, vx1:vx2] = (roi.astype(np.float32) * (1.0 - shadow_alpha)).astype(np.uint8)
+        cv2.ellipse(canvas, shadow_center, shadow_axes, 0, 0, 360, (15, 15, 15), -1, cv2.LINE_8)
 
         if needs_alpha:
             layer = roi.copy()

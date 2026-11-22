@@ -1,0 +1,30 @@
+{
+  "name": "Desk",
+  "aliases": [
+    "office desk",
+    "workstation",
+    "computer desk",
+    "study desk"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "furniture",
+  "description": "Office workstation table with flat desktop work plane and integrated side drawer pedestal cabinet.",
+  "distinguishing_features": [
+    "Spacious rectangular desktop surface",
+    "Side pedestal filing drawer unit",
+    "Asymmetric functional workstation geometry"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Desk.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_desk",
+  "fileIdentifier": "desk.glb",
+  "statistics": {
+    "triangle_count": 36,
+    "vertex_count": 24,
+    "file_size_bytes": 4288
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Horseshoe Magnet",
+  "aliases": [
+    "U magnet",
+    "horseshoe dipole"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "electromagnetism",
+  "description": "U-shaped permanent magnet concentrating magnetic flux between closely spaced opposite poles.",
+  "distinguishing_features": [
+    "Characteristic U-shape geometry",
+    "Red North and blue South tips",
+    "Concentrated air gap field"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Horseshoe Magnet.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_horseshoe_magnet",
+  "fileIdentifier": "horseshoe_magnet.glb",
+  "statistics": {
+    "triangle_count": 120,
+    "vertex_count": 66,
+    "file_size_bytes": 6304
+  }
+}

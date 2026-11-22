@@ -1,0 +1,31 @@
+{
+  "name": "Space Rocket",
+  "aliases": [
+    "Rocket",
+    "Launch vehicle",
+    "Moon rocket",
+    "Saturn V rocket",
+    "Falcon rocket"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "space_exploration",
+  "description": "Multistage space launch vehicle with cylindrical body, aerodynamic nose cone fairing, and stabilization fins.",
+  "distinguishing_features": [
+    "Cylindrical booster fuselage",
+    "Aerodynamic nose fairing",
+    "Cruciform stabilizing launch fins"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Space Rocket.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_space_rocket",
+  "fileIdentifier": "space_rocket.glb",
+  "statistics": {
+    "triangle_count": 168,
+    "vertex_count": 92,
+    "file_size_bytes": 8300
+  }
+}

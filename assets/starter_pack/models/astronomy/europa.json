@@ -1,0 +1,29 @@
+{
+  "name": "Europa",
+  "aliases": [
+    "Jupiter Moon Europa",
+    "Moon Europa",
+    "Jovian moon Europa"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "moons",
+  "description": "Icy Jovian moon harboring a subsurface liquid water ocean beneath a fractured ice crust.",
+  "distinguishing_features": [
+    "Bright reflective water-ice crust",
+    "Slight brownish fracture markings",
+    "Spherical moon form"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Europa.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_europa",
+  "fileIdentifier": "europa.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 362,
+    "file_size_bytes": 18448
+  }
+}

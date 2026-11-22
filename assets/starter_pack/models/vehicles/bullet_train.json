@@ -1,0 +1,30 @@
+{
+  "name": "Bullet Train",
+  "aliases": [
+    "shinkansen",
+    "high-speed train",
+    "maglev",
+    "tgy"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "rail",
+  "description": "High-speed aerodynamic passenger railway locomotive featuring a streamlined long needle-nose to reduce tunnel boom.",
+  "distinguishing_features": [
+    "Aerodynamic elongated needle-nose front taper",
+    "Smooth streamlined high-speed train carriage",
+    "Distinctive high-speed livery striping"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Bullet Train.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_bullet_train",
+  "fileIdentifier": "bullet_train.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5748
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Shuttlecock",
+  "aliases": [
+    "birdie",
+    "badminton shuttlecock",
+    "feather shuttle"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "equipment",
+  "description": "High-drag projectile used in badminton consisting of rounded cork nose base and flared conical skirt of 16 goose feathers.",
+  "distinguishing_features": [
+    "Hemispherical white leather-covered cork nose",
+    "Flared aerodynamic conical feather skirt",
+    "High drag aerodynamic orientation"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Shuttlecock.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_shuttlecock",
+  "fileIdentifier": "shuttlecock.glb",
+  "statistics": {
+    "triangle_count": 784,
+    "vertex_count": 396,
+    "file_size_bytes": 21088
+  }
+}

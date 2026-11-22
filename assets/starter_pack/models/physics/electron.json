@@ -1,0 +1,29 @@
+{
+  "name": "Electron",
+  "aliases": [
+    "e-",
+    "beta particle",
+    "elementary lepton"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "subatomic",
+  "description": "Subatomic elementary particle with negative elementary electric charge, represented as small blue sphere with minus marker.",
+  "distinguishing_features": [
+    "Compact elementary particle radius",
+    "Electric blue color-coding",
+    "White negative (-) charge bar"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Electron.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_electron",
+  "fileIdentifier": "electron.glb",
+  "statistics": {
+    "triangle_count": 732,
+    "vertex_count": 370,
+    "file_size_bytes": 19836
+  }
+}

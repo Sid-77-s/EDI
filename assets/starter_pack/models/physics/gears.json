@@ -1,0 +1,30 @@
+{
+  "name": "Gears",
+  "aliases": [
+    "gear pair",
+    "interlocking gears",
+    "spur gears",
+    "transmission"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "mechanics",
+  "description": "Pair of intermeshing toothed spur gears demonstrating mechanical advantage and rotational transmission.",
+  "distinguishing_features": [
+    "Driver and driven spur gear cylinders",
+    "Segmented perimeter gear teeth",
+    "Distinct gear reduction ratio"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Gears.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_gears",
+  "fileIdentifier": "gears.glb",
+  "statistics": {
+    "triangle_count": 112,
+    "vertex_count": 60,
+    "file_size_bytes": 5000
+  }
+}

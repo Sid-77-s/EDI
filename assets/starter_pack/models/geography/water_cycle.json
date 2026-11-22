@@ -1,0 +1,29 @@
+{
+  "name": "Water Cycle",
+  "aliases": [
+    "hydrologic cycle",
+    "hydrological cycle",
+    "evaporation cycle"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "hydrology",
+  "description": "Biogeochemical cycle describing continuous movement of water on, above, and below surface of the Earth via evaporation and precipitation.",
+  "distinguishing_features": [
+    "Integrated ocean reservoir and terrestrial landscape",
+    "Atmospheric condensation cloud phase",
+    "Continuous hydrological cycle representation"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Water Cycle.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_water_cycle",
+  "fileIdentifier": "water_cycle.glb",
+  "statistics": {
+    "triangle_count": 744,
+    "vertex_count": 378,
+    "file_size_bytes": 21204
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Eagle",
+  "aliases": [
+    "bald eagle",
+    "raptor",
+    "bird of prey",
+    "aquila"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "birds",
+  "description": "Large bird of prey with wide outstretched soaring wings, pure white head plumage, and hooked raptorial beak.",
+  "distinguishing_features": [
+    "Wide outstretched aerofoil wingspan",
+    "Contrasting white cranial plumage",
+    "Curved hooked predatory beak"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Eagle.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_eagle",
+  "fileIdentifier": "eagle.glb",
+  "statistics": {
+    "triangle_count": 1536,
+    "vertex_count": 778,
+    "file_size_bytes": 42108
+  }
+}

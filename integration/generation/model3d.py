@@ -146,6 +146,11 @@ class Model3D:
             stack.extend(cur.children)
         return None
 
+    @property
+    def num_triangles(self) -> int:
+        """Returns the total number of triangular faces in this model."""
+        return sum(len(m.faces) for m, _ in self.get_all_meshes_with_transforms())
+
 
 # ---------------------------------------------------------------------------
 # 4x4 Matrix Transformation Utilities

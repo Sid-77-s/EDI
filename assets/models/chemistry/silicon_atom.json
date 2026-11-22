@@ -1,0 +1,29 @@
+{
+  "name": "Silicon Atom",
+  "aliases": [
+    "Silicon",
+    "Si atom",
+    "semiconductor silicon"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Semiconductor metalloid forming the foundation of modern computer microelectronics.",
+  "distinguishing_features": [
+    "Four valence electrons",
+    "Three concentric shells",
+    "Tetravalent bonding potential"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Silicon Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_silicon_atom",
+  "fileIdentifier": "silicon_atom.glb",
+  "statistics": {
+    "triangle_count": 11232,
+    "vertex_count": 5646,
+    "file_size_bytes": 285096
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Giraffe",
+  "aliases": [
+    "giraffa camelopardalis",
+    "tallest mammal",
+    "spotted giraffe"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "Tallest living terrestrial animal characterized by extraordinarily long cervical neck, tall legs, and coat patterning.",
+  "distinguishing_features": [
+    "Extraordinarily elongated cervical neck",
+    "Tall slender stilt-like limbs",
+    "Reticulated coat color pattern"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Giraffe.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_giraffe",
+  "fileIdentifier": "giraffe.glb",
+  "statistics": {
+    "triangle_count": 1800,
+    "vertex_count": 914,
+    "file_size_bytes": 50240
+  }
+}

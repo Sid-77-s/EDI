@@ -1,0 +1,29 @@
+{
+  "name": "Ammonia",
+  "aliases": [
+    "NH3",
+    "NH3 molecule",
+    "ammonia chemical structure"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Inorganic nitrogen hydride with trigonal pyramidal geometry and a lone electron pair at the apex.",
+  "distinguishing_features": [
+    "Central blue nitrogen atom",
+    "Three white hydrogen base atoms",
+    "Trigonal pyramidal geometry"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Ammonia.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_ammonia",
+  "fileIdentifier": "ammonia.glb",
+  "statistics": {
+    "triangle_count": 3096,
+    "vertex_count": 1562,
+    "file_size_bytes": 81032
+  }
+}

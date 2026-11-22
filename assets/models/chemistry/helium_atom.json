@@ -1,0 +1,30 @@
+{
+  "name": "Helium Atom",
+  "aliases": [
+    "Helium",
+    "He atom",
+    "Bohr helium model",
+    "noble gas helium"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Noble gas element with full valence K-shell containing 2 electrons.",
+  "distinguishing_features": [
+    "Two-proton nucleus",
+    "Stable filled K-shell",
+    "Two paired orbital electrons"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Helium Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_helium_atom",
+  "fileIdentifier": "helium_atom.glb",
+  "statistics": {
+    "triangle_count": 2304,
+    "vertex_count": 1158,
+    "file_size_bytes": 59184
+  }
+}

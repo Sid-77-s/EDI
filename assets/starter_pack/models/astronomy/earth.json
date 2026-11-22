@@ -1,0 +1,30 @@
+{
+  "name": "Earth",
+  "aliases": [
+    "Planet Earth",
+    "The Earth",
+    "Blue planet",
+    "world globe"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "planets",
+  "description": "Third planet from Sun, ocean world with continents and polar ice caps.",
+  "distinguishing_features": [
+    "Blue ocean base",
+    "Green continental landmasses",
+    "White polar ice cap"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Earth.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_earth",
+  "fileIdentifier": "earth.glb",
+  "statistics": {
+    "triangle_count": 2160,
+    "vertex_count": 1086,
+    "file_size_bytes": 55012
+  }
+}

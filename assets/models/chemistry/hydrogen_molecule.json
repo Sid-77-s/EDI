@@ -1,0 +1,30 @@
+{
+  "name": "Hydrogen Molecule",
+  "aliases": [
+    "H2",
+    "H2 molecule",
+    "dihydrogen",
+    "molecular hydrogen"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Lightest molecule in the universe, consisting of two hydrogen atoms sharing a single covalent bond.",
+  "distinguishing_features": [
+    "Two white hydrogen atoms",
+    "Single covalent bond",
+    "Smallest diatomic molecule"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Hydrogen Molecule.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_hydrogen_molecule",
+  "fileIdentifier": "hydrogen_molecule.glb",
+  "statistics": {
+    "triangle_count": 1512,
+    "vertex_count": 762,
+    "file_size_bytes": 39424
+  }
+}

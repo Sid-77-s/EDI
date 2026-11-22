@@ -1,0 +1,30 @@
+{
+  "name": "Camera",
+  "aliases": [
+    "dslr",
+    "digital camera",
+    "slr camera",
+    "photo camera"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "optics_electronics",
+  "description": "Digital single-lens reflex (DSLR) camera with ergonomic grip body, prominent top pentaprism optical viewfinder, and barrel lens.",
+  "distinguishing_features": [
+    "Ergonomic matte black magnesium chassis body",
+    "Top pentaprism optical viewfinder hump",
+    "Cylindrical optical glass zoom lens barrel"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Camera.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_camera",
+  "fileIdentifier": "camera.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5524
+  }
+}

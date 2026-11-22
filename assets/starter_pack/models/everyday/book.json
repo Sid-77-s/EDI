@@ -1,0 +1,30 @@
+{
+  "name": "Book",
+  "aliases": [
+    "hardcover book",
+    "novel",
+    "textbook",
+    "bound volume"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "stationery",
+  "description": "Bound collection of printed paper pages encased within protective rigid hardcover binding with squared spine.",
+  "distinguishing_features": [
+    "Stiff protective cloth/board hardcover binding",
+    "Squared bound paper leaf edge block",
+    "Distinct longitudinal binding spine"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Book.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_book",
+  "fileIdentifier": "book.glb",
+  "statistics": {
+    "triangle_count": 24,
+    "vertex_count": 16,
+    "file_size_bytes": 2912
+  }
+}

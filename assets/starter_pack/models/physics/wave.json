@@ -1,0 +1,30 @@
+{
+  "name": "Wave",
+  "aliases": [
+    "sine wave",
+    "transverse wave",
+    "harmonic wave",
+    "oscillation"
+  ],
+  "category": "Physics and Mathematics",
+  "subcategory": "waves",
+  "description": "Sinusoidal transverse wave demonstrating wavelength, amplitude, crests, and troughs of harmonic propagation.",
+  "distinguishing_features": [
+    "Sinusoidal spatial profile",
+    "Periodic crests and troughs",
+    "Wavelength oscillation demonstration"
+  ],
+  "educational_purpose": "Visualizes the 3D physical and mathematical properties of Wave.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_physics_wave",
+  "fileIdentifier": "wave.glb",
+  "statistics": {
+    "triangle_count": 18000,
+    "vertex_count": 9050,
+    "file_size_bytes": 457384
+  }
+}

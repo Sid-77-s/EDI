@@ -1,0 +1,30 @@
+{
+  "name": "Iron Atom",
+  "aliases": [
+    "Iron",
+    "Fe atom",
+    "transition metal iron",
+    "ferrum"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Transition metal element central to planetary cores, metallurgy, and hemoglobin.",
+  "distinguishing_features": [
+    "Dense transition metal nucleus",
+    "Four distinct electron shells",
+    "Partially filled d-subshell"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Iron Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_iron_atom",
+  "fileIdentifier": "iron_atom.glb",
+  "statistics": {
+    "triangle_count": 20016,
+    "vertex_count": 10062,
+    "file_size_bytes": 506884
+  }
+}

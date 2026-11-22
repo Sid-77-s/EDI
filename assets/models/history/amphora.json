@@ -1,0 +1,30 @@
+{
+  "name": "Amphora",
+  "aliases": [
+    "greek amphora",
+    "ancient vase",
+    "terracotta vessel",
+    "urn"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "archaeology",
+  "description": "Classical ceramic container with characteristic ovoid shape and two curved vertical handles for carrying wine and olive oil.",
+  "distinguishing_features": [
+    "Ovoid tapered terracotta ceramic body",
+    "Two vertical curved arching handles",
+    "Slender cylindrical pouring neck"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Amphora.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_amphora",
+  "fileIdentifier": "amphora.glb",
+  "statistics": {
+    "triangle_count": 1944,
+    "vertex_count": 976,
+    "file_size_bytes": 50804
+  }
+}

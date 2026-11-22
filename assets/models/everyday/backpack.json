@@ -1,0 +1,30 @@
+{
+  "name": "Backpack",
+  "aliases": [
+    "rucksack",
+    "knapsack",
+    "bookbag",
+    "school bag"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "travel_accessories",
+  "description": "Cloth sack carried on one's back and secured with two straps that go over shoulders, with zippered front compartments.",
+  "distinguishing_features": [
+    "Voluminous zippered main canvas compartment",
+    "Protruding front utility storage pocket",
+    "Ergonomic dual shoulder harness orientation"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Backpack.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_backpack",
+  "fileIdentifier": "backpack.glb",
+  "statistics": {
+    "triangle_count": 24,
+    "vertex_count": 16,
+    "file_size_bytes": 2892
+  }
+}

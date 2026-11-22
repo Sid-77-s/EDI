@@ -1,0 +1,30 @@
+{
+  "name": "Robotic Arm",
+  "aliases": [
+    "industrial robot",
+    "articulated arm",
+    "6-axis robot",
+    "manipulator"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "mechanical",
+  "description": "Articulated multi-axis industrial manipulator with revolving pedestal base, shoulder, forearm, and parallel-jaw end effector gripper.",
+  "distinguishing_features": [
+    "Articulated multi-axis robotic joints",
+    "Vivid safety industrial orange finish",
+    "Precision parallel mechanical gripper end effector"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Robotic Arm.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_robotic_arm",
+  "fileIdentifier": "robotic_arm.glb",
+  "statistics": {
+    "triangle_count": 240,
+    "vertex_count": 130,
+    "file_size_bytes": 11036
+  }
+}

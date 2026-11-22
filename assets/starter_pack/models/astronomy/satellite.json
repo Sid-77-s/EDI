@@ -1,0 +1,30 @@
+{
+  "name": "Satellite",
+  "aliases": [
+    "Communications satellite",
+    "orbital satellite",
+    "weather satellite",
+    "space probe"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "space_exploration",
+  "description": "Orbital satellite featuring instrument payload bus, dual deployable solar cell arrays, and high-gain dish antenna.",
+  "distinguishing_features": [
+    "Central instrument bus body",
+    "Dual lateral solar panel wings",
+    "Communication parabolic dish"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Satellite.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_satellite",
+  "fileIdentifier": "satellite.glb",
+  "statistics": {
+    "triangle_count": 108,
+    "vertex_count": 62,
+    "file_size_bytes": 6884
+  }
+}

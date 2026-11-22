@@ -1,0 +1,30 @@
+{
+  "name": "Castle Tower",
+  "aliases": [
+    "keep",
+    "castle turret",
+    "medieval tower",
+    "fortress keep"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "medieval_architecture",
+  "description": "Medieval defensive stone masonry tower fortification featuring thick walls and projecting machicolated crenellated battlements.",
+  "distinguishing_features": [
+    "Heavy cylindrical stone ashlar masonry core",
+    "Projecting corbelled machicolation crown",
+    "Crenellated defensive parapet battlements"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Castle Tower.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_castle_tower",
+  "fileIdentifier": "castle_tower.glb",
+  "statistics": {
+    "triangle_count": 136,
+    "vertex_count": 72,
+    "file_size_bytes": 5552
+  }
+}

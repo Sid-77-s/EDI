@@ -1,0 +1,29 @@
+{
+  "name": "Water Pump",
+  "aliases": [
+    "centrifugal pump",
+    "fluid pump",
+    "impeller pump"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "fluid_mechanics",
+  "description": "Centrifugal water pump with spiral volute casing, axial suction inlet flange, and tangential vertical discharge outlet.",
+  "distinguishing_features": [
+    "Spiral hydrodynamic volute casing",
+    "Central axial suction eye inlet",
+    "Tangential discharge pressure flange"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Water Pump.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_water_pump",
+  "fileIdentifier": "water_pump.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 364,
+    "file_size_bytes": 20400
+  }
+}

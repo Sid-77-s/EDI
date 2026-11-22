@@ -1,0 +1,30 @@
+{
+  "name": "Truck",
+  "aliases": [
+    "semi truck",
+    "lorry",
+    "cargo truck",
+    "heavy hauler"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "road",
+  "description": "Heavy commercial motor vehicle with upright forward operator cabin and elongated rear cargo load bed on 6 heavy wheels.",
+  "distinguishing_features": [
+    "Upright forward commercial operator cabin",
+    "Long rear heavy-duty cargo haulage bed",
+    "Six heavy-duty radial truck wheels"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Truck.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_truck",
+  "fileIdentifier": "truck.glb",
+  "statistics": {
+    "triangle_count": 456,
+    "vertex_count": 244,
+    "file_size_bytes": 19344
+  }
+}

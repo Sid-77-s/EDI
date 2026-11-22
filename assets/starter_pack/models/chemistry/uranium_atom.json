@@ -1,0 +1,29 @@
+{
+  "name": "Uranium Atom",
+  "aliases": [
+    "Uranium",
+    "U atom",
+    "actinide uranium"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Dense actinide element with 92 protons, naturally occurring fissile isotope U-235.",
+  "distinguishing_features": [
+    "Massive actinide nucleus",
+    "Six electron shell levels",
+    "Heavy radioisotope representation"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Uranium Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_uranium_atom",
+  "fileIdentifier": "uranium_atom.glb",
+  "statistics": {
+    "triangle_count": 42624,
+    "vertex_count": 21428,
+    "file_size_bytes": 1077576
+  }
+}

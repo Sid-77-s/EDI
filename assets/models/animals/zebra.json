@@ -1,0 +1,29 @@
+{
+  "name": "Zebra",
+  "aliases": [
+    "equus quagga",
+    "wild horse",
+    "striped zebra"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "mammals",
+  "description": "African wild equids famous for distinctive black-and-white vertical striped camouflage patterns.",
+  "distinguishing_features": [
+    "Striking black and white striped patterning",
+    "Equid quadruped morphology",
+    "Erect dorsal mane ridge"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Zebra.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_zebra",
+  "fileIdentifier": "zebra.glb",
+  "statistics": {
+    "triangle_count": 1740,
+    "vertex_count": 884,
+    "file_size_bytes": 48860
+  }
+}

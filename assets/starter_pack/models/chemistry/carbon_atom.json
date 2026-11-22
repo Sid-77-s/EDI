@@ -1,0 +1,29 @@
+{
+  "name": "Carbon Atom",
+  "aliases": [
+    "Carbon",
+    "C atom",
+    "Bohr carbon model"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Fundamental tetravalent element of organic chemistry with 4 valence electrons in L shell.",
+  "distinguishing_features": [
+    "Carbon nucleus",
+    "Inner shell with 2 electrons",
+    "Outer valence shell with 4 electrons"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Carbon Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_carbon_atom",
+  "fileIdentifier": "carbon_atom.glb",
+  "statistics": {
+    "triangle_count": 5328,
+    "vertex_count": 2678,
+    "file_size_bytes": 135860
+  }
+}

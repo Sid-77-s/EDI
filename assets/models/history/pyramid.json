@@ -1,0 +1,30 @@
+{
+  "name": "Pyramid",
+  "aliases": [
+    "great pyramid",
+    "giza pyramid",
+    "egyptian pyramid",
+    "khufu pyramid"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "monuments",
+  "description": "Ancient Egyptian monumental masonry tomb with square base and four sloping triangular faces meeting at gilded pyramidion capstone.",
+  "distinguishing_features": [
+    "Square monumental stone masonry foundation",
+    "Four converging equilateral triangular sloping faces",
+    "Gilded electrum apex pyramidion capstone"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Pyramid.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_pyramid",
+  "fileIdentifier": "pyramid.glb",
+  "statistics": {
+    "triangle_count": 32,
+    "vertex_count": 20,
+    "file_size_bytes": 3180
+  }
+}

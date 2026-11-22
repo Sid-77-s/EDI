@@ -1,0 +1,30 @@
+{
+  "name": "Mars Rover",
+  "aliases": [
+    "Curiosity rover",
+    "Perseverance rover",
+    "robotic rover",
+    "Mars exploration rover"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "space_exploration",
+  "description": "Robotic exploratory vehicle equipped with instrument chassis, high mast camera, and rugged all-terrain wheels.",
+  "distinguishing_features": [
+    "Rectangular electronics chassis",
+    "Articulated mast camera (Mastcam)",
+    "Rugged planetary rover wheels"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Mars Rover.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_mars_rover",
+  "fileIdentifier": "mars_rover.glb",
+  "statistics": {
+    "triangle_count": 384,
+    "vertex_count": 206,
+    "file_size_bytes": 16696
+  }
+}

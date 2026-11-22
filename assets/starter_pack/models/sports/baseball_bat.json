@@ -1,0 +1,30 @@
+{
+  "name": "Baseball Bat",
+  "aliases": [
+    "wooden bat",
+    "ash bat",
+    "baseball club",
+    "slugger"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "equipment",
+  "description": "Smooth tapered wooden club used in baseball to hit the ball, with thick barrel hitting zone and flared handle knob.",
+  "distinguishing_features": [
+    "Tapered cylindrical contour from thin handle to thick barrel",
+    "Rounded end cap hitting surface",
+    "Flared safety knob at handle base"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Baseball Bat.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_baseball_bat",
+  "fileIdentifier": "baseball_bat.glb",
+  "statistics": {
+    "triangle_count": 144,
+    "vertex_count": 76,
+    "file_size_bytes": 5708
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Astrolabe",
+  "aliases": [
+    "planispheric astrolabe",
+    "navigational instrument",
+    "brass astrolabe"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "historical_instruments",
+  "description": "Ancient astronomical instrument that was a handheld model of the universe used by astronomers and navigators.",
+  "distinguishing_features": [
+    "Circular brass graduated mater disc rim",
+    "Rotating openwork star-pointer rete disc",
+    "Pivoting alidade sighting rule arm"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Astrolabe.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_astrolabe",
+  "fileIdentifier": "astrolabe.glb",
+  "statistics": {
+    "triangle_count": 180,
+    "vertex_count": 94,
+    "file_size_bytes": 7560
+  }
+}

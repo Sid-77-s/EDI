@@ -1,0 +1,30 @@
+{
+  "name": "Planetary Gear",
+  "aliases": [
+    "epicyclic gear",
+    "gear train",
+    "sun and planet gear",
+    "planetary transmission"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "mechanical",
+  "description": "Epicyclic gear system consisting of central sun gear, three revolving planet gears, and outer annular ring gear.",
+  "distinguishing_features": [
+    "Central drive sun gear cylinder",
+    "Three symmetrically meshed planet gears",
+    "Outer concentric annular internal ring gear"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Planetary Gear.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_planetary_gear",
+  "fileIdentifier": "planetary_gear.glb",
+  "statistics": {
+    "triangle_count": 280,
+    "vertex_count": 148,
+    "file_size_bytes": 11572
+  }
+}

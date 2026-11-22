@@ -1,0 +1,30 @@
+{
+  "name": "Spoon",
+  "aliases": [
+    "soup spoon",
+    "eating utensil",
+    "tablespoon",
+    "metal spoon"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "kitchenware",
+  "description": "Utensil consisting of a small, shallow oval bowl on a long handle, used in preparing, serving, or eating liquid food.",
+  "distinguishing_features": [
+    "Concave oval scoop bowl",
+    "Elongated flat handle shank",
+    "Polished stainless steel finish"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Spoon.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_spoon",
+  "fileIdentifier": "spoon.glb",
+  "statistics": {
+    "triangle_count": 792,
+    "vertex_count": 400,
+    "file_size_bytes": 21328
+  }
+}

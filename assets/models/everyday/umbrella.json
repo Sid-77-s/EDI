@@ -1,0 +1,29 @@
+{
+  "name": "Umbrella",
+  "aliases": [
+    "parasol",
+    "rain umbrella",
+    "brolly"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "accessories",
+  "description": "Collapsible canopy designed to protect against rain or sunlight, supported by ribs on a central shaft with curved hook handle.",
+  "distinguishing_features": [
+    "Domed protective waterproof fabric canopy",
+    "Central supporting metal runner shaft",
+    "Curved ergonomic J-hook hand grip handle"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Umbrella.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_umbrella",
+  "fileIdentifier": "umbrella.glb",
+  "statistics": {
+    "triangle_count": 712,
+    "vertex_count": 360,
+    "file_size_bytes": 20356
+  }
+}

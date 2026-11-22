@@ -1,0 +1,30 @@
+{
+  "name": "Dumbbell",
+  "aliases": [
+    "hand weight",
+    "free weight",
+    "hex dumbbell",
+    "gym weight"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "gym_equipment",
+  "description": "Short barbell weight consisting of central knurled steel handle bar capped at each end with equal hexagonal rubber weights.",
+  "distinguishing_features": [
+    "Central knurled steel hand grip bar",
+    "Twin hexagonal rubber-encased weight heads",
+    "Balanced free-weight resistance design"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Dumbbell.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_dumbbell",
+  "fileIdentifier": "dumbbell.glb",
+  "statistics": {
+    "triangle_count": 120,
+    "vertex_count": 66,
+    "file_size_bytes": 6204
+  }
+}

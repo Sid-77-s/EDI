@@ -1,0 +1,30 @@
+{
+  "name": "Cloud",
+  "aliases": [
+    "cumulus",
+    "cumulus cloud",
+    "fluffy cloud",
+    "rain cloud"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "meteorology",
+  "description": "Clouds having flat bases and distinct lumpy, cauliflower-like globular billowing outlines.",
+  "distinguishing_features": [
+    "Billowing cauliflower-like globular tops",
+    "Flat horizontal condensation cloud base",
+    "High-albedo white condensed water droplet volume"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Cloud.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_cloud",
+  "fileIdentifier": "cloud.glb",
+  "statistics": {
+    "triangle_count": 2160,
+    "vertex_count": 1086,
+    "file_size_bytes": 54676
+  }
+}

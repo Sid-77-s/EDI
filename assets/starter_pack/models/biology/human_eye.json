@@ -1,0 +1,30 @@
+{
+  "name": "Human Eye",
+  "aliases": [
+    "eyeball",
+    "oculus",
+    "eye model",
+    "vision organ"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Sensory visual organ showing outer white sclera, bulging cornea, colored iris disc, pupil, and posterior optic nerve.",
+  "distinguishing_features": [
+    "Spherical white sclera eyeball",
+    "Anterior curved cornea and colored iris",
+    "Posterior projecting optic nerve"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Human Eye.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_human_eye",
+  "fileIdentifier": "human_eye.glb",
+  "statistics": {
+    "triangle_count": 1656,
+    "vertex_count": 838,
+    "file_size_bytes": 45228
+  }
+}

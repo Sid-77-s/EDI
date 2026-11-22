@@ -1,0 +1,30 @@
+{
+  "name": "Water Molecule",
+  "aliases": [
+    "Water",
+    "H2O",
+    "H2O molecule",
+    "water chemical structure"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Polar molecule consisting of 1 oxygen atom bonded to 2 hydrogen atoms at a 104.5 degree bent angle.",
+  "distinguishing_features": [
+    "Central red oxygen atom",
+    "Two white hydrogen atoms",
+    "Characteristic 104.5 degree bent bond angle"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Water Molecule.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_water_molecule",
+  "fileIdentifier": "water_molecule.glb",
+  "statistics": {
+    "triangle_count": 2304,
+    "vertex_count": 1162,
+    "file_size_bytes": 60256
+  }
+}

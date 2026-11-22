@@ -1,0 +1,30 @@
+{
+  "name": "Coffee Mug",
+  "aliases": [
+    "mug",
+    "coffee cup",
+    "tea cup",
+    "ceramic mug"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "kitchenware",
+  "description": "Cylindrical ceramic vessel used for drinking hot beverages with lateral D-shaped handle loop.",
+  "distinguishing_features": [
+    "Cylindrical glazed ceramic beverage vessel",
+    "Lateral curved D-shaped finger grip handle",
+    "Hollow top drinking cavity"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Coffee Mug.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_coffee_mug",
+  "fileIdentifier": "coffee_mug.glb",
+  "statistics": {
+    "triangle_count": 648,
+    "vertex_count": 326,
+    "file_size_bytes": 17836
+  }
+}

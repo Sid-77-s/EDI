@@ -1,0 +1,30 @@
+{
+  "name": "Hydraulic Cylinder",
+  "aliases": [
+    "hydraulic actuator",
+    "ram",
+    "pneumatic piston",
+    "piston actuator"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "mechanical",
+  "description": "Mechanical actuator used to give unidirectional force through unidirectional stroke, with heavy barrel and extending hard-chromed rod.",
+  "distinguishing_features": [
+    "Heavy seamless steel cylinder barrel tube",
+    "Extending polished hard-chrome plated piston rod",
+    "High-pressure fluid actuation geometry"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Hydraulic Cylinder.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_hydraulic_cylinder",
+  "fileIdentifier": "hydraulic_cylinder.glb",
+  "statistics": {
+    "triangle_count": 144,
+    "vertex_count": 76,
+    "file_size_bytes": 5696
+  }
+}

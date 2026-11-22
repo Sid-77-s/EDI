@@ -1,0 +1,29 @@
+{
+  "name": "Sodium Atom",
+  "aliases": [
+    "Sodium",
+    "Na atom",
+    "alkali metal sodium"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "elements_and_atoms",
+  "description": "Highly reactive alkali metal with a single valence electron in the M shell.",
+  "distinguishing_features": [
+    "Three concentric electron shells",
+    "Filled K (2) and L (8) shells",
+    "Single reactive M-shell electron"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Sodium Atom.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_sodium_atom",
+  "fileIdentifier": "sodium_atom.glb",
+  "statistics": {
+    "triangle_count": 9072,
+    "vertex_count": 4560,
+    "file_size_bytes": 230676
+  }
+}

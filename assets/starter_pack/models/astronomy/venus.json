@@ -1,0 +1,29 @@
+{
+  "name": "Venus",
+  "aliases": [
+    "Planet Venus",
+    "Venus planet",
+    "morning star"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "planets",
+  "description": "Second planet from Sun, shrouded in thick yellowish-white sulfuric acid clouds.",
+  "distinguishing_features": [
+    "Dense cloud atmosphere",
+    "Warm yellowish-cream hue",
+    "Spherical planetary form"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Venus.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_venus",
+  "fileIdentifier": "venus.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 362,
+    "file_size_bytes": 18448
+  }
+}

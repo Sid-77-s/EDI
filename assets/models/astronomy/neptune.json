@@ -1,0 +1,29 @@
+{
+  "name": "Neptune",
+  "aliases": [
+    "Planet Neptune",
+    "Eighth planet",
+    "deep blue planet"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "planets",
+  "description": "Outermost major planet, intense deep azure blue atmosphere shaped by supersonic winds.",
+  "distinguishing_features": [
+    "Vivid deep azure blue colour",
+    "Ice giant spherical form",
+    "Atmospheric haze depth"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Neptune.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_neptune",
+  "fileIdentifier": "neptune.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 362,
+    "file_size_bytes": 18456
+  }
+}

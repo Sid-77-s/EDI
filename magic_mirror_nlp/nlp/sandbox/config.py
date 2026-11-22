@@ -20,7 +20,7 @@ RUNTIME_OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), "..", "runtime_out
 SANDBOX_OUTPUTS_DIR = os.path.join(os.path.dirname(__file__), "runtime_outputs")
 
 OLLAMA_HOST = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-DEFAULT_OLLAMA_MODEL = os.environ.get("DEFAULT_OLLAMA_MODEL", "qwen2.5:1.5b")
+DEFAULT_OLLAMA_MODEL = os.environ.get("DEFAULT_OLLAMA_MODEL", "qwen2.5:3b")
 
 DEFAULT_MIC_DEVICE_INDEX = int(os.environ.get("DEFAULT_MIC_DEVICE_INDEX", 1))
 DEFAULT_WHISPER_MODEL = os.environ.get("DEFAULT_WHISPER_MODEL", "base.en")

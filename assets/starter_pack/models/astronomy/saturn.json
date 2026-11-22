@@ -1,0 +1,29 @@
+{
+  "name": "Saturn",
+  "aliases": [
+    "Planet Saturn",
+    "Ringed planet",
+    "sixth planet"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "planets",
+  "description": "Second largest planet, distinguished by its magnificent, highly reflective icy ring system.",
+  "distinguishing_features": [
+    "Gas giant body",
+    "Prominent concentric ring disc",
+    "Tilted orbital ring plane"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Saturn.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_saturn",
+  "fileIdentifier": "saturn.glb",
+  "statistics": {
+    "triangle_count": 912,
+    "vertex_count": 458,
+    "file_size_bytes": 24036
+  }
+}

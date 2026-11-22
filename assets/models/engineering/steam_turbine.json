@@ -1,0 +1,29 @@
+{
+  "name": "Steam Turbine",
+  "aliases": [
+    "power turbine",
+    "rotary steam engine",
+    "turbogenerator"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "mechanical",
+  "description": "Turbomachine extracting thermal energy from pressurized steam to perform mechanical work on rotating bladed shaft stages.",
+  "distinguishing_features": [
+    "Heavy cast steel split casing shell",
+    "Concentric high-speed rotor shaft axis",
+    "Multi-stage thermodynamic expansion architecture"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Steam Turbine.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_steam_turbine",
+  "fileIdentifier": "steam_turbine.glb",
+  "statistics": {
+    "triangle_count": 144,
+    "vertex_count": 76,
+    "file_size_bytes": 5816
+  }
+}

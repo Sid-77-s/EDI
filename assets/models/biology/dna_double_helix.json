@@ -1,0 +1,30 @@
+{
+  "name": "DNA Double Helix",
+  "aliases": [
+    "DNA",
+    "deoxyribonucleic acid",
+    "double helix",
+    "genetic helix"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "molecular_biology",
+  "description": "Molecular double helix of DNA consisting of complementary antiparallel polynucleotide chains connected by base pair rungs.",
+  "distinguishing_features": [
+    "Antiparallel intertwined double helices",
+    "Connecting transverse base pair rungs",
+    "Accurate helical pitch and major/minor grooves"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of DNA Double Helix.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_dna_double_helix",
+  "fileIdentifier": "dna_double_helix.glb",
+  "statistics": {
+    "triangle_count": 2752,
+    "vertex_count": 1416,
+    "file_size_bytes": 80500
+  }
+}

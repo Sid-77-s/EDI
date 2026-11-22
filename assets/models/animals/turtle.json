@@ -1,0 +1,30 @@
+{
+  "name": "Turtle",
+  "aliases": [
+    "testudines",
+    "sea turtle",
+    "tortoise",
+    "chelonian"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "reptiles",
+  "description": "Reptile with domed bony carapace shell protecting body, outstretched flippers, and projecting head.",
+  "distinguishing_features": [
+    "Domed protective bony carapace",
+    "Projecting cranial neck and head",
+    "Paddle-like swimming flippers"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Turtle.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_turtle",
+  "fileIdentifier": "turtle.glb",
+  "statistics": {
+    "triangle_count": 4320,
+    "vertex_count": 2172,
+    "file_size_bytes": 109276
+  }
+}

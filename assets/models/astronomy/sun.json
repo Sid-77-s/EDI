@@ -1,0 +1,30 @@
+{
+  "name": "Sun",
+  "aliases": [
+    "The Sun",
+    "Solar star",
+    "Sol",
+    "our star"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "celestial_bodies",
+  "description": "G-type main-sequence star at the center of the solar system, radiating heat and light.",
+  "distinguishing_features": [
+    "Large central sphere",
+    "Radiant golden-yellow surface",
+    "Stellar scale"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Sun.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_sun",
+  "fileIdentifier": "sun.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 362,
+    "file_size_bytes": 18436
+  }
+}

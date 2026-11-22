@@ -1,0 +1,30 @@
+{
+  "name": "CPU",
+  "aliases": [
+    "microprocessor",
+    "central processing unit",
+    "processor chip",
+    "computer chip"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "electronics",
+  "description": "Semiconductor microprocessor package with green FR4 substrate, metallic nickel-plated integrated heat spreader (IHS), and pin-1 marker.",
+  "distinguishing_features": [
+    "Square multi-layer PCB carrier substrate",
+    "Metallic nickel-plated integrated heat spreader (IHS)",
+    "Gold corner index alignment mark"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of CPU.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_cpu",
+  "fileIdentifier": "cpu.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5680
+  }
+}

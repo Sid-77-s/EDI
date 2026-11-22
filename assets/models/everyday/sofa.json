@@ -1,0 +1,30 @@
+{
+  "name": "Sofa",
+  "aliases": [
+    "couch",
+    "davenport",
+    "living room sofa",
+    "settee"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "furniture",
+  "description": "Upholstered furniture piece for seating multiple persons, with cushioned bench, high backrest, and padded side armrests.",
+  "distinguishing_features": [
+    "Upholstered multi-person seat bench cushion",
+    "Padded upright backrest support",
+    "Twin flanking upholstered armrests"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Sofa.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_sofa",
+  "fileIdentifier": "sofa.glb",
+  "statistics": {
+    "triangle_count": 48,
+    "vertex_count": 32,
+    "file_size_bytes": 5384
+  }
+}

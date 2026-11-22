@@ -1,0 +1,30 @@
+{
+  "name": "Column",
+  "aliases": [
+    "greek column",
+    "corinthian column",
+    "classical pillar",
+    "marble column"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "classical_architecture",
+  "description": "Classical architectural vertical structural element consisting of circular fluted marble shaft, base plinth, and decorative capital.",
+  "distinguishing_features": [
+    "Fluted vertical cylindrical marble shaft",
+    "Classical architectural proportion with entasis taper",
+    "Ornamented capital and square plinth base"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Column.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_column",
+  "fileIdentifier": "column.glb",
+  "statistics": {
+    "triangle_count": 104,
+    "vertex_count": 58,
+    "file_size_bytes": 5808
+  }
+}

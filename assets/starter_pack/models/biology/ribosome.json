@@ -1,0 +1,29 @@
+{
+  "name": "Ribosome",
+  "aliases": [
+    "ribosomal complex",
+    "protein factory",
+    "70S/80S ribosome"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "molecular_biology",
+  "description": "Complex cellular machine consisting of large and small ribonucleoprotein subunits responsible for biological protein synthesis.",
+  "distinguishing_features": [
+    "Asymmetric large ribosomal subunit",
+    "Interlocking small ribosomal subunit",
+    "Inter-subunit mRNA/tRNA binding cleft"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Ribosome.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_ribosome",
+  "fileIdentifier": "ribosome.glb",
+  "statistics": {
+    "triangle_count": 1440,
+    "vertex_count": 724,
+    "file_size_bytes": 36736
+  }
+}

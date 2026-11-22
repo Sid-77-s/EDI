@@ -1,0 +1,30 @@
+{
+  "name": "Globe",
+  "aliases": [
+    "terrestrial globe",
+    "world globe",
+    "earth globe",
+    "desk globe"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "cartography",
+  "description": "Three-dimensional spherical scale model of Earth mounted on an inclined 23.5-degree meridian arc and tabletop stand.",
+  "distinguishing_features": [
+    "Spherical planetary representation",
+    "Standard 23.5-degree axial tilt angle",
+    "Semi-meridian calibrated support arc and pedestal base"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Globe.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_globe",
+  "fileIdentifier": "globe.glb",
+  "statistics": {
+    "triangle_count": 1368,
+    "vertex_count": 688,
+    "file_size_bytes": 36052
+  }
+}

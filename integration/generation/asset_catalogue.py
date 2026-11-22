@@ -36,13 +36,15 @@ class LocalAssetPackResolver:
         self.allowed_licenses = ({str(x).casefold() for x in allowed_licenses}
                                  if allowed_licenses is not None else None)
         self.allow_unknown_license = allow_unknown_license
+        self._index: Optional[dict[str, list[tuple[int, str, Path, dict]]]] = None
 
-    def resolve(self, concept: str):
-        """Return a loaded ``(Model3D, metadata)`` match or ``None``."""
+    def _ensure_index(self) -> dict[str, list[tuple[int, str, Path, dict]]]:
+        if self._index is not None:
+            return self._index
+        index: dict[str, list[tuple[int, str, Path, dict]]] = {}
         if not self.asset_pack_dir.is_dir():
-            return None
-        wanted = _concept_key(concept)
-        matches = []
+            self._index = index
+            return index
         for path in self.asset_pack_dir.rglob("*.glb"):
             sidecar = path.with_suffix(".json")
             try:
@@ -64,23 +66,37 @@ class LocalAssetPackResolver:
             if not isinstance(aliases, list):
                 aliases = []
             names = [name, *[str(alias) for alias in aliases]]
-            keys = {_concept_key(item) for item in names if item.strip()}
-            if wanted not in keys:
-                continue
-            rank = 0 if _concept_key(name) == wanted else 1
-            matches.append((rank, str(path).casefold(), path, metadata))
+            entry_keys = {_concept_key(item) for item in names if item.strip()}
+            for key in entry_keys:
+                rank = 0 if _concept_key(name) == key else 1
+                index.setdefault(key, []).append((rank, str(path).casefold(), path, metadata))
+        self._index = index
+        return index
+
+    def resolve(self, concept: str):
+        """Return a loaded ``(Model3D, metadata)`` match or ``None``."""
+        index = self._ensure_index()
+        wanted = _concept_key(concept)
+        matches = index.get(wanted)
         if not matches:
             return None
         _, _, path, metadata = min(matches)
         from integration.generation.model3d import load_glb
         model = load_glb(path)
         model.concept = concept
+        resolved_name = metadata.get("name") or path.stem
         model.metadata.update({
+            "name": resolved_name,
+            "aliases": metadata.get("aliases", []),
+            "category": metadata.get("category"),
+            "subcategory": metadata.get("subcategory"),
             "asset_source": str(path),
             "license": metadata.get("license"),
             "source": metadata.get("source"),
             "author": metadata.get("author"),
             "attribution": metadata.get("attribution"),
+            "distinguishing_features": metadata.get("distinguishing_features", []),
+            "educational_purpose": metadata.get("educational_purpose"),
         })
         return model, model.metadata
 

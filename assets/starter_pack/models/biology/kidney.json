@@ -1,0 +1,29 @@
+{
+  "name": "Kidney",
+  "aliases": [
+    "human kidney",
+    "renal organ",
+    "ren"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Bean-shaped organ filtering blood to extract waste, with medial indented hilum providing entry for renal vessels and ureter.",
+  "distinguishing_features": [
+    "Characteristic reniform bean silhouette",
+    "Medial concave hilum indentation",
+    "Emerging renal vascular pedicle and ureter"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Kidney.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_kidney",
+  "fileIdentifier": "kidney.glb",
+  "statistics": {
+    "triangle_count": 864,
+    "vertex_count": 438,
+    "file_size_bytes": 24176
+  }
+}

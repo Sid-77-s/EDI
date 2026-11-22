@@ -1,0 +1,29 @@
+{
+  "name": "Cricket Ball",
+  "aliases": [
+    "leather cricket ball",
+    "red ball",
+    "match cricket ball"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "balls",
+  "description": "Hard solid cork core sphere covered with polished deep red leather halves joined by a prominent raised white stitched seam.",
+  "distinguishing_features": [
+    "Polished red leather hemispherical quarters",
+    "Raised equatorially stitched string seam",
+    "Hard regulation cork and twine core"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Cricket Ball.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_cricket_ball",
+  "fileIdentifier": "cricket_ball.glb",
+  "statistics": {
+    "triangle_count": 1296,
+    "vertex_count": 650,
+    "file_size_bytes": 33236
+  }
+}

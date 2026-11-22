@@ -1,0 +1,30 @@
+{
+  "name": "Human Skull",
+  "aliases": [
+    "skull",
+    "cranium",
+    "cranium bone",
+    "human skull model"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Bony structure forming the head in human skeleton, encasing the brain and featuring orbits and lower jaw.",
+  "distinguishing_features": [
+    "Rounded neurocranium vault",
+    "Bilateral orbital eye sockets",
+    "Articulated mandible jaw region"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Human Skull.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_human_skull",
+  "fileIdentifier": "human_skull.glb",
+  "statistics": {
+    "triangle_count": 2172,
+    "vertex_count": 1094,
+    "file_size_bytes": 56268
+  }
+}

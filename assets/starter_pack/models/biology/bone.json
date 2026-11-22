@@ -1,0 +1,30 @@
+{
+  "name": "Bone",
+  "aliases": [
+    "femur",
+    "thigh bone",
+    "human bone",
+    "skeletal bone"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Human femur thigh bone, the longest and strongest bone in the human skeleton, with femoral head and dual condyles.",
+  "distinguishing_features": [
+    "Long cylindrical cortical diaphysis shaft",
+    "Angled proximal femoral head sphere",
+    "Bilateral distal articular condyles"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Bone.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_bone",
+  "fileIdentifier": "bone.glb",
+  "statistics": {
+    "triangle_count": 2232,
+    "vertex_count": 1124,
+    "file_size_bytes": 57444
+  }
+}

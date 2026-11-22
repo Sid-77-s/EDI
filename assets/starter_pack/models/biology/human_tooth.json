@@ -1,0 +1,30 @@
+{
+  "name": "Human Tooth",
+  "aliases": [
+    "molar",
+    "tooth",
+    "incisor",
+    "dental anatomy"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Molar tooth structure displaying enamelled crown with cusps, cervical neck, and bifurcated root anchors.",
+  "distinguishing_features": [
+    "White enamelled occlusal crown",
+    "Cervical line anatomical neck",
+    "Bifurcated root projections"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Human Tooth.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_human_tooth",
+  "fileIdentifier": "human_tooth.glb",
+  "statistics": {
+    "triangle_count": 156,
+    "vertex_count": 84,
+    "file_size_bytes": 6948
+  }
+}

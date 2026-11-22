@@ -1,0 +1,29 @@
+{
+  "name": "Obelisk",
+  "aliases": [
+    "monolithic obelisk",
+    "egyptian obelisk",
+    "stone monument"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "monuments",
+  "description": "Tall, four-sided, narrow tapering monument which ends in a pyramid-like shape or pyramidion at the top.",
+  "distinguishing_features": [
+    "Monolithic four-sided tapering granite pillar",
+    "Gilded summit pyramidion apex",
+    "Ancient Egyptian monumental solar symbol"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Obelisk.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_obelisk",
+  "fileIdentifier": "obelisk.glb",
+  "statistics": {
+    "triangle_count": 32,
+    "vertex_count": 20,
+    "file_size_bytes": 3144
+  }
+}

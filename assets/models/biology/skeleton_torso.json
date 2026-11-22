@@ -1,0 +1,30 @@
+{
+  "name": "Skeleton Torso",
+  "aliases": [
+    "ribcage",
+    "thoracic cage",
+    "skeleton chest",
+    "ribs"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "human_anatomy",
+  "description": "Thoracic cage formed by the vertebral column, twelve pairs of curved ribs, and anterior breastbone sternum.",
+  "distinguishing_features": [
+    "Posterior segmented vertebral column",
+    "Curved bilateral thoracic ribs",
+    "Anterior central breastbone sternum"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Skeleton Torso.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_skeleton_torso",
+  "fileIdentifier": "skeleton_torso.glb",
+  "statistics": {
+    "triangle_count": 2964,
+    "vertex_count": 1486,
+    "file_size_bytes": 77568
+  }
+}

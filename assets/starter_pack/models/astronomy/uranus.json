@@ -1,0 +1,29 @@
+{
+  "name": "Uranus",
+  "aliases": [
+    "Planet Uranus",
+    "Ice giant Uranus",
+    "seventh planet"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "planets",
+  "description": "Ice giant composed of water, ammonia, and methane ices with featureless cyan-blue appearance.",
+  "distinguishing_features": [
+    "Pale cyan-aquamarine colour",
+    "Ice giant sphere",
+    "Methane absorption tint"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Uranus.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_uranus",
+  "fileIdentifier": "uranus.glb",
+  "statistics": {
+    "triangle_count": 720,
+    "vertex_count": 362,
+    "file_size_bytes": 18464
+  }
+}

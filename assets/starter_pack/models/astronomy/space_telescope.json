@@ -1,0 +1,30 @@
+{
+  "name": "Space Telescope",
+  "aliases": [
+    "Hubble space telescope",
+    "James Webb space telescope",
+    "orbital telescope",
+    "astronomical observatory"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "space_exploration",
+  "description": "Space-borne astronomical observatory with light baffle barrel, optical mirror, and protective sunshield.",
+  "distinguishing_features": [
+    "Cylindrical optical baffle barrel",
+    "Reflective optical aperture mirror",
+    "Broad planar thermal sunshield"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Space Telescope.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_space_telescope",
+  "fileIdentifier": "space_telescope.glb",
+  "statistics": {
+    "triangle_count": 156,
+    "vertex_count": 84,
+    "file_size_bytes": 7272
+  }
+}

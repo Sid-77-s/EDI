@@ -1,0 +1,30 @@
+{
+  "name": "Pipette",
+  "aliases": [
+    "Eye dropper",
+    "dropper pipette",
+    "laboratory pipette",
+    "transfer pipette"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "chemistry_equipment",
+  "description": "Precision laboratory liquid measurement tool featuring a narrow graduated glass stem and rubber suction bulb.",
+  "distinguishing_features": [
+    "Narrow dispensing glass stem",
+    "Tapered delivery tip",
+    "Flexible rubber suction bulb"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Pipette.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_pipette",
+  "fileIdentifier": "pipette.glb",
+  "statistics": {
+    "triangle_count": 864,
+    "vertex_count": 438,
+    "file_size_bytes": 23920
+  }
+}

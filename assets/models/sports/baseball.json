@@ -1,0 +1,29 @@
+{
+  "name": "Baseball",
+  "aliases": [
+    "hardball",
+    "mlb baseball",
+    "stitched baseball"
+  ],
+  "category": "Sports Equipment and Balls",
+  "subcategory": "balls",
+  "description": "White cowhide or horsehide sphere bound tightly with two interlocking pieces featuring 108 double raised red stitches.",
+  "distinguishing_features": [
+    "White genuine cowhide leather panels",
+    "Double-curved raised red waxed thread stitches",
+    "Regulation cork and rubber pill core"
+  ],
+  "educational_purpose": "Visualizes the 3D dimensions, materials, and regulation design of Baseball.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_sports_baseball",
+  "fileIdentifier": "baseball.glb",
+  "statistics": {
+    "triangle_count": 1872,
+    "vertex_count": 938,
+    "file_size_bytes": 47996
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Penguin",
+  "aliases": [
+    "emperor penguin",
+    "spheniscidae",
+    "antarctic penguin",
+    "seabird"
+  ],
+  "category": "Animals and Wildlife",
+  "subcategory": "birds",
+  "description": "Upright aquatic flightless bird with countershaded white breast and black plumage, flipper wings, and tapered beak.",
+  "distinguishing_features": [
+    "Upright bipedal tuxedo countershading",
+    "Rigid paddle-like flipper wings",
+    "Anterior tapered orange bill"
+  ],
+  "educational_purpose": "Visualizes the 3D biological morphology and physical characteristics of Penguin.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_animals_penguin",
+  "fileIdentifier": "penguin.glb",
+  "statistics": {
+    "triangle_count": 888,
+    "vertex_count": 454,
+    "file_size_bytes": 26804
+  }
+}

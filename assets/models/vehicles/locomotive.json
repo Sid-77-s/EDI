@@ -1,0 +1,30 @@
+{
+  "name": "Locomotive",
+  "aliases": [
+    "train engine",
+    "diesel locomotive",
+    "railroad engine",
+    "rail locomotive"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "rail",
+  "description": "Railway vehicle that provides motive power for a train, with heavy diesel-electric hood chassis and elevated cab.",
+  "distinguishing_features": [
+    "Heavy diesel-electric hood engine body",
+    "Elevated forward engineer observation cab",
+    "Industrial railroad motive power proportions"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Locomotive.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_locomotive",
+  "fileIdentifier": "locomotive.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5728
+  }
+}

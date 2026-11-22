@@ -1,0 +1,30 @@
+{
+  "name": "Asteroid",
+  "aliases": [
+    "Space asteroid",
+    "space rock",
+    "Ceres asteroid",
+    "minor planet"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "small_bodies",
+  "description": "Irregular rocky remnant from the early solar system, lacking sufficient gravity to form a sphere.",
+  "distinguishing_features": [
+    "Non-spherical tumbling shape",
+    "Cratered rocky facets",
+    "Dark stony-carbonaceous surface"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Asteroid.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_asteroid",
+  "fileIdentifier": "asteroid.glb",
+  "statistics": {
+    "triangle_count": 252,
+    "vertex_count": 128,
+    "file_size_bytes": 7248
+  }
+}

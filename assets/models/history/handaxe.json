@@ -1,0 +1,30 @@
+{
+  "name": "Handaxe",
+  "aliases": [
+    "biface",
+    "paleolithic tool",
+    "flint tool",
+    "acheulean axe"
+  ],
+  "category": "History, Architecture and Culture",
+  "subcategory": "archaeology",
+  "description": "Prehistoric stone tool with two faces that is the longest-used tool in human history, bifacially flaked into teardrop shape.",
+  "distinguishing_features": [
+    "Bifacial flaked teardrop silhouette",
+    "Sharp worked lateral cutting perimeter edges",
+    "Flint knapped lithic texture"
+  ],
+  "educational_purpose": "Visualizes the 3D archaeological, architectural, and historical significance of Handaxe.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_history_handaxe",
+  "fileIdentifier": "handaxe.glb",
+  "statistics": {
+    "triangle_count": 32,
+    "vertex_count": 18,
+    "file_size_bytes": 2024
+  }
+}

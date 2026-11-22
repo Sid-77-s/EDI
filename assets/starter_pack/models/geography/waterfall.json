@@ -1,0 +1,30 @@
+{
+  "name": "Waterfall",
+  "aliases": [
+    "cascade",
+    "falls",
+    "plunge waterfall",
+    "cataract"
+  ],
+  "category": "Geography, Earth Science and Environment",
+  "subcategory": "hydrology",
+  "description": "River or other body of water's steep fall over a rocky ledge into a plunge pool below.",
+  "distinguishing_features": [
+    "Vertical rock cliff escarpment ledge",
+    "Cascading vertical fluid water sheet",
+    "Basal plunge pool splash basin"
+  ],
+  "educational_purpose": "Visualizes the 3D geological and environmental characteristics of Waterfall.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_geography_waterfall",
+  "fileIdentifier": "waterfall.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5736
+  }
+}

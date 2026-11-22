@@ -1,0 +1,30 @@
+{
+  "name": "Microphone",
+  "aliases": [
+    "mic",
+    "dynamic mic",
+    "studio condenser",
+    "vocal mic"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "audio_engineering",
+  "description": "Acoustic-to-electric transducer with cylindrical handheld body and spherical steel mesh pop filter capsule grille.",
+  "distinguishing_features": [
+    "Cylindrical die-cast zinc handheld handle",
+    "Spherical woven steel mesh acoustic capsule grille",
+    "Acoustic transducer diaphragm architecture"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Microphone.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_microphone",
+  "fileIdentifier": "microphone.glb",
+  "statistics": {
+    "triangle_count": 792,
+    "vertex_count": 400,
+    "file_size_bytes": 21296
+  }
+}

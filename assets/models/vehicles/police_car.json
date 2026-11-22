@@ -1,0 +1,30 @@
+{
+  "name": "Police Car",
+  "aliases": [
+    "police cruiser",
+    "patrol car",
+    "cop car",
+    "law enforcement vehicle"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "emergency",
+  "description": "Law enforcement patrol cruiser with black-and-white livery and roof-mounted dual red and blue emergency strobe beacons.",
+  "distinguishing_features": [
+    "High-contrast black-and-white police livery",
+    "Roof emergency dual red and blue strobe lightbar",
+    "Reinforced sedan pursuit chassis"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Police Car.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_police_car",
+  "fileIdentifier": "police_car.glb",
+  "statistics": {
+    "triangle_count": 336,
+    "vertex_count": 184,
+    "file_size_bytes": 16624
+  }
+}

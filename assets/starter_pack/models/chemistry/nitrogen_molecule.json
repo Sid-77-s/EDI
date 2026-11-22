@@ -1,0 +1,30 @@
+{
+  "name": "Nitrogen Molecule",
+  "aliases": [
+    "N2",
+    "N2 molecule",
+    "dinitrogen",
+    "molecular nitrogen"
+  ],
+  "category": "Chemistry and the Periodic Table",
+  "subcategory": "molecules",
+  "description": "Diatomic nitrogen molecule held together by an exceptionally strong covalent triple bond.",
+  "distinguishing_features": [
+    "Two blue nitrogen atoms",
+    "Covalent triple bond cylinder",
+    "Diatomic molecule"
+  ],
+  "educational_purpose": "Visualizes the 3D structure, bonding, and stoichiometry of Nitrogen Molecule.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_chemistry_nitrogen_molecule",
+  "fileIdentifier": "nitrogen_molecule.glb",
+  "statistics": {
+    "triangle_count": 1512,
+    "vertex_count": 762,
+    "file_size_bytes": 39432
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Watch",
+  "aliases": [
+    "wristwatch",
+    "timepiece",
+    "chronometer",
+    "wrist watch"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "accessories",
+  "description": "Timepiece intended to be carried or worn by a person on wrist, with circular dial case, bezel, and leather strap bands.",
+  "distinguishing_features": [
+    "Circular metallic watchcase with dial face",
+    "Twin flexible leather wrist attachment straps",
+    "Lateral winding/adjustment crown knob"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Watch.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_watch",
+  "fileIdentifier": "watch.glb",
+  "statistics": {
+    "triangle_count": 96,
+    "vertex_count": 54,
+    "file_size_bytes": 5520
+  }
+}

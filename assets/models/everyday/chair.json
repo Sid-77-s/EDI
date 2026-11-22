@@ -1,0 +1,29 @@
+{
+  "name": "Chair",
+  "aliases": [
+    "wooden chair",
+    "dining chair",
+    "seat"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "furniture",
+  "description": "Four-legged seating furniture with flat seat pan, supporting legs, and upright lumbar backrest.",
+  "distinguishing_features": [
+    "Horizontal supportive seat cushion pan",
+    "Four vertical ground-contact legs",
+    "Upright lumbar backrest support"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Chair.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_chair",
+  "fileIdentifier": "chair.glb",
+  "statistics": {
+    "triangle_count": 312,
+    "vertex_count": 168,
+    "file_size_bytes": 13504
+  }
+}

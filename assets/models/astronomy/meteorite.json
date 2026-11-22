@@ -1,0 +1,30 @@
+{
+  "name": "Meteorite",
+  "aliases": [
+    "Fallen meteorite",
+    "meteorite rock",
+    "stony-iron meteorite",
+    "space fragment"
+  ],
+  "category": "Astronomy and Space",
+  "subcategory": "small_bodies",
+  "description": "Extraterrestrial rock specimen that survived transit through Earth's atmosphere to reach the ground.",
+  "distinguishing_features": [
+    "Dark fusion-crust exterior",
+    "Irregular fractured facets",
+    "Metallic sheen"
+  ],
+  "educational_purpose": "Visualizes the 3D structure and astronomical properties of Meteorite.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_astronomy_meteorite",
+  "fileIdentifier": "meteorite.glb",
+  "statistics": {
+    "triangle_count": 12,
+    "vertex_count": 8,
+    "file_size_bytes": 1512
+  }
+}

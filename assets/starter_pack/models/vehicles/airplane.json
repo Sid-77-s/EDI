@@ -1,0 +1,30 @@
+{
+  "name": "Airplane",
+  "aliases": [
+    "passenger jet",
+    "airliner",
+    "commercial aircraft",
+    "aeroplane"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "aviation",
+  "description": "Fixed-wing commercial passenger aircraft with pressurized cylindrical fuselage, main aerofoil wings, and empennage tail.",
+  "distinguishing_features": [
+    "Long cylindrical pressurized passenger fuselage",
+    "Wide aerofoil lift wings",
+    "Vertical tail stabilizer fin with airline livery"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Airplane.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_airplane",
+  "fileIdentifier": "airplane.glb",
+  "statistics": {
+    "triangle_count": 168,
+    "vertex_count": 92,
+    "file_size_bytes": 8440
+  }
+}

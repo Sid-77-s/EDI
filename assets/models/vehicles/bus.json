@@ -1,0 +1,30 @@
+{
+  "name": "Bus",
+  "aliases": [
+    "city bus",
+    "transit bus",
+    "coach",
+    "public transit"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "road",
+  "description": "Public transit passenger vehicle with long rectangular body, continuous side glazing window bands, and high passenger capacity.",
+  "distinguishing_features": [
+    "Long rectangular mass transit monocoque body",
+    "Continuous horizontal panoramic window glazing",
+    "Vivid high-visibility transit coach livery"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Bus.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_bus",
+  "fileIdentifier": "bus.glb",
+  "statistics": {
+    "triangle_count": 312,
+    "vertex_count": 168,
+    "file_size_bytes": 13928
+  }
+}

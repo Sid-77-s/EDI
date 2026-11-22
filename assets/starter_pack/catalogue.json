@@ -1,0 +1,4090 @@
+{
+  "mm_astronomy_mercury": {
+    "name": "Mercury",
+    "category": "Astronomy and Space",
+    "subcategory": "planets",
+    "description": "Smallest terrestrial planet, cratered grey surface with high iron core.",
+    "tags": [
+      "Astronomy and Space",
+      "planets",
+      "Planet Mercury",
+      "Mercury planet",
+      "first planet"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/mercury.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_venus": {
+    "name": "Venus",
+    "category": "Astronomy and Space",
+    "subcategory": "planets",
+    "description": "Second planet from Sun, shrouded in thick yellowish-white sulfuric acid clouds.",
+    "tags": [
+      "Astronomy and Space",
+      "planets",
+      "Planet Venus",
+      "Venus planet",
+      "morning star"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/venus.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_earth": {
+    "name": "Earth",
+    "category": "Astronomy and Space",
+    "subcategory": "planets",
+    "description": "Third planet from Sun, ocean world with continents and polar ice caps.",
+    "tags": [
+      "Astronomy and Space",
+      "planets",
+      "Planet Earth",
+      "The Earth",
+      "Blue planet",
+      "world globe"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/earth.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_mars": {
+    "name": "Mars",
+    "category": "Astronomy and Space",
+    "subcategory": "planets",
+    "description": "Fourth planet, iron-oxide rich red surface and bright white carbon-dioxide/water ice cap.",
+    "tags": [
+      "Astronomy and Space",
+      "planets",
+      "Planet Mars",
+      "Red planet",
+      "fourth planet"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/mars.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_jupiter": {
+    "name": "Jupiter",
+    "category": "Astronomy and Space",
+    "subcategory": "planets",
+    "description": "Largest planet in solar system, prominent atmospheric banding and Great Red Spot anticyclonic storm.",
+    "tags": [
+      "Astronomy and Space",
+      "planets",
+      "Planet Jupiter",
+      "Gas giant Jupiter",
+      "fifth planet",
+      "king of planets"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/jupiter.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_saturn": {
+    "name": "Saturn",
+    "category": "Astronomy and Space",
+    "subcategory": "planets",
+    "description": "Second largest planet, distinguished by its magnificent, highly reflective icy ring system.",
+    "tags": [
+      "Astronomy and Space",
+      "planets",
+      "Planet Saturn",
+      "Ringed planet",
+      "sixth planet"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/saturn.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_uranus": {
+    "name": "Uranus",
+    "category": "Astronomy and Space",
+    "subcategory": "planets",
+    "description": "Ice giant composed of water, ammonia, and methane ices with featureless cyan-blue appearance.",
+    "tags": [
+      "Astronomy and Space",
+      "planets",
+      "Planet Uranus",
+      "Ice giant Uranus",
+      "seventh planet"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/uranus.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_neptune": {
+    "name": "Neptune",
+    "category": "Astronomy and Space",
+    "subcategory": "planets",
+    "description": "Outermost major planet, intense deep azure blue atmosphere shaped by supersonic winds.",
+    "tags": [
+      "Astronomy and Space",
+      "planets",
+      "Planet Neptune",
+      "Eighth planet",
+      "deep blue planet"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/neptune.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_sun": {
+    "name": "Sun",
+    "category": "Astronomy and Space",
+    "subcategory": "celestial_bodies",
+    "description": "G-type main-sequence star at the center of the solar system, radiating heat and light.",
+    "tags": [
+      "Astronomy and Space",
+      "celestial_bodies",
+      "The Sun",
+      "Solar star",
+      "Sol",
+      "our star"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/sun.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_moon": {
+    "name": "Moon",
+    "category": "Astronomy and Space",
+    "subcategory": "moons",
+    "description": "Earth's sole natural satellite, airless world with cratered highlands and basaltic maria.",
+    "tags": [
+      "Astronomy and Space",
+      "moons",
+      "Earth Moon",
+      "The Moon",
+      "Luna",
+      "Earth's moon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/moon.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_europa": {
+    "name": "Europa",
+    "category": "Astronomy and Space",
+    "subcategory": "moons",
+    "description": "Icy Jovian moon harboring a subsurface liquid water ocean beneath a fractured ice crust.",
+    "tags": [
+      "Astronomy and Space",
+      "moons",
+      "Jupiter Moon Europa",
+      "Moon Europa",
+      "Jovian moon Europa"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/europa.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_titan": {
+    "name": "Titan",
+    "category": "Astronomy and Space",
+    "subcategory": "moons",
+    "description": "Saturn's largest moon, only moon with a substantial nitrogen-rich atmosphere and methane lakes.",
+    "tags": [
+      "Astronomy and Space",
+      "moons",
+      "Saturn Moon Titan",
+      "Moon Titan",
+      "Titan moon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/titan.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_ganymede": {
+    "name": "Ganymede",
+    "category": "Astronomy and Space",
+    "subcategory": "moons",
+    "description": "Largest moon in the Solar System, larger than Mercury, grooved icy-rock terrain.",
+    "tags": [
+      "Astronomy and Space",
+      "moons",
+      "Jupiter Moon Ganymede",
+      "Moon Ganymede",
+      "largest moon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/ganymede.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_pluto": {
+    "name": "Pluto",
+    "category": "Astronomy and Space",
+    "subcategory": "dwarf_planets",
+    "description": "Famous dwarf planet in the Kuiper Belt with heart-shaped nitrogen glacier (Tombaugh Regio).",
+    "tags": [
+      "Astronomy and Space",
+      "dwarf_planets",
+      "Dwarf Planet Pluto",
+      "Pluto dwarf planet",
+      "Kuiper Belt object Pluto"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/pluto.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_asteroid": {
+    "name": "Asteroid",
+    "category": "Astronomy and Space",
+    "subcategory": "small_bodies",
+    "description": "Irregular rocky remnant from the early solar system, lacking sufficient gravity to form a sphere.",
+    "tags": [
+      "Astronomy and Space",
+      "small_bodies",
+      "Space asteroid",
+      "space rock",
+      "Ceres asteroid",
+      "minor planet"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/asteroid.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_comet": {
+    "name": "Comet",
+    "category": "Astronomy and Space",
+    "subcategory": "small_bodies",
+    "description": "Small Solar System body composed of ice, dust and rock with a glowing coma and extended dust tail.",
+    "tags": [
+      "Astronomy and Space",
+      "small_bodies",
+      "Halley's Comet",
+      "ice comet",
+      "dirty snowball",
+      "comet with tail"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/comet.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_meteorite": {
+    "name": "Meteorite",
+    "category": "Astronomy and Space",
+    "subcategory": "small_bodies",
+    "description": "Extraterrestrial rock specimen that survived transit through Earth's atmosphere to reach the ground.",
+    "tags": [
+      "Astronomy and Space",
+      "small_bodies",
+      "Fallen meteorite",
+      "meteorite rock",
+      "stony-iron meteorite",
+      "space fragment"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/meteorite.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_black_hole": {
+    "name": "Black Hole",
+    "category": "Astronomy and Space",
+    "subcategory": "astronomical_phenomena",
+    "description": "Educational visualization of a black hole showing the central event horizon and glowing swirling accretion disk.",
+    "tags": [
+      "Astronomy and Space",
+      "astronomical_phenomena",
+      "Singularity",
+      "Supermassive black hole",
+      "stellar black hole",
+      "event horizon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/black_hole.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_solar_system": {
+    "name": "Solar System",
+    "category": "Astronomy and Space",
+    "subcategory": "astronomical_systems",
+    "description": "Overview model showing the central Sun, concentric orbital tracks, and orbiting terrestrial planets.",
+    "tags": [
+      "Astronomy and Space",
+      "astronomical_systems",
+      "Our solar system",
+      "heliocentric system",
+      "planetary system"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/solar_system.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_space_rocket": {
+    "name": "Space Rocket",
+    "category": "Astronomy and Space",
+    "subcategory": "space_exploration",
+    "description": "Multistage space launch vehicle with cylindrical body, aerodynamic nose cone fairing, and stabilization fins.",
+    "tags": [
+      "Astronomy and Space",
+      "space_exploration",
+      "Rocket",
+      "Launch vehicle",
+      "Moon rocket",
+      "Saturn V rocket",
+      "Falcon rocket"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/space_rocket.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_space_shuttle": {
+    "name": "Space Shuttle",
+    "category": "Astronomy and Space",
+    "subcategory": "space_exploration",
+    "description": "Reusable orbital spacecraft with delta wings, cargo payload bay, and vertical rudder tailfin.",
+    "tags": [
+      "Astronomy and Space",
+      "space_exploration",
+      "NASA Space Shuttle",
+      "Orbiter",
+      "Spaceplane",
+      "shuttle orbiter"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/space_shuttle.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_satellite": {
+    "name": "Satellite",
+    "category": "Astronomy and Space",
+    "subcategory": "space_exploration",
+    "description": "Orbital satellite featuring instrument payload bus, dual deployable solar cell arrays, and high-gain dish antenna.",
+    "tags": [
+      "Astronomy and Space",
+      "space_exploration",
+      "Communications satellite",
+      "orbital satellite",
+      "weather satellite",
+      "space probe"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/satellite.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_space_station": {
+    "name": "Space Station",
+    "category": "Astronomy and Space",
+    "subcategory": "space_exploration",
+    "description": "Modular orbital research laboratory with pressurized living habitats, structural truss, and massive solar power arrays.",
+    "tags": [
+      "Astronomy and Space",
+      "space_exploration",
+      "International Space Station",
+      "ISS",
+      "orbital station",
+      "space outpost"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/space_station.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_mars_rover": {
+    "name": "Mars Rover",
+    "category": "Astronomy and Space",
+    "subcategory": "space_exploration",
+    "description": "Robotic exploratory vehicle equipped with instrument chassis, high mast camera, and rugged all-terrain wheels.",
+    "tags": [
+      "Astronomy and Space",
+      "space_exploration",
+      "Curiosity rover",
+      "Perseverance rover",
+      "robotic rover",
+      "Mars exploration rover"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/mars_rover.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_astronomy_space_telescope": {
+    "name": "Space Telescope",
+    "category": "Astronomy and Space",
+    "subcategory": "space_exploration",
+    "description": "Space-borne astronomical observatory with light baffle barrel, optical mirror, and protective sunshield.",
+    "tags": [
+      "Astronomy and Space",
+      "space_exploration",
+      "Hubble space telescope",
+      "James Webb space telescope",
+      "orbital telescope",
+      "astronomical observatory"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "astronomy/space_telescope.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_hydrogen_atom": {
+    "name": "Hydrogen Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Simplest chemical element consisting of 1 proton nucleus orbited by 1 electron.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Hydrogen",
+      "H atom",
+      "Bohr hydrogen model"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/hydrogen_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_helium_atom": {
+    "name": "Helium Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Noble gas element with full valence K-shell containing 2 electrons.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Helium",
+      "He atom",
+      "Bohr helium model",
+      "noble gas helium"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/helium_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_lithium_atom": {
+    "name": "Lithium Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Lightest alkali metal with 2 core electrons and 1 reactive valence electron in L shell.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Lithium",
+      "Li atom",
+      "alkali metal lithium"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/lithium_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_carbon_atom": {
+    "name": "Carbon Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Fundamental tetravalent element of organic chemistry with 4 valence electrons in L shell.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Carbon",
+      "C atom",
+      "Bohr carbon model"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/carbon_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_nitrogen_atom": {
+    "name": "Nitrogen Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Pnictogen element forming 78% of Earth's atmosphere with 5 valence electrons.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Nitrogen",
+      "N atom",
+      "Bohr nitrogen model"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/nitrogen_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_oxygen_atom": {
+    "name": "Oxygen Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Chalcogen element with 8 protons and 6 valence electrons; distinct from diatomic oxygen molecule O2.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Oxygen",
+      "O atom",
+      "atomic oxygen",
+      "Bohr oxygen model"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/oxygen_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_sodium_atom": {
+    "name": "Sodium Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Highly reactive alkali metal with a single valence electron in the M shell.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Sodium",
+      "Na atom",
+      "alkali metal sodium"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/sodium_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_chlorine_atom": {
+    "name": "Chlorine Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Halogen element requiring 1 electron to complete its outer octet shell.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Chlorine",
+      "Cl atom",
+      "halogen chlorine"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/chlorine_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_iron_atom": {
+    "name": "Iron Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Transition metal element central to planetary cores, metallurgy, and hemoglobin.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Iron",
+      "Fe atom",
+      "transition metal iron",
+      "ferrum"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/iron_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_gold_atom": {
+    "name": "Gold Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Dense noble metal resistant to oxidation with relativistic electron stabilization.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Gold",
+      "Au atom",
+      "aurum",
+      "noble metal gold"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/gold_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_copper_atom": {
+    "name": "Copper Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "High electrical conductivity transition metal with filled 3d subshell and 1 4s electron.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Copper",
+      "Cu atom",
+      "cuprum"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/copper_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_silicon_atom": {
+    "name": "Silicon Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Semiconductor metalloid forming the foundation of modern computer microelectronics.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Silicon",
+      "Si atom",
+      "semiconductor silicon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/silicon_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_sulfur_atom": {
+    "name": "Sulfur Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Non-metal element essential to proteins and disulfide cross-links.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Sulfur",
+      "S atom",
+      "brimstone"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/sulfur_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_uranium_atom": {
+    "name": "Uranium Atom",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "elements_and_atoms",
+    "description": "Dense actinide element with 92 protons, naturally occurring fissile isotope U-235.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "elements_and_atoms",
+      "Uranium",
+      "U atom",
+      "actinide uranium"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/uranium_atom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_water_molecule": {
+    "name": "Water Molecule",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Polar molecule consisting of 1 oxygen atom bonded to 2 hydrogen atoms at a 104.5 degree bent angle.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "Water",
+      "H2O",
+      "H2O molecule",
+      "water chemical structure"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/water_molecule.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_carbon_dioxide": {
+    "name": "Carbon Dioxide",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Linear nonpolar molecule composed of a central carbon atom double-bonded to two flanking oxygen atoms.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "CO2",
+      "CO2 molecule",
+      "carbon dioxide gas"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/carbon_dioxide.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_oxygen_molecule": {
+    "name": "Oxygen Molecule",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Diatomic oxygen gas (O2) comprising two covalently bonded oxygen atoms; distinct from atomic oxygen.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "O2",
+      "O2 molecule",
+      "dioxygen",
+      "molecular oxygen"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/oxygen_molecule.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_nitrogen_molecule": {
+    "name": "Nitrogen Molecule",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Diatomic nitrogen molecule held together by an exceptionally strong covalent triple bond.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "N2",
+      "N2 molecule",
+      "dinitrogen",
+      "molecular nitrogen"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/nitrogen_molecule.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_hydrogen_molecule": {
+    "name": "Hydrogen Molecule",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Lightest molecule in the universe, consisting of two hydrogen atoms sharing a single covalent bond.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "H2",
+      "H2 molecule",
+      "dihydrogen",
+      "molecular hydrogen"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/hydrogen_molecule.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_methane": {
+    "name": "Methane",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Simplest alkane hydrocarbon with tetrahedral symmetry (109.5 degree bond angles).",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "CH4",
+      "CH4 molecule",
+      "natural gas methane"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/methane.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_ammonia": {
+    "name": "Ammonia",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Inorganic nitrogen hydride with trigonal pyramidal geometry and a lone electron pair at the apex.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "NH3",
+      "NH3 molecule",
+      "ammonia chemical structure"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/ammonia.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_sodium_chloride": {
+    "name": "Sodium Chloride",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Face-centered cubic (FCC) ionic crystal lattice of alternating sodium cations and chloride anions.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "NaCl",
+      "table salt",
+      "salt crystal",
+      "halite crystal"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/sodium_chloride.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_glucose": {
+    "name": "Glucose",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Primary biological monosaccharide energy source with six-membered pyranose ring backbone.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "C6H12O6",
+      "blood sugar",
+      "dextrose",
+      "glucose molecule"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/glucose.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_ethanol": {
+    "name": "Ethanol",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Two-carbon primary alcohol with an ethyl group connected to a terminal hydroxyl group.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "C2H5OH",
+      "ethyl alcohol",
+      "grain alcohol",
+      "alcohol molecule"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/ethanol.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_dna_double_helix": {
+    "name": "DNA Double Helix",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "molecules",
+    "description": "Biological macromolecule storing genetic instructions in two intertwined helical strands connected by base-pair rungs.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "molecules",
+      "DNA",
+      "deoxyribonucleic acid",
+      "DNA molecule",
+      "double helix"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/dna_double_helix.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_chemistry_beaker": {
+    "name": "Chemistry Beaker",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "chemistry_equipment",
+    "description": "Standard laboratory glassware container for stirring, mixing and heating chemical liquids.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "chemistry_equipment",
+      "Beaker",
+      "glass beaker",
+      "laboratory beaker",
+      "lab beaker"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/chemistry_beaker.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_erlenmeyer_flask": {
+    "name": "Erlenmeyer Flask",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "chemistry_equipment",
+    "description": "Conical laboratory flask with wide flat base and narrow neck for swirling liquids without splashing.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "chemistry_equipment",
+      "Conical flask",
+      "titration flask",
+      "science flask",
+      "lab flask"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/erlenmeyer_flask.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_test_tube": {
+    "name": "Test Tube",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "chemistry_equipment",
+    "description": "Slender cylindrical glass container with rounded U-shaped hemispherical bottom for chemical tests.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "chemistry_equipment",
+      "Laboratory test tube",
+      "glass test tube",
+      "culture tube",
+      "chemical test tube"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/test_tube.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_bunsen_burner": {
+    "name": "Bunsen Burner",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "chemistry_equipment",
+    "description": "Laboratory gas burner producing a single open gas flame for heating and sterilization.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "chemistry_equipment",
+      "Lab burner",
+      "gas burner",
+      "laboratory flame"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/bunsen_burner.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_chemistry_pipette": {
+    "name": "Pipette",
+    "category": "Chemistry and the Periodic Table",
+    "subcategory": "chemistry_equipment",
+    "description": "Precision laboratory liquid measurement tool featuring a narrow graduated glass stem and rubber suction bulb.",
+    "tags": [
+      "Chemistry and the Periodic Table",
+      "chemistry_equipment",
+      "Eye dropper",
+      "dropper pipette",
+      "laboratory pipette",
+      "transfer pipette"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "chemistry/pipette.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_proton": {
+    "name": "Proton",
+    "category": "Physics and Mathematics",
+    "subcategory": "subatomic",
+    "description": "Positively charged subatomic nucleon with distinctive red coloration and positive charge sign.",
+    "tags": [
+      "Physics and Mathematics",
+      "subatomic",
+      "p+",
+      "proton particle",
+      "positive nucleon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/proton.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_neutron": {
+    "name": "Neutron",
+    "category": "Physics and Mathematics",
+    "subcategory": "subatomic",
+    "description": "Electrically neutral hadron found in atomic nuclei, composed of two down quarks and one up quark.",
+    "tags": [
+      "Physics and Mathematics",
+      "subatomic",
+      "n0",
+      "neutron particle",
+      "neutral nucleon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/neutron.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_electron": {
+    "name": "Electron",
+    "category": "Physics and Mathematics",
+    "subcategory": "subatomic",
+    "description": "Subatomic elementary particle with negative elementary electric charge, represented as small blue sphere with minus marker.",
+    "tags": [
+      "Physics and Mathematics",
+      "subatomic",
+      "e-",
+      "beta particle",
+      "elementary lepton"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/electron.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_atomic_nucleus": {
+    "name": "Atomic Nucleus",
+    "category": "Physics and Mathematics",
+    "subcategory": "subatomic",
+    "description": "Dense central core of an atom consisting of tightly bound protons and neutrons held by the strong force.",
+    "tags": [
+      "Physics and Mathematics",
+      "subatomic",
+      "atomic core",
+      "nuclear cluster",
+      "nucleon cluster"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/atomic_nucleus.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_bar_magnet": {
+    "name": "Bar Magnet",
+    "category": "Physics and Mathematics",
+    "subcategory": "electromagnetism",
+    "description": "Rectangular permanent magnetic dipole featuring marked North (red) and South (blue) magnetic poles.",
+    "tags": [
+      "Physics and Mathematics",
+      "electromagnetism",
+      "permanent magnet",
+      "dipole magnet",
+      "magnetic bar"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/bar_magnet.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_horseshoe_magnet": {
+    "name": "Horseshoe Magnet",
+    "category": "Physics and Mathematics",
+    "subcategory": "electromagnetism",
+    "description": "U-shaped permanent magnet concentrating magnetic flux between closely spaced opposite poles.",
+    "tags": [
+      "Physics and Mathematics",
+      "electromagnetism",
+      "U magnet",
+      "horseshoe dipole"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/horseshoe_magnet.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_magnetic_field": {
+    "name": "Magnetic Field",
+    "category": "Physics and Mathematics",
+    "subcategory": "electromagnetism",
+    "description": "Visual demonstration of magnetic field lines (flux loops) emerging from north pole and curving to south pole.",
+    "tags": [
+      "Physics and Mathematics",
+      "electromagnetism",
+      "magnetic flux lines",
+      "dipole field lines",
+      "magnetic demonstration"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/magnetic_field.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_pendulum": {
+    "name": "Pendulum",
+    "category": "Physics and Mathematics",
+    "subcategory": "mechanics",
+    "description": "Classic harmonic oscillator consisting of a mass bob suspended from a pivot by a light string.",
+    "tags": [
+      "Physics and Mathematics",
+      "mechanics",
+      "simple pendulum",
+      "harmonic oscillator",
+      "clock pendulum"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/pendulum.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_spring": {
+    "name": "Spring",
+    "category": "Physics and Mathematics",
+    "subcategory": "mechanics",
+    "description": "Mechanical elastic coil demonstrating Hooke's Law of elasticity (F = -kx).",
+    "tags": [
+      "Physics and Mathematics",
+      "mechanics",
+      "helical spring",
+      "coil spring",
+      "Hooke spring"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/spring.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_gears": {
+    "name": "Gears",
+    "category": "Physics and Mathematics",
+    "subcategory": "mechanics",
+    "description": "Pair of intermeshing toothed spur gears demonstrating mechanical advantage and rotational transmission.",
+    "tags": [
+      "Physics and Mathematics",
+      "mechanics",
+      "gear pair",
+      "interlocking gears",
+      "spur gears",
+      "transmission"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/gears.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_pulley": {
+    "name": "Pulley",
+    "category": "Physics and Mathematics",
+    "subcategory": "mechanics",
+    "description": "Grooved wheel turned by a cord or rope, used to change direction of force and gain mechanical advantage.",
+    "tags": [
+      "Physics and Mathematics",
+      "mechanics",
+      "simple machine pulley",
+      "sheave",
+      "pulley system"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/pulley.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_lever": {
+    "name": "Lever",
+    "category": "Physics and Mathematics",
+    "subcategory": "mechanics",
+    "description": "First-class lever demonstrating torque equilibrium where effort arm balances load arm over a pivot fulcrum.",
+    "tags": [
+      "Physics and Mathematics",
+      "mechanics",
+      "simple lever",
+      "class 1 lever",
+      "fulcrum beam"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/lever.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_inclined_plane": {
+    "name": "Inclined Plane",
+    "category": "Physics and Mathematics",
+    "subcategory": "mechanics",
+    "description": "Sloping ramp enabling heavy loads to be raised using less applied force over a longer distance.",
+    "tags": [
+      "Physics and Mathematics",
+      "mechanics",
+      "ramp",
+      "slope",
+      "simple machine plane"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/inclined_plane.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_prism": {
+    "name": "Prism",
+    "category": "Physics and Mathematics",
+    "subcategory": "optics",
+    "description": "Transparent triangular optical prism refracting and dispersing incident light into constituent wavelengths.",
+    "tags": [
+      "Physics and Mathematics",
+      "optics",
+      "optical prism",
+      "triangular prism",
+      "refraction prism"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/prism.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_wave": {
+    "name": "Wave",
+    "category": "Physics and Mathematics",
+    "subcategory": "waves",
+    "description": "Sinusoidal transverse wave demonstrating wavelength, amplitude, crests, and troughs of harmonic propagation.",
+    "tags": [
+      "Physics and Mathematics",
+      "waves",
+      "sine wave",
+      "transverse wave",
+      "harmonic wave",
+      "oscillation"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/wave.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_cube": {
+    "name": "Cube",
+    "category": "Physics and Mathematics",
+    "subcategory": "geometry",
+    "description": "Platonic solid with six congruent square faces, twelve straight edges, and eight vertices.",
+    "tags": [
+      "Physics and Mathematics",
+      "geometry",
+      "regular hexahedron",
+      "geometric cube",
+      "3d square"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/cube.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_tetrahedron": {
+    "name": "Tetrahedron",
+    "category": "Physics and Mathematics",
+    "subcategory": "geometry",
+    "description": "Simplest Platonic solid having four congruent equilateral triangular faces and four vertices.",
+    "tags": [
+      "Physics and Mathematics",
+      "geometry",
+      "regular tetrahedron",
+      "triangular pyramid",
+      "4-faced polyhedron"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/tetrahedron.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_octahedron": {
+    "name": "Octahedron",
+    "category": "Physics and Mathematics",
+    "subcategory": "geometry",
+    "description": "Platonic solid having eight congruent equilateral triangular faces and six vertices, dual of the cube.",
+    "tags": [
+      "Physics and Mathematics",
+      "geometry",
+      "regular octahedron",
+      "8-faced polyhedron"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/octahedron.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_icosahedron": {
+    "name": "Icosahedron",
+    "category": "Physics and Mathematics",
+    "subcategory": "geometry",
+    "description": "Platonic solid possessing twenty congruent equilateral triangular faces and twelve vertices.",
+    "tags": [
+      "Physics and Mathematics",
+      "geometry",
+      "regular icosahedron",
+      "20-faced polyhedron"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/icosahedron.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_physics_coordinate_axes": {
+    "name": "Coordinate Axes",
+    "category": "Physics and Mathematics",
+    "subcategory": "geometry",
+    "description": "Standard 3D Cartesian coordinate frame with orthogonal X (red), Y (green), and Z (blue) directional vectors.",
+    "tags": [
+      "Physics and Mathematics",
+      "geometry",
+      "3D axes",
+      "Cartesian coordinate system",
+      "XYZ axes",
+      "spatial coordinates"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "physics/coordinate_axes.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_human_heart": {
+    "name": "Human Heart",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Four-chambered muscular organ pumping blood through the circulatory system, with ventricles, aortic arch, and pulmonary trunk.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "heart",
+      "cardiac muscle",
+      "cor",
+      "human heart model"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/human_heart.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_human_brain": {
+    "name": "Human Brain",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Central organ of the human nervous system with bilateral cerebral hemispheres, cerebellum, and brainstem.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "brain",
+      "cerebrum",
+      "human brain model",
+      "encephalon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/human_brain.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_human_skull": {
+    "name": "Human Skull",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Bony structure forming the head in human skeleton, encasing the brain and featuring orbits and lower jaw.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "skull",
+      "cranium",
+      "cranium bone",
+      "human skull model"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/human_skull.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_human_lungs": {
+    "name": "Human Lungs",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Essential respiratory organs with superior trachea tube and asymmetric right (three lobes) and left lobes.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "lungs",
+      "respiratory system",
+      "pulmonary organs",
+      "pulmo"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/human_lungs.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_human_eye": {
+    "name": "Human Eye",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Sensory visual organ showing outer white sclera, bulging cornea, colored iris disc, pupil, and posterior optic nerve.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "eyeball",
+      "oculus",
+      "eye model",
+      "vision organ"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/human_eye.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_human_tooth": {
+    "name": "Human Tooth",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Molar tooth structure displaying enamelled crown with cusps, cervical neck, and bifurcated root anchors.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "molar",
+      "tooth",
+      "incisor",
+      "dental anatomy"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/human_tooth.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_red_blood_cell": {
+    "name": "Red Blood Cell",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "cellular_biology",
+    "description": "Biconcave circular disc shaped erythrocyte maximizing surface area for oxygen transport via hemoglobin.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "cellular_biology",
+      "erythrocyte",
+      "RBC",
+      "blood cell"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/red_blood_cell.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_neuron": {
+    "name": "Neuron",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "cellular_biology",
+    "description": "Electrically excitable cell communicating via synapses, with cell body soma, radiating dendrites, and elongated axon.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "cellular_biology",
+      "nerve cell",
+      "brain neuron",
+      "multipolar neuron"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/neuron.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_animal_cell": {
+    "name": "Animal Cell",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "cellular_biology",
+    "description": "Typical eukaryotic animal cell with flexible outer plasma membrane, prominent nucleus, and organelles.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "cellular_biology",
+      "eukaryotic animal cell",
+      "typical animal cell",
+      "cell model"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/animal_cell.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_plant_cell": {
+    "name": "Plant Cell",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "cellular_biology",
+    "description": "Eukaryotic plant cell featuring rigid cellulosic cell wall, large central sap vacuole, and photosynthetic chloroplasts.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "cellular_biology",
+      "eukaryotic plant cell",
+      "plant cell model"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/plant_cell.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_bacterium": {
+    "name": "Bacterium",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "microbiology",
+    "description": "Single-celled prokaryotic microorganism with rod-shaped capsule and locomotory helical flagellum.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "microbiology",
+      "bacteria",
+      "bacillus",
+      "prokaryote",
+      "microbe"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/bacterium.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_virus": {
+    "name": "Virus",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "microbiology",
+    "description": "Bacteriophage T4 viral particle with icosahedral capsid head containing genome, contractile sheath, and tail fibers.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "microbiology",
+      "bacteriophage",
+      "phage",
+      "viral particle",
+      "capsid"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/virus.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_mitochondrion": {
+    "name": "Mitochondrion",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "cellular_biology",
+    "description": "Double-membrane-bound cellular organelle generating most chemical energy ATP via deeply folded internal cristae.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "cellular_biology",
+      "mitochondria",
+      "cellular powerhouse",
+      "chondriosome"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/mitochondrion.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_chloroplast": {
+    "name": "Chloroplast",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "cellular_biology",
+    "description": "Photosynthetic organelle in plant cells with double envelope containing stacked thylakoid grana discs.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "cellular_biology",
+      "chloroplast organelle",
+      "plastid",
+      "photosynthetic organelle"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/chloroplast.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_chromosome": {
+    "name": "Chromosome",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "genetics",
+    "description": "Duplicated thread-like structure of nucleic acids and protein forming characteristic X-shape joined at centromere.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "genetics",
+      "sister chromatids",
+      "human chromosome",
+      "genetic chromosome"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/chromosome.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_leaf": {
+    "name": "Leaf",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "botany",
+    "description": "Dorsiventral photosynthetic plant leaf with broad flat lamina blade, central midrib vein, and supporting petiole stalk.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "botany",
+      "plant leaf",
+      "foliage",
+      "tree leaf",
+      "green leaf"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/leaf.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_flower": {
+    "name": "Flower",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "botany",
+    "description": "Reproductive structure of angiosperms consisting of central nectar-rich receptacle disc surrounded by radial colored petals.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "botany",
+      "blossom",
+      "angiosperm flower",
+      "floral bloom"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/flower.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_tree": {
+    "name": "Tree",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "botany",
+    "description": "Perennial woody plant featuring an upright supporting trunk cylinder and broad spherical photosynthetic foliage canopy.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "botany",
+      "deciduous tree",
+      "forest tree",
+      "timber tree"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/tree.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_mushroom": {
+    "name": "Mushroom",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "mycology",
+    "description": "Fleshy, spore-bearing fruiting body of a fungus, typically produced above ground, with stipe stem and domed cap.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "mycology",
+      "toadstool",
+      "fungus",
+      "mushroom fruiting body",
+      "agaric"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/mushroom.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_bone": {
+    "name": "Bone",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Human femur thigh bone, the longest and strongest bone in the human skeleton, with femoral head and dual condyles.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "femur",
+      "thigh bone",
+      "human bone",
+      "skeletal bone"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/bone.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_dna_double_helix": {
+    "name": "DNA Double Helix",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "molecular_biology",
+    "description": "Molecular double helix of DNA consisting of complementary antiparallel polynucleotide chains connected by base pair rungs.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "molecular_biology",
+      "DNA",
+      "deoxyribonucleic acid",
+      "double helix",
+      "genetic helix"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/dna_double_helix.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_ribosome": {
+    "name": "Ribosome",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "molecular_biology",
+    "description": "Complex cellular machine consisting of large and small ribonucleoprotein subunits responsible for biological protein synthesis.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "molecular_biology",
+      "ribosomal complex",
+      "protein factory",
+      "70S/80S ribosome"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/ribosome.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_stomach": {
+    "name": "Stomach",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Muscular, hollow organ in the gastrointestinal tract with greater and lesser curvatures, fundus, and pylorus.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "human stomach",
+      "gastric organ",
+      "ventriculus"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/stomach.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_kidney": {
+    "name": "Kidney",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Bean-shaped organ filtering blood to extract waste, with medial indented hilum providing entry for renal vessels and ureter.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "human kidney",
+      "renal organ",
+      "ren"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/kidney.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_biology_skeleton_torso": {
+    "name": "Skeleton Torso",
+    "category": "Biology and Human Anatomy",
+    "subcategory": "human_anatomy",
+    "description": "Thoracic cage formed by the vertebral column, twelve pairs of curved ribs, and anterior breastbone sternum.",
+    "tags": [
+      "Biology and Human Anatomy",
+      "human_anatomy",
+      "ribcage",
+      "thoracic cage",
+      "skeleton chest",
+      "ribs"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "biology/skeleton_torso.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_dog": {
+    "name": "Dog",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Domesticated carnivorous quadruped mammal with characteristic muzzle snout, erect/floppy ears, and tail.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "domestic dog",
+      "canine",
+      "canis familiaris",
+      "puppy"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/dog.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_cat": {
+    "name": "Cat",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Small carnivorous mammal with sleek body, upright pointed triangular ears, and long curved balancing tail.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "domestic cat",
+      "feline",
+      "felis catus",
+      "kitten"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/cat.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_horse": {
+    "name": "Horse",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Large, single-toed, ungulate mammal with long muscular legs, arched neck, and elongated equine skull.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "equine",
+      "stallion",
+      "equus caballus",
+      "mare"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/horse.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_cow": {
+    "name": "Cow",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Large domesticated bovine herbivore with distinctive piebald black-and-white patched coat and horns.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "bovine",
+      "cattle",
+      "bos taurus",
+      "dairy cow"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/cow.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_lion": {
+    "name": "Lion",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Apex feline predator of the savanna with muscular build and prominent magnificent male mane encircling head.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "panthera leo",
+      "king of beasts",
+      "male lion",
+      "big cat"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/lion.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_tiger": {
+    "name": "Tiger",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Largest extant feline species characterized by reddish-orange coat with dark vertical predatory camouflage stripes.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "panthera tigris",
+      "bengal tiger",
+      "siberian tiger"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/tiger.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_elephant": {
+    "name": "Elephant",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Largest living terrestrial animal with massive grey body, long prehensile proboscis trunk, and ivory tusks.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "pachyderm",
+      "loxodonta",
+      "african elephant",
+      "asian elephant"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/elephant.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_giraffe": {
+    "name": "Giraffe",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Tallest living terrestrial animal characterized by extraordinarily long cervical neck, tall legs, and coat patterning.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "giraffa camelopardalis",
+      "tallest mammal",
+      "spotted giraffe"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/giraffe.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_zebra": {
+    "name": "Zebra",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "African wild equids famous for distinctive black-and-white vertical striped camouflage patterns.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "equus quagga",
+      "wild horse",
+      "striped zebra"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/zebra.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_bear": {
+    "name": "Bear",
+    "category": "Animals and Wildlife",
+    "subcategory": "mammals",
+    "description": "Heavy ursid carnivoran with stocky physique, heavy brown fur, non-retractile claws, and broad snout.",
+    "tags": [
+      "Animals and Wildlife",
+      "mammals",
+      "grizzly bear",
+      "brown bear",
+      "ursus arctos",
+      "ursine"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/bear.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_penguin": {
+    "name": "Penguin",
+    "category": "Animals and Wildlife",
+    "subcategory": "birds",
+    "description": "Upright aquatic flightless bird with countershaded white breast and black plumage, flipper wings, and tapered beak.",
+    "tags": [
+      "Animals and Wildlife",
+      "birds",
+      "emperor penguin",
+      "spheniscidae",
+      "antarctic penguin",
+      "seabird"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/penguin.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_eagle": {
+    "name": "Eagle",
+    "category": "Animals and Wildlife",
+    "subcategory": "birds",
+    "description": "Large bird of prey with wide outstretched soaring wings, pure white head plumage, and hooked raptorial beak.",
+    "tags": [
+      "Animals and Wildlife",
+      "birds",
+      "bald eagle",
+      "raptor",
+      "bird of prey",
+      "aquila"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/eagle.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_owl": {
+    "name": "Owl",
+    "category": "Animals and Wildlife",
+    "subcategory": "birds",
+    "description": "Nocturnal bird of prey with upright stance, large forward-facing circular facial discs, and large yellow eyes.",
+    "tags": [
+      "Animals and Wildlife",
+      "birds",
+      "strigiformes",
+      "barn owl",
+      "nocturnal bird",
+      "horned owl"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/owl.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_dolphin": {
+    "name": "Dolphin",
+    "category": "Animals and Wildlife",
+    "subcategory": "marine_life",
+    "description": "Streamlined marine mammal with sleek hydrodynamic body, falcate dorsal fin, and horizontal caudal tail flukes.",
+    "tags": [
+      "Animals and Wildlife",
+      "marine_life",
+      "delphinus",
+      "bottlenose dolphin",
+      "marine cetacean",
+      "porpoise"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/dolphin.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_shark": {
+    "name": "Shark",
+    "category": "Animals and Wildlife",
+    "subcategory": "marine_life",
+    "description": "Apex marine cartilaginous predator with torpedo-shaped fuselage, prominent sharp dorsal fin, and vertical tail fin.",
+    "tags": [
+      "Animals and Wildlife",
+      "marine_life",
+      "selachimorpha",
+      "great white shark",
+      "predatory fish"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/shark.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_whale": {
+    "name": "Whale",
+    "category": "Animals and Wildlife",
+    "subcategory": "marine_life",
+    "description": "Massive aquatic cetacean mammal with colossal streamlined body and broad horizontal fluke propulsion blades.",
+    "tags": [
+      "Animals and Wildlife",
+      "marine_life",
+      "blue whale",
+      "cetacean",
+      "humpback whale",
+      "baleen whale"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/whale.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_octopus": {
+    "name": "Octopus",
+    "category": "Animals and Wildlife",
+    "subcategory": "marine_life",
+    "description": "Soft-bodied eight-limbed cephalopod mollusc with large bulbous mantle head and radial prehensile tentacles.",
+    "tags": [
+      "Animals and Wildlife",
+      "marine_life",
+      "octopod",
+      "cephalopod",
+      "eight-armed mollusc"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/octopus.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_butterfly": {
+    "name": "Butterfly",
+    "category": "Animals and Wildlife",
+    "subcategory": "insects",
+    "description": "Four-winged insect of the order Lepidoptera with segmented body and broad, brightly patterned membrane wings.",
+    "tags": [
+      "Animals and Wildlife",
+      "insects",
+      "lepidoptera",
+      "monarch butterfly",
+      "winged insect"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/butterfly.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_bee": {
+    "name": "Bee",
+    "category": "Animals and Wildlife",
+    "subcategory": "insects",
+    "description": "Social winged flying insect known for honey production, pollination, and vivid yellow-and-black abdominal bands.",
+    "tags": [
+      "Animals and Wildlife",
+      "insects",
+      "honeybee",
+      "bumblebee",
+      "apis mellifera",
+      "pollinator"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/bee.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_animals_turtle": {
+    "name": "Turtle",
+    "category": "Animals and Wildlife",
+    "subcategory": "reptiles",
+    "description": "Reptile with domed bony carapace shell protecting body, outstretched flippers, and projecting head.",
+    "tags": [
+      "Animals and Wildlife",
+      "reptiles",
+      "testudines",
+      "sea turtle",
+      "tortoise",
+      "chelonian"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "animals/turtle.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_football": {
+    "name": "Football",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "balls",
+    "description": "Standard association soccer ball featuring classic 32-panel truncated icosahedron white leather with black pentagons.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "balls",
+      "soccer ball",
+      "association football",
+      "match ball",
+      "fifa ball"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/football.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_basketball": {
+    "name": "Basketball",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "balls",
+    "description": "Regulation basketball with pebbled high-friction orange composite leather surface and inlaid black channel seams.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "balls",
+      "nba ball",
+      "hoop ball",
+      "basketball sphere"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/basketball.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_tennis_ball": {
+    "name": "Tennis Ball",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "balls",
+    "description": "Pressurized regulation tennis ball covered in fibrous optic yellow felt with distinctive curved white vulcanized rubber seam.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "balls",
+      "tennis sphere",
+      "felt ball",
+      "yellow tennis ball"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/tennis_ball.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_cricket_ball": {
+    "name": "Cricket Ball",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "balls",
+    "description": "Hard solid cork core sphere covered with polished deep red leather halves joined by a prominent raised white stitched seam.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "balls",
+      "leather cricket ball",
+      "red ball",
+      "match cricket ball"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/cricket_ball.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_baseball": {
+    "name": "Baseball",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "balls",
+    "description": "White cowhide or horsehide sphere bound tightly with two interlocking pieces featuring 108 double raised red stitches.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "balls",
+      "hardball",
+      "mlb baseball",
+      "stitched baseball"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/baseball.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_golf_ball": {
+    "name": "Golf Ball",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "balls",
+    "description": "Small, hard white ball designed for golf, covered in aerodynamic dimples to reduce aerodynamic drag and optimize lift.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "balls",
+      "dimpled ball",
+      "pga golf ball",
+      "golf sphere"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/golf_ball.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_table_tennis_paddle": {
+    "name": "Table Tennis Paddle",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "equipment",
+    "description": "Laminated wooden paddle with circular red rubber pimpled/smooth hitting surface and flared ergonomic grip handle.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "equipment",
+      "ping pong paddle",
+      "table tennis bat",
+      "ping pong racket"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/table_tennis_paddle.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_shuttlecock": {
+    "name": "Shuttlecock",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "equipment",
+    "description": "High-drag projectile used in badminton consisting of rounded cork nose base and flared conical skirt of 16 goose feathers.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "equipment",
+      "birdie",
+      "badminton shuttlecock",
+      "feather shuttle"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/shuttlecock.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_tennis_racket": {
+    "name": "Tennis Racket",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "equipment",
+    "description": "Strung sports implement with oval aerodynamic graphite composite frame hoop, open throat, and wrapped grip handle.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "equipment",
+      "tennis racquet",
+      "strung racket",
+      "graphite racket"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/tennis_racket.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_cricket_bat": {
+    "name": "Cricket Bat",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "equipment",
+    "description": "Wood bat consisting of cane handle attached to flat-fronted, ridge-backed English willow blade.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "equipment",
+      "willow bat",
+      "cricket paddle",
+      "english willow"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/cricket_bat.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_baseball_bat": {
+    "name": "Baseball Bat",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "equipment",
+    "description": "Smooth tapered wooden club used in baseball to hit the ball, with thick barrel hitting zone and flared handle knob.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "equipment",
+      "wooden bat",
+      "ash bat",
+      "baseball club",
+      "slugger"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/baseball_bat.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_hockey_stick": {
+    "name": "Hockey Stick",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "equipment",
+    "description": "Long sporting shaft with angled lower curved blade used to drive a puck or ball into the opponent's goal.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "equipment",
+      "field hockey stick",
+      "ice hockey stick",
+      "hockey shaft"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/hockey_stick.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_dumbbell": {
+    "name": "Dumbbell",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "gym_equipment",
+    "description": "Short barbell weight consisting of central knurled steel handle bar capped at each end with equal hexagonal rubber weights.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "gym_equipment",
+      "hand weight",
+      "free weight",
+      "hex dumbbell",
+      "gym weight"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/dumbbell.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_barbell": {
+    "name": "Barbell",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "gym_equipment",
+    "description": "Full-length Olympic steel bar with rotating end sleeves holding large circular black Olympic bumper weight plates.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "gym_equipment",
+      "olympic barbell",
+      "weightlifting bar",
+      "weight plate bar"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/barbell.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_sports_sports_helmet": {
+    "name": "Sports Helmet",
+    "category": "Sports Equipment and Balls",
+    "subcategory": "equipment",
+    "description": "Hard protective impact-absorbing outer helmet shell with aerodynamic ventilation contours and front sun visor.",
+    "tags": [
+      "Sports Equipment and Balls",
+      "equipment",
+      "protective helmet",
+      "cycling helmet",
+      "baseball helmet",
+      "headgear"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "sports/sports_helmet.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_formula_1_car": {
+    "name": "Formula 1 Car",
+    "category": "Vehicles and Transportation",
+    "subcategory": "road",
+    "description": "Single-seat, open-cockpit, open-wheel formula racing car with prominent front/rear aerofoil downforce wings and halo safety frame.",
+    "tags": [
+      "Vehicles and Transportation",
+      "road",
+      "f1 car",
+      "grand prix racer",
+      "formula one",
+      "racing single seater"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/formula_1_car.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_sports_car": {
+    "name": "Sports Car",
+    "category": "Vehicles and Transportation",
+    "subcategory": "road",
+    "description": "Low-slung, aerodynamic high-performance passenger automobile with low ground clearance and rear aerofoil spoiler.",
+    "tags": [
+      "Vehicles and Transportation",
+      "road",
+      "supercar",
+      "fast car",
+      "sports coupe",
+      "performance car"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/sports_car.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_sedan": {
+    "name": "Sedan",
+    "category": "Vehicles and Transportation",
+    "subcategory": "road",
+    "description": "Three-box passenger car configuration with separate compartments for engine hood, passenger cabin, and boot trunk.",
+    "tags": [
+      "Vehicles and Transportation",
+      "road",
+      "passenger car",
+      "saloon car",
+      "family car",
+      "automobile"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/sedan.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_truck": {
+    "name": "Truck",
+    "category": "Vehicles and Transportation",
+    "subcategory": "road",
+    "description": "Heavy commercial motor vehicle with upright forward operator cabin and elongated rear cargo load bed on 6 heavy wheels.",
+    "tags": [
+      "Vehicles and Transportation",
+      "road",
+      "semi truck",
+      "lorry",
+      "cargo truck",
+      "heavy hauler"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/truck.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_bus": {
+    "name": "Bus",
+    "category": "Vehicles and Transportation",
+    "subcategory": "road",
+    "description": "Public transit passenger vehicle with long rectangular body, continuous side glazing window bands, and high passenger capacity.",
+    "tags": [
+      "Vehicles and Transportation",
+      "road",
+      "city bus",
+      "transit bus",
+      "coach",
+      "public transit"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/bus.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_ambulance": {
+    "name": "Ambulance",
+    "category": "Vehicles and Transportation",
+    "subcategory": "emergency",
+    "description": "Medically equipped emergency vehicle with white high-roof body, roof flashing emergency lightbar, and red cross insignia.",
+    "tags": [
+      "Vehicles and Transportation",
+      "emergency",
+      "emergency vehicle",
+      "paramedic van",
+      "medical transport"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/ambulance.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_police_car": {
+    "name": "Police Car",
+    "category": "Vehicles and Transportation",
+    "subcategory": "emergency",
+    "description": "Law enforcement patrol cruiser with black-and-white livery and roof-mounted dual red and blue emergency strobe beacons.",
+    "tags": [
+      "Vehicles and Transportation",
+      "emergency",
+      "police cruiser",
+      "patrol car",
+      "cop car",
+      "law enforcement vehicle"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/police_car.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_motorcycle": {
+    "name": "Motorcycle",
+    "category": "Vehicles and Transportation",
+    "subcategory": "road",
+    "description": "Two-wheeled single-track motorized vehicle powered by internal combustion engine with frame, fuel tank, and wheels.",
+    "tags": [
+      "Vehicles and Transportation",
+      "road",
+      "motorbike",
+      "cycle",
+      "motor racer",
+      "chopper"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/motorcycle.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_bicycle": {
+    "name": "Bicycle",
+    "category": "Vehicles and Transportation",
+    "subcategory": "road",
+    "description": "Human-powered pedal-driven single-track vehicle with two spoked wheels attached to diamond frame structure.",
+    "tags": [
+      "Vehicles and Transportation",
+      "road",
+      "bike",
+      "pushbike",
+      "cycle",
+      "pedal bicycle"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/bicycle.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_airplane": {
+    "name": "Airplane",
+    "category": "Vehicles and Transportation",
+    "subcategory": "aviation",
+    "description": "Fixed-wing commercial passenger aircraft with pressurized cylindrical fuselage, main aerofoil wings, and empennage tail.",
+    "tags": [
+      "Vehicles and Transportation",
+      "aviation",
+      "passenger jet",
+      "airliner",
+      "commercial aircraft",
+      "aeroplane"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/airplane.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_fighter_jet": {
+    "name": "Fighter Jet",
+    "category": "Vehicles and Transportation",
+    "subcategory": "aviation",
+    "description": "High-speed tactical military jet aircraft featuring sharp delta-wing planform, bubble canopy, and afterburning exhaust.",
+    "tags": [
+      "Vehicles and Transportation",
+      "aviation",
+      "supersonic fighter",
+      "combat aircraft",
+      "jet fighter",
+      "stealth jet"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/fighter_jet.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_helicopter": {
+    "name": "Helicopter",
+    "category": "Vehicles and Transportation",
+    "subcategory": "aviation",
+    "description": "Rotorcraft in which lift and thrust are supplied by horizontally-spinning main rotors, with tail boom stabilizer.",
+    "tags": [
+      "Vehicles and Transportation",
+      "aviation",
+      "chopper",
+      "rotary aircraft",
+      "whirlybird",
+      "helo"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/helicopter.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_drone": {
+    "name": "Drone",
+    "category": "Vehicles and Transportation",
+    "subcategory": "aviation",
+    "description": "Unmanned aerial vehicle with four horizontal rotor arms generating vertical lift and precision maneuvering.",
+    "tags": [
+      "Vehicles and Transportation",
+      "aviation",
+      "quadcopter",
+      "UAV",
+      "multirotor",
+      "camera drone"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/drone.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_hot_air_balloon": {
+    "name": "Hot Air Balloon",
+    "category": "Vehicles and Transportation",
+    "subcategory": "aviation",
+    "description": "Lighter-than-air aerostat consisting of a large heated air fabric envelope bag and suspended passenger wicker basket.",
+    "tags": [
+      "Vehicles and Transportation",
+      "aviation",
+      "aerostat",
+      "hot air aerostat",
+      "thermal balloon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/hot_air_balloon.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_speedboat": {
+    "name": "Speedboat",
+    "category": "Vehicles and Transportation",
+    "subcategory": "maritime",
+    "description": "High-speed watercraft featuring sharp V-shaped hydrodynamic planing hull, tinted wrap-around windshield, and stern motor.",
+    "tags": [
+      "Vehicles and Transportation",
+      "maritime",
+      "motorboat",
+      "powerboat",
+      "runabout",
+      "speedboat craft"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/speedboat.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_sailboat": {
+    "name": "Sailboat",
+    "category": "Vehicles and Transportation",
+    "subcategory": "maritime",
+    "description": "Wind-propelled watercraft with displacement monohull, tall vertical mast spar, and broad triangular mainsail cloth.",
+    "tags": [
+      "Vehicles and Transportation",
+      "maritime",
+      "sailing yacht",
+      "monohull",
+      "sail vessel",
+      "sloop"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/sailboat.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_submarine": {
+    "name": "Submarine",
+    "category": "Vehicles and Transportation",
+    "subcategory": "maritime",
+    "description": "Naval watercraft capable of independent underwater operation with cylindrical pressure hull and elevated conning tower sail.",
+    "tags": [
+      "Vehicles and Transportation",
+      "maritime",
+      "naval sub",
+      "underwater vessel",
+      "submersible",
+      "u-boat"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/submarine.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_bullet_train": {
+    "name": "Bullet Train",
+    "category": "Vehicles and Transportation",
+    "subcategory": "rail",
+    "description": "High-speed aerodynamic passenger railway locomotive featuring a streamlined long needle-nose to reduce tunnel boom.",
+    "tags": [
+      "Vehicles and Transportation",
+      "rail",
+      "shinkansen",
+      "high-speed train",
+      "maglev",
+      "tgy"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/bullet_train.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_cargo_ship": {
+    "name": "Cargo Ship",
+    "category": "Vehicles and Transportation",
+    "subcategory": "maritime",
+    "description": "Commercial maritime merchant freighter with broad cargo hull carrying intermodal shipping containers and stern bridge.",
+    "tags": [
+      "Vehicles and Transportation",
+      "maritime",
+      "container ship",
+      "freighter",
+      "merchant vessel",
+      "cargo vessel"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/cargo_ship.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_vehicles_locomotive": {
+    "name": "Locomotive",
+    "category": "Vehicles and Transportation",
+    "subcategory": "rail",
+    "description": "Railway vehicle that provides motive power for a train, with heavy diesel-electric hood chassis and elevated cab.",
+    "tags": [
+      "Vehicles and Transportation",
+      "rail",
+      "train engine",
+      "diesel locomotive",
+      "railroad engine",
+      "rail locomotive"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "vehicles/locomotive.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_robotic_arm": {
+    "name": "Robotic Arm",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "mechanical",
+    "description": "Articulated multi-axis industrial manipulator with revolving pedestal base, shoulder, forearm, and parallel-jaw end effector gripper.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "mechanical",
+      "industrial robot",
+      "articulated arm",
+      "6-axis robot",
+      "manipulator"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/robotic_arm.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_jet_engine": {
+    "name": "Jet Engine",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "aviation_engineering",
+    "description": "Aviation high-bypass turbofan engine with aerodynamic nacelle cowl, forward fan spinner cone, and exhaust plug nozzle.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "aviation_engineering",
+      "turbofan",
+      "aircraft engine",
+      "gas turbine",
+      "jet turbine"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/jet_engine.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_planetary_gear": {
+    "name": "Planetary Gear",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "mechanical",
+    "description": "Epicyclic gear system consisting of central sun gear, three revolving planet gears, and outer annular ring gear.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "mechanical",
+      "epicyclic gear",
+      "gear train",
+      "sun and planet gear",
+      "planetary transmission"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/planetary_gear.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_cpu": {
+    "name": "CPU",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "electronics",
+    "description": "Semiconductor microprocessor package with green FR4 substrate, metallic nickel-plated integrated heat spreader (IHS), and pin-1 marker.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "electronics",
+      "microprocessor",
+      "central processing unit",
+      "processor chip",
+      "computer chip"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/cpu.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_circuit_board": {
+    "name": "Circuit Board",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "electronics",
+    "description": "Printed circuit board (PCB) featuring characteristic green solder mask, soldered integrated circuit IC chips, and cylindrical electrolytic capacitors.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "electronics",
+      "PCB",
+      "printed circuit board",
+      "motherboard",
+      "electronics board"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/circuit_board.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_3d_printer": {
+    "name": "3D Printer",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "mechanical",
+    "description": "Fused deposition modeling (FDM) 3D printer with vertical Cartesian gantry frame, square heated build plate bed, and toolhead extruder.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "mechanical",
+      "additive manufacturing",
+      "fdm printer",
+      "rapid prototyper"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/3d_printer.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_wind_turbine": {
+    "name": "Wind Turbine",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "renewable_energy",
+    "description": "Renewable wind power electricity generator featuring tall conical tubular steel tower, nacelle housing, and 3 aerodynamic rotor blades.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "renewable_energy",
+      "wind generator",
+      "wind mill",
+      "renewable energy turbine"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/wind_turbine.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_solar_panel": {
+    "name": "Solar Panel",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "renewable_energy",
+    "description": "Photovoltaic module designed to absorb sun rays as source of energy, with protective extruded aluminum frame and blue crystalline cells.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "renewable_energy",
+      "photovoltaic module",
+      "pv panel",
+      "solar module",
+      "solar array"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/solar_panel.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_electric_motor": {
+    "name": "Electric Motor",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "electrical_engineering",
+    "description": "Electromechanical machine converting electrical energy into mechanical energy, with cast iron stator body, drive shaft, and conduit terminal box.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "electrical_engineering",
+      "induction motor",
+      "AC motor",
+      "electromotor",
+      "drive motor"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/electric_motor.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_hydraulic_cylinder": {
+    "name": "Hydraulic Cylinder",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "mechanical",
+    "description": "Mechanical actuator used to give unidirectional force through unidirectional stroke, with heavy barrel and extending hard-chromed rod.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "mechanical",
+      "hydraulic actuator",
+      "ram",
+      "pneumatic piston",
+      "piston actuator"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/hydraulic_cylinder.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_water_pump": {
+    "name": "Water Pump",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "fluid_mechanics",
+    "description": "Centrifugal water pump with spiral volute casing, axial suction inlet flange, and tangential vertical discharge outlet.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "fluid_mechanics",
+      "centrifugal pump",
+      "fluid pump",
+      "impeller pump"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/water_pump.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_steam_turbine": {
+    "name": "Steam Turbine",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "mechanical",
+    "description": "Turbomachine extracting thermal energy from pressurized steam to perform mechanical work on rotating bladed shaft stages.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "mechanical",
+      "power turbine",
+      "rotary steam engine",
+      "turbogenerator"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/steam_turbine.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_camera": {
+    "name": "Camera",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "optics_electronics",
+    "description": "Digital single-lens reflex (DSLR) camera with ergonomic grip body, prominent top pentaprism optical viewfinder, and barrel lens.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "optics_electronics",
+      "dslr",
+      "digital camera",
+      "slr camera",
+      "photo camera"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/camera.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_microphone": {
+    "name": "Microphone",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "audio_engineering",
+    "description": "Acoustic-to-electric transducer with cylindrical handheld body and spherical steel mesh pop filter capsule grille.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "audio_engineering",
+      "mic",
+      "dynamic mic",
+      "studio condenser",
+      "vocal mic"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/microphone.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_engineering_speaker": {
+    "name": "Speaker",
+    "category": "Engineering, Machines and Technology",
+    "subcategory": "audio_engineering",
+    "description": "Two-way acoustic loudspeaker monitor featuring cuboid resonance enclosure, large low-frequency woofer cone, and dome tweeter.",
+    "tags": [
+      "Engineering, Machines and Technology",
+      "audio_engineering",
+      "loudspeaker",
+      "studio monitor",
+      "audio speaker",
+      "woofer"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "engineering/speaker.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_chair": {
+    "name": "Chair",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "furniture",
+    "description": "Four-legged seating furniture with flat seat pan, supporting legs, and upright lumbar backrest.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "furniture",
+      "wooden chair",
+      "dining chair",
+      "seat"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/chair.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_table": {
+    "name": "Table",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "furniture",
+    "description": "Piece of furniture with flat horizontal work or dining surface supported by four perimeter corner legs.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "furniture",
+      "dining table",
+      "wooden table",
+      "desk table"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/table.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_sofa": {
+    "name": "Sofa",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "furniture",
+    "description": "Upholstered furniture piece for seating multiple persons, with cushioned bench, high backrest, and padded side armrests.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "furniture",
+      "couch",
+      "davenport",
+      "living room sofa",
+      "settee"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/sofa.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_bed": {
+    "name": "Bed",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "furniture",
+    "description": "Piece of furniture used for sleeping, consisting of a supportive mattress, pillow, and raised wooden headboard.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "furniture",
+      "mattress bed",
+      "single bed",
+      "sleeping bed"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/bed.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_desk": {
+    "name": "Desk",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "furniture",
+    "description": "Office workstation table with flat desktop work plane and integrated side drawer pedestal cabinet.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "furniture",
+      "office desk",
+      "workstation",
+      "computer desk",
+      "study desk"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/desk.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_coffee_mug": {
+    "name": "Coffee Mug",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "kitchenware",
+    "description": "Cylindrical ceramic vessel used for drinking hot beverages with lateral D-shaped handle loop.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "kitchenware",
+      "mug",
+      "coffee cup",
+      "tea cup",
+      "ceramic mug"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/coffee_mug.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_water_bottle": {
+    "name": "Water Bottle",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "kitchenware",
+    "description": "Portable cylindrical container for liquids with tapered shoulder neck and sealed threaded screw cap.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "kitchenware",
+      "bottle",
+      "drink bottle",
+      "flask",
+      "reusable bottle"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/water_bottle.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_plate": {
+    "name": "Plate",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "kitchenware",
+    "description": "Broad, mainly flat vessel on which food is served, with raised rim edge to prevent spillage.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "kitchenware",
+      "dinner plate",
+      "dish",
+      "ceramic plate"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/plate.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_spoon": {
+    "name": "Spoon",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "kitchenware",
+    "description": "Utensil consisting of a small, shallow oval bowl on a long handle, used in preparing, serving, or eating liquid food.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "kitchenware",
+      "soup spoon",
+      "eating utensil",
+      "tablespoon",
+      "metal spoon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/spoon.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_fork": {
+    "name": "Fork",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "kitchenware",
+    "description": "Cutlery item with long handle terminating in a head that branches into several parallel prongs or tines.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "kitchenware",
+      "dinner fork",
+      "table fork",
+      "eating utensil"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/fork.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_knife": {
+    "name": "Knife",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "kitchenware",
+    "description": "Utensil with a handle and flat blade with a cutting edge used for cutting and preparing food.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "kitchenware",
+      "table knife",
+      "dinner knife",
+      "butter knife",
+      "cutlery knife"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/knife.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_smartphone": {
+    "name": "Smartphone",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "consumer_electronics",
+    "description": "Handheld personal computer with touchscreen interface, slim slab form factor, and multi-lens camera module.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "consumer_electronics",
+      "phone",
+      "mobile phone",
+      "cell phone",
+      "touchscreen phone"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/smartphone.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_laptop": {
+    "name": "Laptop",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "consumer_electronics",
+    "description": "Portable personal computer with clamshell form factor consisting of keyboard base unit and hinged display screen.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "consumer_electronics",
+      "notebook computer",
+      "laptop computer",
+      "macbook",
+      "pc laptop"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/laptop.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_keyboard": {
+    "name": "Keyboard",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "computer_peripherals",
+    "description": "Typewriter-style input device which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "computer_peripherals",
+      "computer keyboard",
+      "typing keyboard",
+      "qwerty keyboard"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/keyboard.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_computer_mouse": {
+    "name": "Computer Mouse",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "computer_peripherals",
+    "description": "Hand-held pointing device that detects two-dimensional motion relative to a surface, with ergonomic palm dome and scroll wheel.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "computer_peripherals",
+      "mouse",
+      "optical mouse",
+      "wireless mouse",
+      "track mouse"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/computer_mouse.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_headphones": {
+    "name": "Headphones",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "audio_peripherals",
+    "description": "Pair of small loudspeaker drivers worn on or around the head over user's ears, joined by a springy headband.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "audio_peripherals",
+      "headset",
+      "earphones",
+      "audio headphones",
+      "cans"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/headphones.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_watch": {
+    "name": "Watch",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "accessories",
+    "description": "Timepiece intended to be carried or worn by a person on wrist, with circular dial case, bezel, and leather strap bands.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "accessories",
+      "wristwatch",
+      "timepiece",
+      "chronometer",
+      "wrist watch"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/watch.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_backpack": {
+    "name": "Backpack",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "travel_accessories",
+    "description": "Cloth sack carried on one's back and secured with two straps that go over shoulders, with zippered front compartments.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "travel_accessories",
+      "rucksack",
+      "knapsack",
+      "bookbag",
+      "school bag"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/backpack.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_book": {
+    "name": "Book",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "stationery",
+    "description": "Bound collection of printed paper pages encased within protective rigid hardcover binding with squared spine.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "stationery",
+      "hardcover book",
+      "novel",
+      "textbook",
+      "bound volume"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/book.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_pen": {
+    "name": "Pen",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "stationery",
+    "description": "Writing instrument that dispenses ink over a metal ball at its point, with slender cylindrical barrel and pocket clip.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "stationery",
+      "ballpoint pen",
+      "biro",
+      "ink pen",
+      "writing pen"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/pen.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_desk_lamp": {
+    "name": "Desk Lamp",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "lighting",
+    "description": "Adjustable directional luminaire with weighted circular base, articulated neck column, and conical reflector shade.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "lighting",
+      "table lamp",
+      "task light",
+      "reading lamp",
+      "study light"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/desk_lamp.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_fan": {
+    "name": "Fan",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "appliances",
+    "description": "Powered machine used to create flow of air for cooling, with circular safety guard cage and rotating impeller blades.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "appliances",
+      "desk fan",
+      "table fan",
+      "cooling fan",
+      "electric fan"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/fan.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_clock": {
+    "name": "Clock",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "appliances",
+    "description": "Instrument used to measure and indicate time with circular numbered analog dial face and rotating hour/minute hands.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "appliances",
+      "wall clock",
+      "analog clock",
+      "timepiece",
+      "dial clock"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/clock.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_plant_pot": {
+    "name": "Plant Pot",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "home_decor",
+    "description": "Container in which flowers and other plants are cultivated and displayed, made of terracotta with soil and shoot.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "home_decor",
+      "flowerpot",
+      "planter",
+      "indoor plant",
+      "potted plant"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/plant_pot.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_everyday_umbrella": {
+    "name": "Umbrella",
+    "category": "Everyday Objects and Furniture",
+    "subcategory": "accessories",
+    "description": "Collapsible canopy designed to protect against rain or sunlight, supported by ribs on a central shaft with curved hook handle.",
+    "tags": [
+      "Everyday Objects and Furniture",
+      "accessories",
+      "parasol",
+      "rain umbrella",
+      "brolly"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "everyday/umbrella.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_globe": {
+    "name": "Globe",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "cartography",
+    "description": "Three-dimensional spherical scale model of Earth mounted on an inclined 23.5-degree meridian arc and tabletop stand.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "cartography",
+      "terrestrial globe",
+      "world globe",
+      "earth globe",
+      "desk globe"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/globe.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_mountain_peak": {
+    "name": "Mountain Peak",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "landforms",
+    "description": "Prominent elevated landform rising conspicuously above surroundings, with rugged crags and perennial glacial snowcap.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "landforms",
+      "mountain",
+      "alpine peak",
+      "summit",
+      "snowy mountain"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/mountain_peak.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_volcano": {
+    "name": "Volcano",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "volcanology",
+    "description": "Stratovolcano rupture in the crust where molten lava, volcanic ash, and gases escape from a summit caldera crater.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "volcanology",
+      "active volcano",
+      "stratovolcano",
+      "volcano cone",
+      "caldera"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/volcano.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_earth_layers": {
+    "name": "Earth Layers",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "geology",
+    "description": "Internal concentric mechanical and compositional layers of Earth: solid inner core, liquid outer core, and mantle.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "geology",
+      "internal earth structure",
+      "earth core",
+      "geosphere layers"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/earth_layers.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_coral_reef": {
+    "name": "Coral Reef",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "marine_ecology",
+    "description": "Underwater ecosystem characterized by reef-building corals formed of colonies of coral polyps held together by calcium carbonate.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "marine_ecology",
+      "marine reef",
+      "coral ecosystem",
+      "barrier reef"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/coral_reef.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_glacier": {
+    "name": "Glacier",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "glaciology",
+    "description": "Persistent body of dense ice that is constantly moving under its own weight, carving a distinctive U-shaped valley.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "glaciology",
+      "valley glacier",
+      "alpine glacier",
+      "ice stream",
+      "serac"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/glacier.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_tectonic_plates": {
+    "name": "Tectonic Plates",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "tectonics",
+    "description": "Convergent lithospheric plate boundary where a denser oceanic plate undergoes subduction beneath lighter continental crust.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "tectonics",
+      "plate tectonics",
+      "subduction zone",
+      "lithospheric plates",
+      "convergent boundary"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/tectonic_plates.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_crystal": {
+    "name": "Crystal",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "mineralogy",
+    "description": "Cluster of prismatic quartz crystals displaying hexagonal columnar habits terminated by sharp six-sided pyramidal facets.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "mineralogy",
+      "quartz crystal",
+      "mineral cluster",
+      "crystalline prism",
+      "rock crystal"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/crystal.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_waterfall": {
+    "name": "Waterfall",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "hydrology",
+    "description": "River or other body of water's steep fall over a rocky ledge into a plunge pool below.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "hydrology",
+      "cascade",
+      "falls",
+      "plunge waterfall",
+      "cataract"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/waterfall.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_cloud": {
+    "name": "Cloud",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "meteorology",
+    "description": "Clouds having flat bases and distinct lumpy, cauliflower-like globular billowing outlines.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "meteorology",
+      "cumulus",
+      "cumulus cloud",
+      "fluffy cloud",
+      "rain cloud"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/cloud.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_tornado": {
+    "name": "Tornado",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "meteorology",
+    "description": "Violently rotating column of air extending between the surface of the Earth and a cumulonimbus cloud.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "meteorology",
+      "twister",
+      "funnel cloud",
+      "cyclone",
+      "whirlwind"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/tornado.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_water_cycle": {
+    "name": "Water Cycle",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "hydrology",
+    "description": "Biogeochemical cycle describing continuous movement of water on, above, and below surface of the Earth via evaporation and precipitation.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "hydrology",
+      "hydrologic cycle",
+      "hydrological cycle",
+      "evaporation cycle"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/water_cycle.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_fossil": {
+    "name": "Fossil",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "paleontology",
+    "description": "Extinct marine mollusc cephalopod shell preserved in sedimentary rock showing characteristic logarithmic planispiral coiling.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "paleontology",
+      "ammonite",
+      "fossil shell",
+      "paleontology specimen",
+      "ammonite fossil"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/fossil.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_sand_dune": {
+    "name": "Sand Dune",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "geomorphology",
+    "description": "Hill of loose sand built by aeolian processes (wind action), characterized by gentle windward slope and steep slip face.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "geomorphology",
+      "dune",
+      "desert dune",
+      "barchan dune",
+      "sand hill"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/sand_dune.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_geography_canyon": {
+    "name": "Canyon",
+    "category": "Geography, Earth Science and Environment",
+    "subcategory": "geomorphology",
+    "description": "Deep cleft between escarpments or cliffs resulting from weathering and the erosive activity of a river over geologic time.",
+    "tags": [
+      "Geography, Earth Science and Environment",
+      "geomorphology",
+      "gorge",
+      "river canyon",
+      "ravine",
+      "grand canyon"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "geography/canyon.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_pyramid": {
+    "name": "Pyramid",
+    "category": "History, Architecture and Culture",
+    "subcategory": "monuments",
+    "description": "Ancient Egyptian monumental masonry tomb with square base and four sloping triangular faces meeting at gilded pyramidion capstone.",
+    "tags": [
+      "History, Architecture and Culture",
+      "monuments",
+      "great pyramid",
+      "giza pyramid",
+      "egyptian pyramid",
+      "khufu pyramid"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/pyramid.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_column": {
+    "name": "Column",
+    "category": "History, Architecture and Culture",
+    "subcategory": "classical_architecture",
+    "description": "Classical architectural vertical structural element consisting of circular fluted marble shaft, base plinth, and decorative capital.",
+    "tags": [
+      "History, Architecture and Culture",
+      "classical_architecture",
+      "greek column",
+      "corinthian column",
+      "classical pillar",
+      "marble column"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/column.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_castle_tower": {
+    "name": "Castle Tower",
+    "category": "History, Architecture and Culture",
+    "subcategory": "medieval_architecture",
+    "description": "Medieval defensive stone masonry tower fortification featuring thick walls and projecting machicolated crenellated battlements.",
+    "tags": [
+      "History, Architecture and Culture",
+      "medieval_architecture",
+      "keep",
+      "castle turret",
+      "medieval tower",
+      "fortress keep"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/castle_tower.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_colosseum": {
+    "name": "Colosseum",
+    "category": "History, Architecture and Culture",
+    "subcategory": "monuments",
+    "description": "Elliptical amphitheatre in center of Rome, the largest ancient amphitheatre ever built, constructed of travertine stone.",
+    "tags": [
+      "History, Architecture and Culture",
+      "monuments",
+      "roman amphitheatre",
+      "amphitheatrum flavium",
+      "flavian amphitheatre"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/colosseum.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_obelisk": {
+    "name": "Obelisk",
+    "category": "History, Architecture and Culture",
+    "subcategory": "monuments",
+    "description": "Tall, four-sided, narrow tapering monument which ends in a pyramid-like shape or pyramidion at the top.",
+    "tags": [
+      "History, Architecture and Culture",
+      "monuments",
+      "monolithic obelisk",
+      "egyptian obelisk",
+      "stone monument"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/obelisk.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_amphora": {
+    "name": "Amphora",
+    "category": "History, Architecture and Culture",
+    "subcategory": "archaeology",
+    "description": "Classical ceramic container with characteristic ovoid shape and two curved vertical handles for carrying wine and olive oil.",
+    "tags": [
+      "History, Architecture and Culture",
+      "archaeology",
+      "greek amphora",
+      "ancient vase",
+      "terracotta vessel",
+      "urn"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/amphora.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_stone_monument": {
+    "name": "Stone Monument",
+    "category": "History, Architecture and Culture",
+    "subcategory": "archaeology",
+    "description": "Prehistoric megalithic structure consisting of two large vertical upright megaliths supporting a third horizontal stone lintel across top.",
+    "tags": [
+      "History, Architecture and Culture",
+      "archaeology",
+      "stonehenge",
+      "trilithon",
+      "megalith",
+      "standing stone",
+      "dolmen"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/stone_monument.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_handaxe": {
+    "name": "Handaxe",
+    "category": "History, Architecture and Culture",
+    "subcategory": "archaeology",
+    "description": "Prehistoric stone tool with two faces that is the longest-used tool in human history, bifacially flaked into teardrop shape.",
+    "tags": [
+      "History, Architecture and Culture",
+      "archaeology",
+      "biface",
+      "paleolithic tool",
+      "flint tool",
+      "acheulean axe"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/handaxe.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_astrolabe": {
+    "name": "Astrolabe",
+    "category": "History, Architecture and Culture",
+    "subcategory": "historical_instruments",
+    "description": "Ancient astronomical instrument that was a handheld model of the universe used by astronomers and navigators.",
+    "tags": [
+      "History, Architecture and Culture",
+      "historical_instruments",
+      "planispheric astrolabe",
+      "navigational instrument",
+      "brass astrolabe"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/astrolabe.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  },
+  "mm_history_arch": {
+    "name": "Arch",
+    "category": "History, Architecture and Culture",
+    "subcategory": "classical_architecture",
+    "description": "True semicircular masonry arch constructed of wedge-shaped voussoir stones culminating in a central keystone.",
+    "tags": [
+      "History, Architecture and Culture",
+      "classical_architecture",
+      "roman arch",
+      "triumphal arch",
+      "stone archway",
+      "semicircular arch"
+    ],
+    "license": "CC0-1.0",
+    "author": "Magic Mirror Spatial AI Team",
+    "fileIdentifier": "history/arch.glb",
+    "source": "Magic Mirror Curated Library",
+    "fileType": "glb"
+  }
+}

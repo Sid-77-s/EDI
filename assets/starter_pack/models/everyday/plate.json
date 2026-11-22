@@ -1,0 +1,29 @@
+{
+  "name": "Plate",
+  "aliases": [
+    "dinner plate",
+    "dish",
+    "ceramic plate"
+  ],
+  "category": "Everyday Objects and Furniture",
+  "subcategory": "kitchenware",
+  "description": "Broad, mainly flat vessel on which food is served, with raised rim edge to prevent spillage.",
+  "distinguishing_features": [
+    "Circular shallow ceramic disc",
+    "Raised concave outer rim edge",
+    "Glazed smooth porcelain surface"
+  ],
+  "educational_purpose": "Visualizes the 3D ergonomic design and utility of Plate.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_everyday_plate",
+  "fileIdentifier": "plate.glb",
+  "statistics": {
+    "triangle_count": 112,
+    "vertex_count": 58,
+    "file_size_bytes": 3856
+  }
+}

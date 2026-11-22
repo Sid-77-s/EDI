@@ -1,0 +1,30 @@
+{
+  "name": "Sailboat",
+  "aliases": [
+    "sailing yacht",
+    "monohull",
+    "sail vessel",
+    "sloop"
+  ],
+  "category": "Vehicles and Transportation",
+  "subcategory": "maritime",
+  "description": "Wind-propelled watercraft with displacement monohull, tall vertical mast spar, and broad triangular mainsail cloth.",
+  "distinguishing_features": [
+    "Sleek marine displacement monohull",
+    "Tall vertical aluminum/carbon mast spar",
+    "High-aspect triangular canvas mainsail"
+  ],
+  "educational_purpose": "Visualizes the 3D engineering design and vehicular architecture of Sailboat.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_vehicles_sailboat",
+  "fileIdentifier": "sailboat.glb",
+  "statistics": {
+    "triangle_count": 804,
+    "vertex_count": 408,
+    "file_size_bytes": 22552
+  }
+}

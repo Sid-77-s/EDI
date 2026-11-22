@@ -82,6 +82,9 @@ def validate_concept(concept: str) -> RepresentationEligibility:
     clean = " ".join(concept.casefold().replace("-", " ").split())
     identity = next((item for item in _CONCEPTS if clean in item.aliases), None)
     if identity is None:
+        words = clean.split()
+        identity = next((item for item in _CONCEPTS if any(a in words for a in item.aliases)), None)
+    if identity is None:
         return RepresentationEligibility(concept, None, FidelityLevel.UNAVAILABLE, 0.0,
                                          ("no verified exact identity or faithful procedural template",), False)
     supported = {"system.solar",

@@ -1,0 +1,29 @@
+{
+  "name": "Wind Turbine",
+  "aliases": [
+    "wind generator",
+    "wind mill",
+    "renewable energy turbine"
+  ],
+  "category": "Engineering, Machines and Technology",
+  "subcategory": "renewable_energy",
+  "description": "Renewable wind power electricity generator featuring tall conical tubular steel tower, nacelle housing, and 3 aerodynamic rotor blades.",
+  "distinguishing_features": [
+    "Tall slender tapered tubular steel tower",
+    "Overhead generator nacelle pod",
+    "Three-bladed aerodynamic rotor assembly"
+  ],
+  "educational_purpose": "Visualizes the 3D mechanical and electronic engineering architecture of Wind Turbine.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_engineering_wind_turbine",
+  "fileIdentifier": "wind_turbine.glb",
+  "statistics": {
+    "triangle_count": 192,
+    "vertex_count": 108,
+    "file_size_bytes": 10728
+  }
+}

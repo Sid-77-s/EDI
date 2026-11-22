@@ -1,0 +1,30 @@
+{
+  "name": "Virus",
+  "aliases": [
+    "bacteriophage",
+    "phage",
+    "viral particle",
+    "capsid"
+  ],
+  "category": "Biology and Human Anatomy",
+  "subcategory": "microbiology",
+  "description": "Bacteriophage T4 viral particle with icosahedral capsid head containing genome, contractile sheath, and tail fibers.",
+  "distinguishing_features": [
+    "Icosahedral protein capsid head",
+    "Contractile cylindrical tail sheath",
+    "Six radial tail fiber landing pins"
+  ],
+  "educational_purpose": "Visualizes the 3D biological structure and anatomical organization of Virus.",
+  "license": "CC0-1.0",
+  "author": "Magic Mirror Spatial AI Team",
+  "source": "Magic Mirror Curated Library",
+  "attribution": "Curated for Magic Mirror under CC0 1.0 Universal",
+  "download_date": "2026-11-22",
+  "uid": "mm_biology_virus",
+  "fileIdentifier": "virus.glb",
+  "statistics": {
+    "triangle_count": 596,
+    "vertex_count": 316,
+    "file_size_bytes": 23644
+  }
+}
